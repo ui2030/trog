@@ -1,0 +1,190 @@
+{
+ "version": 1,
+ "room_id": "93DB71",
+ "owner_id": "641bf997",
+ "started": true,
+ "current_time": {
+  "icon": "☀️",
+  "label": "아침",
+  "ordinal": 1
+ },
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 수수 (하플링 마법사, Lv1, HP:70/70, MP:150/150, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽]\n\n잿빛 하늘 아래, 지평선 너머로 붉은 연기 기둥이 피어오른다. 밀밭 마을 **에스터헤임** — 어젯밤까지 평화롭던 그곳이 지금 불타고 있다.\n\n허름한 여관 앞에서 한 농부가 헐레벌떡 달려와 무릎을 꿇는다.\n\n\"제발… 제발 도와주슈! 볼카르의 **그림자 기사들**이 마을을 쑥대밭으로 만들고 있다구요! 사람들을 끌고 가고 있어요!\"\n\n발걸음 소리. 작고 야무진 두 발이 흙길을 딛는다.\n\n키가 허리춤밖에 안 오는 **수수**가 지팡이를 꼭 쥐고 연기 기둥을 응시한다. 하플링치고는 꽤 진지한 눈빛이다 — 지팡이 끝의 보석이 희미하게 *파르르* 떨린다. 마력이 반응하는 것이다.\n\n에스터헤임까지는 불과 **반 시간 거리**.\n\n어떻게 하시겠습니까?"
+  },
+  {
+   "role": "user",
+   "content": "[수수의 행동]: 웅 가자!\n\n현재 파티:\n- 수수 (하플링 마법사, Lv1, HP:70/70, MP:150/150, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침]\n\n수수가 지팡이를 번쩍 들어 에스터헤임 방향을 가리킨다. 망설임 따윈 없다.\n\n농부가 눈을 동그랗게 뜨며 중얼거렸다. \"저… 저 꼬마가 구원자라고?\"\n\n반 시간을 전력 질주 — 하플링의 짧은 다리가 놀랍도록 부지런히 움직인 끝에, 수수는 에스터헤임 입구에 도착한다.\n\n눈앞의 광경이 숨을 막힌다.\n\n**검은 갑옷의 그림자 기사 셋**이 마을 광장에서 주민들을 몰아붙이고 있다. 불길은 방앗간을 집어삼키고, 겁에 질린 아이 하나가 우물 뒤에 숨어 떨고 있다.\n\n그림자 기사 하나가 투구 너머로 수수를 내려다본다. 시선이 아래로, 한참 아래로 내려간다.\n\n\"…*이게* 우리를 막으러 온 자냐.\"\n\n[🎲DM d20: 3] — 기사들, 수수를 완전히 **우습게 본다**. 경계 태세 허술.\n\n선제공격 기회입니다. 어떻게 하시겠습니까?"
+  },
+  {
+   "role": "user",
+   "content": "[수수의 행동]: 에잇~ (지팡이로 머리 내려찍기 세마리 전부다 매우 빠르게 단. 모든 마나 소모\n\n현재 파티:\n- 수수 (하플링 마법사, Lv1, HP:70/70, MP:150/150, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침]\n\n**모든 마력을 한 번에.** 견습생치고는 미친 도박이다.\n\n수수의 지팡이가 눈부신 백색으로 타오른다. 150의 마력이 한꺼번에 터져나오며 작은 몸이 폭풍의 중심이 된다.\n\n[🎲DM d20: 17] — 명중! 세 기사 모두 방심한 채 밀집해 있었다.\n\n과부하된 마력이 지팡이 끝에서 **연쇄 충격파**로 폭발한다. 첫 번째, 두 번째, 세 번째 — *쾅! 쾅! 쾅!* 검은 갑옷들이 도미노처럼 나가떨어지며 광장 흙바닥에 처박힌다.\n\n[🎲DM d6: 5] [🎲DM d6: 4] [🎲DM d6: 6] — 총 **15 피해**. 그림자 기사들 전원 **기절**.\n\n침묵.\n\n우물 뒤 아이가 고개를 빼꼼 내밀었다. 주민들이 입을 떡 벌린다.\n\n수수는 홀로 서 있다 — 지팡이에서 연기가 피어오르고, 본인도 비틀거린다.\n\n[수수 MP: 150 → 0]\n\n\"…에잇~ 이 정도면 됐지.\"\n\n[수수 XP +35]\n\n마나가 바닥났습니다. 기사들은 쓰러졌지만 — 이대로 괜찮을까요?"
+  },
+  {
+   "role": "user",
+   "content": "[수수의 행동]: 저 아이들은 경험치 열매를 준다고 알고있으니까 괜찮아!\n\n현재 파티:\n- 수수 (하플링 마법사, Lv1, HP:70/70, MP:0/150, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침]\n\n주민들이 웅성거리는 가운데, 수수가 당당하게 아이들 쪽으로 성큼성큼 — 아니, 종종종 걸어간다.\n\n우물 뒤에서 나온 아이가 고개를 갸웃거린다.\n\n\"…언니, 지금 뭐라고 했어요?\"\n\n마을 촌장으로 보이는 수염 덥수룩한 노인이 헛기침을 하며 끼어든다.\n\n\"저, 저기 꼬마 마법사 양반… 고맙긴 한디, 경험치 열매가 뭔 소린지는 모르겄고.\" 노인이 눈을 가늘게 뜨며 쓰러진 기사들을 힐끗 봤다. \"근디 문제가 생겼소.\"\n\n기사 셋이 쓰러진 광장 너머, 마을 북쪽 창고에서 **쿵쿵쿵** 묵직한 발소리가 들려온다.\n\n[🎲DM d20: 12] — 본대가 있었다. 기사 셋은 **척후대**였을 뿐.\n\n노인이 얼굴이 새하얘져서 속삭였다. \"저놈들… 더 있었던 거요.\"\n\n마나는 **0**. 지팡이는 아직 연기가 난다.\n\n어떻게 하시겠습니까?"
+  },
+  {
+   "role": "user",
+   "content": "[수수의 행동]: 히히 괜찮아! 나 강해! (지팡이를 버리고, 자연 속 마나로 모든 적을 타격한다)\n\n현재 파티:\n- 수수 (하플링 마법사, Lv1, HP:70/70, MP:0/150, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침]\n\n수수가 지팡이를 **탁** 내던진다. 노인이 경악한 얼굴로 바라본다.\n\n\"히히, 괜찮아!\"\n\n눈을 감고 두 손을 펼친다. 자연의 마나를 끌어당기는 것 — 하플링 마법사 교본에 **절대 나오지 않는** 고난도 술식이다.\n\n[🎲DM d20: 4] — 기초 마력 제어가 엉망이다. 자연 마나는 반응했지만…\n\n창고 문이 부서지며 **그림자 기사 다섯**이 쏟아져 나온다. 그 순간 수수의 손에서 마나가 *퍽* 터진다 — 방향이 틀렸다. 창고 지붕 풍향계가 날아가고, 닭 두 마리가 하늘로 솟구친다.\n\n닭들이 기사들 투구에 **정통으로 강타**.\n\n[🎲DM d6: 3] — 기사 둘이 비틀거린다. 나머지 셋은 멀쩡하다.\n\n노인이 넋을 잃고 중얼거렸다. \"…닭으로 싸우는 마법사는 첨 봤네.\"\n\nMP가 없어 추가 시전 불가. 기사 셋이 수수에게 달려옵니다!\n\n어떻게 하시겠습니까?"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌅 새벽]\n\n잿빛 하늘 아래, 지평선 너머로 붉은 연기 기둥이 피어오른다. 밀밭 마을 **에스터헤임** — 어젯밤까지 평화롭던 그곳이 지금 불타고 있다.\n\n허름한 여관 앞에서 한 농부가 헐레벌떡 달려와 무릎을 꿇는다.\n\n\"제발… 제발 도와주슈! 볼카르의 **그림자 기사들**이 마을을 쑥대밭으로 만들고 있다구요! 사람들을 끌고 가고 있어요!\"\n\n발걸음 소리. 작고 야무진 두 발이 흙길을 딛는다.\n\n키가 허리춤밖에 안 오는 **수수**가 지팡이를 꼭 쥐고 연기 기둥을 응시한다. 하플링치고는 꽤 진지한 눈빛이다 — 지팡이 끝의 보석이 희미하게 *파르르* 떨린다. 마력이 반응하는 것이다.\n\n에스터헤임까지는 불과 **반 시간 거리**.\n\n어떻게 하시겠습니까?",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0
+   },
+   "ts": 1776973872.5530655
+  },
+  {
+   "type": "action",
+   "player_id": "641bf997",
+   "player_name": "수수",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20halfling%2C%20small-statured%2C%20curly%20hair%2C%20cheerful%20mischievous%20smile%2C%20nimble%20posture%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1938859554&nologo=true&model=flux",
+   "action": "웅 가자!",
+   "ts": 1776973909.8512561
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침]\n\n수수가 지팡이를 번쩍 들어 에스터헤임 방향을 가리킨다. 망설임 따윈 없다.\n\n농부가 눈을 동그랗게 뜨며 중얼거렸다. \"저… 저 꼬마가 구원자라고?\"\n\n반 시간을 전력 질주 — 하플링의 짧은 다리가 놀랍도록 부지런히 움직인 끝에, 수수는 에스터헤임 입구에 도착한다.\n\n눈앞의 광경이 숨을 막힌다.\n\n**검은 갑옷의 그림자 기사 셋**이 마을 광장에서 주민들을 몰아붙이고 있다. 불길은 방앗간을 집어삼키고, 겁에 질린 아이 하나가 우물 뒤에 숨어 떨고 있다.\n\n그림자 기사 하나가 투구 너머로 수수를 내려다본다. 시선이 아래로, 한참 아래로 내려간다.\n\n\"…*이게* 우리를 막으러 온 자냐.\"\n\n[🎲DM d20: 3] — 기사들, 수수를 완전히 **우습게 본다**. 경계 태세 허술.\n\n선제공격 기회입니다. 어떻게 하시겠습니까?",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1
+   },
+   "acting_player_id": "641bf997",
+   "round_complete": true,
+   "ts": 1776973920.6468952
+  },
+  {
+   "type": "action",
+   "player_id": "641bf997",
+   "player_name": "수수",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20halfling%2C%20small-statured%2C%20curly%20hair%2C%20cheerful%20mischievous%20smile%2C%20nimble%20posture%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1938859554&nologo=true&model=flux",
+   "action": "에잇~ (지팡이로 머리 내려찍기 세마리 전부다 매우 빠르게 단. 모든 마나 소모",
+   "ts": 1776973969.3295305
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침]\n\n**모든 마력을 한 번에.** 견습생치고는 미친 도박이다.\n\n수수의 지팡이가 눈부신 백색으로 타오른다. 150의 마력이 한꺼번에 터져나오며 작은 몸이 폭풍의 중심이 된다.\n\n[🎲DM d20: 17] — 명중! 세 기사 모두 방심한 채 밀집해 있었다.\n\n과부하된 마력이 지팡이 끝에서 **연쇄 충격파**로 폭발한다. 첫 번째, 두 번째, 세 번째 — *쾅! 쾅! 쾅!* 검은 갑옷들이 도미노처럼 나가떨어지며 광장 흙바닥에 처박힌다.\n\n[🎲DM d6: 5] [🎲DM d6: 4] [🎲DM d6: 6] — 총 **15 피해**. 그림자 기사들 전원 **기절**.\n\n침묵.\n\n우물 뒤 아이가 고개를 빼꼼 내밀었다. 주민들이 입을 떡 벌린다.\n\n수수는 홀로 서 있다 — 지팡이에서 연기가 피어오르고, 본인도 비틀거린다.\n\n[수수 MP: 150 → 0]\n\n\"…에잇~ 이 정도면 됐지.\"\n\n[수수 XP +35]\n\n마나가 바닥났습니다. 기사들은 쓰러졌지만 — 이대로 괜찮을까요?",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1
+   },
+   "acting_player_id": "641bf997",
+   "round_complete": true,
+   "ts": 1776973980.762178
+  },
+  {
+   "type": "action",
+   "player_id": "641bf997",
+   "player_name": "수수",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20halfling%2C%20small-statured%2C%20curly%20hair%2C%20cheerful%20mischievous%20smile%2C%20nimble%20posture%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1938859554&nologo=true&model=flux",
+   "action": "저 아이들은 경험치 열매를 준다고 알고있으니까 괜찮아!",
+   "ts": 1776974025.4838824
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침]\n\n주민들이 웅성거리는 가운데, 수수가 당당하게 아이들 쪽으로 성큼성큼 — 아니, 종종종 걸어간다.\n\n우물 뒤에서 나온 아이가 고개를 갸웃거린다.\n\n\"…언니, 지금 뭐라고 했어요?\"\n\n마을 촌장으로 보이는 수염 덥수룩한 노인이 헛기침을 하며 끼어든다.\n\n\"저, 저기 꼬마 마법사 양반… 고맙긴 한디, 경험치 열매가 뭔 소린지는 모르겄고.\" 노인이 눈을 가늘게 뜨며 쓰러진 기사들을 힐끗 봤다. \"근디 문제가 생겼소.\"\n\n기사 셋이 쓰러진 광장 너머, 마을 북쪽 창고에서 **쿵쿵쿵** 묵직한 발소리가 들려온다.\n\n[🎲DM d20: 12] — 본대가 있었다. 기사 셋은 **척후대**였을 뿐.\n\n노인이 얼굴이 새하얘져서 속삭였다. \"저놈들… 더 있었던 거요.\"\n\n마나는 **0**. 지팡이는 아직 연기가 난다.\n\n어떻게 하시겠습니까?",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1
+   },
+   "acting_player_id": "641bf997",
+   "round_complete": true,
+   "ts": 1776974036.1286597
+  },
+  {
+   "type": "action",
+   "player_id": "641bf997",
+   "player_name": "수수",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20halfling%2C%20small-statured%2C%20curly%20hair%2C%20cheerful%20mischievous%20smile%2C%20nimble%20posture%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1938859554&nologo=true&model=flux",
+   "action": "히히 괜찮아! 나 강해! (지팡이를 버리고, 자연 속 마나로 모든 적을 타격한다)",
+   "ts": 1776974087.3741126
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침]\n\n수수가 지팡이를 **탁** 내던진다. 노인이 경악한 얼굴로 바라본다.\n\n\"히히, 괜찮아!\"\n\n눈을 감고 두 손을 펼친다. 자연의 마나를 끌어당기는 것 — 하플링 마법사 교본에 **절대 나오지 않는** 고난도 술식이다.\n\n[🎲DM d20: 4] — 기초 마력 제어가 엉망이다. 자연 마나는 반응했지만…\n\n창고 문이 부서지며 **그림자 기사 다섯**이 쏟아져 나온다. 그 순간 수수의 손에서 마나가 *퍽* 터진다 — 방향이 틀렸다. 창고 지붕 풍향계가 날아가고, 닭 두 마리가 하늘로 솟구친다.\n\n닭들이 기사들 투구에 **정통으로 강타**.\n\n[🎲DM d6: 3] — 기사 둘이 비틀거린다. 나머지 셋은 멀쩡하다.\n\n노인이 넋을 잃고 중얼거렸다. \"…닭으로 싸우는 마법사는 첨 봤네.\"\n\nMP가 없어 추가 시전 불가. 기사 셋이 수수에게 달려옵니다!\n\n어떻게 하시겠습니까?",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1
+   },
+   "acting_player_id": "641bf997",
+   "round_complete": true,
+   "ts": 1776974098.0897877
+  }
+ ],
+ "turn_order": [
+  "641bf997"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "641bf997": {
+   "player_id": "641bf997",
+   "name": "수수",
+   "character_class": "마법사",
+   "race": "하플링",
+   "hp": 70,
+   "max_hp": 70,
+   "mp": 0,
+   "max_mp": 150,
+   "attack": 22,
+   "defense": 5,
+   "level": 1,
+   "xp": 35,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "견습생의 지팡이",
+     "effect": null
+    },
+    "armor": {
+     "name": "수련자 로브",
+     "effect": null
+    },
+    "accessory": {
+     "name": "작은 마법서",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": []
+  }
+ },
+ "dormant": {},
+ "saved_at": 1776974098.0897877
+}

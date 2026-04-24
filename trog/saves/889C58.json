@@ -1,0 +1,55 @@
+{
+ "version": 1,
+ "room_id": "889C58",
+ "owner_id": "e0cc85c1",
+ "started": false,
+ "current_time": null,
+ "messages": [],
+ "chat_log": [],
+ "narrative_log": [],
+ "turn_order": [
+  "e0cc85c1"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "e0cc85c1": {
+   "player_id": "e0cc85c1",
+   "name": "테스터",
+   "character_class": "성직자",
+   "race": "수인",
+   "race_animal": "늑대",
+   "race_ratio": 1,
+   "hp": 100,
+   "max_hp": 100,
+   "mp": 120,
+   "max_mp": 120,
+   "attack": 10,
+   "defense": 12,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "축복받은 철퇴",
+     "effect": "언데드에 추가 피해 +20%"
+    },
+    "armor": {
+     "name": "성스러운 사제복",
+     "effect": null
+    },
+    "accessory": {
+     "name": "성표",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": []
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777007916.159969
+}

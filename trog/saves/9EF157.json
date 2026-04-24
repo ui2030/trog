@@ -1,0 +1,155 @@
+{
+ "version": 1,
+ "room_id": "9EF157",
+ "owner_id": "fc9f0e57",
+ "started": true,
+ "current_time": {
+  "icon": "☀️",
+  "label": "아침",
+  "ordinal": 1
+ },
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 아리스 (인간 도적, Lv1, HP:90/90, MP:60/60, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 벌목꾼 룩 (오크 전사, Lv1, HP:120/120, MP:30/30, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽]\n\n핏빛 연기가 지평선을 물들인다. 타는 냄새가 바람을 타고 밀려오는 새벽, 아리스는 쌍단검 손잡이를 쥐었다 놓기를 반복한다. 저 멀리, **밀포드 마을**의 불길이 별보다 선명하다.\n\n\"크흠.\"\n\n**벌목꾼 룩**이 낡은 방패를 들쭉날쭉한 어깨에 걸치며 코를 씰룩인다. 오크의 야성적인 감각이 벌써 포착했다 — 불과 피, 그리고 **뭔가 다른 것**. 부패한 마력의 냄새.\n\n\"룩, 냄새. 볼카르 놈들 마법사 있어. 조심해야.\"\n\n아리스가 어둠 속으로 몸을 낮추며 눈을 가늘게 뜬다. 도적의 본능이 속삭인다 — *빠르게, 조용하게.*\n\n불길은 점점 커진다. 지금 당장 달려가지 않으면 살아남는 자가 없을 것이다.\n\n**밀포드 마을로 향하는 길은 두 갈래다.** 빠르지만 트인 *대로*, 느리지만 은밀한 *숲길*. 어떻게 접근하겠습니까?"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 벌목꾼 룩(오크 전사, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "**벌목꾼 룩**이 갑자기 걸음을 멈춘다. 허리춤에 매달린 낡은 부적이 붉게 진동하고 있었다 — 오크 부족의 혈맹 신호, 누군가 피를 흘리고 있다는 뜻.\n\n\"아리스. 룩, 가야 해. 부족 일. 하지만…\"\n\n투박한 손이 아리스의 어깨를 한 번 묵직하게 두드린다. 녹슨 장검이 새벽빛에 번뜩이며 오크의 거대한 등이 어둠 속으로 멀어진다.\n\n**반드시 돌아온다.** 룩의 발소리가 사라져도, 그 말은 연기처럼 공기 중에 남았다."
+  },
+  {
+   "role": "user",
+   "content": "[아리스의 행동]: 11\n\n현재 파티:\n- 아리스 (인간 도적, Lv1, HP:90/90, MP:60/60, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침]\n\n아리스는 망설임 없이 **숲길**을 택한다. 도적의 발걸음은 낙엽 하나 소리 내지 않는다.\n\n은신 이동 판정 `[🎲DM d20: 11]`\n\n나쁘지 않다 — 하지만 완벽하지도 않다. 마을 외곽에 거의 다다랐을 때, 썩은 나뭇가지를 밟는 소리가 *딱.* 작지만 충분했다.\n\n덤불 너머, **볼카르의 문장이 새겨진 갑옷**을 걸친 병사 둘이 고개를 돌린다. 아직 정확한 위치는 모른다 — 하지만 촉각을 세우고 있다.\n\n\"…들었냐?\"\n\n\"쥐새끼겠지. 그래도 확인해.\"\n\n한 놈이 횃불을 들고 천천히 덤불 쪽으로 걷기 시작한다. 아리스에겐 **3초**가 있다.\n\n선제 기습할까요, 완전히 숨을까요, 아니면 다른 수를 쓸까요?"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 아리스(인간 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "횃불 빛이 코앞까지 다가오는 그 순간, 아리스의 눈에 뭔가 스친다 — 병사의 갑옷에 새겨진 문장, 어딘가에서 본 적 있는 **그 문양**. 오래된 기억이 가슴을 후벼판다.\n\n쌍단검을 천천히 집어넣으며 아리스는 어둠 속으로 한 발짝 물러선다. 지금 당장 해결해야 할 **개인적인 과거**가 있다 — 볼카르보다 먼저.\n\n*밀포드는 기다려줄 것이다.* 아리스의 실루엣이 새벽 안개 속으로 녹아들고, 쌍단검의 차가운 금속 소리만이 숲속에 희미하게 메아리친다."
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌅 새벽]\n\n핏빛 연기가 지평선을 물들인다. 타는 냄새가 바람을 타고 밀려오는 새벽, 아리스는 쌍단검 손잡이를 쥐었다 놓기를 반복한다. 저 멀리, **밀포드 마을**의 불길이 별보다 선명하다.\n\n\"크흠.\"\n\n**벌목꾼 룩**이 낡은 방패를 들쭉날쭉한 어깨에 걸치며 코를 씰룩인다. 오크의 야성적인 감각이 벌써 포착했다 — 불과 피, 그리고 **뭔가 다른 것**. 부패한 마력의 냄새.\n\n\"룩, 냄새. 볼카르 놈들 마법사 있어. 조심해야.\"\n\n아리스가 어둠 속으로 몸을 낮추며 눈을 가늘게 뜬다. 도적의 본능이 속삭인다 — *빠르게, 조용하게.*\n\n불길은 점점 커진다. 지금 당장 달려가지 않으면 살아남는 자가 없을 것이다.\n\n**밀포드 마을로 향하는 길은 두 갈래다.** 빠르지만 트인 *대로*, 느리지만 은밀한 *숲길*. 어떻게 접근하겠습니까?",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0
+   },
+   "ts": 1776969928.8618805
+  },
+  {
+   "type": "action",
+   "player_id": "fc9f0e57",
+   "player_name": "아리스",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20human%2C%20strong%20jawline%2C%20determined%20eyes%2C%20weathered%20skin%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3575218803&nologo=true&model=flux",
+   "action": "11",
+   "ts": 1776970030.1393287
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침]\n\n아리스는 망설임 없이 **숲길**을 택한다. 도적의 발걸음은 낙엽 하나 소리 내지 않는다.\n\n은신 이동 판정 `[🎲DM d20: 11]`\n\n나쁘지 않다 — 하지만 완벽하지도 않다. 마을 외곽에 거의 다다랐을 때, 썩은 나뭇가지를 밟는 소리가 *딱.* 작지만 충분했다.\n\n덤불 너머, **볼카르의 문장이 새겨진 갑옷**을 걸친 병사 둘이 고개를 돌린다. 아직 정확한 위치는 모른다 — 하지만 촉각을 세우고 있다.\n\n\"…들었냐?\"\n\n\"쥐새끼겠지. 그래도 확인해.\"\n\n한 놈이 횃불을 들고 천천히 덤불 쪽으로 걷기 시작한다. 아리스에겐 **3초**가 있다.\n\n선제 기습할까요, 완전히 숨을까요, 아니면 다른 수를 쓸까요?",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1
+   },
+   "acting_player_id": "fc9f0e57",
+   "round_complete": true,
+   "ts": 1776970040.2204309
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "dormant": {
+  "6bea2e2c": {
+   "player": {
+    "player_id": "6bea2e2c",
+    "name": "벌목꾼 룩",
+    "character_class": "전사",
+    "race": "오크",
+    "hp": 120,
+    "max_hp": 120,
+    "mp": 30,
+    "max_mp": 30,
+    "attack": 15,
+    "defense": 10,
+    "level": 1,
+    "xp": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "녹슨 장검",
+      "effect": null
+     },
+     "armor": {
+      "name": "가죽 흉갑",
+      "effect": null
+     },
+     "accessory": {
+      "name": "낡은 방패",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": []
+   },
+   "departed_at": 1776969986.2040772
+  },
+  "fc9f0e57": {
+   "player": {
+    "player_id": "fc9f0e57",
+    "name": "아리스",
+    "character_class": "도적",
+    "race": "인간",
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "쌍단검",
+      "effect": null
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": []
+   },
+   "departed_at": 1776970064.3867135
+  }
+ },
+ "saved_at": 1776970166.9183097
+}

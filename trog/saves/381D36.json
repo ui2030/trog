@@ -1,0 +1,126 @@
+{
+ "version": 1,
+ "room_id": "381D36",
+ "owner_id": "b06d830e",
+ "started": true,
+ "current_time": {
+  "icon": "🌌",
+  "label": "심야",
+  "ordinal": 5
+ },
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 테슽 (수인(곰·수형·93%) 전사, Lv1, HP:120/120, MP:30/30, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌌 심야]\n\n핏빛 연기가 달빛을 삼킨다. 떨어지는 지붕 너머로 처참한 비명이 울려 퍼지고, 볼카르의 하급 악마들이 횃불을 흔들며 포효한다. 타는 냄새가 코끝을 찌르는 순간, 테슽의 곰 본능이 걷잡을 수 없이 끓어오른다. 93%의 야성이 흐르는 거대한 체구, 털 북실한 주먹이 낡은 방패를 쥐고 으르렁댄다. \n\n\"크아앙...! 감히... 내 사냥감에 손대?!\"\n\n앞을 가로막는 고블린 무리가 짐승 같은 포효에 화들짝 놀라 창끝을 흔든다. 녹슨 장검이 달빛을 머금고 서늘하게 빛난다. \n\n[적 등장: 고블린 A | HP 12]\n[적 등장: 고블린 B | HP 12]\n[적 등장: 고블린 C | HP 8]"
+  },
+  {
+   "role": "user",
+   "content": "[테슽의 행동]: 죽인다\n\n현재 파티:\n- 테슽 (수인(곰·수형·93%) 전사, Lv1, HP:120/120, MP:30/30, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌌 심야]\n\n테슽이 포효하며 돌진한다! 땅을 울리는 압도적인 체급에 고블린들의 창끝이 휘청거린다. 녹슨 장검을 크게 휘두르며 가장 가까운 고블린 A를 내려친다. \n\n[🎲DM d20: 18]\n\n서투른 자세로 창을 들어올린 고블린 A의 방어를 일격에 쪼개버리며 극뼈를 강타! 짐승의 일격에 고블린이 비명도 지르지 못하고 나동그라진다.\n\n\"끼이이ik...!\"\n\n고블린 A의 머리 위로 붉은 피가 솟구치고, 테슽의 거친 숨결이 밤공기를 찢는다. 남은 두 마리가 경악하며 뒷걸음친다.\n\n[적 HP: 고블린 A 12 → 0]\n[적 퇴장: 고블린 A]\n[테슽 XP +10]\n\n[적 상태: 고블린 B | 공포 — 다음 공격 명중 -2]\n[적 상태: 고블린 C | 공포 — 다음 공격 명중 -2]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 테슽(수인 전사, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌌 심야]\n\n핏빛 연기가 달빛을 삼킨다. 떨어지는 지붕 너머로 처참한 비명이 울려 퍼지고, 볼카르의 하급 악마들이 횃불을 흔들며 포효한다. 타는 냄새가 코끝을 찌르는 순간, 테슽의 곰 본능이 걷잡을 수 없이 끓어오른다. 93%의 야성이 흐르는 거대한 체구, 털 북실한 주먹이 낡은 방패를 쥐고 으르렁댄다. \n\n\"크아앙...! 감히... 내 사냥감에 손대?!\"\n\n앞을 가로막는 고블린 무리가 짐승 같은 포효에 화들짝 놀라 창끝을 흔든다. 녹슨 장검이 달빛을 머금고 서늘하게 빛난다. \n\n[적 등장: 고블린 A | HP 12]\n[적 등장: 고블린 B | HP 12]\n[적 등장: 고블린 C | HP 8]",
+   "current_time": {
+    "icon": "🌌",
+    "label": "심야",
+    "ordinal": 5
+   },
+   "ts": 1777007456.0466669
+  },
+  {
+   "type": "action",
+   "player_id": "b06d830e",
+   "player_name": "테슽",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20bearfolk%20beastkin%2C%20bearfolk%2C%20broad%20ursine%20muzzle%2C%20thick%20brown%20fur%2C%20massive%20bipedal%20bear%20humanoid%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3347025894&nologo=true&model=flux",
+   "action": "죽인다",
+   "ts": 1777007464.5530336
+  },
+  {
+   "type": "dm",
+   "text": "[🌌 심야]\n\n테슽이 포효하며 돌진한다! 땅을 울리는 압도적인 체급에 고블린들의 창끝이 휘청거린다. 녹슨 장검을 크게 휘두르며 가장 가까운 고블린 A를 내려친다. \n\n[🎲DM d20: 18]\n\n서투른 자세로 창을 들어올린 고블린 A의 방어를 일격에 쪼개버리며 극뼈를 강타! 짐승의 일격에 고블린이 비명도 지르지 못하고 나동그라진다.\n\n\"끼이이ik...!\"\n\n고블린 A의 머리 위로 붉은 피가 솟구치고, 테슽의 거친 숨결이 밤공기를 찢는다. 남은 두 마리가 경악하며 뒷걸음친다.\n\n[적 HP: 고블린 A 12 → 0]\n[적 퇴장: 고블린 A]\n[테슽 XP +10]\n\n[적 상태: 고블린 B | 공포 — 다음 공격 명중 -2]\n[적 상태: 고블린 C | 공포 — 다음 공격 명중 -2]",
+   "current_time": {
+    "icon": "🌌",
+    "label": "심야",
+    "ordinal": 5
+   },
+   "acting_player_id": "b06d830e",
+   "round_complete": true,
+   "ts": 1777007506.6465034
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "monsters": {
+  "고블린 B": {
+   "name": "고블린 B",
+   "hp": 12,
+   "max_hp": 12,
+   "status_note": "공포 — 다음 공격 명중 -2"
+  },
+  "고블린 C": {
+   "name": "고블린 C",
+   "hp": 8,
+   "max_hp": 8,
+   "status_note": "공포 — 다음 공격 명중 -2"
+  }
+ },
+ "dormant": {
+  "b06d830e": {
+   "player": {
+    "player_id": "b06d830e",
+    "name": "테슽",
+    "character_class": "전사",
+    "race": "수인",
+    "race_animal": "곰",
+    "race_ratio": 93,
+    "hp": 120,
+    "max_hp": 120,
+    "mp": 30,
+    "max_mp": 30,
+    "attack": 15,
+    "defense": 10,
+    "level": 1,
+    "xp": 10,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "녹슨 장검",
+      "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
+     },
+     "armor": {
+      "name": "가죽 흉갑",
+      "effect": null
+     },
+     "accessory": {
+      "name": "낡은 방패",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777007670.0883038
+  }
+ },
+ "saved_at": 1777007670.0883038
+}

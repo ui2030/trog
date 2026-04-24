@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>TROG — AI Dungeon Master</title>
+<link rel="stylesheet" href="/static/style.css?v=3">
+</head>
+<body>
+
+<!-- ── ENTRY SCREEN ─────────────────────── -->
+<div id="entry-screen" class="screen active">
+  <div class="entry-wrap">
+    <div class="logo-area">
+      <div class="logo">TROG</div>
+      <div class="logo-sub">AI Dungeon Master</div>
+    </div>
+
+    <div class="form-group">
+      <label>용사의 이름</label>
+      <input type="text" id="player-name" placeholder="이름을 입력하세요" maxlength="12" autocomplete="off">
+    </div>
+
+    <div class="form-group">
+      <label>직업 선택</label>
+      <div class="class-grid">
+        <div class="class-card" data-class="전사">
+          <div class="class-emoji">⚔️</div>
+          <div class="class-name">전사</div>
+          <div class="class-desc">HP 120 · 강한 방어</div>
+        </div>
+        <div class="class-card" data-class="마법사">
+          <div class="class-emoji">🔮</div>
+          <div class="class-name">마법사</div>
+          <div class="class-desc">HP 70 · 강한 공격</div>
+        </div>
+        <div class="class-card" data-class="도적">
+          <div class="class-emoji">🗡️</div>
+          <div class="class-name">도적</div>
+          <div class="class-desc">HP 90 · 빠른 속도</div>
+        </div>
+        <div class="class-card" data-class="성직자">
+          <div class="class-emoji">✨</div>
+          <div class="class-name">성직자</div>
+          <div class="class-desc">HP 100 · 치유 능력</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>시작 무기</label>
+      <div id="weapon-grid" class="weapon-grid"></div>
+      <div class="weapon-hint">직업에 맞는 무기를 하나 고르세요 (입장 후 변경 불가)</div>
+    </div>
+
+    <div class="form-group">
+      <label class="race-head-label">
+        <span>종족</span>
+        <label class="race-toggle">
+          <input type="checkbox" id="race-manual-toggle">
+          <span>직접 선택</span>
+        </label>
+      </label>
+      <div id="race-random-hint" class="race-notice">🎲 체크 안 하면 입장 시 무작위로 배정됩니다</div>
+      <div id="race-grid" class="race-grid" style="display:none">
+        <div class="race-card" data-race="인간"><div class="race-emoji">🧑</div><div class="race-name">인간</div><div class="race-desc">균형잡힌 종족</div></div>
+        <div class="race-card" data-race="엘프"><div class="race-emoji">🧝</div><div class="race-name">엘프</div><div class="race-desc">숲의 수호자</div></div>
+        <div class="race-card" data-race="드워프"><div class="race-emoji">🧔</div><div class="race-name">드워프</div><div class="race-desc">산악의 장인</div></div>
+        <div class="race-card" data-race="하플링"><div class="race-emoji">🧒</div><div class="race-name">하플링</div><div class="race-desc">작은 방랑자</div></div>
+        <div class="race-card" data-race="오크"><div class="race-emoji">👹</div><div class="race-name">오크</div><div class="race-desc">야성의 전사</div></div>
+        <div class="race-card" data-race="티플링"><div class="race-emoji">😈</div><div class="race-name">티플링</div><div class="race-desc">악마의 혈통</div></div>
+        <div class="race-card" data-race="드래곤본"><div class="race-emoji">🐉</div><div class="race-name">드래곤본</div><div class="race-desc">용의 후예</div></div>
+        <div class="race-card" data-race="놈"><div class="race-emoji">🧙</div><div class="race-name">놈</div><div class="race-desc">기괴한 발명가</div></div>
+        <div class="race-card" data-race="수인"><div class="race-emoji">🦊</div><div class="race-name">수인</div><div class="race-desc">인간과 짐승의 혈통</div></div>
+      </div>
+      <!-- 🆕 수인 sub-UI — race=수인 선택 시만 노출. 동물 6종 + 인간↔동물 비율 슬라이더. -->
+      <div id="beastfolk-config" class="beastfolk-config" style="display:none">
+        <div class="beastfolk-label">🐾 어떤 짐승의 피가 흐릅니까?</div>
+        <div id="beastfolk-animal-grid" class="beastfolk-animal-grid">
+          <div class="beastfolk-animal" data-animal="늑대"><span class="bfa-emoji">🐺</span><span class="bfa-name">늑대</span></div>
+          <div class="beastfolk-animal" data-animal="여우"><span class="bfa-emoji">🦊</span><span class="bfa-name">여우</span></div>
+          <div class="beastfolk-animal" data-animal="호랑이"><span class="bfa-emoji">🐯</span><span class="bfa-name">호랑이</span></div>
+          <div class="beastfolk-animal" data-animal="고양이"><span class="bfa-emoji">🐱</span><span class="bfa-name">고양이</span></div>
+          <div class="beastfolk-animal" data-animal="토끼"><span class="bfa-emoji">🐰</span><span class="bfa-name">토끼</span></div>
+          <div class="beastfolk-animal" data-animal="곰"><span class="bfa-emoji">🐻</span><span class="bfa-name">곰</span></div>
+        </div>
+        <div class="beastfolk-ratio-label">
+          <span>인간성</span>
+          <span id="beastfolk-ratio-value" class="beastfolk-ratio-value">50%</span>
+          <span>동물성</span>
+        </div>
+        <input id="beastfolk-ratio-slider" class="beastfolk-ratio-slider" type="range" min="10" max="90" value="50" step="1">
+        <div id="beastfolk-ratio-bucket" class="beastfolk-ratio-bucket">반수인 — 인간과 짐승이 반반 드러난 혼혈</div>
+        <div class="beastfolk-ratio-note">※ 10%는 거의 인간, 90%는 짐승에 가까운 모습. 0/100 은 수인 정체성이 아니라 금지.</div>
+      </div>
+    </div>
+
+    <div class="room-actions">
+      <button id="create-room-btn" class="btn btn-primary">새 방 만들기</button>
+      <div class="divider">또는</div>
+      <div class="join-row">
+        <input type="text" id="room-code" placeholder="방 코드 입력" maxlength="6">
+        <button id="join-room-btn" class="btn btn-secondary">입장</button>
+      </div>
+
+      <!-- 🆕 관전자 모드 — 방 코드만 있으면 구경 가능 (이름/직업 무관) -->
+      <div class="spectator-row">
+        <span class="spectator-label">👁 관전자 모드</span>
+        <input type="text" id="spectate-code" placeholder="방 코드" maxlength="6">
+        <button id="spectate-btn" class="btn btn-ghost">관전</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── WAITING SCREEN ───────────────────── -->
+<div id="waiting-screen" class="screen">
+  <div class="waiting-shell">
+    <!-- 왼쪽 상단: 방 코드 -->
+    <div class="room-info">
+      <div class="room-info-label">방 코드</div>
+      <div id="display-room-code" class="room-code-display">------</div>
+      <div class="room-hint">친구에게 코드를 공유하세요</div>
+    </div>
+
+    <!-- 왼쪽 하단: 종족 → 플레이어 목록 → 모험 시작 -->
+    <div class="waiting-inner">
+      <div id="my-race-box" class="my-race-box" style="display:none">
+        <div class="race-label">당신의 종족이 정해졌습니다</div>
+        <div class="race-big"><span id="my-race-emoji">🧑</span> <span id="my-race-name">인간</span></div>
+        <div id="my-race-desc" class="race-desc-text"></div>
+        <button id="open-draw-btn" class="btn btn-secondary btn-draw">🎨 내 캐릭터 직접 그리기</button>
+      </div>
+
+      <div class="waiting-players">
+        <div class="waiting-players-title">입장한 용사들</div>
+        <div id="waiting-list" class="waiting-list"></div>
+      </div>
+
+      <button id="ready-btn" class="btn btn-primary btn-large">
+        <span id="ready-btn-label">⚔️ 모험 시작!</span>
+        <span id="ready-btn-check" class="ready-check" style="display:none">✓</span>
+      </button>
+      <div id="ready-hint" class="ready-hint">모두가 누르면 시작됩니다</div>
+    </div>
+
+    <!-- 오른쪽: 채팅 (왼쪽 하단 구역 높이에 맞춰 고정) -->
+    <aside class="waiting-chat">
+      <div class="waiting-chat-title">💬 대기실 채팅</div>
+      <div id="chat-log" class="chat-log"></div>
+      <div class="chat-input-row">
+        <input type="text" id="chat-input" placeholder="메시지 입력..." maxlength="200" autocomplete="off">
+        <button id="chat-send-btn" class="btn btn-secondary">전송</button>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ── MOBILE MINI HUD (좌상단 원형 프로필 + HP/MP 아크) ─── -->
+<button id="mobile-mini-hud" class="mini-hud" type="button" title="내 캐릭터 보기">
+  <svg class="hud-ring" viewBox="0 0 60 60" aria-hidden="true">
+    <!-- HP 왼쪽 반원 (12시 → 6시 반시계) -->
+    <path class="hud-track"   d="M 30 4 A 26 26 0 0 0 30 56" />
+    <path class="hud-hp-fill" d="M 30 4 A 26 26 0 0 0 30 56" />
+    <!-- MP 오른쪽 반원 (12시 → 6시 시계방향) -->
+    <path class="hud-track"   d="M 30 4 A 26 26 0 0 1 30 56" />
+    <path class="hud-mp-fill" d="M 30 4 A 26 26 0 0 1 30 56" />
+  </svg>
+  <img id="mini-hud-portrait" class="hud-portrait" src="" alt="">
+  <span class="hud-level" id="mini-hud-lvl"></span>
+</button>
+
+<!-- ── MOBILE EDGE PULL-TABS — 양쪽 가장자리 화살표 ─── -->
+<button id="edge-tab-party" class="edge-tab edge-tab-left" type="button" title="파티 열기">
+  <span class="edge-tab-icon">⚔️</span>
+  <span class="edge-tab-arrow">›››</span>
+</button>
+<button id="edge-tab-char" class="edge-tab edge-tab-right" type="button" title="소지품 / 내 캐릭터 열기">
+  <span class="edge-tab-arrow">‹‹‹</span>
+  <span class="edge-tab-icon">🎒</span>
+</button>
+
+<!-- ── GAME SCREEN ───────────────────────── -->
+<div id="game-screen" class="screen">
+
+  <!-- 🆕 관전자 모드 표시 배너 -->
+  <div id="spectator-banner" class="spectator-banner" style="display:none">
+    👁 관전자 모드 — 보기만 가능합니다
+  </div>
+
+  <div id="party-panel" class="panel party-panel hide-left">
+    <div class="panel-header">
+      <span>⚔️ 파티</span>
+      <button id="party-collapse-btn" class="party-collapse-btn" type="button"
+              title="카드 접기 / 펼치기">◧</button>
+    </div>
+    <div id="party-list" class="party-list"></div>
+    <!-- 🆕 몬스터 섹션 — 전투 중 DM 이 태그로 생성/제거하는 적 유닛. 없으면 자동 숨김. -->
+    <div id="monster-section" class="monster-section" style="display:none">
+      <div class="monster-header">👹 몬스터</div>
+      <div id="monster-list" class="monster-list"></div>
+    </div>
+    <!-- 🆕 휴면 캐릭터 섹션 — 파티 떠난 사람들. 방장은 "즉시 해제" 버튼으로 takeover 타이머 건너뛰기 가능 -->
+    <div id="dormant-section" class="dormant-section" style="display:none">
+      <div class="dormant-header">💤 휴면 중</div>
+      <div id="dormant-list" class="dormant-list"></div>
+    </div>
+  </div>
+
+  <div id="narrative-panel" class="panel narrative-panel hide-top">
+    <div class="panel-header">
+      <button id="toggle-party-btn" class="mobile-toggle mobile-toggle-left" title="파티 보기">⚔️</button>
+      <span class="panel-title">📖 모험의 기록</span>
+      <span id="room-code-badge" class="room-code-badge" style="display:none" title="친구에게 공유할 방 코드 — 클릭해 복사"></span>
+      <span id="time-badge" class="time-badge" style="display:none"></span>
+      <button id="toggle-char-btn" class="mobile-toggle mobile-toggle-right" title="내 캐릭터 보기">🧙</button>
+    </div>
+    <!-- 장면 배너: 한 라운드가 끝나면 AI 생성 맵/풍경으로 업데이트 -->
+    <div id="scene-banner" class="scene-banner" style="display:none">
+      <img id="scene-banner-img" alt="">
+      <div class="scene-banner-label">
+        <span id="scene-banner-text"></span>
+        <span id="scene-banner-round" class="scene-round"></span>
+      </div>
+    </div>
+    <div id="narr-log" class="narr-log">
+      <div class="dm-thinking">
+        <span class="dots">던전 마스터가 준비 중입니다</span>
+      </div>
+    </div>
+    <div id="dm-typing" class="dm-typing" style="display:none">
+      <span class="dots">🎲 던전 마스터가 주사위를 굴리는 중</span>
+    </div>
+  </div>
+
+  <div id="char-panel" class="panel char-panel hide-right">
+    <div class="panel-header">🧙 내 캐릭터</div>
+    <div id="char-body" class="char-body"></div>
+
+    <!-- 파티원 전용 채팅 (DM과 별개, 플레이어끼리만) -->
+    <div class="game-chat">
+      <div class="game-chat-title">💬 파티 채팅</div>
+      <div id="game-chat-log" class="chat-log game-chat-log"></div>
+      <div class="chat-input-row">
+        <input type="text" id="game-chat-input" placeholder="파티원에게..." maxlength="200" autocomplete="off">
+        <button id="game-chat-send-btn" class="btn btn-secondary">전송</button>
+      </div>
+    </div>
+
+    <button id="open-draw-btn-game" class="btn btn-secondary btn-draw-game">🎨 내 캐릭터 그리기</button>
+    <button id="leave-room-btn" class="btn-leave">🚪 방 나가기 / 새 캐릭터</button>
+  </div>
+
+  <div id="action-bar" class="action-bar hide-bottom">
+    <!-- 🆕 방장 전용 턴 스킵 버튼 (AFK 플레이어용) -->
+    <div class="owner-tools" id="owner-tools" style="display:none">
+      <button id="skip-turn-btn" class="btn-skip-turn" title="현재 차례 플레이어를 스킵">⏭ 턴 스킵</button>
+      <span class="owner-tools-hint">(방장 전용 — AFK 대응)</span>
+    </div>
+
+    <div class="action-row">
+      <input type="text" id="action-input" placeholder="행동을 입력하세요... (예: 검을 뽑아 전방의 고블린을 공격한다)" maxlength="200">
+      <button id="send-btn" class="btn-send">전송 ⚡</button>
+    </div>
+    <div class="quick-row">
+      <button class="q-btn" data-action="주변을 조심스럽게 살펴본다">🔍 탐색</button>
+      <button class="q-btn" data-action="파티원과 작전을 의논한다">💬 대화</button>
+      <button class="q-btn" data-action="적에게 돌진하여 공격한다">⚔️ 공격</button>
+      <button class="q-btn" data-action="상처를 치료하고 휴식을 취한다">💊 치료</button>
+      <button class="q-btn" data-action="주변 지형을 이용해 매복을 시도한다">🌿 매복</button>
+    </div>
+    <div class="quick-row quick-row-custom" id="quick-row-custom"></div>
+
+    <!-- 주사위 트레이 — 기본 d20 + 확장 토글 -->
+    <div class="dice-row">
+      <span class="dice-label">🎲</span>
+      <button class="dice-btn dice-d20" data-die="d20">d20</button>
+      <button id="dice-expand-btn" class="dice-btn dice-expand" title="다른 주사위">▾</button>
+      <span class="dice-extras" id="dice-extras" hidden>
+        <button class="dice-btn" data-die="d4">d4</button>
+        <button class="dice-btn" data-die="d6">d6</button>
+        <button class="dice-btn" data-die="d8">d8</button>
+        <button class="dice-btn" data-die="d10">d10</button>
+        <button class="dice-btn" data-die="d12">d12</button>
+        <button class="dice-btn" data-die="d100">d100</button>
+      </span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── DRAWING MODAL ─────────────────── -->
+<div id="draw-modal" class="modal" style="display:none">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box">
+    <div class="modal-title">
+      🎨 <span id="draw-title">내 캐릭터 그리기</span>
+      <button class="modal-close" data-close>✕</button>
+    </div>
+    <div class="modal-hint" id="draw-hint">종족에 어울리게 자유롭게 그려보세요</div>
+
+    <canvas id="draw-canvas" width="384" height="384"></canvas>
+
+    <div class="draw-toolbar">
+      <div class="tool-group">
+        <span class="tool-lbl">도구</span>
+        <button id="tool-brush-btn" class="tool-btn selected-tool">✏️ 붓</button>
+        <button id="tool-bucket-btn" class="tool-btn">🪣 채우기</button>
+        <button id="eraser-btn" class="tool-btn">🩹 지우개</button>
+      </div>
+      <div class="tool-group">
+        <span class="tool-lbl">크기</span>
+        <button class="brush-btn selected" data-size="3">·</button>
+        <button class="brush-btn" data-size="6">•</button>
+        <button class="brush-btn" data-size="12">⬤</button>
+        <button class="brush-btn" data-size="24">⬛</button>
+      </div>
+      <div class="tool-group">
+        <span class="tool-lbl">색</span>
+        <button class="color-btn selected" data-color="#ddd6c4" style="background:#ddd6c4"></button>
+        <button class="color-btn" data-color="#000000" style="background:#000"></button>
+        <button class="color-btn" data-color="#c9a84c" style="background:#c9a84c"></button>
+        <button class="color-btn" data-color="#f44336" style="background:#f44336"></button>
+        <button class="color-btn" data-color="#4caf50" style="background:#4caf50"></button>
+        <button class="color-btn" data-color="#2196f3" style="background:#2196f3"></button>
+        <button class="color-btn" data-color="#9c27b0" style="background:#9c27b0"></button>
+        <button class="color-btn" data-color="#ff9800" style="background:#ff9800"></button>
+        <button class="color-btn" data-color="#795548" style="background:#795548"></button>
+        <button class="color-btn" data-color="#ffc0cb" style="background:#ffc0cb"></button>
+        <label class="rgb-picker-wrap" title="원하는 색 직접 선택 (RGB)">
+          <span>🎨</span>
+          <input type="color" id="rgb-picker" value="#ddd6c4">
+        </label>
+      </div>
+      <div class="tool-group">
+        <button id="undo-btn" class="tool-btn" title="Ctrl+Z">↶ 되돌리기</button>
+        <button id="clear-btn" class="tool-btn">🗑 전체 지우기</button>
+        <button id="restore-ai-btn" class="tool-btn tool-btn-warn">♻ AI 초상화로</button>
+      </div>
+      <div class="tool-group">
+        <span class="tool-lbl">배경</span>
+        <button class="bg-btn selected" data-bg="dark"  title="기본 어두운 배경" style="background:#1c1c2e">어둠</button>
+        <button class="bg-btn" data-bg="white" title="흰색 배경"            style="background:#ffffff;color:#111">흰색</button>
+        <button class="bg-btn" data-bg="transparent" title="투명 배경 (PNG로 저장됨)">투명</button>
+      </div>
+      <div class="tool-group profile-group">
+        <span class="tool-lbl">브라우저 프로필</span>
+        <button id="profile-save-btn" class="tool-btn">💾 저장</button>
+        <select id="profile-load-select" class="profile-select">
+          <option value="">저장된 프로필 불러오기...</option>
+        </select>
+        <button id="profile-delete-btn" class="tool-btn tool-btn-warn" title="선택된 프로필 삭제">🗑</button>
+      </div>
+      <div class="tool-group profile-group">
+        <span class="tool-lbl">PC 파일</span>
+        <button id="file-save-btn" class="tool-btn" title="현재 그림을 PC에 PNG 파일로 저장">⬇ PC에 저장</button>
+        <label for="file-load-input" class="tool-btn file-label" title="PC에서 이미지 파일 불러오기">⬆ PC에서 불러오기</label>
+        <input type="file" id="file-load-input" accept="image/*" style="display:none">
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button id="draw-cancel" class="btn btn-secondary" data-close>취소</button>
+      <button id="draw-save" class="btn btn-primary">✓ 이 그림으로 저장</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── TAKEOVER MODAL — 입장 시 휴면 캐릭터 이어받기 선택 ─ -->
+<div id="takeover-modal" class="modal" style="display:none">
+  <div class="modal-backdrop" data-takeover-close></div>
+  <div class="modal-box takeover-box">
+    <div class="modal-title">
+      👻 비어있는 자리가 있습니다
+      <button class="modal-close" data-takeover-close>✕</button>
+    </div>
+    <div class="modal-hint">
+      이 방에는 잠시 자리를 비운 영웅들이 있습니다.<br>
+      그 영웅의 이야기를 이어받거나, 새 캐릭터로 합류할 수 있어요.
+    </div>
+    <div id="takeover-list" class="takeover-list"></div>
+    <div class="modal-footer">
+      <button id="takeover-new-btn" class="btn btn-secondary">✨ 새 캐릭터로 입장</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── PORTRAIT LIGHTBOX ────────────── -->
+<div id="portrait-lightbox" class="lightbox" style="display:none">
+  <div class="lightbox-backdrop" data-close-lightbox></div>
+  <div class="lightbox-box">
+    <button class="lightbox-close" data-close-lightbox>✕</button>
+    <img id="lightbox-img" alt="">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+</div>
+
+<script src="/static/game.js?v=3"></script>
+</body>
+</html>

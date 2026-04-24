@@ -1,0 +1,108 @@
+{
+ "version": 1,
+ "room_id": "A314AF",
+ "owner_id": "35a603a2",
+ "started": true,
+ "current_time": {
+  "icon": "🌅",
+  "label": "새벽",
+  "ordinal": 0
+ },
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 테스트 (수인(늑대·반수인·40%) 마법사, Lv1, HP:70/70, MP:150/150, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽]\n\n피비린내 서린 안개가 타오르는 마을을 집어삼킨다. 멀리서 비명이 찢기듯 울려 퍼지고, 볼카르의 검은 깃발을 단 오크 무리가 살육을 즐긴다. \n\n테스트, 네 회색 늑대 털이 곤두선다. 예민한 코가 피와 재, 그리고 **타오르는 고기 냄새**를 포착했다. 길가에 쓰러진 노인이 네 발톱이 솟아난 손을 붙잡는다.\n\n\"울부짖는 자, 테스트…? 하, 이름값도 못 하네. 그래도… 제발…\"\n\n적의 선봉대가 횃불을 들고 이쪽을 향해 돌진해 온다!\n\n[적 등장: 오크 창병 A | HP 15]\n[적 등장: 오크 창병 B | HP 15]\n[적 등장: 오크 두목 | HP 25]"
+  }
+ ],
+ "chat_log": [
+  {
+   "player_id": "35a603a2",
+   "name": "테스트",
+   "emoji": "🔮",
+   "race_emoji": "🐺",
+   "text": "1212124122",
+   "ts": 1777013514.8568506,
+   "is_spectator": false
+  }
+ ],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌅 새벽]\n\n피비린내 서린 안개가 타오르는 마을을 집어삼킨다. 멀리서 비명이 찢기듯 울려 퍼지고, 볼카르의 검은 깃발을 단 오크 무리가 살육을 즐긴다. \n\n테스트, 네 회색 늑대 털이 곤두선다. 예민한 코가 피와 재, 그리고 **타오르는 고기 냄새**를 포착했다. 길가에 쓰러진 노인이 네 발톱이 솟아난 손을 붙잡는다.\n\n\"울부짖는 자, 테스트…? 하, 이름값도 못 하네. 그래도… 제발…\"\n\n적의 선봉대가 횃불을 들고 이쪽을 향해 돌진해 온다!\n\n[적 등장: 오크 창병 A | HP 15]\n[적 등장: 오크 창병 B | HP 15]\n[적 등장: 오크 두목 | HP 25]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0
+   },
+   "ts": 1777013649.1108313
+  }
+ ],
+ "turn_order": [
+  "35a603a2"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "35a603a2": {
+   "player_id": "35a603a2",
+   "name": "테스트",
+   "character_class": "마법사",
+   "race": "수인",
+   "race_animal": "늑대",
+   "race_ratio": 40,
+   "hp": 70,
+   "max_hp": 70,
+   "mp": 150,
+   "max_mp": 150,
+   "attack": 22,
+   "defense": 5,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "견습생의 지팡이",
+     "effect": "균형잡힌 지팡이 — MP 소비 -10%"
+    },
+    "armor": {
+     "name": "수련자 로브",
+     "effect": null
+    },
+    "accessory": {
+     "name": "작은 마법서",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": []
+  }
+ },
+ "monsters": {
+  "오크 창병 A": {
+   "name": "오크 창병 A",
+   "hp": 15,
+   "max_hp": 15,
+   "status_note": null
+  },
+  "오크 창병 B": {
+   "name": "오크 창병 B",
+   "hp": 15,
+   "max_hp": 15,
+   "status_note": null
+  },
+  "오크 두목": {
+   "name": "오크 두목",
+   "hp": 25,
+   "max_hp": 25,
+   "status_note": null
+  }
+ },
+ "dormant": {},
+ "saved_at": 1777013649.1116235
+}
