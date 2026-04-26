@@ -1,0 +1,231 @@
+{
+ "version": 2,
+ "room_id": "D3B8F5",
+ "owner_id": "48f6ce3a",
+ "started": true,
+ "current_time": {
+  "icon": "🌞",
+  "label": "정오",
+  "ordinal": 2,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 12441 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽]\n\n항구 마을 브린포드에서 피비린내 나는 연기가 피어오른다. 볼카르의 하급 마귀들이 쏟아져 나와 짐승의 포효로 여명을 찢어발겼다. \n\n12441의 녹색 근육이 끓어오른다. 오크 특유의 전투 본능이 짙은 피 냄새를 맡고 광소를 삼킨다. 거대한 양손도끼를 움켜쥔 손마디가 뽀드득 간다. \n\n\"오, 이놈의 이름이 일이사사일이라고?\" 길가에서 무너진 마차 위로 뛰어내린 **고블린 정찰대장**이 창끝으로 오크를 가리키며 비웃는다. \"숫자 이름이 웬말이냐! 네놈 주인이 대충 지어준 이름이냐, 아니면 머리통 안에 셀 줄만 아는 바보냐?\"\n\n적의 도발에 12441의 턱 아래 송곳니가 번뜩인다. 마귀들이 포위를 좁히며 낄낄댄다. \n\n[적 등장: 고블린 정찰대장 | HP 18]\n[적 등장: 고블린 창병 A | HP 10]\n[적 등장: 고블린 창병 B | HP 10]"
+  },
+  {
+   "role": "user",
+   "content": "[12441의 행동]: 크르르\n\n현재 파티:\n- 12441 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] 황금빛 햇살이 피로 물든 성벽을 타고 넘는다. 마을 끝의 탑 위 광장. 12441이 흙뿔을 내뿜으며 뛰어든다. 마치 믿기 어려운 이름의 출현에도 파편이 공명처럼, \"오-오! '12441'? 정그레 힘의 숫자냐!\" **고블린 정찰대장**의 창꼭지가 덜덜 떤다. `[🎲DM d20: 1] — 정찰대장 리액션`\n\n12441은 저항 없이 고블린 꼭대기를 관광. 양손도끼를 번쩍 들어 하늘에 부르짖는다. \"오크. 숫자. X자릿수. 어째 그 이름 바꿔달라 졸랐지만 엄마 못 본 지 오래래!\" 적들 앞에서 키득추덕 타자가 낙서라도 되듯 돌진. 도끼날이 붉은 궤적을 그리며 고블린 A의 흉곽을 꿰穿孔. 고블린 A는 환희 어린 시선마저 식어 뚝 떨어진다."
+  },
+  {
+   "role": "user",
+   "content": "[12441의 행동]: 정찰대장 죽어라! (도끼 던지기)\n\n현재 파티:\n- 12441 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] 도끼에 걸린 오크의 울분이 폭발한다.\n\n“내 이름은 **천이백사십일**! 넌 그걸 까먹고 죽는다!”\n\n12441이 양손도끼를 회전시키며 던진다. 무기는 바람을 찢고 고블린 정찰대장의 가슴팍을 꿰뚫는다.\n\n[🎲DM d20: 18] 명중!  \n[🎲DM d6+3: 9] 피해\n\n[적 HP: 고블린 정찰대장 18 → 0]\n\n창병 A·B가 눈이 휘둥그레진 채 뒷걸음질 친다.  \n“총… 총명(聰明)한 오크다! 저 숫자 이름에 숨겨진 힘인가?”\n\n[XP +35]\n\n남은 두 고블린은 진흙 속 도끼를 노리며 흩어진다. 전투가 끝난 건 아니지만, 12441의 이름이 이제 마을 곳곳에 울려 퍼질 순간이다."
+  },
+  {
+   "role": "user",
+   "content": "[12441의 행동]: 힘내보거라.\n\n현재 파티:\n- 12441 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침]  \n피 묻은 도끼를 뽑아 든 12441이 턱을 괸다. 검붉은 근육이 더 뜨겁게 달아오른다.\n\n“흐음… 쟤네들 이름이 뭐였지? 안 물어봤네. 아까 장난치던 놈은 이미 죽었고.”  \n오크가 코웃음을 푹 쳐 내뱉는다. “**남은 둘, 너희도 숫자로 줄 테니 1번 2번 해라.**”\n\n고블린 창병 A가 떨리는 목소리로 중얼거린다. “…우리는 이름이 있어, 으으‘창찌르기’라고—”  \n“그래? 난 그냥 **12441**이야. 외우기도 좋고.”  \n12441이 발걸음을 재촉한다. “**힘내보거라, 1번 2번.** 오늘 너희 둘도 숫자로 남을지 이름으로 남을지 고르는 거야.”\n\n두 고블린은 서로를 바라보다 광기 어린 눈빛으로 돌진 준비에 들어간다.  \n[🎲DM d20:"
+  },
+  {
+   "role": "user",
+   "content": "[12441의 행동]: 모든 마나를 소모하여 공격력 증가 버프를 얻는다)\n\n현재 파티:\n- 12441 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌞 정오] 12441이 가슴팍을 내리치며 으르렁거린다. “오크의 숫자, **전부 바친다!**”  \n피맥 뛰는 심장이 핏줄을 타고 팔뚝까지 뜨거운 파동을 뿜는다.  \n\n`[12441 MP: 30 → 0]`  \n`[12441 버프: 광전 3턴 | 공격력 +10, 다음 공격 2배 피해]`  \n\n남은 창병 A·B가 눈알을 싱하니 움직이는데, 12441의 도끼날이 온기보다 뜨거운 붉은 기운으로 뒤덮인다.  \n살아남은 ‘1번’ ‘2번’이 동시에 비명을 터뜨린다.  \n\n“숫자… 숫자가 불똥이 된다—!”"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 12441(오크 전사, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌅 새벽]\n\n항구 마을 브린포드에서 피비린내 나는 연기가 피어오른다. 볼카르의 하급 마귀들이 쏟아져 나와 짐승의 포효로 여명을 찢어발겼다. \n\n12441의 녹색 근육이 끓어오른다. 오크 특유의 전투 본능이 짙은 피 냄새를 맡고 광소를 삼킨다. 거대한 양손도끼를 움켜쥔 손마디가 뽀드득 간다. \n\n\"오, 이놈의 이름이 일이사사일이라고?\" 길가에서 무너진 마차 위로 뛰어내린 **고블린 정찰대장**이 창끝으로 오크를 가리키며 비웃는다. \"숫자 이름이 웬말이냐! 네놈 주인이 대충 지어준 이름이냐, 아니면 머리통 안에 셀 줄만 아는 바보냐?\"\n\n적의 도발에 12441의 턱 아래 송곳니가 번뜩인다. 마귀들이 포위를 좁히며 낄낄댄다. \n\n[적 등장: 고블린 정찰대장 | HP 18]\n[적 등장: 고블린 창병 A | HP 10]\n[적 등장: 고블린 창병 B | HP 10]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "ts": 1777039368.0114324
+  },
+  {
+   "type": "action",
+   "player_id": "48f6ce3a",
+   "player_name": "12441",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4279069735&nologo=true&model=flux",
+   "action": "크르르",
+   "ts": 1777040287.6139798
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] 황금빛 햇살이 피로 물든 성벽을 타고 넘는다. 마을 끝의 탑 위 광장. 12441이 흙뿔을 내뿜으며 뛰어든다. 마치 믿기 어려운 이름의 출현에도 파편이 공명처럼, \"오-오! '12441'? 정그레 힘의 숫자냐!\" **고블린 정찰대장**의 창꼭지가 덜덜 떤다. `[🎲DM d20: 1] — 정찰대장 리액션`\n\n12441은 저항 없이 고블린 꼭대기를 관광. 양손도끼를 번쩍 들어 하늘에 부르짖는다. \"오크. 숫자. X자릿수. 어째 그 이름 바꿔달라 졸랐지만 엄마 못 본 지 오래래!\" 적들 앞에서 키득추덕 타자가 낙서라도 되듯 돌진. 도끼날이 붉은 궤적을 그리며 고블린 A의 흉곽을 꿰穿孔. 고블린 A는 환희 어린 시선마저 식어 뚝 떨어진다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "48f6ce3a",
+   "round_complete": true,
+   "ts": 1777040294.4002495
+  },
+  {
+   "type": "action",
+   "player_id": "48f6ce3a",
+   "player_name": "12441",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4279069735&nologo=true&model=flux",
+   "action": "정찰대장 죽어라! (도끼 던지기)",
+   "ts": 1777040503.0494592
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] 도끼에 걸린 오크의 울분이 폭발한다.\n\n“내 이름은 **천이백사십일**! 넌 그걸 까먹고 죽는다!”\n\n12441이 양손도끼를 회전시키며 던진다. 무기는 바람을 찢고 고블린 정찰대장의 가슴팍을 꿰뚫는다.\n\n[🎲DM d20: 18] 명중!  \n[🎲DM d6+3: 9] 피해\n\n[적 HP: 고블린 정찰대장 18 → 0]\n\n창병 A·B가 눈이 휘둥그레진 채 뒷걸음질 친다.  \n“총… 총명(聰明)한 오크다! 저 숫자 이름에 숨겨진 힘인가?”\n\n[XP +35]\n\n남은 두 고블린은 진흙 속 도끼를 노리며 흩어진다. 전투가 끝난 건 아니지만, 12441의 이름이 이제 마을 곳곳에 울려 퍼질 순간이다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "48f6ce3a",
+   "round_complete": true,
+   "ts": 1777040520.8714855
+  },
+  {
+   "type": "action",
+   "player_id": "48f6ce3a",
+   "player_name": "12441",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4279069735&nologo=true&model=flux",
+   "action": "힘내보거라.",
+   "ts": 1777040563.0482252
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침]  \n피 묻은 도끼를 뽑아 든 12441이 턱을 괸다. 검붉은 근육이 더 뜨겁게 달아오른다.\n\n“흐음… 쟤네들 이름이 뭐였지? 안 물어봤네. 아까 장난치던 놈은 이미 죽었고.”  \n오크가 코웃음을 푹 쳐 내뱉는다. “**남은 둘, 너희도 숫자로 줄 테니 1번 2번 해라.**”\n\n고블린 창병 A가 떨리는 목소리로 중얼거린다. “…우리는 이름이 있어, 으으‘창찌르기’라고—”  \n“그래? 난 그냥 **12441**이야. 외우기도 좋고.”  \n12441이 발걸음을 재촉한다. “**힘내보거라, 1번 2번.** 오늘 너희 둘도 숫자로 남을지 이름으로 남을지 고르는 거야.”\n\n두 고블린은 서로를 바라보다 광기 어린 눈빛으로 돌진 준비에 들어간다.  \n[🎲DM d20:",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "48f6ce3a",
+   "round_complete": true,
+   "ts": 1777040570.8068728
+  },
+  {
+   "type": "action",
+   "player_id": "48f6ce3a",
+   "player_name": "12441",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4279069735&nologo=true&model=flux",
+   "action": "모든 마나를 소모하여 공격력 증가 버프를 얻는다)",
+   "ts": 1777040651.8139617
+  },
+  {
+   "type": "dm",
+   "text": "[🌞 정오] 12441이 가슴팍을 내리치며 으르렁거린다. “오크의 숫자, **전부 바친다!**”  \n피맥 뛰는 심장이 핏줄을 타고 팔뚝까지 뜨거운 파동을 뿜는다.  \n\n`[12441 MP: 30 → 0]`  \n`[12441 버프: 광전 3턴 | 공격력 +10, 다음 공격 2배 피해]`  \n\n남은 창병 A·B가 눈알을 싱하니 움직이는데, 12441의 도끼날이 온기보다 뜨거운 붉은 기운으로 뒤덮인다.  \n살아남은 ‘1번’ ‘2번’이 동시에 비명을 터뜨린다.  \n\n“숫자… 숫자가 불똥이 된다—!”",
+   "current_time": {
+    "icon": "🌞",
+    "label": "정오",
+    "ordinal": 2,
+    "day": 1
+   },
+   "acting_player_id": "48f6ce3a",
+   "round_complete": true,
+   "ts": 1777040657.990005
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "monsters": {
+  "고블린 창병 A": {
+   "name": "고블린 창병 A",
+   "hp": 10,
+   "max_hp": 10,
+   "status_note": null,
+   "status_effects": [],
+   "attackers": []
+  },
+  "고블린 창병 B": {
+   "name": "고블린 창병 B",
+   "hp": 10,
+   "max_hp": 10,
+   "status_note": null,
+   "status_effects": [],
+   "attackers": []
+  }
+ },
+ "dormant": {
+  "48f6ce3a": {
+   "player": {
+    "player_id": "48f6ce3a",
+    "name": "12441",
+    "character_class": "전사",
+    "race": "오크",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 120,
+    "max_hp": 120,
+    "mp": 0,
+    "max_mp": 30,
+    "attack": 15,
+    "defense": 10,
+    "level": 1,
+    "xp": 16,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "거대한 양손도끼",
+      "effect": "양손 무기 — 공격력 +3, 속도 -1"
+     },
+     "armor": {
+      "name": "가죽 흉갑",
+      "effect": null
+     },
+     "accessory": {
+      "name": "낡은 방패",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": [
+     {
+      "kind": "버프",
+      "name": "광전",
+      "turns_remaining": 3,
+      "effect": "공격력 +10, 다음 공격 2배 피해"
+     }
+    ]
+   },
+   "departed_at": 1777041541.6107397
+  }
+ },
+ "saved_at": 1777041541.6115313
+}

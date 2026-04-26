@@ -1,0 +1,487 @@
+{
+ "version": 2,
+ "room_id": "40D649",
+ "scenario_id": "plague_village",
+ "owner_id": "dfa4f68f",
+ "started": true,
+ "current_time": {
+  "icon": "🌙",
+  "label": "밤",
+  "ordinal": 4,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n\n모험을 시작하세요. 파티는 에벤하임에 도착. 마을 입구 문 앞에 잿빛 얼굴의 아이가 서서 속삭입니다. \"빨리... 돌아가세요. 여긴 이미 늦었어요.\" 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 에벤하임의 입구를 막아선 잿빛 안개가 무겁게 깔려, 낙엽조차 바람에 날리지 못한다. 낡은 목조 문 앞에 서 있는 **잿빛 아이**는 피부가 회색으로 변해 있고, 입가에서 검게 굳은 피가 맺혀 있다.\n> \"빨리... 돌아가세요. 여긴 이미 늦었어요.\"\n\n그 아이의 목소리는 바람에 실려 와 **뮤즈 룩 크레이지스타**의 예민한 고양이 귀를 간질인다. 아이의 눈동자가 공허하게 굴러가며 **이름없는자**의 지팡이 끝을 노려보듯 응시한다.\n> \"살아있는 자는 더 이상 들어갈 수 없어. 우리도 이미 죽은 몸이니까.\"\n\n공기 중에는 썩은 고기와 향내가 섞인 불쾌한 냄새가 감돌며, 마을 깊은 곳에서 이상한 울림이 들려온다.\n**뮤즈 룩 크레이지스타**의 꼬리가 경계심으로 팽팽하게 곧아지고, **이름없는자**는 지팡이를 들어 마력을 감지하려 한다.\n이 낯선 경고 앞에, 너희는 문앞에 멈춰 서서 아이의 다음 말을 기다린다."
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: \"걱정마라, 꼬마야. 우린 이 마을을 조사하러 온 것이니.\" 등 뒤로 유령 같은 환영이 하나 나타난다. \"이 유령은 잘 모르겠지만... 내 의지를 실현시켜 주더군. 그래서 〔스탠드〕라고 부르기로 했다. 나의 〔스탠드〕, 〔크레이지 스타〕다.\"\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] **뮤즈 룩 크레이지스타**가 유쾌하게 어깨를 으쓱이며 대답하자, 공기가 일순간 왜곡된다. 잿빛 아이는 눈을 동그랗게 뜨고, **이름없는자**는 마법사의 직감으로 그 환영의 기운을 감지하며 뒷걸음질 친다. > \"스탠드? 그건 뭐... 귀신도, 마법도 아닌 기괴한 그림자네.\" **뮤즈 룩 크레이지스타**의 뒤로 우뚝 선 **〔크레이지 스타〕**는 마치 별빛으로 조각된 듯한 기묘한 형상으로, 아이의 잿빛 피부를 비추자 아이가 비명을 지르며 뒤로 물러선다. > \"아악! 뜨거운... 그 빛이 내 죽은 살을 태워!\" 아이는 공포에 질려 문 너머로 도망치려다 발목이 걸려 넘어지고, **뮤즈 룩 크레이지스타**의 고양이 귀가 경계심으로 쫑긋 서서 그 상황을 관망한다. **이름없는자**는 지팡이를 휘두르며 마력을 집중하지만, **〔크레이지 스타〕**의 압도적인 기운에 마법사가 당황해 입술을 깨물고 있다. 마을 안쪽에서 더 많은 잿빛 그림자들이 이 소란을 듣고 모여드는 듯한 기운이 감돈다."
+  },
+  {
+   "role": "user",
+   "content": "[이름없는자의 행동]: 안되겠군. 스탠드! 블랭크네임!\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] **이름없는자**가 지팡이를 휘두르며 외치자, 어둠 속에서 또 다른 기이한 환영이 피어오른다. **〔블랭크네임〕**은 마치 지워진 스케치처럼 형체가 희미하고, 주변 빛을 삼켜버리는 듯한 공허한 기운을 뿜어낸다. > \"이건... 마술이 아니라 저주 같은 기운이군!\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 섰다 뒤로 누워, 두 개의 '스탠드'가 맞부딪치는 공간의 왜곡을 경계한다. 잿빛 아이는 두 환영의 기운에 압도되어 비명을 지르며 문 틈으로 숨어버리고, 마을 안쪽에서 발소리가 끊기더니 적막이 찾아온다. > \"이제야 조용해지나? 두 개의 기괴한 그림자가 서로를 위협하니, 이 마을의 저주도 잠시 숨을 죽이는 모양이군.\" **이름없는자**와 **뮤즈 룩 크레이지스타**는 서로의 기묘한 힘을 확인하며, 이제야 문을 열 수 있는 기회를 포착한다. 안쪽에서 바람 소리 대신 무언가 기계가 돌아가는 듯한 소리가 들린다."
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: \"아, 느껴진다고, 늙은이.\" 기묘한 자세로 서서 마을을 바라본다. \"분명 더러운 냄새가 난다. 내 후각이 그렇게 말하고 있어.\" 어두운 곳을 바라보며 손가락으로 가리킨다. \"크레이지 스타, 어둠을 밝혀라.\"\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] **뮤즈 룩 크레이지스타**가 기이한 포즈로 어둠을 가리키자, **〔크레이지 스타〕**가 날카롭게 날개를 펼치며 별빛 같은 에너지를 뿜어낸다. 그 빛은 단순한 등불이 아니라, 어둠 속에 숨겨진 '부정' 자체를 태우는 듯한 청백색의 광채로 마을 안쪽을 비춘다. > \"으악! 눈이... 너무 밝아!\" 빛에 노출된 어둠 구석에서 검은 피를 토하며 기어다니던 **그림자형 괴물**들이 비명을 지르며 타들어 간다. **이름없는자**는 그 광경을 보며 지팡이를 내려놓고 입을 다문다. > \"저건 단순한 그림자가 아니야. 저 빛에 닿는 것들은... 이미 죽은 자들의 영혼이 타들어 가는 소리야.\" **뮤즈 룩 크레이지스타**의 고양이 코가 킁킁거리며 썩은 냄새와 함께 '무언가'의 존재감을 감지한다. 빛이 비추는 길 끝, 납골당으로 이어지는 계단 입구가 드러나고, 거기서 낡은 열쇠가 반짝이며 흔들린다. **[이름없는자 XP +10]**: 기이한 스탠드 현상 관찰 및 마법적 분석 **[뮤즈 룩 크레이지스타 XP +10]**: 어둠 소각 및 적의 은신처 폭로"
+  },
+  {
+   "role": "user",
+   "content": "[이름없는자의 행동]: 너무 밝잖아! 블랭크네임. 빛을 조금만 먹어라.\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] **이름없는자**의 외침과 동시에 **〔블랭크네임〕**이 허공으로 솟아올라 **〔크레이지 스타〕**의 강렬한 청백색 광채를 집어삼키듯 덮쳐간다. 마치 먹구름이 햇빛을 가리듯, 형체 없는 그림자가 빛을 '먹어치우자' 눈부신 광채가 순식간에 잿빛 안개로 변해 무겁게 가라앉는다. > \"흐음... 이제야 눈이 좀 편하군. 하지만 너무 어두워지면 또 위험해지겠지.\" **뮤즈 룩 크레이지스타**는 눈가리를 하며 낮게 웃지만, 여전히 예민한 귀는 어둠 속에 숨겨진 미세한 숨소리를 포착한다. 빛이 약해진 틈을 타, 납골당 입구에서 반짝이던 낡은 열쇠가 다시 어둠 속에 숨어버린 듯 자취를 감춘다. > \"열쇠가 도망갔어. 혹은... 누군가 치워버렸을지도 몰라.\" **이름없는자**는 지팡이 끝에서 희미한 불꽃을 피워내며 **뮤즈 룩 크레이지스타**의 뒤를 따라 계단으로 향한다. 두 기괴한 스탠드의 조화로 인해, 마을의 저주받은 안개는 잠시나마 물러나 길을 비켜주고 있다."
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: \"늙은이... 내 〔빛〕을 삼키는거냐.\" 당황하며 바라본다. \"빛을 삼킬 수 있는 스탠드라니... 아군이라 다행인가.\" 주변을 살펴본다.\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] **뮤즈 룩 크레이지스타**가 당황한 표정으로 **〔블랭크네임〕**을 바라보자, **이름없는자**는 어깨를 으쓱이며 대수롭지 않게 웃어넘긴다. > \"아군이라니, 그건 너무 낙관적인 생각이야. 내 스탠드는 그저 '무(無)'를 구현할 뿐이지. 하지만 네가 그 빛을 삼키지 않는 한, 우리는 협력할 수밖에 없지.\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 섰다. 어둠이 짙어지자, 납골당 입구에서 뿜어져 나오는 **검은 연기**가 더욱 거칠게 일렁이며, 그 안에서 **오스윈 성직자**의 목소리가 들린다. > \"이방인들아, 신의 심판을 피할 수 없다. 너희의 그 기괴한 힘조차 이 마을의 저주 앞에서는 무용지물이리라.\" **뮤즈 룩 크레이지스타**의 후각이 예민하게 반응하며, 검은 연기가 썩은 고기 냄새와 함께 **독** 성분을 품고 있음을 감지한다. **이름없는자**는 지팡이를 들어 연기를 가리키며, **〔블랭크네임〕**이 다시 빛을 삼킬 준비를 한다. 두 스탠드의 대치가 마을의 공기를 더욱 무겁게 만든다. **[뮤즈 룩 크레이지스타 XP +5]**: 독 기운 감지 및 상황 분석 **[이름없는자 XP +5]**: 스탠드 협력 및 대치 상황 유지"
+  },
+  {
+   "role": "user",
+   "content": "[이름없는자의 행동]: 좋아. 그렇다면 주변일대의 분위기를 잠시 환기 시켜볼까? 블랭크 네임.\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **이름없는자**의 손짓에 **〔블랭크네임〕**이 거대한 그림자 구름처럼 퍼져나감. 납골당 입구를 덮고 있던 **검은 연기**와 **오스윈 성직자**의 저주스러운 목소리가 순식간에 '없음'으로 지워지며, 주변은 묘한 정적에 휩싸인다. > \"흐음... 소리가 완전히 사라졌군. 마치 이 세상의 한 구석이 지워진 듯하네.\" **뮤즈 룩 크레이지스타**는 코를 킁킁거리며 주변을 훑어보지만, 독 냄새도, 썩은 내음도, 심지어 바람 소리조차 들리지 않아 오히려 더 큰 불안을 느낀다. > \"이건... 너무 조용해. 고양이 귀에도 아무것도 들리지 않으니, 뭔가 더 무서운 게 숨어있다는 뜻이야.\" 어둠 속에서 오스윈의 형체가 희미하게 다시 모습을 드러내려 하지만, **〔블랭크네임〕**의 '무(無)'의 영역 안에서는 그의 존재조차 희미해져 제자리걸음을 한다. **[이름없는자 MP: 150 → 130]**: 스탠드 능력 '소멸' 발동으로 마력 소모 **[이름없는자 XP +10]**: 적의 저주 소멸 및 전장 제어 **[뮤즈 룩 크레이지스타 XP +5]**: 정적 상황에서의 경계 및 감각 동원"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: \"젠장... 늙은이. 너무 조용하다고.\" 천천히 〔크레이지 스타〕의 은은한 빛으로 길을 밝히며 걷는다.\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:130/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **뮤즈 룩 크레이지스타**가 **〔크레이지 스타〕**의 은은한 별빛을 켜며 계단을 내려가자, **〔블랭크네임〕**의 '무(無)' 영역과 충돌하여 빛이 희미한 파동을 일으킨다. 납골당 내부의 공기는 차갑고 무겁게 가라앉아 있으며, 바닥에는 검은 피가 굳어져 얼룩덜룩한 무늬를 이루고 있다. > \"이런... 여기선 소리가 들리지 않아. 마치 내가 죽은 자들의 무덤 속을 걷는 것 같군.\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 섰다. 어둠 속에서 **오스윈 성직자**의 형체가 희미하게 다시 모습을 드러내려 하지만, **〔블랭크네임〕**의 영향으로 그의 목소리는 끊어지고 형체는 흐릿하게 번진다. > \"너희가 이 저주를 풀 수 있을 거라 믿지 않는다. 신의 심판은 피할 수 없으니, 너희도 이 무덤의 일부가 되리라.\" **이름없는자**는 지팡이를 들어 성직자의 형체를 가리키며, **〔블랭크네임〕**이 다시 그 존재를 지우려 준비한다. **뮤즈 룩 크레이지스타**는 쌍단검을 뽑아 들고 경계 태세를 갖춘다. **[뮤즈 룩 크레이지스타 XP +5]**: 납골당 내부 탐색 및 적의 재등장 감지 **[이름없는자 XP +5]**: 적의 저주 소멸 시도 및 전장 유지"
+  },
+  {
+   "role": "user",
+   "content": "[이름없는자의 행동]: 납골당 내부를 탐색한다\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:130/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **이름없는자**가 지팡이를 앞세워 어둠을 가르고 **〔블랭크네임〕**이 주변 공간의 '존재'를 희미하게 지우며 탐색을 시작한다. 납골당 깊숙한 곳, 썩은 냄새가 진동하는 제단 위로 낡은 **서약서**가 펼쳐져 있고, 그 위에는 검은 피로 그려진 기이한 문양이 pulsating like a heartbeat. > \"여기다... 이 마을의 저주가 시작되었구나.\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 서며, 제단 뒤쪽 그림자 속에서 **오스윈 성직자**의 진짜 형체가 모습을 드러낸다. 그의 눈은 검게 변해 있고, 입가에서는 검은 피가 흘러내린다. > \"너희가 그 서약서를 보았구나. 이제 너희도 이 저주의 일부가 되리라.\" **오스윈**이 손을 들어 제단 위의 **검은 유물**을 가리키자, 공기가 찢어지는 듯한 소리가 들리며 **〔크레이지 스타〕**와 **〔블랭크네임〕**이 동시에 반격의 태세를 갖춘다. **[이름없는자 XP +10]**: 납골당 내부 탐색 및 핵심 단서 (서약서) 발견 **[뮤즈 룩 크레이지스타 XP +10]**: 적의 정체가 드러남 및 전투 준비"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: \"젠장...! 크레이지 스타! 〔슈팅 스타 어택〕!!\" 별똥별처럼 순식간에 성직자에게 다가가 단검으로 공격한다.\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:130/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **뮤즈 룩 크레이지스타**가 외치며 **〔크레이지 스타〕**의 별빛이 단검에 감겨 **오스윈 성직자**를 향해 돌진한다. 공기를 찢는 굉음과 함께 날아오던 단검은 성직자의 흉부를 정확히 관통하려 하지만, 그의 몸이 연기처럼 흐려지며 공격이 빗나가는 듯하다. `[🎲DM d20: 16]` **이름없는자**의 지팡이 끝에서 마력이 뿜어져 나오자, **〔블랭크네임〕**이 오스윈의 '연기' 부분을 지워내며 공격 경로를 고정시킨다. 단검이 성직자의 실제 육체를 강타하자, 검은 피가 튀어 오르고 성직자가 비명을 지르며 뒤로 밀려난다. > \"아아악! 이 기괴한 빛이... 내 영혼까지 태우느냐!\" **오스윈**의 몸에서 검은 피가 뚝뚝 떨어지며 바닥에 검붉은 흔적을 남긴다. **[오스윈 HP: 45 → 28]**: **뮤즈 룩 크레이지스타**의 치명적인 일격 **[뮤즈 룩 크레이지스타 XP +15]**: 적의 방어 무효화 및 대미지 결정 **[이름없는자 XP +10]**: 스탠드 협동으로 적의 은신 해제 및 공격 보조"
+  },
+  {
+   "role": "user",
+   "content": "[이름없는자의 행동]: 블랭크네임! 무언가를 잠시동안 무로 만들지! 너의 시야는 잠시 무가 되었다! 파이어볼!\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:130/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **이름없는자**의 지팡이에서 붉은 마력이 응축되자, **〔블랭크네임〕**이 오스윈의 시야를 '무(無)'로 지워버린다. 성직자는 갑자기 앞이 깜깜해진 듯 비틀거리며 공포에 질려 손을 휘두른다. > \"안 보여! 너희가... 너희가 내 눈을 지웠느냐!\" 그 틈을 타, **파이어볼**이 오스윈의 가슴팍을 강타하며 폭발한다. `[🎲DM d20: 18]` 불꽃이 검은 피와 섞이며 피어오르고, 성직자의 로브가 타들어 간다. > \"으아아악! 이 불꽃은... 신의 심판이 아니다! 저주받은 불이다!\" **오스윈**의 몸이 화염에 휩싸이며 비명을 지르지만, 그의 눈은 여전히 검게 빛나며 분노로 일그러진다. **[오스윈 HP: 28 → 8]**: **이름없는자**의 파이어볼이 치명적인 타격을 입힘 **[오스윈 디버프: 화상 3 턴 | 매 턴 -5 HP]**: 불꽃이 살갗을 태우며 지속적인 피해 발생 **[이름없는자 MP: 130 → 110]**: 파이어볼 시전으로 마력 소모 **[이름없는자 XP +15]**: 적의 시야 차단 및 화상 효과 부여 성공"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: \"내 속도를 따라올 수 없을 거다!\" 순식간에 〔크레이지 스타〕의 능력으로 다시 한 번 등 뒤로 다가가 공격한다.\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:110/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **뮤즈 룩 크레이지스타**가 고양이처럼 유연하게 공중을 가르고, **〔크레이지 스타〕**의 별빛이 오스윈의 등 뒤로 순간 이동하듯 닿는다. 화상과 실명으로 비틀거리던 성직자는 뒤돌아보기도 전에 **쌍단검**의 날이 척추를 향해 날아든다. `[🎲DM d20: 19]` > \"안 돼! 이... 이 속도가!\" 단검이 깊숙이 박히며 검은 피가 폭포처럼 쏟아져 내리고, 오스윈의 몸이 불꽃과 피로 뒤덮인 채 바닥으로 무너져 내린다. > \"신... 심판은... 내게... 오지 않았다...\" 그의 눈이 서서히 검게 변했다가 희미해지며, 마지막 숨을 거둔다. **[오스윈 HP: 8 → 0]**: **뮤즈 룩 크레이지스타**의 결정타로 적 처치 **[오스윈 퇴장]**: 성직자 오스윈의 죽음 **[뮤즈 룩 크레이지스타 XP +20]**: 적 처치 및 치명타 성공 **[이름없는자 XP +15]**: 적의 상태이상 (화상/실명) 유지 및 보조 공격 성공"
+  },
+  {
+   "role": "user",
+   "content": "[이름없는자의 행동]: 내가 성직자는 아니네만.. 자네의 심판은 내가 대신 짊이지도록하지.. 오스윈이여 나에게 오라..\n\n현재 파티:\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·20%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 이름없는자 (놈 마법사, Lv1, HP:70/70, MP:110/150, 공격:22, 방어:5, 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **이름없는자**가 죽어가는 오스윈의 시체를 향해 지팡이를 들이대자, **〔블랭크네임〕**이 공중의 '무(無)'를 갈라 죽은 자의 영혼을 끌어당긴다. > \"자네의 심판은 내가 대신 짊어지리라... 오스윈이여, 그대의 죄를 보여라!\" 검은 연기가 시체에서 피어올라 **이름없는자**의 지팡이 끝으로 빨려 들어가고, 바닥에 쓰러진 오스윈의 몸이 흙먼지로 변해 사라진다. 제단 위의 **낡은 서약서**가 저절로 펼쳐지며, 검은 피로 쓰인 글자들이 희미한 금빛으로 빛나기 시작한다. **뮤즈 룩 크레이지스타**는 코를 킁킁거리며 서약서를 바라본다. > \"이건... 단순한 문서가 아니야. 대대로 이어져온 '서약' 을 깨뜨리는 열쇠가 여기에 있군.\" **이름없는자**는 지팡이 끝에서 희미한 금빛 마력이 맴도는 것을 느끼며, 서약서의 내용을 해독하려 노력한다. **[이름없는자 XP +20]**: 적의 영혼 흡수 및 서약서 해독 시작 **[뮤즈 룩 크레이지스타 XP +10]**: 상황 분석 및 핵심 유물 확인"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 이름없는자(놈 마법사, Lv2)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 에벤하임의 입구를 막아선 잿빛 안개가 무겁게 깔려, 낙엽조차 바람에 날리지 못한다. 낡은 목조 문 앞에 서 있는 **잿빛 아이**는 피부가 회색으로 변해 있고, 입가에서 검게 굳은 피가 맺혀 있다.\n> \"빨리... 돌아가세요. 여긴 이미 늦었어요.\"\n\n그 아이의 목소리는 바람에 실려 와 **뮤즈 룩 크레이지스타**의 예민한 고양이 귀를 간질인다. 아이의 눈동자가 공허하게 굴러가며 **이름없는자**의 지팡이 끝을 노려보듯 응시한다.\n> \"살아있는 자는 더 이상 들어갈 수 없어. 우리도 이미 죽은 몸이니까.\"\n\n공기 중에는 썩은 고기와 향내가 섞인 불쾌한 냄새가 감돌며, 마을 깊은 곳에서 이상한 울림이 들려온다.\n**뮤즈 룩 크레이지스타**의 꼬리가 경계심으로 팽팽하게 곧아지고, **이름없는자**는 지팡이를 들어 마력을 감지하려 한다.\n이 낯선 경고 앞에, 너희는 문앞에 멈춰 서서 아이의 다음 말을 기다린다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "ts": 1777136426.9610233
+  },
+  {
+   "type": "action",
+   "player_id": "dfa4f68f",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1179236820&nologo=true&model=flux",
+   "action": "\"걱정마라, 꼬마야. 우린 이 마을을 조사하러 온 것이니.\" 등 뒤로 유령 같은 환영이 하나 나타난다. \"이 유령은 잘 모르겠지만... 내 의지를 실현시켜 주더군. 그래서 〔스탠드〕라고 부르기로 했다. 나의 〔스탠드〕, 〔크레이지 스타〕다.\"",
+   "ts": 1777136578.007187
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] **뮤즈 룩 크레이지스타**가 유쾌하게 어깨를 으쓱이며 대답하자, 공기가 일순간 왜곡된다. 잿빛 아이는 눈을 동그랗게 뜨고, **이름없는자**는 마법사의 직감으로 그 환영의 기운을 감지하며 뒷걸음질 친다. > \"스탠드? 그건 뭐... 귀신도, 마법도 아닌 기괴한 그림자네.\" **뮤즈 룩 크레이지스타**의 뒤로 우뚝 선 **〔크레이지 스타〕**는 마치 별빛으로 조각된 듯한 기묘한 형상으로, 아이의 잿빛 피부를 비추자 아이가 비명을 지르며 뒤로 물러선다. > \"아악! 뜨거운... 그 빛이 내 죽은 살을 태워!\" 아이는 공포에 질려 문 너머로 도망치려다 발목이 걸려 넘어지고, **뮤즈 룩 크레이지스타**의 고양이 귀가 경계심으로 쫑긋 서서 그 상황을 관망한다. **이름없는자**는 지팡이를 휘두르며 마력을 집중하지만, **〔크레이지 스타〕**의 압도적인 기운에 마법사가 당황해 입술을 깨물고 있다. 마을 안쪽에서 더 많은 잿빛 그림자들이 이 소란을 듣고 모여드는 듯한 기운이 감돈다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "dfa4f68f",
+   "round_complete": false,
+   "ts": 1777136593.0095272
+  },
+  {
+   "type": "action",
+   "player_id": "0ac5b6bb",
+   "player_name": "이름없는자",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20gnome%2C%20tiny%20statured%2C%20bright%20curious%20eyes%2C%20wild%20unkempt%20hair%2C%20inventor%27s%20apron%2C%20spectacles%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3464720444&nologo=true&model=flux",
+   "action": "안되겠군. 스탠드! 블랭크네임!",
+   "ts": 1777136724.3201077
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] **이름없는자**가 지팡이를 휘두르며 외치자, 어둠 속에서 또 다른 기이한 환영이 피어오른다. **〔블랭크네임〕**은 마치 지워진 스케치처럼 형체가 희미하고, 주변 빛을 삼켜버리는 듯한 공허한 기운을 뿜어낸다. > \"이건... 마술이 아니라 저주 같은 기운이군!\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 섰다 뒤로 누워, 두 개의 '스탠드'가 맞부딪치는 공간의 왜곡을 경계한다. 잿빛 아이는 두 환영의 기운에 압도되어 비명을 지르며 문 틈으로 숨어버리고, 마을 안쪽에서 발소리가 끊기더니 적막이 찾아온다. > \"이제야 조용해지나? 두 개의 기괴한 그림자가 서로를 위협하니, 이 마을의 저주도 잠시 숨을 죽이는 모양이군.\" **이름없는자**와 **뮤즈 룩 크레이지스타**는 서로의 기묘한 힘을 확인하며, 이제야 문을 열 수 있는 기회를 포착한다. 안쪽에서 바람 소리 대신 무언가 기계가 돌아가는 듯한 소리가 들린다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "0ac5b6bb",
+   "round_complete": true,
+   "ts": 1777136734.2453952
+  },
+  {
+   "type": "action",
+   "player_id": "dfa4f68f",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1179236820&nologo=true&model=flux",
+   "action": "\"아, 느껴진다고, 늙은이.\" 기묘한 자세로 서서 마을을 바라본다. \"분명 더러운 냄새가 난다. 내 후각이 그렇게 말하고 있어.\" 어두운 곳을 바라보며 손가락으로 가리킨다. \"크레이지 스타, 어둠을 밝혀라.\"",
+   "ts": 1777136843.2493188
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] **뮤즈 룩 크레이지스타**가 기이한 포즈로 어둠을 가리키자, **〔크레이지 스타〕**가 날카롭게 날개를 펼치며 별빛 같은 에너지를 뿜어낸다. 그 빛은 단순한 등불이 아니라, 어둠 속에 숨겨진 '부정' 자체를 태우는 듯한 청백색의 광채로 마을 안쪽을 비춘다. > \"으악! 눈이... 너무 밝아!\" 빛에 노출된 어둠 구석에서 검은 피를 토하며 기어다니던 **그림자형 괴물**들이 비명을 지르며 타들어 간다. **이름없는자**는 그 광경을 보며 지팡이를 내려놓고 입을 다문다. > \"저건 단순한 그림자가 아니야. 저 빛에 닿는 것들은... 이미 죽은 자들의 영혼이 타들어 가는 소리야.\" **뮤즈 룩 크레이지스타**의 고양이 코가 킁킁거리며 썩은 냄새와 함께 '무언가'의 존재감을 감지한다. 빛이 비추는 길 끝, 납골당으로 이어지는 계단 입구가 드러나고, 거기서 낡은 열쇠가 반짝이며 흔들린다. **[이름없는자 XP +10]**: 기이한 스탠드 현상 관찰 및 마법적 분석 **[뮤즈 룩 크레이지스타 XP +10]**: 어둠 소각 및 적의 은신처 폭로",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "dfa4f68f",
+   "round_complete": false,
+   "ts": 1777136875.9352229
+  },
+  {
+   "type": "action",
+   "player_id": "0ac5b6bb",
+   "player_name": "이름없는자",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20gnome%2C%20tiny%20statured%2C%20bright%20curious%20eyes%2C%20wild%20unkempt%20hair%2C%20inventor%27s%20apron%2C%20spectacles%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3464720444&nologo=true&model=flux",
+   "action": "너무 밝잖아! 블랭크네임. 빛을 조금만 먹어라.",
+   "ts": 1777136909.498441
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] **이름없는자**의 외침과 동시에 **〔블랭크네임〕**이 허공으로 솟아올라 **〔크레이지 스타〕**의 강렬한 청백색 광채를 집어삼키듯 덮쳐간다. 마치 먹구름이 햇빛을 가리듯, 형체 없는 그림자가 빛을 '먹어치우자' 눈부신 광채가 순식간에 잿빛 안개로 변해 무겁게 가라앉는다. > \"흐음... 이제야 눈이 좀 편하군. 하지만 너무 어두워지면 또 위험해지겠지.\" **뮤즈 룩 크레이지스타**는 눈가리를 하며 낮게 웃지만, 여전히 예민한 귀는 어둠 속에 숨겨진 미세한 숨소리를 포착한다. 빛이 약해진 틈을 타, 납골당 입구에서 반짝이던 낡은 열쇠가 다시 어둠 속에 숨어버린 듯 자취를 감춘다. > \"열쇠가 도망갔어. 혹은... 누군가 치워버렸을지도 몰라.\" **이름없는자**는 지팡이 끝에서 희미한 불꽃을 피워내며 **뮤즈 룩 크레이지스타**의 뒤를 따라 계단으로 향한다. 두 기괴한 스탠드의 조화로 인해, 마을의 저주받은 안개는 잠시나마 물러나 길을 비켜주고 있다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "0ac5b6bb",
+   "round_complete": true,
+   "ts": 1777136931.1121569
+  },
+  {
+   "type": "action",
+   "player_id": "dfa4f68f",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1179236820&nologo=true&model=flux",
+   "action": "\"늙은이... 내 〔빛〕을 삼키는거냐.\" 당황하며 바라본다. \"빛을 삼킬 수 있는 스탠드라니... 아군이라 다행인가.\" 주변을 살펴본다.",
+   "ts": 1777137012.1051135
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] **뮤즈 룩 크레이지스타**가 당황한 표정으로 **〔블랭크네임〕**을 바라보자, **이름없는자**는 어깨를 으쓱이며 대수롭지 않게 웃어넘긴다. > \"아군이라니, 그건 너무 낙관적인 생각이야. 내 스탠드는 그저 '무(無)'를 구현할 뿐이지. 하지만 네가 그 빛을 삼키지 않는 한, 우리는 협력할 수밖에 없지.\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 섰다. 어둠이 짙어지자, 납골당 입구에서 뿜어져 나오는 **검은 연기**가 더욱 거칠게 일렁이며, 그 안에서 **오스윈 성직자**의 목소리가 들린다. > \"이방인들아, 신의 심판을 피할 수 없다. 너희의 그 기괴한 힘조차 이 마을의 저주 앞에서는 무용지물이리라.\" **뮤즈 룩 크레이지스타**의 후각이 예민하게 반응하며, 검은 연기가 썩은 고기 냄새와 함께 **독** 성분을 품고 있음을 감지한다. **이름없는자**는 지팡이를 들어 연기를 가리키며, **〔블랭크네임〕**이 다시 빛을 삼킬 준비를 한다. 두 스탠드의 대치가 마을의 공기를 더욱 무겁게 만든다. **[뮤즈 룩 크레이지스타 XP +5]**: 독 기운 감지 및 상황 분석 **[이름없는자 XP +5]**: 스탠드 협력 및 대치 상황 유지",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "dfa4f68f",
+   "round_complete": false,
+   "ts": 1777137031.0565383
+  },
+  {
+   "type": "action",
+   "player_id": "0ac5b6bb",
+   "player_name": "이름없는자",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20gnome%2C%20tiny%20statured%2C%20bright%20curious%20eyes%2C%20wild%20unkempt%20hair%2C%20inventor%27s%20apron%2C%20spectacles%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3464720444&nologo=true&model=flux",
+   "action": "좋아. 그렇다면 주변일대의 분위기를 잠시 환기 시켜볼까? 블랭크 네임.",
+   "ts": 1777137184.9763298
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **이름없는자**의 손짓에 **〔블랭크네임〕**이 거대한 그림자 구름처럼 퍼져나감. 납골당 입구를 덮고 있던 **검은 연기**와 **오스윈 성직자**의 저주스러운 목소리가 순식간에 '없음'으로 지워지며, 주변은 묘한 정적에 휩싸인다. > \"흐음... 소리가 완전히 사라졌군. 마치 이 세상의 한 구석이 지워진 듯하네.\" **뮤즈 룩 크레이지스타**는 코를 킁킁거리며 주변을 훑어보지만, 독 냄새도, 썩은 내음도, 심지어 바람 소리조차 들리지 않아 오히려 더 큰 불안을 느낀다. > \"이건... 너무 조용해. 고양이 귀에도 아무것도 들리지 않으니, 뭔가 더 무서운 게 숨어있다는 뜻이야.\" 어둠 속에서 오스윈의 형체가 희미하게 다시 모습을 드러내려 하지만, **〔블랭크네임〕**의 '무(無)'의 영역 안에서는 그의 존재조차 희미해져 제자리걸음을 한다. **[이름없는자 MP: 150 → 130]**: 스탠드 능력 '소멸' 발동으로 마력 소모 **[이름없는자 XP +10]**: 적의 저주 소멸 및 전장 제어 **[뮤즈 룩 크레이지스타 XP +5]**: 정적 상황에서의 경계 및 감각 동원",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "0ac5b6bb",
+   "round_complete": true,
+   "ts": 1777137195.560575
+  },
+  {
+   "type": "action",
+   "player_id": "dfa4f68f",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1179236820&nologo=true&model=flux",
+   "action": "\"젠장... 늙은이. 너무 조용하다고.\" 천천히 〔크레이지 스타〕의 은은한 빛으로 길을 밝히며 걷는다.",
+   "ts": 1777137278.085111
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **뮤즈 룩 크레이지스타**가 **〔크레이지 스타〕**의 은은한 별빛을 켜며 계단을 내려가자, **〔블랭크네임〕**의 '무(無)' 영역과 충돌하여 빛이 희미한 파동을 일으킨다. 납골당 내부의 공기는 차갑고 무겁게 가라앉아 있으며, 바닥에는 검은 피가 굳어져 얼룩덜룩한 무늬를 이루고 있다. > \"이런... 여기선 소리가 들리지 않아. 마치 내가 죽은 자들의 무덤 속을 걷는 것 같군.\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 섰다. 어둠 속에서 **오스윈 성직자**의 형체가 희미하게 다시 모습을 드러내려 하지만, **〔블랭크네임〕**의 영향으로 그의 목소리는 끊어지고 형체는 흐릿하게 번진다. > \"너희가 이 저주를 풀 수 있을 거라 믿지 않는다. 신의 심판은 피할 수 없으니, 너희도 이 무덤의 일부가 되리라.\" **이름없는자**는 지팡이를 들어 성직자의 형체를 가리키며, **〔블랭크네임〕**이 다시 그 존재를 지우려 준비한다. **뮤즈 룩 크레이지스타**는 쌍단검을 뽑아 들고 경계 태세를 갖춘다. **[뮤즈 룩 크레이지스타 XP +5]**: 납골당 내부 탐색 및 적의 재등장 감지 **[이름없는자 XP +5]**: 적의 저주 소멸 시도 및 전장 유지",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "dfa4f68f",
+   "round_complete": false,
+   "ts": 1777137293.7969077
+  },
+  {
+   "type": "action",
+   "player_id": "0ac5b6bb",
+   "player_name": "이름없는자",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20gnome%2C%20tiny%20statured%2C%20bright%20curious%20eyes%2C%20wild%20unkempt%20hair%2C%20inventor%27s%20apron%2C%20spectacles%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3464720444&nologo=true&model=flux",
+   "action": "납골당 내부를 탐색한다",
+   "ts": 1777137461.1980977
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **이름없는자**가 지팡이를 앞세워 어둠을 가르고 **〔블랭크네임〕**이 주변 공간의 '존재'를 희미하게 지우며 탐색을 시작한다. 납골당 깊숙한 곳, 썩은 냄새가 진동하는 제단 위로 낡은 **서약서**가 펼쳐져 있고, 그 위에는 검은 피로 그려진 기이한 문양이 pulsating like a heartbeat. > \"여기다... 이 마을의 저주가 시작되었구나.\" **뮤즈 룩 크레이지스타**의 고양이 귀가 쫑긋 서며, 제단 뒤쪽 그림자 속에서 **오스윈 성직자**의 진짜 형체가 모습을 드러낸다. 그의 눈은 검게 변해 있고, 입가에서는 검은 피가 흘러내린다. > \"너희가 그 서약서를 보았구나. 이제 너희도 이 저주의 일부가 되리라.\" **오스윈**이 손을 들어 제단 위의 **검은 유물**을 가리키자, 공기가 찢어지는 듯한 소리가 들리며 **〔크레이지 스타〕**와 **〔블랭크네임〕**이 동시에 반격의 태세를 갖춘다. **[이름없는자 XP +10]**: 납골당 내부 탐색 및 핵심 단서 (서약서) 발견 **[뮤즈 룩 크레이지스타 XP +10]**: 적의 정체가 드러남 및 전투 준비",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "0ac5b6bb",
+   "round_complete": true,
+   "ts": 1777137474.2133408
+  },
+  {
+   "type": "action",
+   "player_id": "dfa4f68f",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1179236820&nologo=true&model=flux",
+   "action": "\"젠장...! 크레이지 스타! 〔슈팅 스타 어택〕!!\" 별똥별처럼 순식간에 성직자에게 다가가 단검으로 공격한다.",
+   "ts": 1777137606.6217098
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **뮤즈 룩 크레이지스타**가 외치며 **〔크레이지 스타〕**의 별빛이 단검에 감겨 **오스윈 성직자**를 향해 돌진한다. 공기를 찢는 굉음과 함께 날아오던 단검은 성직자의 흉부를 정확히 관통하려 하지만, 그의 몸이 연기처럼 흐려지며 공격이 빗나가는 듯하다. `[🎲DM d20: 16]` **이름없는자**의 지팡이 끝에서 마력이 뿜어져 나오자, **〔블랭크네임〕**이 오스윈의 '연기' 부분을 지워내며 공격 경로를 고정시킨다. 단검이 성직자의 실제 육체를 강타하자, 검은 피가 튀어 오르고 성직자가 비명을 지르며 뒤로 밀려난다. > \"아아악! 이 기괴한 빛이... 내 영혼까지 태우느냐!\" **오스윈**의 몸에서 검은 피가 뚝뚝 떨어지며 바닥에 검붉은 흔적을 남긴다. **[오스윈 HP: 45 → 28]**: **뮤즈 룩 크레이지스타**의 치명적인 일격 **[뮤즈 룩 크레이지스타 XP +15]**: 적의 방어 무효화 및 대미지 결정 **[이름없는자 XP +10]**: 스탠드 협동으로 적의 은신 해제 및 공격 보조",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "dfa4f68f",
+   "round_complete": false,
+   "ts": 1777137631.8536856
+  },
+  {
+   "type": "action",
+   "player_id": "0ac5b6bb",
+   "player_name": "이름없는자",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20gnome%2C%20tiny%20statured%2C%20bright%20curious%20eyes%2C%20wild%20unkempt%20hair%2C%20inventor%27s%20apron%2C%20spectacles%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3464720444&nologo=true&model=flux",
+   "action": "블랭크네임! 무언가를 잠시동안 무로 만들지! 너의 시야는 잠시 무가 되었다! 파이어볼!",
+   "ts": 1777137719.6260836
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **이름없는자**의 지팡이에서 붉은 마력이 응축되자, **〔블랭크네임〕**이 오스윈의 시야를 '무(無)'로 지워버린다. 성직자는 갑자기 앞이 깜깜해진 듯 비틀거리며 공포에 질려 손을 휘두른다. > \"안 보여! 너희가... 너희가 내 눈을 지웠느냐!\" 그 틈을 타, **파이어볼**이 오스윈의 가슴팍을 강타하며 폭발한다. `[🎲DM d20: 18]` 불꽃이 검은 피와 섞이며 피어오르고, 성직자의 로브가 타들어 간다. > \"으아아악! 이 불꽃은... 신의 심판이 아니다! 저주받은 불이다!\" **오스윈**의 몸이 화염에 휩싸이며 비명을 지르지만, 그의 눈은 여전히 검게 빛나며 분노로 일그러진다. **[오스윈 HP: 28 → 8]**: **이름없는자**의 파이어볼이 치명적인 타격을 입힘 **[오스윈 디버프: 화상 3 턴 | 매 턴 -5 HP]**: 불꽃이 살갗을 태우며 지속적인 피해 발생 **[이름없는자 MP: 130 → 110]**: 파이어볼 시전으로 마력 소모 **[이름없는자 XP +15]**: 적의 시야 차단 및 화상 효과 부여 성공",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "0ac5b6bb",
+   "round_complete": true,
+   "ts": 1777137740.1516793
+  },
+  {
+   "type": "action",
+   "player_id": "dfa4f68f",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1179236820&nologo=true&model=flux",
+   "action": "\"내 속도를 따라올 수 없을 거다!\" 순식간에 〔크레이지 스타〕의 능력으로 다시 한 번 등 뒤로 다가가 공격한다.",
+   "ts": 1777137988.9819672
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **뮤즈 룩 크레이지스타**가 고양이처럼 유연하게 공중을 가르고, **〔크레이지 스타〕**의 별빛이 오스윈의 등 뒤로 순간 이동하듯 닿는다. 화상과 실명으로 비틀거리던 성직자는 뒤돌아보기도 전에 **쌍단검**의 날이 척추를 향해 날아든다. `[🎲DM d20: 19]` > \"안 돼! 이... 이 속도가!\" 단검이 깊숙이 박히며 검은 피가 폭포처럼 쏟아져 내리고, 오스윈의 몸이 불꽃과 피로 뒤덮인 채 바닥으로 무너져 내린다. > \"신... 심판은... 내게... 오지 않았다...\" 그의 눈이 서서히 검게 변했다가 희미해지며, 마지막 숨을 거둔다. **[오스윈 HP: 8 → 0]**: **뮤즈 룩 크레이지스타**의 결정타로 적 처치 **[오스윈 퇴장]**: 성직자 오스윈의 죽음 **[뮤즈 룩 크레이지스타 XP +20]**: 적 처치 및 치명타 성공 **[이름없는자 XP +15]**: 적의 상태이상 (화상/실명) 유지 및 보조 공격 성공",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "dfa4f68f",
+   "round_complete": false,
+   "ts": 1777138012.1646802
+  },
+  {
+   "type": "action",
+   "player_id": "0ac5b6bb",
+   "player_name": "이름없는자",
+   "player_emoji": "🔮",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20gnome%2C%20tiny%20statured%2C%20bright%20curious%20eyes%2C%20wild%20unkempt%20hair%2C%20inventor%27s%20apron%2C%20spectacles%2C%20arcane%20wizard%2C%20piercing%20eyes%20glowing%20faint%20blue%2C%20ornate%20flowing%20velvet%20robes%20with%20silver%20arcane%20embroidery%2C%20holding%20a%20gnarled%20wooden%20staff%20crowned%20with%20a%20floating%20crystal%2C%20swirling%20magical%20runes%20in%20the%20air%2C%20mysterious%20aura%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3464720444&nologo=true&model=flux",
+   "action": "내가 성직자는 아니네만.. 자네의 심판은 내가 대신 짊이지도록하지.. 오스윈이여 나에게 오라..",
+   "ts": 1777138074.4722893
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **이름없는자**가 죽어가는 오스윈의 시체를 향해 지팡이를 들이대자, **〔블랭크네임〕**이 공중의 '무(無)'를 갈라 죽은 자의 영혼을 끌어당긴다. > \"자네의 심판은 내가 대신 짊어지리라... 오스윈이여, 그대의 죄를 보여라!\" 검은 연기가 시체에서 피어올라 **이름없는자**의 지팡이 끝으로 빨려 들어가고, 바닥에 쓰러진 오스윈의 몸이 흙먼지로 변해 사라진다. 제단 위의 **낡은 서약서**가 저절로 펼쳐지며, 검은 피로 쓰인 글자들이 희미한 금빛으로 빛나기 시작한다. **뮤즈 룩 크레이지스타**는 코를 킁킁거리며 서약서를 바라본다. > \"이건... 단순한 문서가 아니야. 대대로 이어져온 '서약' 을 깨뜨리는 열쇠가 여기에 있군.\" **이름없는자**는 지팡이 끝에서 희미한 금빛 마력이 맴도는 것을 느끼며, 서약서의 내용을 해독하려 노력한다. **[이름없는자 XP +20]**: 적의 영혼 흡수 및 서약서 해독 시작 **[뮤즈 룩 크레이지스타 XP +10]**: 상황 분석 및 핵심 유물 확인",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "0ac5b6bb",
+   "round_complete": true,
+   "ts": 1777138095.385698
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "monsters": {},
+ "dormant": {
+  "0ac5b6bb": {
+   "player": {
+    "player_id": "0ac5b6bb",
+    "name": "이름없는자",
+    "character_class": "마법사",
+    "race": "놈",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 80,
+    "max_hp": 80,
+    "mp": 115,
+    "max_mp": 155,
+    "attack": 24,
+    "defense": 8,
+    "level": 2,
+    "xp": 100,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "견습생의 지팡이",
+      "effect": "균형잡힌 지팡이 — MP 소비 -10%"
+     },
+     "armor": {
+      "name": "수련자 로브",
+      "effect": null
+     },
+     "accessory": {
+      "name": "작은 마법서",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777138302.8907568
+  },
+  "dfa4f68f": {
+   "player": {
+    "player_id": "dfa4f68f",
+    "name": "뮤즈 룩 크레이지스타",
+    "character_class": "도적",
+    "race": "수인",
+    "race_animal": "고양이",
+    "race_ratio": 20,
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 80,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "쌍단검",
+      "effect": "2회 공격 — 치명타 확률 +10%"
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777138328.452162
+  }
+ },
+ "saved_at": 1777138328.452162
+}

@@ -1,0 +1,522 @@
+{
+ "version": 2,
+ "room_id": "AC34B8",
+ "scenario_id": "beast_king_arena",
+ "owner_id": "eb295ad1",
+ "started": true,
+ "current_time": {
+  "icon": "🌙",
+  "label": "심야",
+  "ordinal": 4,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:120/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)\n\n모험을 시작하세요. 본선 8강 진출. 대기실에 첫 상대 정보와 경기장의 거대한 관중 함성이 들립니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 투기장 천장을 뚫고 내려오는 붉은 노을빛이 먼지 낀 대기실 바닥을 핏빛으로 물들입니다. 거대한 철문 너머로 수만 명의 관중이 내뱉는 함성이 진동하며, 오크 로가르의 거대한 근육을 들썩이게 만듭니다.\n> \"으으… 저 소리, 귀가 터질 듯하구나. 하지만 이 도끼가 더 크게 울리게 하마!\" 로가르가 거대한 양손도끼를 어깨에 걸치고 씩씩하게 웃으며 문에 기대어 섭니다.\n그의 옆에서 용사 라네라가 축복받은 철퇴를 꽉 쥐고 성스러운 기도를 읊조립니다. 드래곤본의 비늘이 황혼빛을 받아 은은하게 빛나며, 그녀의 눈빛은 차분하지만 날카롭습니다.\n> \"신께서 우리 길을 비추시리니, 로가르의 분노도 나의 빛도 모두 승리를 위한 도구라네. 첫 상대는 '철갑 곰' 그라크라. 방어가 두터우니, 로가르의 타격이 열쇠가 되겠지.\"\n파티의 이름과 위상에 걸맞은 긴장감이 흐르는 가운데, 심판의 나팔 소리가 멀리서 울려 퍼집니다."
+  },
+  {
+   "role": "user",
+   "content": "[로가르의 행동]: 조용해져라! 라고 외치며 철갑 곰을 도끼로 내려친다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:120/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)\n\n[DM용 시스템 메모]\n※ 용사 라네라(드래곤본 성직자)이(가) 방금 자기 캐릭터의 모습을 직접 그려 파티에게 공개했다. 다음 서사에서 이 캐릭터의 외양/인상을 자연스럽게 한두 문장 묘사하고, NPC나 다른 파티원의 반응을 한 마디 끼워넣어라."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] \"조용해져라!\" 로가르의 포효가 경기장 천장을 울리며, 거대한 양손도끼가 공기를 찢고 내려옵니다. [🎲DM d20: 18] 날카로운 도끼날이 철갑 곰 그라크라의 두꺼운 갑옷을 강타하며 불꽃을 튀깁니다. > \"으아아악! 이게 무슨 괴물이지?!\" 그라크라는 고통에 몸부림치며 뒤로 물러서지만, 로가르의 일격에 갑옷이 금이 가기 시작합니다.\n\n그 와중, 용사 라네라의 드래곤 본 모습이 선명하게 드러납니다. 용의 비늘이 감싸는 그녀의 우아한 자태와 날카로운 이빨, 그리고 등 뒤로 펼쳐진 작은 날개는 관중들의 숨을 멈추게 합니다. > \"저기 봐라! 저 드래곤 본의 미모와 위엄이… 신의 가호를 입은 자로군!\" 옆에 있던 심판이 놀란 표정으로 라네라를 바라보며 중얼거립니다. 라네라의 눈빛은 차분하지만, 그녀의 존재감은 이미 경기장을 지배합니다.\n\n[적 등장: 철갑 곰 그라크라 | HP 80]\n[적 HP: 철갑 곰 그라크라 80 → 62]\n[로가르 XP +15]"
+  },
+  {
+   "role": "user",
+   "content": "[용사 라네라의 행동]: 심판해주마! 라고 말하며, 날개로 공중 높이 올라가 철퇴로 내려찍는다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:120/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] \"심판해주마!\" 라네라의 외침과 함께 등 뒤의 날개가 힘차게 퍼덕이며 그녀를 공중으로 솟구치게 합니다. 드래곤본의 날렵한 자태가 황혼빛에 실려 내려오는 그녀의 모습은 관중석에서 \"신적 위엄!\"이라는 탄성을 자아냅니다. > \"하늘에서 내려온 심판자여! 그라크라, 이제 네 운명이 결정되리라!\" 라네라가 축복받은 철퇴를 머리 위로 높이 들어 올린 채, 철갑 곰의 정수리를 향해 우레와 같이 내려찍습니다. [🎲DM d20: 19] 날카로운 금속음이 경기장을 찢으며, 그라크라의 두터운 갑옷은 비명을 지르며 무너집니다. [적 HP: 철갑 곰 그라크라 62 → 25] [용사 라네라 MP: 120 → 115] [용사 라네라 XP +15] 그라크라는 비틀거리며 무릎을 꿇지만, 아직 완전히 쓰러지지는 않았습니다. 로가르가 이를 보며 거친 웃음을 터뜨립니다. > \"좋아! 이제 내 도끼가 마무리지을 차례다, 라네라!\""
+  },
+  {
+   "role": "user",
+   "content": "[로가르의 행동]: 그라크라의 머리를 내려찍는다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:115/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] \"이제 끝이다, 짐승아!\" 로가르의 포효와 함께 거대한 양손도끼가 공기를 가르며 그라크라의 머리를 향해 폭풍처럼 내려칩니다. [🎲DM d20: 20] **크리티컬 히트!** 도끼날이 철갑 곰의 두개골을 산산조각 내며, 경기장 바닥에 거대한 금이 갑니다. [적 HP: 철갑 곰 그라크라 25 → 0] [적 퇴장: 철갑 곰 그라크라] > \"으아아악! 죽었다! 야생의 왕이 쓰러졌다!\" 심판이 놀란 목소리로 외치며 로가르와 라네라의 손을 들어 승리를 선언합니다. 관중석은 천지를 진동하는 함성과 박수로 뒤덮입니다. > \"로가르, 그 대담함이야말로 오크의 긍지다! 그리고 라네라, 하늘의 심판자여, 너희 둘은 완벽한 조화였구나.\" 라네라의 드래곤 날개가 천천히 접히며, 그녀의 비늘은 승리의 빛을 머금어 더욱 찬란하게 빛납니다. [로가르 XP +25] [용사 라네라 XP +25] [로가르 획득: 투기장 승리 메달 | 경기장 명예도 상승] [용사 라네라 획득: 투기장 승리 메달 | 경기장 명예도 상승]"
+  },
+  {
+   "role": "user",
+   "content": "[용사 라네라의 행동]: 좋아! 우리가 이겼군! 다음 상대는 누구냐! 이몸을 이길자는 로가르 외에는 없을것이다! 라고 크게 소리치며 사자후를 내비치고 철갑곰 크라그라의 모든 전리품을 용사 라네라가 강탈해간다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:115/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] \"좋아! 우리가 이겼군! 다음 상대는 누구냐! 이몸을 이길자는 로가르 외에는 없을것이다!\" 라네라의 사자후가 경기장을 뒤흔듭니다. 드래곤 본의 날개가 활짝 펴지며 그녀는 공중으로 솟구쳐, 쓰러진 그라크라의 시체 위로 날아갑니다. > \"이것은 승리의 증거! 신의 뜻대로 모든 전리품은 내가 맡겠다!\" 라네라가 거대한 곰의 가죽 갑옷과 무거운 보석 상자를 낚아챕니다. > \"뭐?! 그라크라의 가죽은 내가 입으려던 것이었다!\" 로가르가 눈이 빨개져서 날뛰며 도끼를 내려치려 하지만, 라네라는 날개 한 번 퍼덕이며 재빠르게 피합니다. > \"이봐, 오크야. 신의 가호를 받은 자가 전리품을 관리하는 것이 순리다. 네 도끼는 이미 충분히 빛났지.\" 라네라의 비늘이 달빛을 받아 찬란하게 빛나며, 그녀의 도발적인 미소가 로가르를 더욱 화나게 만듭니다. 관중들은 이 예상치 못한 파티 내 다툼에 환호하며 도박을 시작합니다. [용사 라네라 획득: 철갑 곰 가죽 | 방어력 +5, 내구도 높음] [용사 라네라 획득: 그라크라의 보석 상자 x1 | 미확인] [용사 라네라 MP: 115 → 110]"
+  },
+  {
+   "role": "user",
+   "content": "[로가르의 행동]: 안되겠군. 전리품을 내놓지 않는다면, 죽어라! 라고 외치며 라네라의 옆구리를 강하게 후려친다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:110/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽, 그라크라의 보석 상자)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] \"안 되겠군. 전리품을 내놓지 않는다면, 죽어라!\" 로가르의 거친 포효와 함께 거대한 양손도끼가 라네라의 옆구리를 향해 맹렬히 날아듭니다. [🎲DM d20: 4] **치명적인 실수!** 오크의 거친 손놀림은 공중의 드래곤본을 잡기에 너무 둔했습니다. 도끼날은 라네라의 발끝을 스치며 바닥에 꽂히고, 흙먼지가 피어오릅니다. > \"하! 오크의 눈은 도끼날보다 무뎠구나!\" 라네라가 날개를 활짝 펼쳐 로가르의 공격을 가볍게 피하며 비웃습니다. 그녀의 비늘 사이로 신성한 빛이 스며나와 로가르의 공격을 막아냅니다. > \"성스러운 자를 해코지하려는 네 무모함이 오크의 자존심을 구겨버렸군. 하지만 이 싸움은 여기서 끝내야 해.\" 심판이 재빨리 뛰어들어 두 사람을 갈라놓으며, 경기장 관중들은 이 예측 불가능한 내분 사태에 환호하며 도박을 더热하게 합니다. [로가르 HP: 120 → 115] (도끼를 휘두르며 균형을 잃어 살짝 다침) [용사 라네라 HP: 100 → 100] (피함)"
+  },
+  {
+   "role": "user",
+   "content": "[용사 라네라의 행동]: 상처를 치료하고 휴식을 취한다\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:115/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:110/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽, 그라크라의 보석 상자)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 심야] \"이제 진정하라, 오크야. 신의 은총으로 상처를 치유하리라.\" 라네라가 성스러운 사제복을 휘날리며 축복받은 철퇴를 땅에 짚고 눈을 감습니다. 그녀의 등에서 뿜어져 나오는 따뜻한 황금빛 기운이 로가르의 상처 난 옆구리를 감싸며, 찢어진 가죽 흉갑 자국이 빠르게 아물어갑니다. > \"흐으... 이 따스함은... 악마의 마법인가, 신의 축복인가?\" 로가르가 어색하게 몸을 풀며 중얼거립니다. 그의 체력이 완전히 회복되고, 두 사람 사이의 긴장감도 잠시 누그러집니다. > \"휴식은 승리를 위한 준비일 뿐이다. 다음 상대는 '유령 춤꾼' 리셀린이라는데, 그녀는 그림자보다 빠르다네. 경계하라.\" 라네라의 날개가 천천히 접히며, 그녀의 비늘은 달빛 아래에서 차분한 은색으로 빛납니다. [로가르 HP: 115 → 120] [용사 라네라 MP: 110 → 105]"
+  },
+  {
+   "role": "user",
+   "content": "[로가르의 행동]: 상대가 나오길 기다린다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:105/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽)\n\n[DM용 시스템 메모]\n※ 용사 라네라이(가) 방금 소지품 '그라크라의 보석 상자'을(를) 사용했다. 남은 수량 0. 효과를 자연스럽게 서사에 반영하고, 필요 시 HP/MP/상태 태그로 결과 표기."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 심야] 로가르가 무심하게 손을 털며 다음 상대를 기다리는 동안, 라네라가 그라크라의 보석 상자를 열어젖힙니다. > \"이 보석들이 신의 가호를 받아 빛나리라!\" 상자에서 쏟아진 보석들이 갑자기 공중으로 떠올라 황금빛 기운을 뿜어내며 라네라의 몸을 감쌉니다. [아이템 효과: 용사 라네라 | 그라크라의 보석 상자 | MP 회복 및 마력 증폭] [용사 라네라 MP: 105 → 120] > \"오호라! 이 보석들은 단순한 보물이 아니었군! 라네라, 너의 마력이 다시 솟구치는구나.\" 로가르가 보석들의 찬란한 빛을 바라보며 감탄합니다. 라네라의 비늘은 보석의 빛을 받아 더욱 신비로운 광채를 띠며, 그녀의 눈동자에서 성스러운 불꽃이 일렁입니다. > \"이제 준비가 되었다. 그림자보다 빠른 유령 춤꾼 리셀린이라... 그녀의 춤을 막아낼 수 있으리라.\" 라네라의 목소리에 힘이 실리며, 경기장 입구에서 은은한 그림자가 꿈틀거리며 다가옵니다. [적 등장: 유령 춤꾼 리셀린 | HP 90] [적 상태: 유령 춤꾼 리셀린 | 투명화 — 다음 공격 시 명중률 -15%]"
+  },
+  {
+   "role": "user",
+   "content": "[용사 라네라의 행동]: 그림자보다 빠른 유령 춤꾼 리셀린이여! 나와의 댄스배틀을 시작한다! 라고 하면서 화려한 춤으로 리셀린을 공격한다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:100/100, MP:120/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 심야] \"그림자보다 빠른 유령 춤꾼 리셀린이여! 나와의 댄스배틀을 시작한다!\" 라네라의 외침과 함께 드래곤본의 우아한 몸짓이 경기장 바닥을 수놓습니다. 그녀의 날개가 퍼덕이며 황금빛 마력이 춤추는 듯한 궤적을 그리며 리셀린을 향해 날아갑니다. [🎲DM d20: 7] **아쉬운 발놀림!** 드래곤본의 화려한 춤은 유령의 초자연적인 움직임 앞에서는 너무 예측 가능했습니다. 리셀린이 그림자 속에서 순식간에 모습을 감추며 라네라의 공격을 빗나가게 합니다. > \"하하하! 신성한 춤이라니, 너무 무겁구나, 용사님. 내 춤은 그림자처럼 가볍지.\" 리셀린의 목소리가 라네라의 바로 뒤에서 들리며, 그녀의 날카로운 손날이 라네라의 어깨를 스칩니다. > \"으악! 이 녀석, 정말로 그림자야!\" 라네라가 허공을 휘두르며 균형을 잡지만, 어깨에 깊은 상처가 남습니다. 로가르가 이를 보며 거친 웃음을 터뜨리며 도끼를 휘둘러줍니다. > \"춤추기 전에 먼저 상대를 잡아야 하는 법이지, 라네라! 내가 도와주마!\" [용사 라네라 HP: 100 → 85] [적 HP: 유령 춤꾼 리셀린 90 → 90] (회피 성공) [적 상태: 유령 춤꾼 리셀린 | 투명화 유지 — 다음 공격 시 명중률 -15%]"
+  },
+  {
+   "role": "user",
+   "content": "[로가르의 행동]: 땅을 세 번 내려치며 바닥에 균열을 일으킨다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:85/100, MP:120/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 심야] \"땅을 찢어라!\" 로가르가 거대한 양손도끼로 경기장 바닥을 세 번 강렬하게 내려칩니다. [🎲DM d20: 16] **대지 진동!** 거대한 충격파가 바닥을 뚫고 퍼지며, 유령 춤꾼 리셀린이 숨고 있던 그림자 틈새가 무너져 내립니다. > \"크아악! 이 오크의 힘은 지각을 흔드는구나!\" 리셀린이 투명했던 몸이 균열 사이로 드러나며 비틀거립니다. 그녀의 그림자 마법이 일시적으로 무력화되어 정체가 완전히 드러났습니다. > \"좋아! 이제 네가 보일 때다, 그림자 여우야!\" 로가르가 거친 웃음과 함께 도끼를 휘두릅니다. 리셀린은 비명을 지르며 균열 가장자리로 밀려납니다. [적 상태: 유령 춤꾼 리셀린 | 투명화 해제 — 명중률 정상화] [적 HP: 유령 춤꾼 리셀린 90 → 75] (지진 피해) [로가르 XP +10]"
+  },
+  {
+   "role": "user",
+   "content": "[용사 라네라의 행동]: 하! 이번에는 지지 않겠다! 나의 화려한 춤놀림 솜씨를 다시한번 20배속으로 보여주도록하지! 하면서 더 빠르게 춤을 추며, 순식간에 철퇴로 공격을 하고 주변을 아수라장으로 만든다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:85/100, MP:120/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 심야] \"하! 이번에는 지지 않겠다! 나의 화려한 춤놀림 솜씨를 20 배속으로 보여주도록하지!\" 라네라의 외침과 함께 드래곤본의 몸이 흐릿한 잔상으로 변하며 경기장을 휩씁니다. 황금빛 마력이 폭주하여 그녀의 춤은 단순한 기술이 아닌 광기 어린 폭풍이 되어 리셀린을 덮칩니다. [🎲DM d20: 12] **명중!** 하지만 20 배속의 과한 속도는 정교함보다 혼란을 낳았습니다. 라네라의 철퇴는 리셀린의 가슴을 강타하지만, 동시에 경기장 기둥과 바닥까지 무차별하게 파괴하며 아수라장을 만듭니다. > \"크아악! 이 미친 드래곤 녀석아! 내 춤을 더럽히지 마!\" 리셀린이 비명을 지르며 날개를 펴고 뒤로 날아가지만, 그녀의 옷자락은 찢기고 피가 흐릅니다. > \"하아... 하아... 너무 빨라서... 다리가 저리다...\" 라네라는 급격히 감속하며 헉헉거리며 땅에 주저앉습니다. 그녀의 날개 끝이 깨진 기둥 조각에 찢어졌습니다. [용사 라네라 MP: 120 → 95] (마력 과사용) [적 HP: 유령 춤꾼 리셀린 75 → 45] [적 상태: 유령 춤꾼 리셀린 | 출혈 3 턴 | 매 턴 -5 HP] [용사 라네라 HP: 85 → 80] (파괴된 잔해에 맞음)"
+  },
+  {
+   "role": "user",
+   "content": "[로가르의 행동]: 진정한 춤은 노래와 무대에서 나오는 법이다! 라고 외치며 신나게 바닥을 붕괴하듯 내려친다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:80/100, MP:95/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 심야] \"진정한 춤은 노래와 무대에서 나오는 법이다!\" 로가르의 거친 외침이 경기장 바닥을 울리며, 거대한 양손도끼가 다시 한번 지각을 뒤흔듭니다. [🎲DM d20: 18] **대지 진동!** 바닥이 갈라지며 리셀린이 서 있던 공간이 함몰되고, 그녀의 균형이 완전히 무너집니다. > \"이... 이 오크의 박자가 너무 거칠다! 내 무대가 무너져!\" 리셀린이 비명을 지르며 함몰된 구덩이로 굴러떨어집니다. 그녀의 유령 같은 몸은 물리적인 충격에 약해져 피가 터져 나옵니다. > \"이제 끝이다, 춤추는 유령아!\" 로가르가 함몰된 구덩이 위로 거대한 그림자를 드리우며 도끼를 휘두릅니다. [적 HP: 유령 춤꾼 리셀린 45 → 10] (지진 피해) [적 상태: 유령 춤꾼 리셀린 | 출혈 3 턴 | 매 턴 -5 HP] [적 상태: 유령 춤꾼 리셀린 | 기절 1 턴 — 다음 행동 불가] (함몰된 구덩이에 머리를 다침)"
+  },
+  {
+   "role": "user",
+   "content": "[용사 라네라의 행동]: 잘했다 로가르! 마지막 일격이다! 신사적으로 성불 시켜주마! 아마겟돈!!!! 이라 외치며, 리셀린의 대가리를 철퇴로 확 내려친다.\n\n현재 파티:\n- 로가르 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 투기장 승리 메달)\n- 용사 라네라 (드래곤본 성직자, Lv1, HP:80/100, MP:95/120, 공격:10, 방어:12, 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표, 소지: 투기장 승리 메달, 철갑 곰 가죽)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 심야] \"잘했다 로가르! 마지막 일격이다! 신사적으로 성불 시켜주마! 아마겟돈!!!!\" 라네라의 외침과 함께 축복받은 철퇴가 하늘의 번개처럼 리셀린의 머리를 향해 내려칩니다. [🎲DM d20: 19] **대단한 타격!** 기절해 있던 리셀린은 피할 새도 없이 거대한 철퇴를 정통으로 맞습니다. > \"크아아악! 내 춤이... 멈추다니!\" 리셀린의 비명이 경기장을 울리며 그녀의 몸이 빛나는 입자들로 흩어집니다. [적 HP: 유령 춤꾼 리셀린 10 → 0] [적 퇴장: 유령 춤꾼 리셀린] > \"승리다! 드래곤의 심판이 내려졌다!\" 라네라가 헐떡이며 철퇴를 땅에 짚고 웃음을 터뜨립니다. 로가르는 거친 웃음과 함께 도끼를 어깨에 걸치며 관중들의 함성을 즐깁니다. > \"하하! 네 '아마겟돈'은 꽤 무서웠구나, 라네라! 하지만 내 '지진'이 없었으면 불가능했을 테지!\" > \"그건 그렇다 치고, 이번엔 내 전리품을 먼저 챙기겠다. 이번엔 도끼로 빼앗지 말라고!\" 라네라가 리셀린이 남긴 유령의 리본과 은색 부적을 주워 담으며 로가르를 경계합니다. [용사 라네라 XP +30] [로가르 XP +20] (어시스트) [용사 라네라 획득: 유령의 리본 | 유령 계열 적에 대한 공격력 +10%] [용사 라네라 획득: 은색 부적 | MP 회복량 +15%]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 로가르(오크 전사, Lv2)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "\"이제 내 검이 갈 길을 알았도다, 드래곤의 성녀여. 이 투기장의 흙먼지가 아닌, 더 깊은 그림자 속으로 가야 할 때가 왔노라.\" 로가르가 거대한 양손도끼를 바닥에 꽂으며 고개를 숙이자, 오크의 야성이 담긴 눈빛에 복잡한 그림자가 스칩니다. > \"다시 만날 날이 오리라. 그때는 너의 '아마겟돈'보다 더 거친 박자로 춤추어 보일 테니.\" 그는 뒤도 돌아보지 않고 어둠 속으로 사라졌고, 남겨진 도끼 자국만 남게 되어 경기장의 바람이 그를 향해 길게 신음을 토해냅니다."
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 용사 라네라(드래곤본 성직자, Lv2)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 투기장 천장을 뚫고 내려오는 붉은 노을빛이 먼지 낀 대기실 바닥을 핏빛으로 물들입니다. 거대한 철문 너머로 수만 명의 관중이 내뱉는 함성이 진동하며, 오크 로가르의 거대한 근육을 들썩이게 만듭니다.\n> \"으으… 저 소리, 귀가 터질 듯하구나. 하지만 이 도끼가 더 크게 울리게 하마!\" 로가르가 거대한 양손도끼를 어깨에 걸치고 씩씩하게 웃으며 문에 기대어 섭니다.\n그의 옆에서 용사 라네라가 축복받은 철퇴를 꽉 쥐고 성스러운 기도를 읊조립니다. 드래곤본의 비늘이 황혼빛을 받아 은은하게 빛나며, 그녀의 눈빛은 차분하지만 날카롭습니다.\n> \"신께서 우리 길을 비추시리니, 로가르의 분노도 나의 빛도 모두 승리를 위한 도구라네. 첫 상대는 '철갑 곰' 그라크라. 방어가 두터우니, 로가르의 타격이 열쇠가 되겠지.\"\n파티의 이름과 위상에 걸맞은 긴장감이 흐르는 가운데, 심판의 나팔 소리가 멀리서 울려 퍼집니다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "ts": 1777129250.585834
+  },
+  {
+   "type": "action",
+   "player_id": "5568a079",
+   "player_name": "로가르",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2586164072&nologo=true&model=flux",
+   "action": "조용해져라! 라고 외치며 철갑 곰을 도끼로 내려친다.",
+   "ts": 1777129339.3064842
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] \"조용해져라!\" 로가르의 포효가 경기장 천장을 울리며, 거대한 양손도끼가 공기를 찢고 내려옵니다. [🎲DM d20: 18] 날카로운 도끼날이 철갑 곰 그라크라의 두꺼운 갑옷을 강타하며 불꽃을 튀깁니다. > \"으아아악! 이게 무슨 괴물이지?!\" 그라크라는 고통에 몸부림치며 뒤로 물러서지만, 로가르의 일격에 갑옷이 금이 가기 시작합니다.\n\n그 와중, 용사 라네라의 드래곤 본 모습이 선명하게 드러납니다. 용의 비늘이 감싸는 그녀의 우아한 자태와 날카로운 이빨, 그리고 등 뒤로 펼쳐진 작은 날개는 관중들의 숨을 멈추게 합니다. > \"저기 봐라! 저 드래곤 본의 미모와 위엄이… 신의 가호를 입은 자로군!\" 옆에 있던 심판이 놀란 표정으로 라네라를 바라보며 중얼거립니다. 라네라의 눈빛은 차분하지만, 그녀의 존재감은 이미 경기장을 지배합니다.\n\n[적 등장: 철갑 곰 그라크라 | HP 80]\n[적 HP: 철갑 곰 그라크라 80 → 62]\n[로가르 XP +15]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "5568a079",
+   "round_complete": false,
+   "ts": 1777129354.792505
+  },
+  {
+   "type": "action",
+   "player_id": "eb295ad1",
+   "player_name": "용사 라네라",
+   "player_emoji": "✨",
+   "portrait_url": "/portrait/AC34B8/eb295ad1?v=b45166bf",
+   "action": "심판해주마! 라고 말하며, 날개로 공중 높이 올라가 철퇴로 내려찍는다.",
+   "ts": 1777129558.17743
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] \"심판해주마!\" 라네라의 외침과 함께 등 뒤의 날개가 힘차게 퍼덕이며 그녀를 공중으로 솟구치게 합니다. 드래곤본의 날렵한 자태가 황혼빛에 실려 내려오는 그녀의 모습은 관중석에서 \"신적 위엄!\"이라는 탄성을 자아냅니다. > \"하늘에서 내려온 심판자여! 그라크라, 이제 네 운명이 결정되리라!\" 라네라가 축복받은 철퇴를 머리 위로 높이 들어 올린 채, 철갑 곰의 정수리를 향해 우레와 같이 내려찍습니다. [🎲DM d20: 19] 날카로운 금속음이 경기장을 찢으며, 그라크라의 두터운 갑옷은 비명을 지르며 무너집니다. [적 HP: 철갑 곰 그라크라 62 → 25] [용사 라네라 MP: 120 → 115] [용사 라네라 XP +15] 그라크라는 비틀거리며 무릎을 꿇지만, 아직 완전히 쓰러지지는 않았습니다. 로가르가 이를 보며 거친 웃음을 터뜨립니다. > \"좋아! 이제 내 도끼가 마무리지을 차례다, 라네라!\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "eb295ad1",
+   "round_complete": true,
+   "ts": 1777129565.4664023
+  },
+  {
+   "type": "action",
+   "player_id": "5568a079",
+   "player_name": "로가르",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2586164072&nologo=true&model=flux",
+   "action": "그라크라의 머리를 내려찍는다.",
+   "ts": 1777129639.597309
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] \"이제 끝이다, 짐승아!\" 로가르의 포효와 함께 거대한 양손도끼가 공기를 가르며 그라크라의 머리를 향해 폭풍처럼 내려칩니다. [🎲DM d20: 20] **크리티컬 히트!** 도끼날이 철갑 곰의 두개골을 산산조각 내며, 경기장 바닥에 거대한 금이 갑니다. [적 HP: 철갑 곰 그라크라 25 → 0] [적 퇴장: 철갑 곰 그라크라] > \"으아아악! 죽었다! 야생의 왕이 쓰러졌다!\" 심판이 놀란 목소리로 외치며 로가르와 라네라의 손을 들어 승리를 선언합니다. 관중석은 천지를 진동하는 함성과 박수로 뒤덮입니다. > \"로가르, 그 대담함이야말로 오크의 긍지다! 그리고 라네라, 하늘의 심판자여, 너희 둘은 완벽한 조화였구나.\" 라네라의 드래곤 날개가 천천히 접히며, 그녀의 비늘은 승리의 빛을 머금어 더욱 찬란하게 빛납니다. [로가르 XP +25] [용사 라네라 XP +25] [로가르 획득: 투기장 승리 메달 | 경기장 명예도 상승] [용사 라네라 획득: 투기장 승리 메달 | 경기장 명예도 상승]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "5568a079",
+   "round_complete": false,
+   "ts": 1777129649.3795576
+  },
+  {
+   "type": "action",
+   "player_id": "eb295ad1",
+   "player_name": "용사 라네라",
+   "player_emoji": "✨",
+   "portrait_url": "/portrait/AC34B8/eb295ad1?v=b45166bf",
+   "action": "좋아! 우리가 이겼군! 다음 상대는 누구냐! 이몸을 이길자는 로가르 외에는 없을것이다! 라고 크게 소리치며 사자후를 내비치고 철갑곰 크라그라의 모든 전리품을 용사 라네라가 강탈해간다.",
+   "ts": 1777129731.3068478
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] \"좋아! 우리가 이겼군! 다음 상대는 누구냐! 이몸을 이길자는 로가르 외에는 없을것이다!\" 라네라의 사자후가 경기장을 뒤흔듭니다. 드래곤 본의 날개가 활짝 펴지며 그녀는 공중으로 솟구쳐, 쓰러진 그라크라의 시체 위로 날아갑니다. > \"이것은 승리의 증거! 신의 뜻대로 모든 전리품은 내가 맡겠다!\" 라네라가 거대한 곰의 가죽 갑옷과 무거운 보석 상자를 낚아챕니다. > \"뭐?! 그라크라의 가죽은 내가 입으려던 것이었다!\" 로가르가 눈이 빨개져서 날뛰며 도끼를 내려치려 하지만, 라네라는 날개 한 번 퍼덕이며 재빠르게 피합니다. > \"이봐, 오크야. 신의 가호를 받은 자가 전리품을 관리하는 것이 순리다. 네 도끼는 이미 충분히 빛났지.\" 라네라의 비늘이 달빛을 받아 찬란하게 빛나며, 그녀의 도발적인 미소가 로가르를 더욱 화나게 만듭니다. 관중들은 이 예상치 못한 파티 내 다툼에 환호하며 도박을 시작합니다. [용사 라네라 획득: 철갑 곰 가죽 | 방어력 +5, 내구도 높음] [용사 라네라 획득: 그라크라의 보석 상자 x1 | 미확인] [용사 라네라 MP: 115 → 110]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "eb295ad1",
+   "round_complete": true,
+   "ts": 1777129747.3813896
+  },
+  {
+   "type": "action",
+   "player_id": "5568a079",
+   "player_name": "로가르",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2586164072&nologo=true&model=flux",
+   "action": "안되겠군. 전리품을 내놓지 않는다면, 죽어라! 라고 외치며 라네라의 옆구리를 강하게 후려친다.",
+   "ts": 1777129807.6812239
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] \"안 되겠군. 전리품을 내놓지 않는다면, 죽어라!\" 로가르의 거친 포효와 함께 거대한 양손도끼가 라네라의 옆구리를 향해 맹렬히 날아듭니다. [🎲DM d20: 4] **치명적인 실수!** 오크의 거친 손놀림은 공중의 드래곤본을 잡기에 너무 둔했습니다. 도끼날은 라네라의 발끝을 스치며 바닥에 꽂히고, 흙먼지가 피어오릅니다. > \"하! 오크의 눈은 도끼날보다 무뎠구나!\" 라네라가 날개를 활짝 펼쳐 로가르의 공격을 가볍게 피하며 비웃습니다. 그녀의 비늘 사이로 신성한 빛이 스며나와 로가르의 공격을 막아냅니다. > \"성스러운 자를 해코지하려는 네 무모함이 오크의 자존심을 구겨버렸군. 하지만 이 싸움은 여기서 끝내야 해.\" 심판이 재빨리 뛰어들어 두 사람을 갈라놓으며, 경기장 관중들은 이 예측 불가능한 내분 사태에 환호하며 도박을 더热하게 합니다. [로가르 HP: 120 → 115] (도끼를 휘두르며 균형을 잃어 살짝 다침) [용사 라네라 HP: 100 → 100] (피함)",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "5568a079",
+   "round_complete": false,
+   "ts": 1777129817.9207444
+  },
+  {
+   "type": "action",
+   "player_id": "eb295ad1",
+   "player_name": "용사 라네라",
+   "player_emoji": "✨",
+   "portrait_url": "/portrait/AC34B8/eb295ad1?v=b45166bf",
+   "action": "상처를 치료하고 휴식을 취한다",
+   "ts": 1777129929.1890955
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] \"이제 진정하라, 오크야. 신의 은총으로 상처를 치유하리라.\" 라네라가 성스러운 사제복을 휘날리며 축복받은 철퇴를 땅에 짚고 눈을 감습니다. 그녀의 등에서 뿜어져 나오는 따뜻한 황금빛 기운이 로가르의 상처 난 옆구리를 감싸며, 찢어진 가죽 흉갑 자국이 빠르게 아물어갑니다. > \"흐으... 이 따스함은... 악마의 마법인가, 신의 축복인가?\" 로가르가 어색하게 몸을 풀며 중얼거립니다. 그의 체력이 완전히 회복되고, 두 사람 사이의 긴장감도 잠시 누그러집니다. > \"휴식은 승리를 위한 준비일 뿐이다. 다음 상대는 '유령 춤꾼' 리셀린이라는데, 그녀는 그림자보다 빠르다네. 경계하라.\" 라네라의 날개가 천천히 접히며, 그녀의 비늘은 달빛 아래에서 차분한 은색으로 빛납니다. [로가르 HP: 115 → 120] [용사 라네라 MP: 110 → 105]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "eb295ad1",
+   "round_complete": true,
+   "ts": 1777129945.1336448
+  },
+  {
+   "type": "action",
+   "player_id": "5568a079",
+   "player_name": "로가르",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2586164072&nologo=true&model=flux",
+   "action": "상대가 나오길 기다린다.",
+   "ts": 1777130020.1276402
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] 로가르가 무심하게 손을 털며 다음 상대를 기다리는 동안, 라네라가 그라크라의 보석 상자를 열어젖힙니다. > \"이 보석들이 신의 가호를 받아 빛나리라!\" 상자에서 쏟아진 보석들이 갑자기 공중으로 떠올라 황금빛 기운을 뿜어내며 라네라의 몸을 감쌉니다. [아이템 효과: 용사 라네라 | 그라크라의 보석 상자 | MP 회복 및 마력 증폭] [용사 라네라 MP: 105 → 120] > \"오호라! 이 보석들은 단순한 보물이 아니었군! 라네라, 너의 마력이 다시 솟구치는구나.\" 로가르가 보석들의 찬란한 빛을 바라보며 감탄합니다. 라네라의 비늘은 보석의 빛을 받아 더욱 신비로운 광채를 띠며, 그녀의 눈동자에서 성스러운 불꽃이 일렁입니다. > \"이제 준비가 되었다. 그림자보다 빠른 유령 춤꾼 리셀린이라... 그녀의 춤을 막아낼 수 있으리라.\" 라네라의 목소리에 힘이 실리며, 경기장 입구에서 은은한 그림자가 꿈틀거리며 다가옵니다. [적 등장: 유령 춤꾼 리셀린 | HP 90] [적 상태: 유령 춤꾼 리셀린 | 투명화 — 다음 공격 시 명중률 -15%]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "5568a079",
+   "round_complete": false,
+   "ts": 1777130031.6749246
+  },
+  {
+   "type": "action",
+   "player_id": "eb295ad1",
+   "player_name": "용사 라네라",
+   "player_emoji": "✨",
+   "portrait_url": "/portrait/AC34B8/eb295ad1?v=b45166bf",
+   "action": "그림자보다 빠른 유령 춤꾼 리셀린이여! 나와의 댄스배틀을 시작한다! 라고 하면서 화려한 춤으로 리셀린을 공격한다.",
+   "ts": 1777130121.4573424
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] \"그림자보다 빠른 유령 춤꾼 리셀린이여! 나와의 댄스배틀을 시작한다!\" 라네라의 외침과 함께 드래곤본의 우아한 몸짓이 경기장 바닥을 수놓습니다. 그녀의 날개가 퍼덕이며 황금빛 마력이 춤추는 듯한 궤적을 그리며 리셀린을 향해 날아갑니다. [🎲DM d20: 7] **아쉬운 발놀림!** 드래곤본의 화려한 춤은 유령의 초자연적인 움직임 앞에서는 너무 예측 가능했습니다. 리셀린이 그림자 속에서 순식간에 모습을 감추며 라네라의 공격을 빗나가게 합니다. > \"하하하! 신성한 춤이라니, 너무 무겁구나, 용사님. 내 춤은 그림자처럼 가볍지.\" 리셀린의 목소리가 라네라의 바로 뒤에서 들리며, 그녀의 날카로운 손날이 라네라의 어깨를 스칩니다. > \"으악! 이 녀석, 정말로 그림자야!\" 라네라가 허공을 휘두르며 균형을 잡지만, 어깨에 깊은 상처가 남습니다. 로가르가 이를 보며 거친 웃음을 터뜨리며 도끼를 휘둘러줍니다. > \"춤추기 전에 먼저 상대를 잡아야 하는 법이지, 라네라! 내가 도와주마!\" [용사 라네라 HP: 100 → 85] [적 HP: 유령 춤꾼 리셀린 90 → 90] (회피 성공) [적 상태: 유령 춤꾼 리셀린 | 투명화 유지 — 다음 공격 시 명중률 -15%]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "eb295ad1",
+   "round_complete": true,
+   "ts": 1777130139.0986764
+  },
+  {
+   "type": "action",
+   "player_id": "5568a079",
+   "player_name": "로가르",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2586164072&nologo=true&model=flux",
+   "action": "땅을 세 번 내려치며 바닥에 균열을 일으킨다.",
+   "ts": 1777130209.578911
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] \"땅을 찢어라!\" 로가르가 거대한 양손도끼로 경기장 바닥을 세 번 강렬하게 내려칩니다. [🎲DM d20: 16] **대지 진동!** 거대한 충격파가 바닥을 뚫고 퍼지며, 유령 춤꾼 리셀린이 숨고 있던 그림자 틈새가 무너져 내립니다. > \"크아악! 이 오크의 힘은 지각을 흔드는구나!\" 리셀린이 투명했던 몸이 균열 사이로 드러나며 비틀거립니다. 그녀의 그림자 마법이 일시적으로 무력화되어 정체가 완전히 드러났습니다. > \"좋아! 이제 네가 보일 때다, 그림자 여우야!\" 로가르가 거친 웃음과 함께 도끼를 휘두릅니다. 리셀린은 비명을 지르며 균열 가장자리로 밀려납니다. [적 상태: 유령 춤꾼 리셀린 | 투명화 해제 — 명중률 정상화] [적 HP: 유령 춤꾼 리셀린 90 → 75] (지진 피해) [로가르 XP +10]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "5568a079",
+   "round_complete": false,
+   "ts": 1777130219.6062474
+  },
+  {
+   "type": "action",
+   "player_id": "eb295ad1",
+   "player_name": "용사 라네라",
+   "player_emoji": "✨",
+   "portrait_url": "/portrait/AC34B8/eb295ad1?v=b45166bf",
+   "action": "하! 이번에는 지지 않겠다! 나의 화려한 춤놀림 솜씨를 다시한번 20배속으로 보여주도록하지! 하면서 더 빠르게 춤을 추며, 순식간에 철퇴로 공격을 하고 주변을 아수라장으로 만든다.",
+   "ts": 1777130322.2465541
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] \"하! 이번에는 지지 않겠다! 나의 화려한 춤놀림 솜씨를 20 배속으로 보여주도록하지!\" 라네라의 외침과 함께 드래곤본의 몸이 흐릿한 잔상으로 변하며 경기장을 휩씁니다. 황금빛 마력이 폭주하여 그녀의 춤은 단순한 기술이 아닌 광기 어린 폭풍이 되어 리셀린을 덮칩니다. [🎲DM d20: 12] **명중!** 하지만 20 배속의 과한 속도는 정교함보다 혼란을 낳았습니다. 라네라의 철퇴는 리셀린의 가슴을 강타하지만, 동시에 경기장 기둥과 바닥까지 무차별하게 파괴하며 아수라장을 만듭니다. > \"크아악! 이 미친 드래곤 녀석아! 내 춤을 더럽히지 마!\" 리셀린이 비명을 지르며 날개를 펴고 뒤로 날아가지만, 그녀의 옷자락은 찢기고 피가 흐릅니다. > \"하아... 하아... 너무 빨라서... 다리가 저리다...\" 라네라는 급격히 감속하며 헉헉거리며 땅에 주저앉습니다. 그녀의 날개 끝이 깨진 기둥 조각에 찢어졌습니다. [용사 라네라 MP: 120 → 95] (마력 과사용) [적 HP: 유령 춤꾼 리셀린 75 → 45] [적 상태: 유령 춤꾼 리셀린 | 출혈 3 턴 | 매 턴 -5 HP] [용사 라네라 HP: 85 → 80] (파괴된 잔해에 맞음)",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "eb295ad1",
+   "round_complete": true,
+   "ts": 1777130342.3233652
+  },
+  {
+   "type": "action",
+   "player_id": "5568a079",
+   "player_name": "로가르",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2586164072&nologo=true&model=flux",
+   "action": "진정한 춤은 노래와 무대에서 나오는 법이다! 라고 외치며 신나게 바닥을 붕괴하듯 내려친다.",
+   "ts": 1777130390.508376
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] \"진정한 춤은 노래와 무대에서 나오는 법이다!\" 로가르의 거친 외침이 경기장 바닥을 울리며, 거대한 양손도끼가 다시 한번 지각을 뒤흔듭니다. [🎲DM d20: 18] **대지 진동!** 바닥이 갈라지며 리셀린이 서 있던 공간이 함몰되고, 그녀의 균형이 완전히 무너집니다. > \"이... 이 오크의 박자가 너무 거칠다! 내 무대가 무너져!\" 리셀린이 비명을 지르며 함몰된 구덩이로 굴러떨어집니다. 그녀의 유령 같은 몸은 물리적인 충격에 약해져 피가 터져 나옵니다. > \"이제 끝이다, 춤추는 유령아!\" 로가르가 함몰된 구덩이 위로 거대한 그림자를 드리우며 도끼를 휘두릅니다. [적 HP: 유령 춤꾼 리셀린 45 → 10] (지진 피해) [적 상태: 유령 춤꾼 리셀린 | 출혈 3 턴 | 매 턴 -5 HP] [적 상태: 유령 춤꾼 리셀린 | 기절 1 턴 — 다음 행동 불가] (함몰된 구덩이에 머리를 다침)",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "5568a079",
+   "round_complete": false,
+   "ts": 1777130403.5197597
+  },
+  {
+   "type": "action",
+   "player_id": "eb295ad1",
+   "player_name": "용사 라네라",
+   "player_emoji": "✨",
+   "portrait_url": "/portrait/AC34B8/eb295ad1?v=b45166bf",
+   "action": "잘했다 로가르! 마지막 일격이다! 신사적으로 성불 시켜주마! 아마겟돈!!!! 이라 외치며, 리셀린의 대가리를 철퇴로 확 내려친다.",
+   "ts": 1777130479.8775988
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] \"잘했다 로가르! 마지막 일격이다! 신사적으로 성불 시켜주마! 아마겟돈!!!!\" 라네라의 외침과 함께 축복받은 철퇴가 하늘의 번개처럼 리셀린의 머리를 향해 내려칩니다. [🎲DM d20: 19] **대단한 타격!** 기절해 있던 리셀린은 피할 새도 없이 거대한 철퇴를 정통으로 맞습니다. > \"크아아악! 내 춤이... 멈추다니!\" 리셀린의 비명이 경기장을 울리며 그녀의 몸이 빛나는 입자들로 흩어집니다. [적 HP: 유령 춤꾼 리셀린 10 → 0] [적 퇴장: 유령 춤꾼 리셀린] > \"승리다! 드래곤의 심판이 내려졌다!\" 라네라가 헐떡이며 철퇴를 땅에 짚고 웃음을 터뜨립니다. 로가르는 거친 웃음과 함께 도끼를 어깨에 걸치며 관중들의 함성을 즐깁니다. > \"하하! 네 '아마겟돈'은 꽤 무서웠구나, 라네라! 하지만 내 '지진'이 없었으면 불가능했을 테지!\" > \"그건 그렇다 치고, 이번엔 내 전리품을 먼저 챙기겠다. 이번엔 도끼로 빼앗지 말라고!\" 라네라가 리셀린이 남긴 유령의 리본과 은색 부적을 주워 담으며 로가르를 경계합니다. [용사 라네라 XP +30] [로가르 XP +20] (어시스트) [용사 라네라 획득: 유령의 리본 | 유령 계열 적에 대한 공격력 +10%] [용사 라네라 획득: 은색 부적 | MP 회복량 +15%]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "eb295ad1",
+   "round_complete": true,
+   "ts": 1777130496.8643112
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "monsters": {},
+ "dormant": {
+  "5568a079": {
+   "player": {
+    "player_id": "5568a079",
+    "name": "로가르",
+    "character_class": "전사",
+    "race": "오크",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 130,
+    "max_hp": 130,
+    "mp": 35,
+    "max_mp": 35,
+    "attack": 20,
+    "defense": 10,
+    "level": 2,
+    "xp": 113,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "거대한 양손도끼",
+      "effect": "양손 무기 — 공격력 +3, 속도 -1"
+     },
+     "armor": {
+      "name": "가죽 흉갑",
+      "effect": null
+     },
+     "accessory": {
+      "name": "낡은 방패",
+      "effect": null
+     }
+    },
+    "inventory": [
+     {
+      "name": "투기장 승리 메달",
+      "effect": "경기장 명예도 상승",
+      "quantity": 1
+     }
+    ],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777130521.8723724
+  },
+  "eb295ad1": {
+   "player": {
+    "player_id": "eb295ad1",
+    "name": "용사 라네라",
+    "character_class": "성직자",
+    "race": "드래곤본",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 90,
+    "max_hp": 110,
+    "mp": 115,
+    "max_mp": 140,
+    "attack": 12,
+    "defense": 12,
+    "level": 2,
+    "xp": 114,
+    "stat_points": 0,
+    "custom_portrait": "data:image/jpeg;base64,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qrqBu5bvT7z95bylsohI+6McDjBHqPXBrjz712OhfEO40fRk0ybT471I8hGkkIwp7EYOcVyMr+bM8mxU3sW2oMBc9h7U43WjBjKXJxtycdcUlFUIKUjbjpyM8GkooAKKKKACloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK9B8HiS0+Hev3iIYncOElxgkBMcH2JP4k159XeAuPg0cEAG55+m/wDxqJ7JDRwdJS0VYgooooASiiigBaKSloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACu9cLH8GY95KmS5+TJ+8fMPT8Afyrgq73x2wsPCnh/RyQzrEJGZTxwoH82P5VEt0ho4KiiirEFFFFACUUtJQAUtFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV3vxRXb/AGL8xb/R2HT/AHea43SI1m1qxidQyPcRqwIyCCwrqvipJI3iiKNnJRLVSq9lyWz/ACqH8SH0OKoooqxBRRRQAUlLRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFbXhXw3P4l1UWylo7eP5p5gPuL6fU9vz7UN2V2B0Hh3wM9zpml63DeAzPdo/lhcqqBucn14/pVX4oSJJ4uwjhiluisB/Cck4P5g/jXQr8Q9F8P3H9kWNg8thaJsSWJh8zDrweoznnPJ5rI+IenQ3kNj4n0+Bhb3sQMxCj5WOCpbHc5IP0rGLfNdldDhaKKK2JCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAJLe3lurmO3gQvLKwRFHUknAFd94jvYPBfh5PDGlyBry4TfeTjqARz9Ceg9B9c1U8DWMGlWF34u1FP3NqpS2U/xv0JH57R9T6VyGoX0+p3897cvumncux/oPYdKj4n5IexXrs/AGuD7Q/hzUT5un6gpjVGPCOfT0B/ng+tcZT4JpLa4jnhbbJE4dGHYg5BqpK6sCLet6Y+j61d6e+f3EhVSerL1U/iMGqNdx8Qo01Oy0nxLAvyXcAjlx0VxyB/6EP+A1w9KLugYUUUVQgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKvaLpM+t6tBp9uPmlblscIvdj9BVGu/0hE8F+CpNbkwNU1NdlqrDlFPQ/l83/fIqZOy0Gil4/wBXtg9v4b0z5bLTRtfB4aTp+nPPqTXG0rMzsWYlmY5JJ5JpKcVZWAKKKKYjvPCDW3iPwreeFLiYR3IYzWhbp68fQ5z7Ma4m8tJ7C7ltLqMxzQsVdT2NLZXk+nXsN5ayGOaFgyMPX/Cuy8b2kOt6TZ+LrBMLMoju0H8DDgE/j8v/AHzUfDL1HucNRRRViCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDd8HeH28Q69Fbup+zRfvLhv9kdvxPH5+lS+N9fGu68/kMPsdqPKtwOhA6sPqf0ArZtWPhP4cyXQJjv9abbGRwVjx1/LJz/ALQrhKhau4woooqxBRRRQAV2Pw/1iETT+HdQ5sdTBQA/wyEY/UcfUCuOpUdo3V0Yq6nKsDgg+tKSurDL2uaRPoWrz6fcA5ib5Wxw69mH1FUK7/Wox408GQ69CoOo6cDHdqOrqOSf/ZvxauApRd1qDCiiiqEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVu+D/Dx8Q60kUgItIP3ly/QBR2z6np+Z7VhojyyLHGpZ3ICqBkkntXfa4yeCvCMWg27qdS1Eb7yRTyq9CPp/CPo3rUyfRDRheNvEQ1/WcW+BZWgMVuAOCO7fjj8gK52iimlZWEFFFFMAooooAKKKKAN3wh4hfw9rKTOSbSbEdynUFfXHqOv5jvV3xz4U/sG+F5aYbTrpsxEH7hPO36entXK1u3ni27v/C8GhXMEUi27qY5yPmCgYA+vOM+n51LTvdDMKiiiqEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRSxp5kipuVdxA3MeB7mgDs/AumW9nBceK9UXFpYg+Qp/5aSe30yAPc+1ctq2p3GsanPqF02ZJmzjso7AewHFdZ8QdSs4bfT/D2lTK1raRhpBGQVLEfLz3OMn/gVcRUR195jfYKKKKsQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==",
+    "equipped": {
+     "weapon": {
+      "name": "축복받은 철퇴",
+      "effect": "언데드에 추가 피해 +20%"
+     },
+     "armor": {
+      "name": "성스러운 사제복",
+      "effect": null
+     },
+     "accessory": {
+      "name": "성표",
+      "effect": null
+     }
+    },
+    "inventory": [
+     {
+      "name": "투기장 승리 메달",
+      "effect": "경기장 명예도 상승",
+      "quantity": 1
+     },
+     {
+      "name": "철갑 곰 가죽",
+      "effect": "방어력 +5, 내구도 높음",
+      "quantity": 1
+     },
+     {
+      "name": "유령의 리본",
+      "effect": "유령 계열 적에 대한 공격력 +10%",
+      "quantity": 1
+     },
+     {
+      "name": "은색 부적",
+      "effect": "MP 회복량 +15%",
+      "quantity": 1
+     }
+    ],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777130612.34976
+  }
+ },
+ "saved_at": 1777130612.3502667
+}

@@ -1,0 +1,62 @@
+{
+ "version": 2,
+ "room_id": "459BD9",
+ "scenario_id": "volkar",
+ "owner_id": "74d133e3",
+ "started": false,
+ "current_time": null,
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 12425215 (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 불타는 지붕의 연기가 지평선에 피어오릅니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [],
+ "turn_order": [
+  "74d133e3"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "74d133e3": {
+   "player_id": "74d133e3",
+   "name": "12425215",
+   "character_class": "전사",
+   "race": "오크",
+   "race_animal": null,
+   "race_ratio": null,
+   "hp": 120,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "녹슨 장검",
+     "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": []
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777141059.8278346
+}

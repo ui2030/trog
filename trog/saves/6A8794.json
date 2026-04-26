@@ -1,0 +1,187 @@
+{
+ "version": 2,
+ "room_id": "6A8794",
+ "owner_id": "e50597e0",
+ "started": true,
+ "current_time": {
+  "icon": "🌆",
+  "label": "황혼",
+  "ordinal": 3,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 산타카타리나기니피스 (드워프 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 피처럼 붉은 노을이 낡은 여관 간판을 핥아먹듯 드리운다. 여관 구석진 테이블에서 **산타카타리나기니피스**가 독이 배인 단도를 무심하게 닦으며 웃는다. \"볼카르의 개들? 이름만 들어도 배가 고프군. 이 작은 손으로 그놈들의 목을 따서 술안주로 만들지.\"\n\n그의 드워프 특유의 짧고 굵은 손가락이 날카로운 칼날을 스치며 은은한 푸른 빛을 띤다. 여관 문이 거칠게 열리며 진흙투성이의 전령이 허겁지겁 뛰어든다. \"빨리 오세요! 마을이... 마을이 불타고 있습니다!\"\n\n산타카타리나기니피스가 자리에서 벌떡 일어나 의자를 뒤집는다. \"좋아, 시작이군. 내 단도가 목말라 죽을 지경이니까.\"\n\n[산타카타리나기니피스 XP +5]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피스의 행동]: 파티원과 작전을 의논한다\n\n현재 파티:\n- 산타카타리나기니피스 (드워프 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 여관 구석의 탁자 위로 거친 그림자가 드리운다. 산타카타리나기니피스가 단도를 탁자에 꽂으며 주변을 둘러본다. \"들려라, 이 긴 이름의 도적 녀석들. 불타는 마을은 함정일 수도 있다. 내가 먼저 그림자 속으로 파고들어 적의 수와 위치를 파악한 뒤, 너희는 그 틈을 타서 일격을 가하자.\" 그의 작은 귀가 쫑긋 세워져 문밖의 발소리를 포착하려 애쓴다. \"무작정 돌진하면 내가 먼저 독에 걸려 죽을 테니, 내 신호에 맞춰 움직여야 한다. 알겠느냐?\" [산타카타리나기니피스 XP +3]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피스의 행동]: (전령의 멱살을 잡고 위협한다) 어디서 불이 났지?\n\n현재 파티:\n- 산타카타리나기니피스 (드워프 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 산타카타리나기니피스의 거친 손이 전령의 멱살을 꽉 잡는다. 작은 키에서 뿜어지는 위압감에 전령은 공기가 막힌 듯 얼굴이 붉어지며 비틀거린다. \"이봐, 긴 이름의 도적. 불이 났다고? 어디서? 누가? 말하지 않으면 내 독 단도가 네 목덜미에 먼저 박힐 거야.\" 전령은 공포에 질린 눈으로 떨리는 목소리로 외친다. \"서쪽... 서쪽 숲에서 연기가 피어올랐습니다! 고블린 무리가 마을을 습격하고 있어요!\" 산타카타리나기니피스가 코웃음을 치며 전령을 밀쳐낸다. \"하, 고블린이라. 식욕을 돋우는 냄새군.\" [산타카타리나기니피스 XP +2]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피스의 행동]: 상처를 치료하고 휴식을 취한다\n\n현재 파티:\n- 산타카타리나기니피스 (드워프 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 산타카타리나기니피스가 여관 구석의 낡은 의자에 털썩 주저앉는다. \"휴식? 지금 불타는 마을 앞에서? ...아니, 내 단도를 닦을 시간이 필요하군.\" 그는 어두운 가죽 갑옷의 주름을 펴며 깊은 숨을 들이마신다. 드워프 특유의 강인한 체력으로 피로를 조금씩 걷어내지만, 이미 HP 는 만점이라 회복할 상처는 없다. \"좋아, 준비는 끝났다. 이제 서쪽 숲으로 가볼까? 고블린들이 내 독을 맛볼 준비가 되었는지 확인하러.\" [산타카타리나기니피스 HP: 90 → 90]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 산타카타리나기니피스(드워프 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [
+  {
+   "player_id": "e50597e0",
+   "name": "산타카타리나기니피스",
+   "emoji": "🗡️",
+   "race_emoji": "🧔",
+   "text": "ㅎㅇ염",
+   "ts": 1777045801.0321863,
+   "is_spectator": false
+  }
+ ],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 피처럼 붉은 노을이 낡은 여관 간판을 핥아먹듯 드리운다. 여관 구석진 테이블에서 **산타카타리나기니피스**가 독이 배인 단도를 무심하게 닦으며 웃는다. \"볼카르의 개들? 이름만 들어도 배가 고프군. 이 작은 손으로 그놈들의 목을 따서 술안주로 만들지.\"\n\n그의 드워프 특유의 짧고 굵은 손가락이 날카로운 칼날을 스치며 은은한 푸른 빛을 띤다. 여관 문이 거칠게 열리며 진흙투성이의 전령이 허겁지겁 뛰어든다. \"빨리 오세요! 마을이... 마을이 불타고 있습니다!\"\n\n산타카타리나기니피스가 자리에서 벌떡 일어나 의자를 뒤집는다. \"좋아, 시작이군. 내 단도가 목말라 죽을 지경이니까.\"\n\n[산타카타리나기니피스 XP +5]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "ts": 1777045801.028924
+  },
+  {
+   "type": "action",
+   "player_id": "e50597e0",
+   "player_name": "산타카타리나기니피스",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dwarf%2C%20stocky%20sturdy%20build%2C%20braided%20beard%20with%20iron%20rings%2C%20rugged%20features%2C%20broad%20shoulders%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2163028821&nologo=true&model=flux",
+   "action": "파티원과 작전을 의논한다",
+   "ts": 1777045844.8778925
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 여관 구석의 탁자 위로 거친 그림자가 드리운다. 산타카타리나기니피스가 단도를 탁자에 꽂으며 주변을 둘러본다. \"들려라, 이 긴 이름의 도적 녀석들. 불타는 마을은 함정일 수도 있다. 내가 먼저 그림자 속으로 파고들어 적의 수와 위치를 파악한 뒤, 너희는 그 틈을 타서 일격을 가하자.\" 그의 작은 귀가 쫑긋 세워져 문밖의 발소리를 포착하려 애쓴다. \"무작정 돌진하면 내가 먼저 독에 걸려 죽을 테니, 내 신호에 맞춰 움직여야 한다. 알겠느냐?\" [산타카타리나기니피스 XP +3]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "e50597e0",
+   "round_complete": true,
+   "ts": 1777045860.0412445
+  },
+  {
+   "type": "action",
+   "player_id": "e50597e0",
+   "player_name": "산타카타리나기니피스",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dwarf%2C%20stocky%20sturdy%20build%2C%20braided%20beard%20with%20iron%20rings%2C%20rugged%20features%2C%20broad%20shoulders%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2163028821&nologo=true&model=flux",
+   "action": "(전령의 멱살을 잡고 위협한다) 어디서 불이 났지?",
+   "ts": 1777045860.044193
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 산타카타리나기니피스의 거친 손이 전령의 멱살을 꽉 잡는다. 작은 키에서 뿜어지는 위압감에 전령은 공기가 막힌 듯 얼굴이 붉어지며 비틀거린다. \"이봐, 긴 이름의 도적. 불이 났다고? 어디서? 누가? 말하지 않으면 내 독 단도가 네 목덜미에 먼저 박힐 거야.\" 전령은 공포에 질린 눈으로 떨리는 목소리로 외친다. \"서쪽... 서쪽 숲에서 연기가 피어올랐습니다! 고블린 무리가 마을을 습격하고 있어요!\" 산타카타리나기니피스가 코웃음을 치며 전령을 밀쳐낸다. \"하, 고블린이라. 식욕을 돋우는 냄새군.\" [산타카타리나기니피스 XP +2]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "e50597e0",
+   "round_complete": true,
+   "ts": 1777045864.3686948
+  },
+  {
+   "type": "action",
+   "player_id": "e50597e0",
+   "player_name": "산타카타리나기니피스",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dwarf%2C%20stocky%20sturdy%20build%2C%20braided%20beard%20with%20iron%20rings%2C%20rugged%20features%2C%20broad%20shoulders%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2163028821&nologo=true&model=flux",
+   "action": "상처를 치료하고 휴식을 취한다",
+   "ts": 1777045864.372292
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 산타카타리나기니피스가 여관 구석의 낡은 의자에 털썩 주저앉는다. \"휴식? 지금 불타는 마을 앞에서? ...아니, 내 단도를 닦을 시간이 필요하군.\" 그는 어두운 가죽 갑옷의 주름을 펴며 깊은 숨을 들이마신다. 드워프 특유의 강인한 체력으로 피로를 조금씩 걷어내지만, 이미 HP 는 만점이라 회복할 상처는 없다. \"좋아, 준비는 끝났다. 이제 서쪽 숲으로 가볼까? 고블린들이 내 독을 맛볼 준비가 되었는지 확인하러.\" [산타카타리나기니피스 HP: 90 → 90]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "e50597e0",
+   "round_complete": true,
+   "ts": 1777045873.8593373
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "monsters": {},
+ "dormant": {
+  "e50597e0": {
+   "player": {
+    "player_id": "e50597e0",
+    "name": "산타카타리나기니피스",
+    "character_class": "도적",
+    "race": "드워프",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 10,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "독 바른 단도",
+      "effect": "독 부여 — 매 턴 HP -3 (3턴)"
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777045889.4623694
+  }
+ },
+ "saved_at": 1777045889.4628742
+}

@@ -1,0 +1,339 @@
+{
+ "version": 2,
+ "room_id": "512B75",
+ "owner_id": "13464343",
+ "started": true,
+ "current_time": {
+  "icon": "🌆",
+  "label": "황혼",
+  "ordinal": 3,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 뭐노? (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] 회색 안개가 자욱한 아침, 마을 입구의 찢어진 현수막이 바람에 펄럭인다. 오크 전사 **뭐노**가 녹슨 장검을 쥔 채 발걸음을 멈추고 코를 킁킁거린다. \"으으… 인간 냄새 말고, 피와 똥 냄새가 진동하네. 볼카르의 개들인가?\" 그의 거대한 주둥이가 경계심으로 일그러지며, 주변은 적막하지만 어딘가에서 금속 부딪치는 소리가 들려온다.\n\n> \"뭐노, 네 그 거친 코가 맡은 게 맞다면 우리는 곧 피바다에 빠질 거야. 하지만 네가 앞장서 준다면, 나는 네 뒤를 따르겠지.\"\n\n**뭐노**의 녹색 피부 위로 아침 햇살이 비추며, 그가 낮은 포효를 내지르며 전진한다. 그의 호기심 섞인 시선이 안개 너머로 향한다."
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 뭐노?\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] 안개 사이로 흐린 형체가 드러나자, 오크 전사 **뭐노**가 코를 킁킁거리며 거친 숨을 내뿜는다. \"하! 볼카르의 하수인들이군. 네놈들의 피를 내 장검에 묻히면 좋겠다.\" 그가 녹슨 장검을 뽑아 휘두르며 돌진하려는 순간, 그림자 속에서 날카로운 화살이 **뭐노**의 어깨를 스친다.\n\n> \"오우, 이 거대한 오크 녀석! 네가 먼저 덤비니 우리가 거절할 수 없지!\"\n\n[🎲DM d20: 8] 화살은 명중하지는 않았으나, **뭐노**는 균형을 잃고 비틀거린다. 그의 가죽 흉갑에 화살촉이 박히며 작은 상처가 생긴다.\n[뭐노? HP: 120 → 115]\n\n안개 너머에서 고블린 두 마리가 비명을 지르며 튀어나와 검을 휘두른다.\n[적 등장: 고블린 A | HP 10]\n[적 등장: 고블린 B | HP 10]\n\n\"이제 진짜 싸움이 시작되나 보군, 뭐노! 네 거대한 몸뚱이가 방패가 되어줄 테니, 내 검이 그들을 베어라!\""
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 적에게 돌진하여 공격한다\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:115/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] **뭐노**의 거대한 다리가 땅을 진동시키며 고블린 A 를 향해 돌진한다. \"으아아악! 네놈의 뱃속을 장검으로 뚫어주마!\" 녹슨 장검이 공기를 가르며 내려찍히지만, [🎲DM d20: 4] 고블린 A 는 기묘하게도 비틀며 피하고 만다. 오히려 **뭐노**는 날카로운 화살에 맞은 어깨의 통증으로 균형을 잃고 고블린 B 의 발목을 밟아 넘어진다. [뭐노? HP: 115 → 112] 넘어진 **뭐노**의 뒤로 고블린 B 가 비웃으며 찌르려 한다. > \"하하! 저 거대한 오크가 넘어졌군! 이제 네 뱃속에 내 검을 꽂아줄 시간이다!\" [적 상태: 고블린 B | 공격 준비 중] [적 상태: 고블린 A | 회피 성공]"
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 뭐노?\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:112/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] 넘어진 **뭐노**가 땅을 발로 차며 거칠게 일어난다. \"크으윽! 이 작은 벌레들이 날 넘어뜨리다니!\" 그는 분노에 찬 눈으로 고블린 B 를 노려보며 녹슨 장검을 다시 휘둘러 내리친다. [🎲DM d20: 16] 이번에는 명중! 장검이 고블린 B 의 어깨를 베어내며 피가 튀어 오른다. [적 HP: 고블린 B 10 → 2] \"아악! 제발, 살려줘!\" 고블린 B 가 비명을 지르며 뒤로 물러선다. 반면 고블린 A 는 틈을 타 **뭐노**의 다리를 찌르려 한다. [🎲DM d20: 12] 하지만 **뭐노**의 가죽 흉갑이 튕겨내며 치명상을 막아낸다. [뭐노? HP: 112 → 110] \"하아, 이 정도로는 안 죽어! 다시 일어서라, 뭐노!\" 고블린 A 가 다시 공격을 준비한다. [적 상태: 고블린 A | 공격 준비 중] [적 상태: 고블린 B | 상처 입음 - 도주 시도 중]"
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 적에게 돌진하여 공격한다\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:110/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] **뭐노**가 땅을 발로 구르며 고블린 A 를 향해 거대한 몸으로 돌진한다. \"이 작은 벌레들아, 오크의 분노를 맛보아라!\" [🎲DM d20: 19] 녹슨 장검이 고블린 A 의 목을 정확히 베어넘긴다. 고블린 A 는 비명도 지르지 못한 채 쓰러진다. [적 퇴장: 고블린 A] \"하아… 한 마리 더 처리했다.\" **뭐노**가 숨을 고르며 피 묻은 장검을 들어 올린다. 그때, 상처 입은 고블린 B 가 공포에 질려 도망치려 한다. \"제발, 살려줘! 나는 볼카르의 부하가 아니야!\" 하지만 **뭐노**는 피식 웃으며 그에게 다가가 발로 걷어차 다시 쓰러뜨린다. \"도망칠 생각 마라. 네놈의 피가 내 장검을 닦아줄 테니.\" [뭐노? XP +20]"
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 뭐노?\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:110/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] 고블린 B 가 공포에 질려 비명을 지르며 땅에 엎드린다. \"제발! 이 오크 대장님, 제가 가진 모든 것을 드릴 테니 살려주세요!\" **뭐노**는 코를 킁킁거리며 그 위에 거대한 그림자를 드리운다. \"으으… 네놈의 냄새가 너무 진동하군. 하지만 오크의 자비는 없다!\" 녹슨 장검이 허공을 가르며 내려찍히자, 고블린 B 는 눈물을 흘리며 몸을 웅크린다. [🎲DM d20: 1] 장검이 고블린 B 의 옆구리를 스치며 땅에 꽂히고, **뭐노**는 균형을 잃고 뒤로 넘어진다. [뭐노? HP: 110 → 105] \"크아악! 이 운 없는 날! 네놈은 도망쳐라!\" 고블린 B 는 기회의 틈을 타 안개 속으로 쏜살같이 달아난다. [적 퇴장: 고블린 B] **뭐노**가 땅에서 비틀거리며 일어나 화를 내며 발을 구른다. \"젠장! 도망치는 쥐새끼! 다음엔 꼭 잡아서 내 장작으로 쓸 테다!\" [뭐노? XP +10]"
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 뭐노?\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:105/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] 안개 속으로 사라진 고블린의 뒤를 쫓지 못해 **뭐노**는 분개하며 땅을 발로 구른다. \"크으윽! 도망치는 쥐새끼! 다음엔 네 뼈다귀만이라도 찾아내어 장작으로 쓰리라!\" 그는 거친 숨을 몰아쉬며 녹슨 장검을 다시 한번 휘둘러 주변을 정리한다. [🎲DM d20: 14] 장검이 고블린 A 가 쓰러진 자리에 박혀 있는 고블린의 주머니를 찢어뜨리고, 낡은 지갑이 튀어나온다. [뭐노? 획득: 낡은 지갑 | 동전 15, 작은 치유 물약 x1] \"하! 고작 이 정도냐? 하지만 오크에게는 충분하군.\" **뭐노**가 지갑을 주머니에 쑤셔 넣으며 안개 너머로 시선을 돌린다. \"이제 진짜 마을로 가자. 볼카르의 개들이 숨어있을 테니까.\" 그의 발걸음이 다시금 단호하게 마을 쪽으로 향한다. [뭐노? XP +5]"
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 적에게 돌진하여 공격한다\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:105/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패, 소지: 낡은 지갑)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 안개가 걷히자 마을 광장에 붉은 노을이 피어오르지만, 그 아래는 이미 피로 물들었다. **뭐노**가 코를 킁킁거리며 새로운 적을 감지하고 고함친다. \"으아아악! 볼카르의 개들이 여기 있었군!\" 그가 녹슨 장검을 휘둘러 돌진하지만, [🎲DM d20: 3] 발목에 걸린 낡은 밧줄에 걸려 거대한 몸뚱이가 비틀리며 땅에 쿵! 하고 쓰러진다. [뭐노? HP: 105 → 100] \"크아악! 이 저주받은 밧줄!\" **뭐노**가 비틀거리며 일어나려 하자, 그림자 속에서 거대한 **오크 용병** 하나가 튀어나와 도끼를 휘두른다. > \"하! 저 거대한 오크가 넘어졌군! 볼카르 님을 위해 네 두개골을 얻어가마!\" [적 등장: 오크 용병 | HP 45] [적 상태: 오크 용병 | 공격 준비 중] \"이제 진짜 사냥감이 시작되나 보군, 뭐노! 네 거대한 몸뚱이가 방패가 되어줄 테니, 내 검이 그들을 베어라!\" **뭐노**가 분노에 찬 눈으로 용병을 노려보며 다시 일어서려 한다."
+  },
+  {
+   "role": "user",
+   "content": "[뭐노?의 행동]: 뭐노?\n\n현재 파티:\n- 뭐노? (오크 전사, Lv1, HP:100/120, MP:30/30, 공격:15, 방어:10, 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패, 소지: 낡은 지갑)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] **뭐노**가 거친 숨을 몰아쉬며 땅에서 일어서자, 오크 용병의 도끼가 그의 낡은 방패를 강하게 내리친다. [🎲DM d20: 17] \"크아악! 이 정도는 내 가죽에 긁힘도 못 주지!\" 방패가 튕겨 나가며 용병의 공격이 빗나가지만, 충격으로 **뭐노**의 어깨가 아려온다. [뭐노? HP: 100 → 92] 분노에 찬 **뭐노**가 녹슨 장검을 두 손으로 쥐고 용병의 목덜미를 향해 거대한 몸으로 돌진한다. [🎲DM d20: 15] 장검이 용병의 어깨를 깊이 베어 피가 튀어 오른다. [적 HP: 오크 용병 45 → 25] \"하! 네놈의 살점도 오크의 살점과 같구나!\" **뭐노**가 비틀거리며 웃으며 다시 공격 태세를 갖춘다. [적 상태: 오크 용병 | 출혈 중 - 다음 턴 -5 HP]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 회색 안개가 자욱한 아침, 마을 입구의 찢어진 현수막이 바람에 펄럭인다. 오크 전사 **뭐노**가 녹슨 장검을 쥔 채 발걸음을 멈추고 코를 킁킁거린다. \"으으… 인간 냄새 말고, 피와 똥 냄새가 진동하네. 볼카르의 개들인가?\" 그의 거대한 주둥이가 경계심으로 일그러지며, 주변은 적막하지만 어딘가에서 금속 부딪치는 소리가 들려온다.\n\n> \"뭐노, 네 그 거친 코가 맡은 게 맞다면 우리는 곧 피바다에 빠질 거야. 하지만 네가 앞장서 준다면, 나는 네 뒤를 따르겠지.\"\n\n**뭐노**의 녹색 피부 위로 아침 햇살이 비추며, 그가 낮은 포효를 내지르며 전진한다. 그의 호기심 섞인 시선이 안개 너머로 향한다.",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "ts": 1777045616.1113555
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "뭐노?",
+   "ts": 1777045626.3761003
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 안개 사이로 흐린 형체가 드러나자, 오크 전사 **뭐노**가 코를 킁킁거리며 거친 숨을 내뿜는다. \"하! 볼카르의 하수인들이군. 네놈들의 피를 내 장검에 묻히면 좋겠다.\" 그가 녹슨 장검을 뽑아 휘두르며 돌진하려는 순간, 그림자 속에서 날카로운 화살이 **뭐노**의 어깨를 스친다.\n\n> \"오우, 이 거대한 오크 녀석! 네가 먼저 덤비니 우리가 거절할 수 없지!\"\n\n[🎲DM d20: 8] 화살은 명중하지는 않았으나, **뭐노**는 균형을 잃고 비틀거린다. 그의 가죽 흉갑에 화살촉이 박히며 작은 상처가 생긴다.\n[뭐노? HP: 120 → 115]\n\n안개 너머에서 고블린 두 마리가 비명을 지르며 튀어나와 검을 휘두른다.\n[적 등장: 고블린 A | HP 10]\n[적 등장: 고블린 B | HP 10]\n\n\"이제 진짜 싸움이 시작되나 보군, 뭐노! 네 거대한 몸뚱이가 방패가 되어줄 테니, 내 검이 그들을 베어라!\"",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045642.9938781
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777045656.205774
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] **뭐노**의 거대한 다리가 땅을 진동시키며 고블린 A 를 향해 돌진한다. \"으아아악! 네놈의 뱃속을 장검으로 뚫어주마!\" 녹슨 장검이 공기를 가르며 내려찍히지만, [🎲DM d20: 4] 고블린 A 는 기묘하게도 비틀며 피하고 만다. 오히려 **뭐노**는 날카로운 화살에 맞은 어깨의 통증으로 균형을 잃고 고블린 B 의 발목을 밟아 넘어진다. [뭐노? HP: 115 → 112] 넘어진 **뭐노**의 뒤로 고블린 B 가 비웃으며 찌르려 한다. > \"하하! 저 거대한 오크가 넘어졌군! 이제 네 뱃속에 내 검을 꽂아줄 시간이다!\" [적 상태: 고블린 B | 공격 준비 중] [적 상태: 고블린 A | 회피 성공]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045663.8205738
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "뭐노?",
+   "ts": 1777045663.8230848
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 넘어진 **뭐노**가 땅을 발로 차며 거칠게 일어난다. \"크으윽! 이 작은 벌레들이 날 넘어뜨리다니!\" 그는 분노에 찬 눈으로 고블린 B 를 노려보며 녹슨 장검을 다시 휘둘러 내리친다. [🎲DM d20: 16] 이번에는 명중! 장검이 고블린 B 의 어깨를 베어내며 피가 튀어 오른다. [적 HP: 고블린 B 10 → 2] \"아악! 제발, 살려줘!\" 고블린 B 가 비명을 지르며 뒤로 물러선다. 반면 고블린 A 는 틈을 타 **뭐노**의 다리를 찌르려 한다. [🎲DM d20: 12] 하지만 **뭐노**의 가죽 흉갑이 튕겨내며 치명상을 막아낸다. [뭐노? HP: 112 → 110] \"하아, 이 정도로는 안 죽어! 다시 일어서라, 뭐노!\" 고블린 A 가 다시 공격을 준비한다. [적 상태: 고블린 A | 공격 준비 중] [적 상태: 고블린 B | 상처 입음 - 도주 시도 중]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045671.3306806
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777045676.6681674
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] **뭐노**가 땅을 발로 구르며 고블린 A 를 향해 거대한 몸으로 돌진한다. \"이 작은 벌레들아, 오크의 분노를 맛보아라!\" [🎲DM d20: 19] 녹슨 장검이 고블린 A 의 목을 정확히 베어넘긴다. 고블린 A 는 비명도 지르지 못한 채 쓰러진다. [적 퇴장: 고블린 A] \"하아… 한 마리 더 처리했다.\" **뭐노**가 숨을 고르며 피 묻은 장검을 들어 올린다. 그때, 상처 입은 고블린 B 가 공포에 질려 도망치려 한다. \"제발, 살려줘! 나는 볼카르의 부하가 아니야!\" 하지만 **뭐노**는 피식 웃으며 그에게 다가가 발로 걷어차 다시 쓰러뜨린다. \"도망칠 생각 마라. 네놈의 피가 내 장검을 닦아줄 테니.\" [뭐노? XP +20]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045690.4441628
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "뭐노?",
+   "ts": 1777045690.447672
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 고블린 B 가 공포에 질려 비명을 지르며 땅에 엎드린다. \"제발! 이 오크 대장님, 제가 가진 모든 것을 드릴 테니 살려주세요!\" **뭐노**는 코를 킁킁거리며 그 위에 거대한 그림자를 드리운다. \"으으… 네놈의 냄새가 너무 진동하군. 하지만 오크의 자비는 없다!\" 녹슨 장검이 허공을 가르며 내려찍히자, 고블린 B 는 눈물을 흘리며 몸을 웅크린다. [🎲DM d20: 1] 장검이 고블린 B 의 옆구리를 스치며 땅에 꽂히고, **뭐노**는 균형을 잃고 뒤로 넘어진다. [뭐노? HP: 110 → 105] \"크아악! 이 운 없는 날! 네놈은 도망쳐라!\" 고블린 B 는 기회의 틈을 타 안개 속으로 쏜살같이 달아난다. [적 퇴장: 고블린 B] **뭐노**가 땅에서 비틀거리며 일어나 화를 내며 발을 구른다. \"젠장! 도망치는 쥐새끼! 다음엔 꼭 잡아서 내 장작으로 쓸 테다!\" [뭐노? XP +10]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045698.5261436
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "뭐노?",
+   "ts": 1777045698.5289514
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 안개 속으로 사라진 고블린의 뒤를 쫓지 못해 **뭐노**는 분개하며 땅을 발로 구른다. \"크으윽! 도망치는 쥐새끼! 다음엔 네 뼈다귀만이라도 찾아내어 장작으로 쓰리라!\" 그는 거친 숨을 몰아쉬며 녹슨 장검을 다시 한번 휘둘러 주변을 정리한다. [🎲DM d20: 14] 장검이 고블린 A 가 쓰러진 자리에 박혀 있는 고블린의 주머니를 찢어뜨리고, 낡은 지갑이 튀어나온다. [뭐노? 획득: 낡은 지갑 | 동전 15, 작은 치유 물약 x1] \"하! 고작 이 정도냐? 하지만 오크에게는 충분하군.\" **뭐노**가 지갑을 주머니에 쑤셔 넣으며 안개 너머로 시선을 돌린다. \"이제 진짜 마을로 가자. 볼카르의 개들이 숨어있을 테니까.\" 그의 발걸음이 다시금 단호하게 마을 쪽으로 향한다. [뭐노? XP +5]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045717.984097
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777045717.987612
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 안개가 걷히자 마을 광장에 붉은 노을이 피어오르지만, 그 아래는 이미 피로 물들었다. **뭐노**가 코를 킁킁거리며 새로운 적을 감지하고 고함친다. \"으아아악! 볼카르의 개들이 여기 있었군!\" 그가 녹슨 장검을 휘둘러 돌진하지만, [🎲DM d20: 3] 발목에 걸린 낡은 밧줄에 걸려 거대한 몸뚱이가 비틀리며 땅에 쿵! 하고 쓰러진다. [뭐노? HP: 105 → 100] \"크아악! 이 저주받은 밧줄!\" **뭐노**가 비틀거리며 일어나려 하자, 그림자 속에서 거대한 **오크 용병** 하나가 튀어나와 도끼를 휘두른다. > \"하! 저 거대한 오크가 넘어졌군! 볼카르 님을 위해 네 두개골을 얻어가마!\" [적 등장: 오크 용병 | HP 45] [적 상태: 오크 용병 | 공격 준비 중] \"이제 진짜 사냥감이 시작되나 보군, 뭐노! 네 거대한 몸뚱이가 방패가 되어줄 테니, 내 검이 그들을 베어라!\" **뭐노**가 분노에 찬 눈으로 용병을 노려보며 다시 일어서려 한다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045735.095348
+  },
+  {
+   "type": "action",
+   "player_id": "13464343",
+   "player_name": "뭐노?",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/an%20orc%2C%20muscular%20powerful%20build%2C%20protruding%20lower%20tusks%2C%20green-tinged%20skin%2C%20fierce%20warrior%20scars%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2310180570&nologo=true&model=flux",
+   "action": "뭐노?",
+   "ts": 1777045735.0984876
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] **뭐노**가 거친 숨을 몰아쉬며 땅에서 일어서자, 오크 용병의 도끼가 그의 낡은 방패를 강하게 내리친다. [🎲DM d20: 17] \"크아악! 이 정도는 내 가죽에 긁힘도 못 주지!\" 방패가 튕겨 나가며 용병의 공격이 빗나가지만, 충격으로 **뭐노**의 어깨가 아려온다. [뭐노? HP: 100 → 92] 분노에 찬 **뭐노**가 녹슨 장검을 두 손으로 쥐고 용병의 목덜미를 향해 거대한 몸으로 돌진한다. [🎲DM d20: 15] 장검이 용병의 어깨를 깊이 베어 피가 튀어 오른다. [적 HP: 오크 용병 45 → 25] \"하! 네놈의 살점도 오크의 살점과 같구나!\" **뭐노**가 비틀거리며 웃으며 다시 공격 태세를 갖춘다. [적 상태: 오크 용병 | 출혈 중 - 다음 턴 -5 HP]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "13464343",
+   "round_complete": true,
+   "ts": 1777045745.0247614
+  }
+ ],
+ "turn_order": [
+  "13464343"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "13464343": {
+   "player_id": "13464343",
+   "name": "뭐노?",
+   "character_class": "전사",
+   "race": "오크",
+   "race_animal": null,
+   "race_ratio": null,
+   "hp": 92,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 35,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "녹슨 장검",
+     "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [
+    {
+     "name": "낡은 지갑",
+     "effect": "동전 15, 작은 치유 물약 x1",
+     "quantity": 1
+    }
+   ],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": []
+  }
+ },
+ "monsters": {
+  "오크 용병": {
+   "name": "오크 용병",
+   "hp": 25,
+   "max_hp": 45,
+   "status_note": "출혈 중 - 다음 턴 -5 HP",
+   "status_effects": [],
+   "attackers": [
+    "13464343"
+   ]
+  }
+ },
+ "dormant": {},
+ "saved_at": 1777045745.0252779
+}

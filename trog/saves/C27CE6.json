@@ -1,0 +1,57 @@
+{
+ "version": 2,
+ "room_id": "C27CE6",
+ "scenario_id": "volkar",
+ "owner_id": "4aa5ba53",
+ "started": false,
+ "current_time": null,
+ "day": 1,
+ "messages": [],
+ "chat_log": [],
+ "narrative_log": [],
+ "turn_order": [
+  "4aa5ba53"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "4aa5ba53": {
+   "player_id": "4aa5ba53",
+   "name": "m",
+   "character_class": "전사",
+   "race": "수인",
+   "race_animal": "곰",
+   "race_ratio": 19,
+   "hp": 120,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "녹슨 장검",
+     "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": false,
+   "pending_notes": [],
+   "status_effects": []
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777218562.9381332
+}

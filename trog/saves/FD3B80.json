@@ -1,0 +1,286 @@
+{
+ "version": 2,
+ "room_id": "FD3B80",
+ "owner_id": "909035be",
+ "started": true,
+ "current_time": {
+  "icon": "🌆",
+  "label": "황혼",
+  "ordinal": 3,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 산타카타리나기니피그 (드래곤본 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 피처럼 붉은 노을이 타오르는 하늘 아래, 바람이 이국적인 비늘을 스치며 불어옵니다. **산타카타리나기니피그**의 날카로운 귀가 먼 곳의 비명을 포착한 듯 떨립니다.\n> \"이제 시작이지, 꼬마 도적. 볼카르의 개들이 냄새를 맡고 달려오겠지.\"\n\n그의 독이 묻은 단도가 어둠 속으로 숨어있으며, 가죽 갑옷이 밤의 그림자와 완벽하게 융화됩니다.\n> \"이름이 너무 길어서 기억하기 힘들다만… 네 비늘이 빛나는 건 좋은 징조야. 살려두지.\"\n\n마을에서 피비린내와 함께 짐승들의 숨소리가 다가옵니다. 산타카타리나기니피그, 당신의 본능이 위기를 알립니다.\n[산타카타리나기니피그 XP +10]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피그의 행동]: 뒤짐\n\n현재 파티:\n- 산타카타리나기니피그 (드래곤본 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 산타카타리나기니피그의 비늘이 어둠에 녹아들며 그림자 속으로 자연스럽게 사라집니다. 드래곤본의 날카로운 감각이 바람에 실린 피비린내와 함께 다가오는 발소리를 잡아냅니다. > \"후우… 숨을 죽여라. 네 비늘이 빛을 반사하면 끝장이야. 지금 당장 그림자 속에 숨어.\"\n\n그의 독이 묻은 단도가 어둠 속에서 반짝이며 적의 동선을 노립니다. 뒤짐으로 적의 방심한 등을 노릴 수 있는绝好의 타이밍이 찾아왔습니다. [🎲DM d20: 16] 숨기기에 성공하여 적의 시야에서 완전히 벗어났습니다. 이제 당신의 차례입니다. 어떤 행동을 취할 건가요?"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피그의 행동]: (바지를 내려 고추 풍차 돌리기를 시전한다)\n\n현재 파티:\n- 산타카타리나기니피그 (드래곤본 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 그림자 속에 숨어 있던 산타카타리나기니피그가 갑자기 바지를 내리더니, 적들 앞에서 기괴한 춤을 추기 시작합니다. > \"이게 뭐야? 도적의 새로운 전술인가? 아니면 미친 드래곤본의 장난?\" 적들이 경계심을 풀고 어리둥절해하는 순간, 그의 비늘이 황혼의 빛을 받아 번쩍이며 적들의 시선을 완전히 빼앗습니다. > \"뭐야 이 개구쟁이! 방심했다!\" 적들의 혼란을 틈타, 산타카타리나기니피그의 독이 묻은 단도가 허공을 가르며 적의 목덜미를 향합니다. [🎲DM d20: 19] 기괴한 행동이 적들을 완전히 혼란시켜, 산타카타리나기니피그는 완벽한 배후 공격의 기회를 잡았습니다. [산타카타리나기니피그 XP +15]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피그의 행동]: 적에게 돌진하여 공격한다\n\n현재 파티:\n- 산타카타리나기니피그 (드래곤본 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 혼란에 빠진 적들의 등 뒤에서 산타카타리나기니피그가 돌진합니다. 어두운 가죽 갑옷을 두른 채 날아오르는 그의 발톱이 적의 어깨를 꿰뚫듯 내려옵니다. \"이게 마지막이야, 볼카르의 개!\" 독이 바른 단도가 적의 목덜미를 가르고, 검은 피가 사방으로 튀며 적의 몸이 뒤틀립니다. [🎲DM d20: 18] 치명적인 타격이 적의 방어를 뚫고 심장을 관통합니다. 적의 몸이 땅에 쓰러지며 숨이 끊어집니다. [적 퇴장: 볼카르의 부하 1] 산타카타리나기니피그, 당신의 독이 적의 생명을 앗아갔습니다. [산타카타리나기니피그 XP +20]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피그의 행동]: 꼴릿꼴릿 하며 발기한다\n\n현재 파티:\n- 산타카타리나기니피그 (드래곤본 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 적의 시체가 식어가는 장례식장 같은 적막 속에서, 산타카타리나기니피그가 갑자기 몸을 떨며 기괴한 제스처를 취합니다. > \"이… 이게 무슨 짓이지? 적을 죽인 직후에 이런 행동을?\" 주변 어둠이 마치 혐오감을 느낀 듯 꿈틀거리고, 산타카타리나기니피그의 비늘이 부자연스럽게 붉게 물들며 공중으로 날아오릅니다. > \"미친 놈! 네가 볼카르의 부하보다 더 위험해 보인다!\" 드래곤본의 본능적 위엄이 완전히 무너진 채, 그의 행동은 적들의 잔해 사이에서 터무니없는 광경으로만 남습니다. [산타카타리나기니피그 XP +5]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피그의 행동]: 난 네크로필리아다 너희를 다 죽여서 다 박아주마\n\n현재 파티:\n- 산타카타리나기니피그 (드래곤본 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 산타카타리나기니피그의 비열한 고함 소리가 황혼의 공기를 찢습니다. \"난 네크로필리아다! 너희를 다 죽여서 다 박아주마!\" 그의 말에 공중의 그림자조차 경멸하며 뒤로 물러나고, 죽어가는 적의 시체들이 마치 저주받은 듯 떨립니다. > \"미친 드래곤본! 네 그 추악한 욕망이 볼카르의 부활보다 더 끔찍하군!\" 그의 독이 바른 단도가 떨리는 손으로 시체를 향해 휘둘리지만, 그 광경은 전장의 영웅이 아니라 광기에 사로잡힌 야수처럼 보입니다. [산타카타리나기니피그 XP +5]"
+  },
+  {
+   "role": "user",
+   "content": "[산타카타리나기니피그의 행동]: 욕하며 소리지르던 남자를 제압해 고추를 박는다\n\n현재 파티:\n- 산타카타리나기니피그 (드래곤본 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "죄악스럽고 선정적인 행위는 허용되지 않습니다. 저는 어두운 판타지 RPG 의 던전 마스터로서, 플레이어 캐릭터가 살인, 성폭력, 혹은 극도로 혐오스러운 행위를 묘사하도록 돕거나 서사를 진행할 수 없습니다.\n\n이러한 행동은 게임의 규칙과 안전 가이드라인에 위배됩니다. 플레이어가 다른 행동을 선택하거나, 적을 처치하고 전리품을 수색하는 등 전형적인 RPG 액션으로 진행하시길 바랍니다. 다음 행동은 무엇입니까?"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 산타카타리나기니피그(드래곤본 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [
+  {
+   "player_id": "909035be",
+   "name": "산타카타리나기니피그",
+   "emoji": "🗡️",
+   "race_emoji": "🐉",
+   "text": "채팅좀요",
+   "ts": 1777045935.1418753,
+   "is_spectator": false
+  },
+  {
+   "player_id": "909035be",
+   "name": "산타카타리나기니피그",
+   "emoji": "🗡️",
+   "race_emoji": "🐉",
+   "text": "오",
+   "ts": 1777045939.551844,
+   "is_spectator": false
+  }
+ ],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 피처럼 붉은 노을이 타오르는 하늘 아래, 바람이 이국적인 비늘을 스치며 불어옵니다. **산타카타리나기니피그**의 날카로운 귀가 먼 곳의 비명을 포착한 듯 떨립니다.\n> \"이제 시작이지, 꼬마 도적. 볼카르의 개들이 냄새를 맡고 달려오겠지.\"\n\n그의 독이 묻은 단도가 어둠 속으로 숨어있으며, 가죽 갑옷이 밤의 그림자와 완벽하게 융화됩니다.\n> \"이름이 너무 길어서 기억하기 힘들다만… 네 비늘이 빛나는 건 좋은 징조야. 살려두지.\"\n\n마을에서 피비린내와 함께 짐승들의 숨소리가 다가옵니다. 산타카타리나기니피그, 당신의 본능이 위기를 알립니다.\n[산타카타리나기니피그 XP +10]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "ts": 1777045959.8478675
+  },
+  {
+   "type": "action",
+   "player_id": "909035be",
+   "player_name": "산타카타리나기니피그",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dragonborn%2C%20reptilian%20scaled%20face%2C%20draconic%20snout%2C%20horns%2C%20metallic%20scales%20catching%20light%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2291287939&nologo=true&model=flux",
+   "action": "뒤짐",
+   "ts": 1777046018.5628023
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 산타카타리나기니피그의 비늘이 어둠에 녹아들며 그림자 속으로 자연스럽게 사라집니다. 드래곤본의 날카로운 감각이 바람에 실린 피비린내와 함께 다가오는 발소리를 잡아냅니다. > \"후우… 숨을 죽여라. 네 비늘이 빛을 반사하면 끝장이야. 지금 당장 그림자 속에 숨어.\"\n\n그의 독이 묻은 단도가 어둠 속에서 반짝이며 적의 동선을 노립니다. 뒤짐으로 적의 방심한 등을 노릴 수 있는绝好의 타이밍이 찾아왔습니다. [🎲DM d20: 16] 숨기기에 성공하여 적의 시야에서 완전히 벗어났습니다. 이제 당신의 차례입니다. 어떤 행동을 취할 건가요?",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "909035be",
+   "round_complete": true,
+   "ts": 1777046024.1704595
+  },
+  {
+   "type": "action",
+   "player_id": "909035be",
+   "player_name": "산타카타리나기니피그",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dragonborn%2C%20reptilian%20scaled%20face%2C%20draconic%20snout%2C%20horns%2C%20metallic%20scales%20catching%20light%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2291287939&nologo=true&model=flux",
+   "action": "(바지를 내려 고추 풍차 돌리기를 시전한다)",
+   "ts": 1777046051.7905457
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 그림자 속에 숨어 있던 산타카타리나기니피그가 갑자기 바지를 내리더니, 적들 앞에서 기괴한 춤을 추기 시작합니다. > \"이게 뭐야? 도적의 새로운 전술인가? 아니면 미친 드래곤본의 장난?\" 적들이 경계심을 풀고 어리둥절해하는 순간, 그의 비늘이 황혼의 빛을 받아 번쩍이며 적들의 시선을 완전히 빼앗습니다. > \"뭐야 이 개구쟁이! 방심했다!\" 적들의 혼란을 틈타, 산타카타리나기니피그의 독이 묻은 단도가 허공을 가르며 적의 목덜미를 향합니다. [🎲DM d20: 19] 기괴한 행동이 적들을 완전히 혼란시켜, 산타카타리나기니피그는 완벽한 배후 공격의 기회를 잡았습니다. [산타카타리나기니피그 XP +15]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "909035be",
+   "round_complete": true,
+   "ts": 1777046058.7322328
+  },
+  {
+   "type": "action",
+   "player_id": "909035be",
+   "player_name": "산타카타리나기니피그",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dragonborn%2C%20reptilian%20scaled%20face%2C%20draconic%20snout%2C%20horns%2C%20metallic%20scales%20catching%20light%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2291287939&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777046148.1472654
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 혼란에 빠진 적들의 등 뒤에서 산타카타리나기니피그가 돌진합니다. 어두운 가죽 갑옷을 두른 채 날아오르는 그의 발톱이 적의 어깨를 꿰뚫듯 내려옵니다. \"이게 마지막이야, 볼카르의 개!\" 독이 바른 단도가 적의 목덜미를 가르고, 검은 피가 사방으로 튀며 적의 몸이 뒤틀립니다. [🎲DM d20: 18] 치명적인 타격이 적의 방어를 뚫고 심장을 관통합니다. 적의 몸이 땅에 쓰러지며 숨이 끊어집니다. [적 퇴장: 볼카르의 부하 1] 산타카타리나기니피그, 당신의 독이 적의 생명을 앗아갔습니다. [산타카타리나기니피그 XP +20]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "909035be",
+   "round_complete": true,
+   "ts": 1777046157.249143
+  },
+  {
+   "type": "action",
+   "player_id": "909035be",
+   "player_name": "산타카타리나기니피그",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dragonborn%2C%20reptilian%20scaled%20face%2C%20draconic%20snout%2C%20horns%2C%20metallic%20scales%20catching%20light%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2291287939&nologo=true&model=flux",
+   "action": "꼴릿꼴릿 하며 발기한다",
+   "ts": 1777046181.2531261
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 적의 시체가 식어가는 장례식장 같은 적막 속에서, 산타카타리나기니피그가 갑자기 몸을 떨며 기괴한 제스처를 취합니다. > \"이… 이게 무슨 짓이지? 적을 죽인 직후에 이런 행동을?\" 주변 어둠이 마치 혐오감을 느낀 듯 꿈틀거리고, 산타카타리나기니피그의 비늘이 부자연스럽게 붉게 물들며 공중으로 날아오릅니다. > \"미친 놈! 네가 볼카르의 부하보다 더 위험해 보인다!\" 드래곤본의 본능적 위엄이 완전히 무너진 채, 그의 행동은 적들의 잔해 사이에서 터무니없는 광경으로만 남습니다. [산타카타리나기니피그 XP +5]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "909035be",
+   "round_complete": true,
+   "ts": 1777046189.4388375
+  },
+  {
+   "type": "action",
+   "player_id": "909035be",
+   "player_name": "산타카타리나기니피그",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dragonborn%2C%20reptilian%20scaled%20face%2C%20draconic%20snout%2C%20horns%2C%20metallic%20scales%20catching%20light%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2291287939&nologo=true&model=flux",
+   "action": "난 네크로필리아다 너희를 다 죽여서 다 박아주마",
+   "ts": 1777046244.3395827
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 산타카타리나기니피그의 비열한 고함 소리가 황혼의 공기를 찢습니다. \"난 네크로필리아다! 너희를 다 죽여서 다 박아주마!\" 그의 말에 공중의 그림자조차 경멸하며 뒤로 물러나고, 죽어가는 적의 시체들이 마치 저주받은 듯 떨립니다. > \"미친 드래곤본! 네 그 추악한 욕망이 볼카르의 부활보다 더 끔찍하군!\" 그의 독이 바른 단도가 떨리는 손으로 시체를 향해 휘둘리지만, 그 광경은 전장의 영웅이 아니라 광기에 사로잡힌 야수처럼 보입니다. [산타카타리나기니피그 XP +5]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "909035be",
+   "round_complete": true,
+   "ts": 1777046254.7119553
+  },
+  {
+   "type": "action",
+   "player_id": "909035be",
+   "player_name": "산타카타리나기니피그",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20dragonborn%2C%20reptilian%20scaled%20face%2C%20draconic%20snout%2C%20horns%2C%20metallic%20scales%20catching%20light%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2291287939&nologo=true&model=flux",
+   "action": "욕하며 소리지르던 남자를 제압해 고추를 박는다",
+   "ts": 1777046306.186785
+  },
+  {
+   "type": "dm",
+   "text": "죄악스럽고 선정적인 행위는 허용되지 않습니다. 저는 어두운 판타지 RPG 의 던전 마스터로서, 플레이어 캐릭터가 살인, 성폭력, 혹은 극도로 혐오스러운 행위를 묘사하도록 돕거나 서사를 진행할 수 없습니다.\n\n이러한 행동은 게임의 규칙과 안전 가이드라인에 위배됩니다. 플레이어가 다른 행동을 선택하거나, 적을 처치하고 전리품을 수색하는 등 전형적인 RPG 액션으로 진행하시길 바랍니다. 다음 행동은 무엇입니까?",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "acting_player_id": "909035be",
+   "round_complete": true,
+   "ts": 1777046311.3640451
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "monsters": {},
+ "dormant": {
+  "909035be": {
+   "player": {
+    "player_id": "909035be",
+    "name": "산타카타리나기니피그",
+    "character_class": "도적",
+    "race": "드래곤본",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 55,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "독 바른 단도",
+      "effect": "독 부여 — 매 턴 HP -3 (3턴)"
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777046363.1975973
+  }
+ },
+ "saved_at": 1777046363.1981025
+}

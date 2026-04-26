@@ -1,0 +1,94 @@
+{
+ "version": 2,
+ "room_id": "6F0E28",
+ "scenario_id": "deep_sea_horror",
+ "owner_id": "6cac160b",
+ "started": false,
+ "current_time": null,
+ "day": 1,
+ "messages": [],
+ "chat_log": [],
+ "narrative_log": [],
+ "turn_order": [
+  "6cac160b",
+  "19e67145"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "6cac160b": {
+   "player_id": "6cac160b",
+   "name": "5152",
+   "character_class": "전사",
+   "race": "하플링",
+   "race_animal": null,
+   "race_ratio": null,
+   "hp": 120,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "녹슨 장검",
+     "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": []
+  },
+  "19e67145": {
+   "player_id": "19e67145",
+   "name": "뮤즈 룩 크레이지스타",
+   "character_class": "도적",
+   "race": "수인",
+   "race_animal": "고양이",
+   "race_ratio": 25,
+   "hp": 90,
+   "max_hp": 90,
+   "mp": 60,
+   "max_mp": 60,
+   "attack": 18,
+   "defense": 7,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "쌍단검",
+     "effect": "2회 공격 — 치명타 확률 +10%"
+    },
+    "armor": {
+     "name": "어두운 가죽 갑옷",
+     "effect": null
+    },
+    "accessory": {
+     "name": "도둑의 밧줄",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": []
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777140387.1947944
+}

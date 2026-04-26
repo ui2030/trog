@@ -1,0 +1,96 @@
+{
+ "version": 2,
+ "room_id": "D5656E",
+ "owner_id": "f1cf13d7",
+ "started": true,
+ "current_time": {
+  "icon": "🌆",
+  "label": "황혼",
+  "ordinal": 3,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 산타카타리나기니피그 (드워프 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 장착: 독 바른 단도 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 핏빛 노을이 폐허가 된 마을 광장을 붉게 물들입니다. 안개 사이로 비틀거리는 **산타카타리나기니피그**가 어둠을 가르는 독 단도를 손에 쥐고 전방을 노려봅니다. \"하! 볼카르의 개들인가? 이 드워프의 단도 맛을 보게 해줄까?\" 주변에서 으르렁거리는 그림자들이 서서히 모습을 드러냅니다. `[적 등장: 골렘 파수꾼 | HP 45]` `[적 등장: 골렘 파수꾼 | HP 45]` `[적 등장: 골렘 파수꾼 | HP 45]`"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 산타카타리나기니피그(드워프 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 핏빛 노을이 폐허가 된 마을 광장을 붉게 물들입니다. 안개 사이로 비틀거리는 **산타카타리나기니피그**가 어둠을 가르는 독 단도를 손에 쥐고 전방을 노려봅니다. \"하! 볼카르의 개들인가? 이 드워프의 단도 맛을 보게 해줄까?\" 주변에서 으르렁거리는 그림자들이 서서히 모습을 드러냅니다. `[적 등장: 골렘 파수꾼 | HP 45]` `[적 등장: 골렘 파수꾼 | HP 45]` `[적 등장: 골렘 파수꾼 | HP 45]`",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "ts": 1777045705.740921
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "players": {},
+ "monsters": {
+  "골렘 파수꾼": {
+   "name": "골렘 파수꾼",
+   "hp": 45,
+   "max_hp": 45,
+   "status_note": null,
+   "status_effects": [],
+   "attackers": []
+  }
+ },
+ "dormant": {
+  "f1cf13d7": {
+   "player": {
+    "player_id": "f1cf13d7",
+    "name": "산타카타리나기니피그",
+    "character_class": "도적",
+    "race": "드워프",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 0,
+    "stat_points": 0,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "독 바른 단도",
+      "effect": "독 부여 — 매 턴 HP -3 (3턴)"
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": []
+   },
+   "departed_at": 1777045724.2986693
+  }
+ },
+ "saved_at": 1777045724.2992356
+}

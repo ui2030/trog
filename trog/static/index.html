@@ -91,8 +91,17 @@
         </div>
         <input id="beastfolk-ratio-slider" class="beastfolk-ratio-slider" type="range" min="10" max="90" value="50" step="1">
         <div id="beastfolk-ratio-bucket" class="beastfolk-ratio-bucket">반수인 — 인간과 짐승이 반반 드러난 혼혈</div>
-        <div class="beastfolk-ratio-note">※ 10%는 거의 인간, 90%는 짐승에 가까운 모습. 0/100 은 수인 정체성이 아니라 금지.</div>
+        <div class="beastfolk-ratio-note">※ 10%는 거의 인간, 90%는 짐승에 가까운 모습.</div>
       </div>
+    </div>
+
+    <!-- 🆕 시나리오 선택 — 방 만들 때만 적용됨. 입장/관전자 모드엔 무관. -->
+    <div class="scenario-picker">
+      <label class="scenario-lbl">📖 시나리오</label>
+      <div id="scenario-cards" class="scenario-cards">
+        <!-- 동적으로 /scenarios API 에서 채움 -->
+      </div>
+      <div id="scenario-summary" class="scenario-summary"></div>
     </div>
 
     <div class="room-actions">
@@ -121,6 +130,7 @@
       <div class="room-info-label">방 코드</div>
       <div id="display-room-code" class="room-code-display">------</div>
       <div class="room-hint">친구에게 코드를 공유하세요</div>
+      <div id="waiting-scenario-badge" class="scenario-badge" style="display:none"></div>
     </div>
 
     <!-- 왼쪽 하단: 종족 → 플레이어 목록 → 모험 시작 -->
@@ -130,6 +140,16 @@
         <div class="race-big"><span id="my-race-emoji">🧑</span> <span id="my-race-name">인간</span></div>
         <div id="my-race-desc" class="race-desc-text"></div>
         <button id="open-draw-btn" class="btn btn-secondary btn-draw">🎨 내 캐릭터 직접 그리기</button>
+      </div>
+
+      <!-- 🆕 포인트 바이 능력치 조정 (시작 전에만 노출) -->
+      <div id="pregame-stats-box" class="pregame-stats-box" style="display:none">
+        <div class="pregame-title">⚙ 능력치 분배 <span class="pregame-hint">(시작 전에만 가능 · 시작 시 종족 보정 +random 1~3)</span></div>
+        <div id="pregame-stats-list" class="pregame-stats-list"></div>
+        <div class="pregame-foot">
+          <span>총합 <b id="pregame-total">60</b> / 60</span>
+          <span class="pregame-range">각 능력치 <b>7</b> ~ <b>13</b></span>
+        </div>
       </div>
 
       <div class="waiting-players">
@@ -212,6 +232,7 @@
       <button id="toggle-party-btn" class="mobile-toggle mobile-toggle-left" title="파티 보기">⚔️</button>
       <span class="panel-title">📖 모험의 기록</span>
       <span id="room-code-badge" class="room-code-badge" style="display:none" title="친구에게 공유할 방 코드 — 클릭해 복사"></span>
+      <span id="game-scenario-badge" class="scenario-badge" style="display:none"></span>
       <span id="time-badge" class="time-badge" style="display:none"></span>
       <button id="toggle-char-btn" class="mobile-toggle mobile-toggle-right" title="내 캐릭터 보기">🧙</button>
     </div>
@@ -255,7 +276,8 @@
     <!-- 🆕 방장 전용 턴 스킵 버튼 (AFK 플레이어용) -->
     <div class="owner-tools" id="owner-tools" style="display:none">
       <button id="skip-turn-btn" class="btn-skip-turn" title="현재 차례 플레이어를 스킵">⏭ 턴 스킵</button>
-      <span class="owner-tools-hint">(방장 전용 — AFK 대응)</span>
+      <button id="clear-monsters-btn" class="btn-skip-turn" title="DM 이 [적 퇴장] 을 빠뜨려 카드가 남아있을 때 정리">🗑 몬스터 정리</button>
+      <span class="owner-tools-hint">(방장 전용 — AFK / 잔존 몬스터 대응)</span>
     </div>
 
     <div class="action-row">
@@ -306,6 +328,7 @@
         <span class="tool-lbl">도구</span>
         <button id="tool-brush-btn" class="tool-btn selected-tool">✏️ 붓</button>
         <button id="tool-bucket-btn" class="tool-btn">🪣 채우기</button>
+        <button id="tool-eyedropper-btn" class="tool-btn">💧 스포이드</button>
         <button id="eraser-btn" class="tool-btn">🩹 지우개</button>
       </div>
       <div class="tool-group">

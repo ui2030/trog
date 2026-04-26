@@ -1,0 +1,985 @@
+{
+ "version": 2,
+ "room_id": "6BC673",
+ "scenario_id": "beast_king_arena",
+ "owner_id": "605e40e0",
+ "started": true,
+ "current_time": {
+  "icon": "🌌",
+  "label": "심야",
+  "ordinal": 5,
+  "day": 2
+ },
+ "day": 2,
+ "messages": [
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 자랑스러운 갑옷이라더니 겨우이정도인가?\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 어깨에 난 상처를 무심히 핥아내며, 비릿한 피 냄새와 함께 낮게 낄낄거립니다. 그는 도끼날에 묻은 잔해를 털어내고는, 상대의 화려한 갑옷을 비웃듯 거대한 앞발로 가슴을 툭툭 칩니다. \"자랑스러운 갑옷이라더니... 겨우 이 정도인가? 껍데기만 번지르르한 깡통이었군.\"\n\n짐승 특유의 우월감이 섞인 조롱에 가르크의 안색이 급격히 창백해졌다가 이내 핏빛으로 변합니다. \"이... 짐승 놈이!! 내 가문의 명예가 깃든 갑옷을 모욕하다니!\" 가르크가 분노로 몸을 떨며 메이스를 꽉 쥐자, 그의 호흡이 거칠어지며 완전히 이성을 잃은 모습이 역력합니다. [배덕 XP +10]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 적에게 돌진하여 공격한다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] 분노로 눈이 먼 가르크가 달려들기도 전, **배덕**이 먼저 지면을 박차며 덮쳐듭니다. 이번에는 망설임 없는 진정한 포식자의 돌격입니다. 거대한 체구가 공기를 가르며 쇄도하고, 곰의 무시무시한 완력이 실린 양손도끼가 가르크의 머리 위로 무자비하게 낙하합니다! [🎲DM d20: 19] 치명적인 명중! \n\n*콰직!!* 비명조차 지를 새 없이 도끼날이 가르크의 투구를 뚫고 어깨까지 깊숙이 박혀 들어갑니다. 은빛 판금 갑옷이 종잇장처럼 구겨지며 끔찍한 금속 마찰음이 경기장에 울려 퍼집니다. [적 HP: 가르크 51 → 22] 가르크는 충격으로 인해 바닥에 완전히 처박힌 채, 입가로 거품과 피를 울컥 쏟아내며 경련합니다. 이제 그는 전사가 아니라, 도살장 위에 놓인 가련한 제물에 불과해 보입니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 뭐야 역시 번지르르하기만한 깡통이였잖아?\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 어깨에 박힌 도끼를 무심하게 뽑아내며, 바닥에서 헐떡이는 가르크를 내려다봅니다. 그는 짐승 같은 콧김을 퓌익 내뿜으며, 구겨진 은빛 갑옷 조각을 앞발로 툭 걷어찹니다. \"뭐야, 역시 번지르르하기만 한 깡통이었잖아? 명예니 가문이니 떠들더니, 속은 텅 비어있었군.\" \n\n그의 오만한 조롱이 경기장에 울려 퍼지자, 관중들은 광분하며 배덕의 이름을 외치기 시작합니다. [배덕 XP +10] 가르크는 투구 사이로 피 섞인 가래를 뱉어내며 믿기지 않는다는 듯 눈을 부릅뜹니다. \"이... 이럴 리가... 내가... 내가 이런 짐승 따위에게...!\" 가르크의 자존심이 완전히 가루가 되어 흩어집니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 마지막 일격을 준비한다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 낮게 으르렁거리며 도끼를 높게 치켜듭니다. 이제는 조롱조차 아까운 시간입니다. 그는 짐승의 본능으로 적의 숨통이 끊어질 단 하나의 지점을 정확히 포착하고, 전신의 근육을 팽팽하게 조이며 모든 체중을 실어 내리찍을 준비를 합니다.\n\n가르크는 공포에 질린 눈으로 위를 올려다보며 무력하게 손을 내저어 보지만, 그것은 거대한 포식자 앞에 놓인 먹잇감의 마지막 발악에 불과합니다. 경기장의 함성이 잦아들고, 오직 배덕의 무거운 숨소리와 도끼날이 공기를 가르는 날카로운 파찰음만이 남습니다.\n\n\"잘 가라, 깡통.\"\n\n[🎲DM d20: 17] 명중! 거대한 도끼날이 가르크의 흉갑 정중앙을 완전히 관통하여 바닥의 돌판까지 깊숙이 박혀 들어갑니다.\n\n[적 HP: 가르크 22 → 0]\n\n가르크의 몸이 크게 한 번 튀어 올랐다가, 이내 힘없이 늘어집니다. 은빛 갑옷은 이제 붉은 피로 물든 고철 덩어리가 되어 투기장의 모래바닥 위에 뒹굽니다. 관중석에서는 떠나갈 듯한 환호성이 터져 나옵니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 자존심만쌘 잔챙이였군\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 가르크의 시신 위에 박힌 도끼를 무심하게 홱 뽑아냅니다. 그는 피가 뚝뚝 떨어지는 날을 슥 훑어보더니, 바닥에 널브러진 고철 덩어리를 향해 코방귀를 뀝니다. \"자존심만 쌘 잔챙이였군.\" 짐승 같은 오만함이 가득 담긴 그의 말에 관중들은 전율하며 더욱 크게 환호합니다. 이제 투기장의 모래바닥 위에는 오직 승리한 포식자만이 우뚝 서 있습니다.\n\n[배덕 XP +20]\n[적 퇴장: 가르크]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] 승리의 도취감 속에서도 **배덕**은 본능적으로 긴장을 늦추지 않습니다. 그는 피 묻은 도끼를 낮게 내려쥔 채, 털이 돋은 귀를 쫑긋거리며 경기장 구석구석에서 들려오는 소리에 집중합니다. 짐승의 감각이 날카롭게 깨어나, 관중들의 광분한 함성 소리 너머로 숨어 있는 또 다른 살기나 불길한 움직임이 있는지 훑어냅니다. [🎲DM d20: 16]\n\n그의 예리한 후각이 공기 중에 섞인 낯선 향취를 포착합니다. 피 냄새와 땀 냄새가 진동하는 투기장 한편, 귀족석 근처에서 누군가 자신을 뚫어지게 쳐다보고 있다는 강렬한 시선이 느껴집니다. 배덕은 고개를 돌려 그 방향을 노려보며 낮게 으르렁거립니다. 적의 기습은 없었으나, 새로운 '관심'이 그를 향하고 있음이 분명합니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 그래서 이제 뭘 하면되지?\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 도끼를 어깨에 툭 걸치며 무심하게 중얼거립니다. \"그래서 이제 뭘 하면 되지?\" 그가 짐승 같은 하품을 내뱉으며 주변을 둘러보자, 경기장 관리인들이 조심스럽게 다가와 시신을 수습하기 시작합니다.\n\n그때, 화려한 비단 옷을 입은 한 **중년의 남성**이 귀족석 난간에서 몸을 내밀어 배덕을 향해 흥미롭다는 듯 미소 짓습니다. \"훌륭한 야성이군! 저런 고리타분한 기사 놈을 깡통으로 만들어버리다니, 정말 내 취향이야.\"\n\n남자가 손가락으로 경기장 출구 쪽의 대기실을 가리킵니다. \"자네 같은 인재를 그냥 보낼 순 없지. 대기실로 오게나. 자네의 그 무시무시한 힘에 걸맞은 '후원' 이야기를 좀 나누고 싶군.\"\n\n배덕의 곰 귀가 쫑긋거립니다. 단순한 찬사보다는 금전이나 더 좋은 장비가 섞인 냄새가 나는 제안인 듯합니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 대기실로 가서 남성과 이야기한다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 묵직한 발걸음으로 모래바닥을 짓이기며 대기실로 향합니다. 그의 거대한 체구가 좁은 복도를 가득 메우자, 옆을 지나던 하인들이 겁에 질려 벽에 딱 붙어 길을 터줍니다. 대기실 문을 쾅 열고 들어서자, 아까의 남자가 고급스러운 소파에 깊숙이 몸을 묻은 채 시가 향기를 풍기고 있습니다.\n\n\"어서 오게, 야수여. 나는 투기장의 큰 손, 도박사이자 수집가인 **실라스**라고 하네.\"\n\n실라스가 얇은 입술을 말아 올리며 웃습니다. 그는 배덕의 짐승 같은 외형을 훑어보며 탐욕스러운 눈빛을 보냅니다. \"가르크를 찢어발기는 모습이 아주 예술이었어. 자네 같은 괴물이 이 투기장의 생태계를 뒤흔드는 걸 보면 전율이 돋거든. 내가 자네의 후원자가 되어주지. 다음 경기까지 최상의 컨디션을 유지할 보급품과, 자네의 그 투박한 도끼보다 훨씬 날카로운 무기를 마련해 줄 수도 있어. 단, 내가 원하는 건 자네가 4강, 아니 결승까지 올라가 내 판돈을 불려주는 것이지.\""
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 실라스의 제안을 받아들인다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 코웃음을 치며 실라스의 제안을 덥석 받아들입니다. \"좋아, 내 힘이 필요하다면 그만큼의 대가를 치러라.\" 짐승 같은 낮은 목소리가 방 안을 울리자, 실라스가 만족스러운 듯 손뼉을 칩니다. \"현명한 선택이야! 역시 야수들은 본능적으로 이득을 잘 낚아채지.\"\n\n실라스가 옆에 있던 하인에게 눈짓하자, 하인이 정중하게 작은 상자와 가죽 주머니를 내밉니다. \"우선 계약금과 기초 보급품이네. 자네의 그 거대한 몸집을 유지하려면 잘 먹어야겠지.\"\n\n[배덕 획득: 금화 주머니 | 소지금 증가]\n[배덕 획득: 고단백 육포 x5 | 사용 시 HP 10 회복]\n[배덕 XP +15]\n\n\"이제 편히 쉬게나. 다음 경기는 더욱 잔혹할 거야. 자네의 앞길을 가로막을 '유령 춤꾼' 리셀린이라는 자가 자네의 소문을 듣고 꽤나 흥분해 있거든.\" 실라스가 의미심장한 미소를 지으며 배덕을 배웅합니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 보급품을받아들고 대기실로간다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)\n\n[DM용 시스템 메모]\n※ 배덕이(가) 방금 소지품 '금화 주머니'을(를) 사용했다. 남은 수량 0. 효과를 자연스럽게 서사에 반영하고, 필요 시 HP/MP/상태 태그로 결과 표기."
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**이 하인이 건넨 물건들을 거칠게 낚아챕니다. 그는 금화 주머니의 묵직한 무게감을 느끼더니, 만족스러운 듯 씩 웃으며 그것을 품속에 쑤셔 넣습니다. 이제 주머니는 비었지만, 그 가치는 이미 그의 소지금으로 환산되어 든든한 뒷배가 되었습니다.\n\n그는 육포 냄새를 깊게 들이마시며 자신의 개인 대기실로 발걸음을 옮깁니다. 육중한 문을 닫고 들어선 배덕은 좁은 방 안에서 거대한 몸을 길게 뻗으며 하품을 내뱉습니다.\n\n\"리셀린이라고 했나... 춤꾼이라니, 짓밟아버리기 딱 좋겠군.\"\n\n포식자의 눈빛이 어둠 속에서 번뜩입니다. 그는 다음 사냥감을 떠올리며, 가져온 육포 하나를 입에 물고 천천히 씹기 시작합니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 다음 전투를 기다린다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] 투기장의 소음이 잦아든 깊은 밤, **배덕**은 대기실의 딱딱한 침상에 몸을 누인 채 어둠 속에서 숨을 고릅니다. 그는 짐승 특유의 예민한 청각으로 벽 너머에서 들려오는 다른 전사들의 긴장 섞인 속삭임과 무기 손질 소리를 듣습니다.\n\n그의 거대한 가슴이 느리게 오르내리며 야성의 본능이 차분히 가라앉습니다. 육포를 씹으며 보낸 시간 덕분에 몸에는 다시금 묵직한 힘이 차오르고, 도끼날의 서늘한 감촉이 손바닥에 닿습니다.\n\n\"춤을 추든 말든... 결국 내 발밑에서 짓눌리게 될 거다.\"\n\n배덕은 눈을 감으며 다음날 펼쳐질 피의 축제를 기다립니다. 포식자의 꿈속에서는 이미 리셀린의 가느다란 목뼈가 으스러지는 소리가 들려오는 듯합니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 다음날을 위해 잠을 청한다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:114/120, MP:25/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌌 심야] **배덕**은 짐승처럼 몸을 웅크린 채 깊은 잠에 빠져듭니다. 규칙적인 코골이가 좁은 대기실을 웅웅 울리게 하지만, 그의 무의식은 여전히 주변의 작은 진동 하나하나를 감지하며 야성적인 경계심을 유지합니다. 꿈속에서 그는 끝없는 숲의 왕이 되어 모든 적을 발아래 굴복시키고 포효합니다.\n\n충분한 휴식이 그의 육체에 스며들며, 전투로 지쳤던 근육들이 다시 팽팽하게 조여집니다. 내일의 사냥을 위해 포식자는 완벽한 정적 속에서 에너지를 응축합니다.\n\n[배덕 HP: 114 → 120]\n[배덕 MP: 25 → 30]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] 잠에서 깨어난 **배덕**이 가장 먼저 하는 일은 본능적인 경계입니다. 그는 침상에서 일어나기 전, 콧구멍을 벌름거리며 공기 중에 섞인 냄새를 맡고 털이 돋은 귀를 쫑긋거리며 복도의 소음을 훑습니다. 짐승의 감각이 깨어나며 대기실 문밖에서 들려오는 조심스러운 발소리와, 누군가 일부러 남긴 듯한 서늘한 향수 냄새를 포착합니다.\n\n[🎲DM d20: 12]\n\n그는 눈을 가늘게 뜨며 문쪽을 노려봅니다. 누군가 그의 방 앞에서 잠시 멈춰 섰다가, 비웃는 듯한 가벼운 콧노래를 남기고 사라집니다. 적의 기습은 아니었지만, 명백한 '도발'입니다. 배덕은 낮게 그르렁거리며 자리에서 일어납니다. 곰의 육중한 몸집이 움직일 때마다 방 안의 공기가 무겁게 흔들립니다. \"쥐새끼 한 마리가 다녀갔군.\""
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽] **배덕**은 다시 한번 콧구멍을 벌름거리며 공기를 읽어냅니다. 방금 전 사라진 발소리의 잔향과 공중에 흩어진 향수 냄새를 쫓으며, 그는 방 안의 모든 구석을 짐승의 눈으로 훑습니다. [🎲DM d20: 18]\n\n그의 예리한 시선이 문틈 사이에 끼워져 있는 작은 쪽지 하나를 포착합니다. 조심스럽게 쪽지를 집어 들어 읽어보니, 유려한 필체로 짧은 문장이 적혀 있습니다. <i>\"무식한 곰 같으니. 내일은 네가 춤추게 만들어주지.\"</i>\n\n배덕의 굵은 손가락이 쪽지를 구기며 으스러뜨립니다. 상대가 누구인지 굳이 묻지 않아도 알 수 있습니다. '유령 춤꾼' 리셀린, 그 오만한 자가 보낸 명백한 선전포고입니다. 배덕은 구겨진 종이 뭉치를 바닥에 뱉어내며 낮게 포효합니다. \"춤? 내 도끼가 네 머리 위에서 춤추게 해주마.\""
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 다가올 전투를 준비한다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[☀️ 아침] **배덕**은 짐승 같은 본능으로 전투 태세에 들어갑니다. 그는 가죽 흉갑의 끈을 단단히 조여 매고, 낡은 방패의 균열을 살피며 거대한 양손도끼의 날을 숫돌에 거칠게 갑니다. *슥, 슥* 하는 날카로운 마찰음이 대기실 안에 울려 퍼지며, 그의 살기를 더욱 돋웁니다.\n\n그는 소지하고 있던 고단백 육포 하나를 입에 넣고 씹으며 근육의 펌핑감을 느낍니다. 곰의 거대한 체구에서 뿜어져 나오는 위압감이 방 안을 가득 채우고, 그는 도끼자루를 꽉 쥐며 손아귀 힘을 시험합니다. \n\n[배덕 사용: 고단백 육포]\n[배덕 HP: 120 → 120] (최대치 유지)\n\n이제 모든 준비는 끝났습니다. 배덕은 문을 박차고 나가며 투기장의 모래바닥을 향해 묵직한 발걸음을 옮깁니다. 오늘, 오만한 춤꾼의 콧대를 꺾어줄 시간입니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 투기장에 입장한다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌞 정오] 태양 빛이 내리쬐는 투기장의 문이 굉음을 내며 열립니다. **배덕**이 거대한 도끼를 끌며 모래바닥으로 들어서자, 관중석에서 천둥 같은 환호성이 터져 나옵니다. 짐승에 가까운 그의 위압적인 외형에 군중들은 경외감과 공포가 섞인 비명을 지릅니다.\n\n경기장 반대편, 안개처럼 흐릿한 모습으로 한 남자가 서 있습니다. 가느다란 체구에 화려한 비단 옷을 걸친 **리셀린**입니다. 그는 가벼운 스텝으로 제자리를 돌며 배덕을 향해 조롱 섞인 미소를 짓습니다.\n\n\"정말 무식하게 크군. 하지만 그 덩치로는 내 그림자조차 잡지 못할 거다.\"\n\n리셀린이 손가락을 튕기자, 그의 등 뒤에서 서늘한 기운의 단검 두 자루가 나타납니다. 이제 심판의 신호와 함께 피의 무도가 시작될 차례입니다.\n\n[적 등장: 리셀린 | HP 80]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 마나를 사용해 정신을 집중하여 반격준비를 한다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌞 정오] **배덕**은 무작정 달려드는 대신, 곰의 끈질긴 인내심으로 발을 붙이고 서서 마나를 끌어올립니다. 그는 낮게 그르렁거리며 온 신경을 리셀린의 작은 움직임 하나하나에 집중합니다. [배덕 MP: 30 → 20]\n\n공기의 흐름, 모래의 진동, 그리고 상대의 호흡까지. 야성적인 감각이 극도로 예민해지며 리셀린의 화려한 움직임 속에 숨겨진 허점이 보이기 시작합니다.\n\n[배덕 버프: 집중 반격 2턴 | 다음 공격 명중률 +20%, 피격 시 반격 확률 증가]\n\n리셀린이 눈썹을 치켜뜨며 의아한 표정을 짓습니다. \"어라? 짐승인 줄 알았는데 생각보다 머리를 쓰는군. 하지만 그 정적인 자세가 얼마나 오래갈까?\" 리셀린이 순식간에 형체를 흐리며 배덕의 측면으로 파고듭니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 도끼를 전방향으로 휘두른다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌞 정오] 리셀린이 측면으로 파고드는 찰나, **배덕**이 거대한 양손도끼를 중심으로 폭발적인 회전을 시작합니다. \"어디 한번 춤춰봐라!\" 곰의 육중한 체중이 실린 도끼날이 거대한 원을 그리며 주변의 모든 것을 짓뭉개려 합니다.\n\n[🎲DM d20: 16] (집중 반격 보너스 적용)\n\n리셀린이 가볍게 도약해 피하려 했으나, 배덕이 예상보다 더 넓은 범위를 휩쓸었습니다. 도끼날이 리셀린의 옆구리를 깊게 긁으며 그를 모래바닥 위로 거칠게 내동댕이칩니다.\n\n[적 HP: 리셀린 80 → 55]\n\n\"큭...!\" 리셀린이 신음하며 굴러갑니다. 화려했던 비단 옷에 붉은 핏자국이 선명하게 새겨졌고, 그의 여유롭던 표정이 처음으로 일그러집니다. 그는 급히 몸을 일으키며 단검을 고쳐 쥡니다. [배덕 버프: 집중 반격 2턴 → 1턴]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 적에게 돌진하여 공격한다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌞 정오] **배덕**이 도끼를 움켜쥔 채로 리셀린에게 무작정 돌진합니다. 그의 거대한 몸이 모래를 밀어내며 앞으로 쇄도하고, 리셀린은 단검을 높이 들어올려 방어태세를 취합니다. [🎲DM d20: 14] 리셀린은 배덕의 공격을 피하려고 하였지만, 그의 돌진 속도는 예상보다 빨랐습니다. 리셀린의 단검은 도끼의 손잡이에 맞부딪치며 단단한 충돌음이 울려 퍼집니다. 리셀린의 가느다란 손목이 도끼의 무게에 짓눌려 손가락이 빠르게 풀리고, 도끼날이 그의 어깨를 깊게 갈라냅니다. [적 HP: 리셀린 55 → 25] 리셀린의 비단 옷이 물들며 붉게 변하고, 그는 비명을 지르며 뒤로 쓰러집니다. \"아아...!\" 그의 몸이 뒤로 물러나며, 단검은 그의 손에서 떨어져 나갑니다. 배덕은 여전히 도끼를 움켜쥔 채로 리셀린을 짓눌러 압살하려 합니다. [배덕 버프: 집중 반격 1턴 | 다음 공격 명중률 +20%, 피격 시 반격 확률 증가]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 그대로 짓누른다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌞 정오] 쓰러진 리셀린의 위로 **배덕**의 거대한 그림자가 드리워집니다. 그는 자비 없이 도끼날을 리셀린의 흉곽 위로 내리꽂으며 자신의 모든 체중을 실어 짓누릅니다. [🎲DM d20: 19] \n\n*콰득!* \n\n끔찍한 파열음과 함께 리셀린의 비명이 짧게 끊깁니다. 화려한 춤꾼의 자존심이었던 흉곽이 곰의 압도적인 힘 앞에 종잇장처럼 구겨졌습니다. 리셀린은 경련하며 입가로 핏덩이를 쏟아내고, 이내 초점 없는 눈으로 하늘을 바라보며 숨을 거둡니다. [적 HP: 리셀린 25 → 0]\n\n관중석은 잠시 정적에 휩싸였다가, 이내 야수와 같은 배덕의 잔혹한 승리에 열광하며 폭발적인 함성을 내지릅니다. 배덕은 피 묻은 도끼를 어깨에 걸치고, 죽은 적을 내려다보며 낮게 으르렁거립니다. \"이게 진짜 춤이다, 애송아.\"\n\n[적 퇴장: 리셀린]\n[배덕 XP +40]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 자신만만한표정으로 귀족석의 실라스를 바라본다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv2, HP:130/130, MP:25/35, 공격:20, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌞 정오] **배덕**은 피가 뚝뚝 떨어지는 도끼를 바닥에 꽂고, 거대한 가슴을 펴며 귀족석을 향해 고개를 듭니다. 곰의 위압감이 서린 그 표정에는 승자의 오만함과 야성적인 자신감이 가득 차 있습니다. 그는 마치 '다음은 누구냐'고 묻는 듯, 콧김을 거칠게 내뿜으며 실라스를 정면으로 응시합니다. [🎲DM d20: 15]\n\n귀족석의 **실라스**는 부채로 입가를 가린 채 흥미롭다는 듯 눈을 가늘게 뜹니다. 그는 리셀린의 처참한 최후보다, 그 위에 군림한 배덕의 압도적인 무력에 더 매료된 모습입니다.\n\n\"호오... 기대 이상이군. 단순한 짐승인 줄 알았는데, 저렇게 영리하게 숨을 죽이다가 단숨에 낚아채다니.\"\n\n실라스가 가볍게 손뼉을 치며 배덕에게 짧은 눈인사를 보냅니다. 그것은 단순한 관람객의 박수가 아니라, 가치 있는 '상품'을 발견한 상인의 탐욕스러운 만족감이 섞인 신호였습니다. [배덕 XP +15]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 다음 상황을 기다린다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv2, HP:130/130, MP:25/35, 공격:20, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 경기가 끝난 후, 투기장의 열기는 서서히 식어가고 하늘은 핏빛으로 물듭니다. **배덕**은 모래바닥에 가만히 서서 거친 숨을 고르며 자신의 승리를 만끽합니다. 짐승의 감각이 주변의 소란스러움 속에서 특정한 움직임을 포착합니다.\n\n전담 관리인이 다가와 그의 어깨를 툭 치며 낮게 속삭입니다. \"이봐, 곰 친구. 귀족석의 실라스 님이 자네가 마음에 드신 모양이야. 대기실로 돌아가면 그분이 보낸 '선물'과 메시지가 있을 거다.\"\n\n배덕은 콧김을 한 번 크게 내뿜고는, 도끼를 챙겨 묵직한 발걸음으로 대기실로 향합니다. 이제 그는 단순한 참가자가 아니라, 투기장의 모든 도박사와 귀족들이 주목하는 '뜨거운 말'이 되었습니다. 복도를 지나가는 다른 전사들의 시선에 경외와 질투가 섞여 있음을 느끼며, 배덕은 입가에 만족스러운 미소를 띱니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 대기실로 돌아가 실라스의 메세지를 확인한다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv2, HP:130/130, MP:25/35, 공격:20, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] **배덕**이 대기실의 무거운 철문을 닫고 들어서자, 탁자 위에 놓인 화려한 금색 상자 하나가 눈에 들어옵니다. 그는 거대한 손으로 조심스럽게 상자를 열었습니다. 그 안에는 최고급 가죽으로 덧댄 묵직한 보호구 한 조각과 향기로운 밀랍으로 봉인된 편지가 들어있습니다.\n\n[배덕 획득: 강화 가죽 흉갑 | 방어력 +5 증가]\n\n편지를 펼치자 실라스의 유려한 필체가 배덕을 반깁니다. <i>\"짐승의 힘에 지성이 깃들어 있더군. 자네 같은 괴물이 굶주려 있는 건 대륙의 손실이지. 다음 경기를 위해 내 후원을 받겠나? 조건은 간단해. 자네가 우승하는 순간, 내게 '작은 호의' 하나만 베풀어주면 되네.\"</i>\n\n배덕은 곰 특유의 예민한 후각으로 편지지에 묻은 은은한 침향 냄새를 맡습니다. 권력자의 향기, 그리고 그 뒤에 숨겨진 끈적한 욕망의 냄새가 진동합니다. [배덕 XP +10]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 흉갑을 착용하고 휴식을 취한다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv2, HP:130/130, MP:25/35, 공격:20, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)\n\n[DM용 시스템 메모]\n※ 배덕이(가) 방금 소지품 '강화 가죽 흉갑'을(를) 사용했다. 남은 수량 0. 효과를 자연스럽게 서사에 반영하고, 필요 시 HP/MP/상태 태그로 결과 표기."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌌 심야] **배덕**은 낡은 흉갑을 벗어 던지고, 실라스가 보내온 <bget>강화 가죽 흉갑</bget>을 몸에 맞게 조여 맵니다. 단단하면서도 유연한 가죽의 감촉이 곰의 육중한 근육을 빈틈없이 감싸 안으며, 이전보다 훨씬 견고한 보호막이 형성되었음을 느낍니다. [배덕 장비 해제: 가죽 흉갑] [장비 효과: 배덕 | 강화 가죽 흉갑 | 방어력 +5 증가]\n\n그는 무거운 도끼를 옆에 눕혀두고 차가운 바닥에 몸을 웅크립니다. 짐승의 깊은 잠에 빠져들기 전, 그는 오늘 흘린 피와 관중들의 함성을 되새기며 낮게 그르렁거립니다. 육체는 휴식을 통해 다시금 강인해지고, 마나의 흐름이 차분하게 정돈됩니다. [배덕 MP: 25 → 35]\n\n어둠 속에서 배덕의 귀가 쫑긋거리며 복도의 작은 소음들을 잡아내지만, 이제 그는 내일 있을 더 거대한 사냥을 꿈꾸며 깊은 잠 속으로 침잠합니다."
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 상처를 치료하고 휴식을 취한다\n\n현재 파티:\n[현재 2일차]\n- 배덕 (수인(곰·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 고단백 육포)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌌 심야] **배덕**은 곰의 강인한 회복력을 믿으며 눈을 감습니다. 비록 겉으로는 큰 상처가 없었으나, 격렬한 돌진과 회전 공격으로 인해 근육 곳곳에 쌓인 피로와 미세한 찰과상들이 욱신거립니다. 그는 깊은 호흡을 통해 내면의 생명력을 끌어올려 상처 입은 조직들을 빠르게 재생시킵니다.\n\n그는 육중한 몸을 웅크린 채, 야수 특유의 깊은 잠에 빠져듭니다. 규칙적인 숨소리가 대기실의 정적을 채우고, 내일을 위해 모든 감각이 최적의 상태로 벼려집니다. \n\n다음 날의 사냥을 위해, 곰의 잠은 깊고도 평온합니다.\n\n[배덕 HP: 130 → 130]\n[배덕 MP: 35 → 35]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[☀️ 아침]\n\n두꺼운 석벽 너머로 수만 명의 관중이 내뿜는 광적인 함성이 파도처럼 밀려옵니다. 공기는 땀 냄새와 흥분, 그리고 누군가의 피 냄새가 섞여 비릿하게 진동합니다.\n\n대기실의 좁은 벤치에 앉은 **배덕**의 거구는 그 공간을 가득 채웁니다. 짐승에 가까운 육중한 체구와 빳빳하게 솟은 털, 날카로운 발톱이 돋은 손이 거대한 양손도끼의 자루를 꽉 쥐자 *드득* 하며 가죽 끈이 비명을 지릅니다. \n\n탁자 위에는 첫 상대의 정보가 적힌 양피지가 놓여 있습니다. \n\n**[제1경기 상대: '강철의 송곳니' 가르크]**\n*특징: 전신을 덮는 무거운 판금 갑옷과 거대한 메이스를 사용하는 돌격형 전사.*\n\n철창문 너머로 진행요원이 거칠게 소리칩니다. \"어이, 곰탱이! 언제까지 멍하니 있을 거야? 야수왕께서 기다리신다. 당장 기어 나와!\"\n\n배덕의 콧구멍이 실룩이며 사냥감의 냄새를 쫓습니다. 이제 투기장의 모래바닥이 당신의 발을 기다리고 있습니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "ts": 1777206336.38553
+  },
+  {
+   "type": "action",
+   "player_id": "605e40e0",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "파티원과 작전을 의논한다",
+   "ts": 1777206372.759622
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] 배덕은 육중한 몸을 일으켜 세우며 낮게 그르렁거렸습니다. 현재 파티에는 그 혼자뿐이지만, 그는 본능적으로 상대의 정보를 곱씹으며 전략을 구상합니다. 거대한 곰의 발톱이 양피지 끝을 살짝 긁어내리자 *찌익* 하는 날카로운 소리가 들립니다.\n\n\"판금 갑옷이라... 껍데기가 단단하군.\"\n\n배덕의 굵고 거친 목소리가 대기실의 정적을 깹니다. 정면 돌파보다는 육중한 힘으로 상대의 중심을 무너뜨린 뒤, 갑옷의 틈새를 노리거나 그대로 짓눌러버리는 것이 효율적이라는 판단이 섭니다. 그는 자신의 거대한 도끼날을 한 번 훑어보고는 콧김을 뿜어냈습니다. \n\n그때, 다시 한번 철창문이 덜컹거리며 진행요원이 짜증 섞인 목소리로 외칩니다. \"야! 작전 회의는 무덤 가서나 해! 당장 안 나오면 몰수패 처리하겠어!\"\n\n배덕의 굵은 꼬리가 바닥을 탁 쳤습니다. 준비는 끝났습니다. 이제 저 소란스러운 관중들 앞에서 누가 진짜 '야수'인지 보여줄 차례입니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "605e40e0",
+   "round_complete": true,
+   "ts": 1777206391.9377508
+  },
+  {
+   "type": "action",
+   "player_id": "605e40e0",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "경기장으로 향한다",
+   "ts": 1777206445.4078407
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] 육중한 철문이 굉음을 내며 열리자, 눈을 찌르는 강렬한 햇빛과 함께 고막을 찢는 듯한 환호성이 쏟아집니다. **배덕**이 모래바닥 위로 첫발을 내딛는 순간, 경기장 전체가 그의 거대한 덩치와 야수 같은 위압감에 순간적으로 숨을 죽였다가 이내 더 큰 함성으로 뒤덮입니다. \n\n\"보라! 숲의 파괴자, 곰의 화신이 등장했다!\"\n\n중계자의 외침과 함께 경기장 반대편에서 육중한 금속음이 들려옵니다. 전신을 은빛 판금 갑옷으로 감싼 **가르크**가 거대한 메이스를 바닥에 쾅 찍으며 배덕을 노려봅니다. 가르크의 투구 틈새로 보이는 눈빛에는 상대를 깔보는 오만함이 가득합니다. \"덩치만 큰 짐승 놈이 내 갑옷에 흠집이나 낼 수 있겠나? 오늘 네 가죽을 벗겨 내 침실의 카펫으로 만들어주마!\"\n\n배덕의 콧구멍이 실룩이며 상대로부터 풍겨오는 차가운 쇠 냄새와 땀 냄새를 감지합니다. 사냥감이 정해졌습니다.\n\n[적 등장: 가르크 | HP 100]",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "605e40e0",
+   "round_complete": true,
+   "ts": 1777206460.479477
+  },
+  {
+   "type": "action",
+   "player_id": "605e40e0",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777206486.7071676
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 바닥의 모래를 박차며 포효와 함께 돌진합니다. 육중한 덩치가 믿기지 않을 정도의 폭발적인 가속도로 가르크를 향해 쇄도하자, 관중석에서 전율 섞인 함성이 터져 나옵니다.\n\n배덕은 그대로 거대한 양손도끼를 머리 위로 치켜들어 가르크의 어깨를 향해 무지막지하게 내리찍습니다!\n\n[🎲DM d20: 16]\n명중! 도끼날이 가르크의 은빛 판금 갑옷에 부딪히며 *깡!!* 하는 굉음과 함께 불꽃을 튀깁니다. 단단한 갑옷이 충격을 흡수했지만, 배덕의 압도적인 힘에 가르크의 몸이 모래바닥 위로 깊게 처박힙니다.\n\n[적 HP: 가르크 100 → 82]\n\n가르크가 억지로 상체를 일으키며 비틀거립니다. \"으윽... 이, 이 괴력은 대체 뭐냐!\" 그는 당혹스러운 듯 메이스를 고쳐 쥐며 다시 자세를 잡습니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "605e40e0",
+   "round_complete": true,
+   "ts": 1777206498.9796627
+  },
+  {
+   "type": "action",
+   "player_id": "605e40e0",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "마나를 집중해 갑옷 틈새를 노린다",
+   "ts": 1777206574.1869104
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 거칠게 뿜어내던 숨을 가다듬고, 전신의 근육 속에 잠재된 마나를 끌어올립니다. 육중한 곰의 감각이 예리해지며 가르크의 판금 갑옷 사이, 겨드랑이와 목덜미의 좁은 틈새가 마치 커다란 구멍처럼 뚜렷하게 보이기 시작합니다.\n\n[배덕 MP: 30 → 25]\n\n배덕은 짐승 같은 반사신경으로 도끼날의 각도를 비틀어, 가르크가 방심한 틈을 타 갑옷의 이음새를 향해 날카롭게 찔러넣습니다! [🎲DM d20: 18] 정밀 타격 성공! 도끼날이 갑옷의 틈을 정확히 파고들어 가르크의 옆구리 살점을 깊숙이 찢어발깁니다.\n\n[적 HP: 가르크 82 → 65]\n\n\"끄아아악!\" 가르크가 비명을 지르며 뒤로 물러납니다. 갑옷의 견고함이 무색하게, 틈새를 공략당한 상처에서 붉은 피가 울컥 쏟아져 나와 은빛 갑옷을 더럽힙니다. 관중들은 예상치 못한 정교한 공격에 환호하며 배덕의 이름을 연호하기 시작합니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "605e40e0",
+   "round_complete": true,
+   "ts": 1777206789.561614
+  },
+  {
+   "type": "action",
+   "player_id": "605e40e0",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "관중의 환호를 유도한다",
+   "ts": 1777206833.248744
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 피 묻은 도끼를 어깨에 툭 걸치며, 상처 입고 헐떡이는 가르크를 향해 낮게 으르렁거립니다. 그는 일부러 공격을 멈춘 채, 육중한 상체를 좌우로 흔들며 관중석을 향해 거대한 앞발을 높이 들어 올립니다. \n\n짐승의 위압감과 전사의 여유가 동시에 느껴지는 도발적인 몸짓에, 관중들은 잠시 정적에 휩싸였다가 이내 경기장이 떠나갈 듯한 광분 섞인 함성을 내지릅니다. \"곰이다! 곰이 다 씹어먹고 있어!\"\n\n[배덕 XP +15]\n\n가르크의 얼굴이 투구 속에서 분노로 벌겋게 달아오릅니다. \"이... 비열한 짐승 놈이 감히 나를 조롱해?!\" 분노에 휩싸인 가르크가 이성을 잃고 메이스를 휘두르며 무작정 돌진해 옵니다! \n\n[🎲DM d20: 7] \n\n분노 때문에 자세가 완전히 무너진 공격입니다. 메이스가 허공을 가르며 배덕의 발치 모래바닥을 헛짚어 쾅 소리를 냅니다. 가르크의 중심이 크게 흔들리며 상체가 앞으로 쏠립니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "605e40e0",
+   "round_complete": false,
+   "ts": 1777206884.630944
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777207267.0243113
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 낮게 으르렁거리며 주변의 공기를 들이마십니다. 짐승에 가까운 그의 예민한 후각이 바람에 실려 오는 미세한 냄새들을 잡아냅니다. 낯선 영웅의 갑옷을 걸쳤음에도, 본능적인 감각은 여전히 날카롭게 깨어 있습니다.\n\n그는 주변의 지형과 숨어 있을 법한 매복 지점을 훑으며, 털이 돋은 귀를 쫑긋거려 아주 작은 금속 마찰음조차 놓치지 않으려 집중합니다. [🎲DM d20: 14] 다행히 당장 눈앞에 끔찍한 기습을 준비하는 적은 보이지 않지만, 공기 중에 섞인 묘한 긴장감이 그에게 경고를 보냅니다.\n\n배덕은 도끼 자루를 쥔 손에 힘을 주며, 언제든 튀어 나갈 수 있도록 무게 중심을 낮춥니다. 거대한 체구가 그림자 속에 녹아들어, 이제는 사냥감이 아닌 포식자의 시선으로 주변을 감시하기 시작합니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207303.1927004
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777207318.4720807
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] 주변의 정적을 깨뜨린 것은 **배덕**의 폭발적인 포효였습니다. 그는 더 이상 살피지 않고, 본능이 가리키는 살기의 방향을 향해 거대한 육신을 탄환처럼 내던집니다. 낯선 영웅의 갑주가 육중한 근육의 움직임에 따라 *끼릭* 소리를 내며 조여들고, 그 끝에 거대한 양손도끼가 무시무시한 궤적을 그리며 쇄도합니다!\n\n[🎲DM d20: 12] 명중! 도끼날이 적의 방어선을 강타하며 둔탁한 파열음을 냅니다. 비록 정면에서 맞부딪쳐 화려한 일격은 아니었으나, 배덕의 압도적인 체중이 실린 공격은 적의 중심을 완전히 무너뜨리며 뒤로 밀어내기에 충분했습니다.\n\n하지만 적 또한 만만치 않았습니다. 밀려나던 적이 급히 무기를 휘둘러 배덕의 가슴팍을 스치듯 공격합니다! [🎲DM d20: 15] 명중! 가죽 흉갑 위로 날카로운 금속음이 들리며 배덕의 어깨에 붉은 선이 그어집니다.\n\n[배덕 HP: 120 → 114]\n[적 HP: 가르크 65 → 51] (이전 전투 상태 유지 가정)",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207330.1879818
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "자랑스러운 갑옷이라더니 겨우이정도인가?",
+   "ts": 1777207393.2102218
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 어깨에 난 상처를 무심히 핥아내며, 비릿한 피 냄새와 함께 낮게 낄낄거립니다. 그는 도끼날에 묻은 잔해를 털어내고는, 상대의 화려한 갑옷을 비웃듯 거대한 앞발로 가슴을 툭툭 칩니다. \"자랑스러운 갑옷이라더니... 겨우 이 정도인가? 껍데기만 번지르르한 깡통이었군.\"\n\n짐승 특유의 우월감이 섞인 조롱에 가르크의 안색이 급격히 창백해졌다가 이내 핏빛으로 변합니다. \"이... 짐승 놈이!! 내 가문의 명예가 깃든 갑옷을 모욕하다니!\" 가르크가 분노로 몸을 떨며 메이스를 꽉 쥐자, 그의 호흡이 거칠어지며 완전히 이성을 잃은 모습이 역력합니다. [배덕 XP +10]",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207459.5666523
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777207478.6161573
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] 분노로 눈이 먼 가르크가 달려들기도 전, **배덕**이 먼저 지면을 박차며 덮쳐듭니다. 이번에는 망설임 없는 진정한 포식자의 돌격입니다. 거대한 체구가 공기를 가르며 쇄도하고, 곰의 무시무시한 완력이 실린 양손도끼가 가르크의 머리 위로 무자비하게 낙하합니다! [🎲DM d20: 19] 치명적인 명중! \n\n*콰직!!* 비명조차 지를 새 없이 도끼날이 가르크의 투구를 뚫고 어깨까지 깊숙이 박혀 들어갑니다. 은빛 판금 갑옷이 종잇장처럼 구겨지며 끔찍한 금속 마찰음이 경기장에 울려 퍼집니다. [적 HP: 가르크 51 → 22] 가르크는 충격으로 인해 바닥에 완전히 처박힌 채, 입가로 거품과 피를 울컥 쏟아내며 경련합니다. 이제 그는 전사가 아니라, 도살장 위에 놓인 가련한 제물에 불과해 보입니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207488.0368228
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "뭐야 역시 번지르르하기만한 깡통이였잖아?",
+   "ts": 1777207563.3020036
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 어깨에 박힌 도끼를 무심하게 뽑아내며, 바닥에서 헐떡이는 가르크를 내려다봅니다. 그는 짐승 같은 콧김을 퓌익 내뿜으며, 구겨진 은빛 갑옷 조각을 앞발로 툭 걷어찹니다. \"뭐야, 역시 번지르르하기만 한 깡통이었잖아? 명예니 가문이니 떠들더니, 속은 텅 비어있었군.\" \n\n그의 오만한 조롱이 경기장에 울려 퍼지자, 관중들은 광분하며 배덕의 이름을 외치기 시작합니다. [배덕 XP +10] 가르크는 투구 사이로 피 섞인 가래를 뱉어내며 믿기지 않는다는 듯 눈을 부릅뜹니다. \"이... 이럴 리가... 내가... 내가 이런 짐승 따위에게...!\" 가르크의 자존심이 완전히 가루가 되어 흩어집니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207597.556872
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "마지막 일격을 준비한다",
+   "ts": 1777207629.8088841
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 낮게 으르렁거리며 도끼를 높게 치켜듭니다. 이제는 조롱조차 아까운 시간입니다. 그는 짐승의 본능으로 적의 숨통이 끊어질 단 하나의 지점을 정확히 포착하고, 전신의 근육을 팽팽하게 조이며 모든 체중을 실어 내리찍을 준비를 합니다.\n\n가르크는 공포에 질린 눈으로 위를 올려다보며 무력하게 손을 내저어 보지만, 그것은 거대한 포식자 앞에 놓인 먹잇감의 마지막 발악에 불과합니다. 경기장의 함성이 잦아들고, 오직 배덕의 무거운 숨소리와 도끼날이 공기를 가르는 날카로운 파찰음만이 남습니다.\n\n\"잘 가라, 깡통.\"\n\n[🎲DM d20: 17] 명중! 거대한 도끼날이 가르크의 흉갑 정중앙을 완전히 관통하여 바닥의 돌판까지 깊숙이 박혀 들어갑니다.\n\n[적 HP: 가르크 22 → 0]\n\n가르크의 몸이 크게 한 번 튀어 올랐다가, 이내 힘없이 늘어집니다. 은빛 갑옷은 이제 붉은 피로 물든 고철 덩어리가 되어 투기장의 모래바닥 위에 뒹굽니다. 관중석에서는 떠나갈 듯한 환호성이 터져 나옵니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207659.8526433
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "자존심만쌘 잔챙이였군",
+   "ts": 1777207735.1785362
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 가르크의 시신 위에 박힌 도끼를 무심하게 홱 뽑아냅니다. 그는 피가 뚝뚝 떨어지는 날을 슥 훑어보더니, 바닥에 널브러진 고철 덩어리를 향해 코방귀를 뀝니다. \"자존심만 쌘 잔챙이였군.\" 짐승 같은 오만함이 가득 담긴 그의 말에 관중들은 전율하며 더욱 크게 환호합니다. 이제 투기장의 모래바닥 위에는 오직 승리한 포식자만이 우뚝 서 있습니다.\n\n[배덕 XP +20]\n[적 퇴장: 가르크]",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207742.1946936
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777207777.9145012
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] 승리의 도취감 속에서도 **배덕**은 본능적으로 긴장을 늦추지 않습니다. 그는 피 묻은 도끼를 낮게 내려쥔 채, 털이 돋은 귀를 쫑긋거리며 경기장 구석구석에서 들려오는 소리에 집중합니다. 짐승의 감각이 날카롭게 깨어나, 관중들의 광분한 함성 소리 너머로 숨어 있는 또 다른 살기나 불길한 움직임이 있는지 훑어냅니다. [🎲DM d20: 16]\n\n그의 예리한 후각이 공기 중에 섞인 낯선 향취를 포착합니다. 피 냄새와 땀 냄새가 진동하는 투기장 한편, 귀족석 근처에서 누군가 자신을 뚫어지게 쳐다보고 있다는 강렬한 시선이 느껴집니다. 배덕은 고개를 돌려 그 방향을 노려보며 낮게 으르렁거립니다. 적의 기습은 없었으나, 새로운 '관심'이 그를 향하고 있음이 분명합니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207801.4204526
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "그래서 이제 뭘 하면되지?",
+   "ts": 1777207831.4023104
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 도끼를 어깨에 툭 걸치며 무심하게 중얼거립니다. \"그래서 이제 뭘 하면 되지?\" 그가 짐승 같은 하품을 내뱉으며 주변을 둘러보자, 경기장 관리인들이 조심스럽게 다가와 시신을 수습하기 시작합니다.\n\n그때, 화려한 비단 옷을 입은 한 **중년의 남성**이 귀족석 난간에서 몸을 내밀어 배덕을 향해 흥미롭다는 듯 미소 짓습니다. \"훌륭한 야성이군! 저런 고리타분한 기사 놈을 깡통으로 만들어버리다니, 정말 내 취향이야.\"\n\n남자가 손가락으로 경기장 출구 쪽의 대기실을 가리킵니다. \"자네 같은 인재를 그냥 보낼 순 없지. 대기실로 오게나. 자네의 그 무시무시한 힘에 걸맞은 '후원' 이야기를 좀 나누고 싶군.\"\n\n배덕의 곰 귀가 쫑긋거립니다. 단순한 찬사보다는 금전이나 더 좋은 장비가 섞인 냄새가 나는 제안인 듯합니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207860.3449278
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "대기실로 가서 남성과 이야기한다",
+   "ts": 1777207911.465521
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 묵직한 발걸음으로 모래바닥을 짓이기며 대기실로 향합니다. 그의 거대한 체구가 좁은 복도를 가득 메우자, 옆을 지나던 하인들이 겁에 질려 벽에 딱 붙어 길을 터줍니다. 대기실 문을 쾅 열고 들어서자, 아까의 남자가 고급스러운 소파에 깊숙이 몸을 묻은 채 시가 향기를 풍기고 있습니다.\n\n\"어서 오게, 야수여. 나는 투기장의 큰 손, 도박사이자 수집가인 **실라스**라고 하네.\"\n\n실라스가 얇은 입술을 말아 올리며 웃습니다. 그는 배덕의 짐승 같은 외형을 훑어보며 탐욕스러운 눈빛을 보냅니다. \"가르크를 찢어발기는 모습이 아주 예술이었어. 자네 같은 괴물이 이 투기장의 생태계를 뒤흔드는 걸 보면 전율이 돋거든. 내가 자네의 후원자가 되어주지. 다음 경기까지 최상의 컨디션을 유지할 보급품과, 자네의 그 투박한 도끼보다 훨씬 날카로운 무기를 마련해 줄 수도 있어. 단, 내가 원하는 건 자네가 4강, 아니 결승까지 올라가 내 판돈을 불려주는 것이지.\"",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777207932.057297
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "실라스의 제안을 받아들인다",
+   "ts": 1777208045.6293075
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 코웃음을 치며 실라스의 제안을 덥석 받아들입니다. \"좋아, 내 힘이 필요하다면 그만큼의 대가를 치러라.\" 짐승 같은 낮은 목소리가 방 안을 울리자, 실라스가 만족스러운 듯 손뼉을 칩니다. \"현명한 선택이야! 역시 야수들은 본능적으로 이득을 잘 낚아채지.\"\n\n실라스가 옆에 있던 하인에게 눈짓하자, 하인이 정중하게 작은 상자와 가죽 주머니를 내밉니다. \"우선 계약금과 기초 보급품이네. 자네의 그 거대한 몸집을 유지하려면 잘 먹어야겠지.\"\n\n[배덕 획득: 금화 주머니 | 소지금 증가]\n[배덕 획득: 고단백 육포 x5 | 사용 시 HP 10 회복]\n[배덕 XP +15]\n\n\"이제 편히 쉬게나. 다음 경기는 더욱 잔혹할 거야. 자네의 앞길을 가로막을 '유령 춤꾼' 리셀린이라는 자가 자네의 소문을 듣고 꽤나 흥분해 있거든.\" 실라스가 의미심장한 미소를 지으며 배덕을 배웅합니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208062.5834017
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "보급품을받아들고 대기실로간다",
+   "ts": 1777208135.1854472
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**이 하인이 건넨 물건들을 거칠게 낚아챕니다. 그는 금화 주머니의 묵직한 무게감을 느끼더니, 만족스러운 듯 씩 웃으며 그것을 품속에 쑤셔 넣습니다. 이제 주머니는 비었지만, 그 가치는 이미 그의 소지금으로 환산되어 든든한 뒷배가 되었습니다.\n\n그는 육포 냄새를 깊게 들이마시며 자신의 개인 대기실로 발걸음을 옮깁니다. 육중한 문을 닫고 들어선 배덕은 좁은 방 안에서 거대한 몸을 길게 뻗으며 하품을 내뱉습니다.\n\n\"리셀린이라고 했나... 춤꾼이라니, 짓밟아버리기 딱 좋겠군.\"\n\n포식자의 눈빛이 어둠 속에서 번뜩입니다. 그는 다음 사냥감을 떠올리며, 가져온 육포 하나를 입에 물고 천천히 씹기 시작합니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208153.7906291
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "다음 전투를 기다린다",
+   "ts": 1777208208.6010387
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] 투기장의 소음이 잦아든 깊은 밤, **배덕**은 대기실의 딱딱한 침상에 몸을 누인 채 어둠 속에서 숨을 고릅니다. 그는 짐승 특유의 예민한 청각으로 벽 너머에서 들려오는 다른 전사들의 긴장 섞인 속삭임과 무기 손질 소리를 듣습니다.\n\n그의 거대한 가슴이 느리게 오르내리며 야성의 본능이 차분히 가라앉습니다. 육포를 씹으며 보낸 시간 덕분에 몸에는 다시금 묵직한 힘이 차오르고, 도끼날의 서늘한 감촉이 손바닥에 닿습니다.\n\n\"춤을 추든 말든... 결국 내 발밑에서 짓눌리게 될 거다.\"\n\n배덕은 눈을 감으며 다음날 펼쳐질 피의 축제를 기다립니다. 포식자의 꿈속에서는 이미 리셀린의 가느다란 목뼈가 으스러지는 소리가 들려오는 듯합니다.",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208277.7401087
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "다음날을 위해 잠을 청한다",
+   "ts": 1777208320.2518134
+  },
+  {
+   "type": "dm",
+   "text": "[🌌 심야] **배덕**은 짐승처럼 몸을 웅크린 채 깊은 잠에 빠져듭니다. 규칙적인 코골이가 좁은 대기실을 웅웅 울리게 하지만, 그의 무의식은 여전히 주변의 작은 진동 하나하나를 감지하며 야성적인 경계심을 유지합니다. 꿈속에서 그는 끝없는 숲의 왕이 되어 모든 적을 발아래 굴복시키고 포효합니다.\n\n충분한 휴식이 그의 육체에 스며들며, 전투로 지쳤던 근육들이 다시 팽팽하게 조여집니다. 내일의 사냥을 위해 포식자는 완벽한 정적 속에서 에너지를 응축합니다.\n\n[배덕 HP: 114 → 120]\n[배덕 MP: 25 → 30]",
+   "current_time": {
+    "icon": "🌌",
+    "label": "심야",
+    "ordinal": 5,
+    "day": 1
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208328.429211
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777208354.6015863
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 잠에서 깨어난 **배덕**이 가장 먼저 하는 일은 본능적인 경계입니다. 그는 침상에서 일어나기 전, 콧구멍을 벌름거리며 공기 중에 섞인 냄새를 맡고 털이 돋은 귀를 쫑긋거리며 복도의 소음을 훑습니다. 짐승의 감각이 깨어나며 대기실 문밖에서 들려오는 조심스러운 발소리와, 누군가 일부러 남긴 듯한 서늘한 향수 냄새를 포착합니다.\n\n[🎲DM d20: 12]\n\n그는 눈을 가늘게 뜨며 문쪽을 노려봅니다. 누군가 그의 방 앞에서 잠시 멈춰 섰다가, 비웃는 듯한 가벼운 콧노래를 남기고 사라집니다. 적의 기습은 아니었지만, 명백한 '도발'입니다. 배덕은 낮게 그르렁거리며 자리에서 일어납니다. 곰의 육중한 몸집이 움직일 때마다 방 안의 공기가 무겁게 흔들립니다. \"쥐새끼 한 마리가 다녀갔군.\"",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208391.7679586
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777208411.7551908
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] **배덕**은 다시 한번 콧구멍을 벌름거리며 공기를 읽어냅니다. 방금 전 사라진 발소리의 잔향과 공중에 흩어진 향수 냄새를 쫓으며, 그는 방 안의 모든 구석을 짐승의 눈으로 훑습니다. [🎲DM d20: 18]\n\n그의 예리한 시선이 문틈 사이에 끼워져 있는 작은 쪽지 하나를 포착합니다. 조심스럽게 쪽지를 집어 들어 읽어보니, 유려한 필체로 짧은 문장이 적혀 있습니다. <i>\"무식한 곰 같으니. 내일은 네가 춤추게 만들어주지.\"</i>\n\n배덕의 굵은 손가락이 쪽지를 구기며 으스러뜨립니다. 상대가 누구인지 굳이 묻지 않아도 알 수 있습니다. '유령 춤꾼' 리셀린, 그 오만한 자가 보낸 명백한 선전포고입니다. 배덕은 구겨진 종이 뭉치를 바닥에 뱉어내며 낮게 포효합니다. \"춤? 내 도끼가 네 머리 위에서 춤추게 해주마.\"",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208494.8465624
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "다가올 전투를 준비한다",
+   "ts": 1777208524.3688684
+  },
+  {
+   "type": "dm",
+   "text": "[☀️ 아침] **배덕**은 짐승 같은 본능으로 전투 태세에 들어갑니다. 그는 가죽 흉갑의 끈을 단단히 조여 매고, 낡은 방패의 균열을 살피며 거대한 양손도끼의 날을 숫돌에 거칠게 갑니다. *슥, 슥* 하는 날카로운 마찰음이 대기실 안에 울려 퍼지며, 그의 살기를 더욱 돋웁니다.\n\n그는 소지하고 있던 고단백 육포 하나를 입에 넣고 씹으며 근육의 펌핑감을 느낍니다. 곰의 거대한 체구에서 뿜어져 나오는 위압감이 방 안을 가득 채우고, 그는 도끼자루를 꽉 쥐며 손아귀 힘을 시험합니다. \n\n[배덕 사용: 고단백 육포]\n[배덕 HP: 120 → 120] (최대치 유지)\n\n이제 모든 준비는 끝났습니다. 배덕은 문을 박차고 나가며 투기장의 모래바닥을 향해 묵직한 발걸음을 옮깁니다. 오늘, 오만한 춤꾼의 콧대를 꺾어줄 시간입니다.",
+   "current_time": {
+    "icon": "☀️",
+    "label": "아침",
+    "ordinal": 1,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208535.3111784
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "투기장에 입장한다",
+   "ts": 1777208562.001231
+  },
+  {
+   "type": "dm",
+   "text": "[🌞 정오] 태양 빛이 내리쬐는 투기장의 문이 굉음을 내며 열립니다. **배덕**이 거대한 도끼를 끌며 모래바닥으로 들어서자, 관중석에서 천둥 같은 환호성이 터져 나옵니다. 짐승에 가까운 그의 위압적인 외형에 군중들은 경외감과 공포가 섞인 비명을 지릅니다.\n\n경기장 반대편, 안개처럼 흐릿한 모습으로 한 남자가 서 있습니다. 가느다란 체구에 화려한 비단 옷을 걸친 **리셀린**입니다. 그는 가벼운 스텝으로 제자리를 돌며 배덕을 향해 조롱 섞인 미소를 짓습니다.\n\n\"정말 무식하게 크군. 하지만 그 덩치로는 내 그림자조차 잡지 못할 거다.\"\n\n리셀린이 손가락을 튕기자, 그의 등 뒤에서 서늘한 기운의 단검 두 자루가 나타납니다. 이제 심판의 신호와 함께 피의 무도가 시작될 차례입니다.\n\n[적 등장: 리셀린 | HP 80]",
+   "current_time": {
+    "icon": "🌞",
+    "label": "정오",
+    "ordinal": 2,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208573.2106898
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "마나를 사용해 정신을 집중하여 반격준비를 한다",
+   "ts": 1777208620.821909
+  },
+  {
+   "type": "dm",
+   "text": "[🌞 정오] **배덕**은 무작정 달려드는 대신, 곰의 끈질긴 인내심으로 발을 붙이고 서서 마나를 끌어올립니다. 그는 낮게 그르렁거리며 온 신경을 리셀린의 작은 움직임 하나하나에 집중합니다. [배덕 MP: 30 → 20]\n\n공기의 흐름, 모래의 진동, 그리고 상대의 호흡까지. 야성적인 감각이 극도로 예민해지며 리셀린의 화려한 움직임 속에 숨겨진 허점이 보이기 시작합니다.\n\n[배덕 버프: 집중 반격 2턴 | 다음 공격 명중률 +20%, 피격 시 반격 확률 증가]\n\n리셀린이 눈썹을 치켜뜨며 의아한 표정을 짓습니다. \"어라? 짐승인 줄 알았는데 생각보다 머리를 쓰는군. 하지만 그 정적인 자세가 얼마나 오래갈까?\" 리셀린이 순식간에 형체를 흐리며 배덕의 측면으로 파고듭니다.",
+   "current_time": {
+    "icon": "🌞",
+    "label": "정오",
+    "ordinal": 2,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208628.1131508
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "도끼를 전방향으로 휘두른다",
+   "ts": 1777208661.6266496
+  },
+  {
+   "type": "dm",
+   "text": "[🌞 정오] 리셀린이 측면으로 파고드는 찰나, **배덕**이 거대한 양손도끼를 중심으로 폭발적인 회전을 시작합니다. \"어디 한번 춤춰봐라!\" 곰의 육중한 체중이 실린 도끼날이 거대한 원을 그리며 주변의 모든 것을 짓뭉개려 합니다.\n\n[🎲DM d20: 16] (집중 반격 보너스 적용)\n\n리셀린이 가볍게 도약해 피하려 했으나, 배덕이 예상보다 더 넓은 범위를 휩쓸었습니다. 도끼날이 리셀린의 옆구리를 깊게 긁으며 그를 모래바닥 위로 거칠게 내동댕이칩니다.\n\n[적 HP: 리셀린 80 → 55]\n\n\"큭...!\" 리셀린이 신음하며 굴러갑니다. 화려했던 비단 옷에 붉은 핏자국이 선명하게 새겨졌고, 그의 여유롭던 표정이 처음으로 일그러집니다. 그는 급히 몸을 일으키며 단검을 고쳐 쥡니다. [배덕 버프: 집중 반격 2턴 → 1턴]",
+   "current_time": {
+    "icon": "🌞",
+    "label": "정오",
+    "ordinal": 2,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208672.9470406
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "적에게 돌진하여 공격한다",
+   "ts": 1777208714.9154649
+  },
+  {
+   "type": "dm",
+   "text": "[🌞 정오] **배덕**이 도끼를 움켜쥔 채로 리셀린에게 무작정 돌진합니다. 그의 거대한 몸이 모래를 밀어내며 앞으로 쇄도하고, 리셀린은 단검을 높이 들어올려 방어태세를 취합니다. [🎲DM d20: 14] 리셀린은 배덕의 공격을 피하려고 하였지만, 그의 돌진 속도는 예상보다 빨랐습니다. 리셀린의 단검은 도끼의 손잡이에 맞부딪치며 단단한 충돌음이 울려 퍼집니다. 리셀린의 가느다란 손목이 도끼의 무게에 짓눌려 손가락이 빠르게 풀리고, 도끼날이 그의 어깨를 깊게 갈라냅니다. [적 HP: 리셀린 55 → 25] 리셀린의 비단 옷이 물들며 붉게 변하고, 그는 비명을 지르며 뒤로 쓰러집니다. \"아아...!\" 그의 몸이 뒤로 물러나며, 단검은 그의 손에서 떨어져 나갑니다. 배덕은 여전히 도끼를 움켜쥔 채로 리셀린을 짓눌러 압살하려 합니다. [배덕 버프: 집중 반격 1턴 | 다음 공격 명중률 +20%, 피격 시 반격 확률 증가]",
+   "current_time": {
+    "icon": "🌞",
+    "label": "정오",
+    "ordinal": 2,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777208963.8743672
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "그대로 짓누른다",
+   "ts": 1777209522.9848285
+  },
+  {
+   "type": "dm",
+   "text": "[🌞 정오] 쓰러진 리셀린의 위로 **배덕**의 거대한 그림자가 드리워집니다. 그는 자비 없이 도끼날을 리셀린의 흉곽 위로 내리꽂으며 자신의 모든 체중을 실어 짓누릅니다. [🎲DM d20: 19] \n\n*콰득!* \n\n끔찍한 파열음과 함께 리셀린의 비명이 짧게 끊깁니다. 화려한 춤꾼의 자존심이었던 흉곽이 곰의 압도적인 힘 앞에 종잇장처럼 구겨졌습니다. 리셀린은 경련하며 입가로 핏덩이를 쏟아내고, 이내 초점 없는 눈으로 하늘을 바라보며 숨을 거둡니다. [적 HP: 리셀린 25 → 0]\n\n관중석은 잠시 정적에 휩싸였다가, 이내 야수와 같은 배덕의 잔혹한 승리에 열광하며 폭발적인 함성을 내지릅니다. 배덕은 피 묻은 도끼를 어깨에 걸치고, 죽은 적을 내려다보며 낮게 으르렁거립니다. \"이게 진짜 춤이다, 애송아.\"\n\n[적 퇴장: 리셀린]\n[배덕 XP +40]",
+   "current_time": {
+    "icon": "🌞",
+    "label": "정오",
+    "ordinal": 2,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777209540.62665
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "자신만만한표정으로 귀족석의 실라스를 바라본다",
+   "ts": 1777209618.838447
+  },
+  {
+   "type": "dm",
+   "text": "[🌞 정오] **배덕**은 피가 뚝뚝 떨어지는 도끼를 바닥에 꽂고, 거대한 가슴을 펴며 귀족석을 향해 고개를 듭니다. 곰의 위압감이 서린 그 표정에는 승자의 오만함과 야성적인 자신감이 가득 차 있습니다. 그는 마치 '다음은 누구냐'고 묻는 듯, 콧김을 거칠게 내뿜으며 실라스를 정면으로 응시합니다. [🎲DM d20: 15]\n\n귀족석의 **실라스**는 부채로 입가를 가린 채 흥미롭다는 듯 눈을 가늘게 뜹니다. 그는 리셀린의 처참한 최후보다, 그 위에 군림한 배덕의 압도적인 무력에 더 매료된 모습입니다.\n\n\"호오... 기대 이상이군. 단순한 짐승인 줄 알았는데, 저렇게 영리하게 숨을 죽이다가 단숨에 낚아채다니.\"\n\n실라스가 가볍게 손뼉을 치며 배덕에게 짧은 눈인사를 보냅니다. 그것은 단순한 관람객의 박수가 아니라, 가치 있는 '상품'을 발견한 상인의 탐욕스러운 만족감이 섞인 신호였습니다. [배덕 XP +15]",
+   "current_time": {
+    "icon": "🌞",
+    "label": "정오",
+    "ordinal": 2,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777209644.9217079
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "다음 상황을 기다린다",
+   "ts": 1777209704.4584732
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 경기가 끝난 후, 투기장의 열기는 서서히 식어가고 하늘은 핏빛으로 물듭니다. **배덕**은 모래바닥에 가만히 서서 거친 숨을 고르며 자신의 승리를 만끽합니다. 짐승의 감각이 주변의 소란스러움 속에서 특정한 움직임을 포착합니다.\n\n전담 관리인이 다가와 그의 어깨를 툭 치며 낮게 속삭입니다. \"이봐, 곰 친구. 귀족석의 실라스 님이 자네가 마음에 드신 모양이야. 대기실로 돌아가면 그분이 보낸 '선물'과 메시지가 있을 거다.\"\n\n배덕은 콧김을 한 번 크게 내뿜고는, 도끼를 챙겨 묵직한 발걸음으로 대기실로 향합니다. 이제 그는 단순한 참가자가 아니라, 투기장의 모든 도박사와 귀족들이 주목하는 '뜨거운 말'이 되었습니다. 복도를 지나가는 다른 전사들의 시선에 경외와 질투가 섞여 있음을 느끼며, 배덕은 입가에 만족스러운 미소를 띱니다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777209715.6193047
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "대기실로 돌아가 실라스의 메세지를 확인한다",
+   "ts": 1777209747.8209262
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] **배덕**이 대기실의 무거운 철문을 닫고 들어서자, 탁자 위에 놓인 화려한 금색 상자 하나가 눈에 들어옵니다. 그는 거대한 손으로 조심스럽게 상자를 열었습니다. 그 안에는 최고급 가죽으로 덧댄 묵직한 보호구 한 조각과 향기로운 밀랍으로 봉인된 편지가 들어있습니다.\n\n[배덕 획득: 강화 가죽 흉갑 | 방어력 +5 증가]\n\n편지를 펼치자 실라스의 유려한 필체가 배덕을 반깁니다. <i>\"짐승의 힘에 지성이 깃들어 있더군. 자네 같은 괴물이 굶주려 있는 건 대륙의 손실이지. 다음 경기를 위해 내 후원을 받겠나? 조건은 간단해. 자네가 우승하는 순간, 내게 '작은 호의' 하나만 베풀어주면 되네.\"</i>\n\n배덕은 곰 특유의 예민한 후각으로 편지지에 묻은 은은한 침향 냄새를 맡습니다. 권력자의 향기, 그리고 그 뒤에 숨겨진 끈적한 욕망의 냄새가 진동합니다. [배덕 XP +10]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777209867.8695996
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "흉갑을 착용하고 휴식을 취한다",
+   "ts": 1777210068.4575715
+  },
+  {
+   "type": "dm",
+   "text": "[🌌 심야] **배덕**은 낡은 흉갑을 벗어 던지고, 실라스가 보내온 <bget>강화 가죽 흉갑</bget>을 몸에 맞게 조여 맵니다. 단단하면서도 유연한 가죽의 감촉이 곰의 육중한 근육을 빈틈없이 감싸 안으며, 이전보다 훨씬 견고한 보호막이 형성되었음을 느낍니다. [배덕 장비 해제: 가죽 흉갑] [장비 효과: 배덕 | 강화 가죽 흉갑 | 방어력 +5 증가]\n\n그는 무거운 도끼를 옆에 눕혀두고 차가운 바닥에 몸을 웅크립니다. 짐승의 깊은 잠에 빠져들기 전, 그는 오늘 흘린 피와 관중들의 함성을 되새기며 낮게 그르렁거립니다. 육체는 휴식을 통해 다시금 강인해지고, 마나의 흐름이 차분하게 정돈됩니다. [배덕 MP: 25 → 35]\n\n어둠 속에서 배덕의 귀가 쫑긋거리며 복도의 작은 소음들을 잡아내지만, 이제 그는 내일 있을 더 거대한 사냥을 꿈꾸며 깊은 잠 속으로 침잠합니다.",
+   "current_time": {
+    "icon": "🌌",
+    "label": "심야",
+    "ordinal": 5,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777210080.0199678
+  },
+  {
+   "type": "action",
+   "player_id": "26b48048",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/ursine%20muzzle%20with%20blunt%20teeth%2C%20dense%20brown%20fur%20covering%20face%2C%20rounded%20bear%20ears%2C%20massive%20human%20body%20with%20bear%20features%2C%20full%20bear%20muzzle%2C%20face%20completely%20covered%20in%20bear%20fur%2C%20bear%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20bear%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=4221191355&nologo=true&model=flux",
+   "action": "상처를 치료하고 휴식을 취한다",
+   "ts": 1777210087.322939
+  },
+  {
+   "type": "dm",
+   "text": "[🌌 심야] **배덕**은 곰의 강인한 회복력을 믿으며 눈을 감습니다. 비록 겉으로는 큰 상처가 없었으나, 격렬한 돌진과 회전 공격으로 인해 근육 곳곳에 쌓인 피로와 미세한 찰과상들이 욱신거립니다. 그는 깊은 호흡을 통해 내면의 생명력을 끌어올려 상처 입은 조직들을 빠르게 재생시킵니다.\n\n그는 육중한 몸을 웅크린 채, 야수 특유의 깊은 잠에 빠져듭니다. 규칙적인 숨소리가 대기실의 정적을 채우고, 내일을 위해 모든 감각이 최적의 상태로 벼려집니다. \n\n다음 날의 사냥을 위해, 곰의 잠은 깊고도 평온합니다.\n\n[배덕 HP: 130 → 130]\n[배덕 MP: 35 → 35]",
+   "current_time": {
+    "icon": "🌌",
+    "label": "심야",
+    "ordinal": 5,
+    "day": 2
+   },
+   "acting_player_id": "26b48048",
+   "round_complete": true,
+   "ts": 1777210129.6763372
+  }
+ ],
+ "turn_order": [
+  "26b48048"
+ ],
+ "current_turn_index": 0,
+ "players": {
+  "26b48048": {
+   "player_id": "26b48048",
+   "name": "배덕",
+   "character_class": "전사",
+   "race": "수인",
+   "race_animal": "곰",
+   "race_ratio": 90,
+   "hp": 130,
+   "max_hp": 130,
+   "mp": 35,
+   "max_mp": 35,
+   "attack": 20,
+   "defense": 10,
+   "level": 2,
+   "xp": 189,
+   "stat_points": 0,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "거대한 양손도끼",
+     "effect": "양손 무기 — 공격력 +3, 속도 -1"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [
+    {
+     "name": "고단백 육포",
+     "effect": "사용 시 HP 10 회복",
+     "quantity": 4
+    }
+   ],
+   "is_ready": false,
+   "pending_notes": [],
+   "status_effects": []
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777210129.6766412
+}
