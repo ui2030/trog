@@ -1,0 +1,1385 @@
+{
+ "version": 2,
+ "room_id": "40FD00",
+ "scenario_id": "volkar",
+ "owner_id": "18549586",
+ "started": true,
+ "current_time": {
+  "icon": "🌆",
+  "label": "황혼",
+  "ordinal": 3,
+  "day": 2
+ },
+ "current_scene_url": "https://image.pollinations.ai/prompt/twilight%20in%20a%20narrow%20alley%2C%20a%20hooded%20dark%20priest%20kneeling%20on%20the%20ground%20casting%20dark%20thorny%20magic%20at%20a%20rabbit-kin%20berserker%2C%20black%20thorns%20sprouting%20around%20the%20berserker%27s%20ankles%2C%20a%20cat-kin%20rogue%20watching%20with%20daggers%20ready%2C%20ominous%20purple%20mist%20swirling%2C%20dramatic%20shadows%20cast%20by%20the%20setting%20sun%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=30144&nologo=true&model=flux",
+ "day": 2,
+ "messages": [
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: (배덕 은(는) 이번 차례에 직접 행동하지 않고 흐름을 지켜본다 — 관망/패스. **DM 은 시나리오를 한 단계 명확히 진척시켜라**: NPC 의 새 등장·환경 변화·새 정보 노출·시간 경과·적의 다음 행동 중 하나 이상으로 이야기를 다음 비트로 끌어가라. 빈 묘사·정적 풍경 묘사 금지.)\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:105, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 치유 물약, 볼카르의 봉인 해제 지시문, 침묵의 탑 내부 지도)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 볼카르의 파편 조각, 그림자 열쇠, 치유 물약)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 대장간의 불꽃이 더욱 거세게 타오르자, 안쪽에서 검은 망토를 두른 낯선 사내가 걸어 나왔다. 그는 손에 낡은 양피지 한 장을 들고 있으며, 파티를 노려보는 듯한 날카로운 눈빛을 띠고 있다. \"들리시나요? 저기서 들리는 비명 소리... 볼카르의 사역자들이 침묵의 탑으로 향하고 있습니다.\" 그가 양피지를 펼쳐 보이자, 그 위에는 붉은 잉크로 그려진 지도 위에 '침묵의 탑'이라는 글자가 피처럼 번져 있었다. \"당신들이 가진 파편 조각이 그 열쇠입니다. 탑의 문이 열리는 순간, 대륙은 다시 불타버리겠지요.\" 상인은 당황한 기색을 보이며 뒷걸음질 쳤고, 김코슈의 토끼 귀가 경계심에 쫑긋 섰다. \"이게 무슨 소리냐, 인간아! 우리가 왜 네 말을 들어야 하지?\" 배덕이 무거운 양손도끼를 바닥에 내리찍으며 물었다. 사내는 입꼬리를 비틀며 미소 지었다. \"선택은 당신들의 자유입니다. 하지만 시간은... 이미 늦었을지도 모릅니다.\" [🎬 SCENE: golden hour fading into twilight in a medieval village street, a mysterious hooded figure holding a blood-stained parchment map standing before a blacksmith forge, a massive bear-kin warrior gripping a huge axe, a rabbit-kin berserker with alert ears, a cat-kin rogue watching intently, ominous atmosphere, dark fantasy style]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 쌍단검과 관련된 무기가 있는지 물어본다.\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:105, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 치유 물약, 볼카르의 봉인 해제 지시문, 침묵의 탑 내부 지도)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 볼카르의 파편 조각, 그림자 열쇠, 치유 물약)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈 룩 크레이지스타가 날렵하게 대장간 안으로 뛰어 들어가 상인의 목덜미를 잡으며 쌍단검을 흔들었다. \"이봐, 고양이 귀 있는 사나이. 내 쌍단검에 딱 맞는 더 좋은 무기가 있나? 아니면 마법으로 날을 세운 검 말이야.\" 상인은 놀라 뒷걸음질 치며 \"오, 오호라! 그건... 대장장이가 숨겨둔 보물 중 하나를 말씀하시는군요!\" 하며 뒤쪽의 어두운 선반을 가리켰다. 거기에는 검게 빛나는 두 개의 단검이 비닐처럼 얇은 실로 묶여 있었다. \"이것은 '그림자 이빨'이라 불립니다. 어둠 속에서 적의 심장을 정확히 찌를 수 있다고 하죠. 가격은... 80 골드입니다.\" 상인이 떨리는 손으로 단검을 내밀자, 뮤즈의 고양이 눈이 반짝였다. \"흥, 꽤 비싸군. 하지만 내 손에 딱 맞을 것 같아.\" [뮤즈 룩 크레이지스타 골드: 67 → 67] \"아, 아! 67 골드는 부족하군요.\" 상인이 당황하며 손을 흔들었다. \"하지만... 이봐요, 너희들이 침묵의 탑의 열쇠를 가진 영웅이라면, 대장장이님이 특별히 10 골드를 할인해 주실지도 모릅니다.\" 상인이 배덕을 바라보며 눈짓을 보냈다. [🎬 SCENE: twilight inside a bustling blacksmith shop, a cat-kin rogue holding up dual daggers and demanding better weapons from a nervous merchant, a massive bear-kin warrior standing nearby with a huge axe, a rabbit-kin berserker watching curiously, shadowy shelves with glowing weapons in the background, warm forge light contrasting with dark corners, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 살육광 김코슈의 행동]: 돈을 모두 배덕에게 준다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:105, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 치유 물약, 볼카르의 봉인 해제 지시문, 침묵의 탑 내부 지도)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 볼카르의 파편 조각, 그림자 열쇠, 치유 물약)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코슈가 주머니를 뒤져 마지막 동전까지 배덕의 거대한 손바닥에 쏟아부었다. \"다 받아, 곰 형! 뮤즈의 검 값으로 쓰게! 내가 쓸 돈은 없어, 오직 싸우는 것뿐이니까!\" 그의 토끼 귀가 들썩이며 미친 듯이 웃자, 배덕은 고개를 저으며 웃음을 터뜨렸다. \"하! 네가 또? 자, 상인아! 이 돈으로 '그림자 이빨'을 사주마. 그리고 남는 돈으로 우리 모두의 방패를 수리해 주게.\" [김코슈 골드: 50 → 0] [배덕 골드: 105 → 155] [배덕 골드 -80] [뮤즈 룩 크레이지스타 획득: 그림자 이빨 | 무기 | 공격 +3, 어둠 속에서 은신 시 명중률 +15%] \"이게 바로 형제애지!\" 배덕이 새 단검을 받아 뮤즈에게 건네자, 뮤즈는 기뻐하며 검을 손에 쥐고 날카롭게 휘둘러보았다. \"와, 정말 가벼워! 이걸로 그림자를 베어낼 수 있겠군!\" 상인은 만족한 표정으로 동전을 주머니에 넣으며 말했다. \"영웅들이여, 침묵의 탑으로 가는 길은 멀고도 위험합니다. 하지만 이 무기를 가진다면... 희망이 있겠지요.\" [🎬 SCENE: twilight inside a blacksmith shop, a rabbit-kin berserker pouring gold coins into a massive bear-kin warrior's hand, the bear-kin warrior handing a pair of glowing shadow daggers to a cat-kin rogue, the rogue testing the blades with a grin, a nervous merchant watching with satisfaction, warm forge light illuminating the scene, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 방어구를구매한다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:75, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 치유 물약, 볼카르의 봉인 해제 지시문, 침묵의 탑 내부 지도)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 그림자 열쇠, 치유 물약, 쌍단검)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 배덕이 상인에게 거대한 손짓을 하며 말했다. \"이제 내 방패와 갑옷을 업그레이드해 주게. 침묵의 탑에서는 단순한 가죽으로는 버티기 어렵다.\" 상인은 고개를 끄덕이며 진열장 뒤에서 빛나는 강철 갑옷 한 벌과 튼튼한 철포 방패를 꺼냈다. \"이것은 '흑철의 수호'라 불립니다. 그림자 사냥개의 이빨도 뚫지 못하죠. 가격은 60 골드입니다.\" 배덕이 주머니에서 동전을 꺼내 상인에게 건네자, 상인은 갑옷을 받아주며 미소 지었다. [배덕 골드: 75 → 15] [배덕 획득: 흑철 갑옷 | 방어구 | 방어 +5] [배덕 획득: 강철 방패 | 방어구 | 방어 +3] \"좋아, 이제 좀 더 단단해졌군.\" 배덕이 갑옷을 입고 방패를 든 뒤, 김코슈와 뮤즈를 바라보았다. \"자, 준비가 됐다. 침묵의 탑으로 가자.\" [🎬 SCENE: twilight inside a blacksmith shop, a massive bear-kin warrior donning gleaming black iron plate armor and holding a sturdy steel shield, a rabbit-kin berserker and a cat-kin rogue standing nearby, warm forge light reflecting off the new armor, a merchant smiling in the background, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: \"잠시만.\" 이라고 말하고는 상인에게 현재 장착중인 장신구 도둑의 밧줄 효과를 감정 받는다.\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:15, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 강철 방패 / 흑철 갑옷 / 낡은 방패, 소지: 침묵의 탑 내부 지도, 가죽 흉갑, 거대한 양손도끼)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 그림자 열쇠, 치유 물약, 쌍단검)\n\n[DM용 시스템 메모]\n※ 배덕이(가) '흑철 갑옷'을(를) armor 슬롯에 장착했다. 기존 '강철 방패'은(는) 인벤토리로 회수됨.\n※ 배덕이(가) '강철 방패'을(를) weapon 슬롯에 장착했다. 기존 '거대한 양손도끼'은(는) 인벤토리로 회수됨.\n※ 배덕이(가) '거대한 양손도끼'을(를) weapon 슬롯에 장착했다. 기존 '강철 방패'은(는) 인벤토리로 회수됨.\n※ 배덕이(가) '강철 방패'을(를) weapon 슬롯에 장착했다. 기존 '거대한 양손도끼'은(는) 인벤토리로 회수됨.\n※ 배덕이(가) '가죽 흉갑'을(를) armor 슬롯에 장착했다. 기존 '흑철 갑옷'은(는) 인벤토리로 회수됨.\n※ 배덕이(가) '흑철 갑옷'을(를) armor 슬롯에 장착했다. 기존 '가죽 흉갑'은(는) 인벤토리로 회수됨.\n※ 배덕이(가) '거대한 양손도끼'을(를) weapon 슬롯에 장착했다. 기존 '강철 방패'은(는) 인벤토리로 회수됨.\n※ 배덕이(가) '강철 방패'을(를) weapon 슬롯에 장착했다. 기존 '거대한 양손도끼'은(는) 인벤토리로 회수됨."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] \"잠시만.\" 뮤즈 룩 크레이지스타가 고양이 귀를 쫑긋 세우며 상인에게 다가가 도둑의 밧줄을 내밀었다. \"이게 정말 그냥 밧줄이야? 아니면 뭔가 숨은 힘이 있는 거지?\" 상인은 밧줄을 받아 만지작거리더니, 갑자기 눈이 커지며 놀란 표정을 지었다. \"오! 이거... 단순한 장비가 아니군요! 이 밧줄은 '그림자 걸쇠'라고 불리는 마법 장신구입니다. 등 뒤에서 적의 목을 조여 제압하거나, 높은 벽을 타고 오를 때 체중을 무시하게 해준다고 전해집니다.\" [장비 효과: 뮤즈 룩 크레이지스타 | 도둑의 밧줄 | 등반 시 이동력 +50%, 뒤에서 적 공격 시 '제압' 효과 15% 확률] \"하, 역시 도적의 눈은 다르군.\" 배덕이 웃으며 고개를 끄덕였다. \"그걸로 침묵의 탑의 높은 벽도 쉽게 넘을 수 있겠어.\" 상인이 밧줄을 다시 뮤즈에게 건네며 말했다. \"영웅이시여, 이 힘으로 탑의 비밀을 밝혀내시길 바랍니다.\" [🎬 SCENE: twilight inside a blacksmith shop, a cat-kin rogue holding up a mysterious glowing rope accessory and examining it closely with a merchant, a massive bear-kin warrior in black iron armor watching with a smile, a rabbit-kin berserker leaning against the counter, warm forge light illuminating the magical rope, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 살육광 김코슈의 행동]: 내 무기도 강화시켜줘\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:15, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 강철 방패 / 흑철 갑옷 / 낡은 방패, 소지: 침묵의 탑 내부 지도, 가죽 흉갑, 거대한 양손도끼)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 그림자 열쇠, 치유 물약, 쌍단검)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코슈가 자신의 거대한 양손도끼를 대장간 화로에 꽂으며 미친 듯이 웃었다. \"이게 내 친구야! 하지만 더 날카롭게, 더 무겁게 만들어줘! 볼카르의 하수인들을 베어낼 때 이 도끼가 울어야지!\" 상인은 도끼날을 유심히 살피더니, \"이 도끼... 이미 영혼이 깃든 듯합니다. 하지만 '불꽃의 주조'로 날을 재연하면 더욱 강력해질 겁니다. 단, 40 골드가 필요합니다.\" 김코슈는 주머니를 두드리며 \"돈은 없어! 하지만 배덕 형이 줄 돈이 있지!\" 하고 배덕을 힐끗 보았다. 배덕이 한숨을 쉬며 남은 동전 15 골드를 주머니에서 꺼내 상인에게 내밀었다. \"나머지는... 다음에 갚게. 어서 해라, 토끼 녀석의 도끼를.\" 상인은 동전을 받아 화로에 던지며 특수한 약액을 부었다. \"으아아악!\" 도끼가 붉은 불꽃에 휩싸이며 날카로운 굉음을 냈다. [배덕 골드: 15 → 0] [김코슈 획득: 불꽃의 양손도끼 | 무기 | 공격 +4, 적에게 화상 상태 (매 턴 -3 HP) 부여] \"이제야 제대로 생겼군!\" 김코슈가 불타는 듯한 도끼를 휘두르며 포효했다. \"이제 침묵의 탑이 두려울 게 뭐 있겠어!\" [🎬 SCENE: twilight inside a blacksmith shop, a rabbit-kin berserker holding a massive two-handed axe engulfed in roaring red flames, a merchant pouring alchemical liquid onto the blade, a massive bear-kin warrior watching with a weary smile, sparks flying into the air, intense heat radiating from the forge, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 낡은방패를감정한다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:0, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 강철 방패 / 흑철 갑옷 / 낡은 방패, 소지: 침묵의 탑 내부 지도, 가죽 흉갑, 거대한 양손도끼)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 그림자 열쇠, 치유 물약, 쌍단검)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 배덕이 인벤토리에서 낡은 방패를 꺼내 상인의 손에 쥐어주며 물었다. \"이걸 봐주게. 그냥 폐기할 물건일까, 아니면 숨은 힘이 있을까?\" 상인이 방패를 받아 만져보더니, 낡은 나무 틈새에서 은은한 푸른 빛이 스며나오는 것을 발견하고 놀라 입을 벌렸다. \"이건... 단순한 나무가 아닙니다! '바람의 수호'라는 고대 마법이 각인된 방패군요. 적의 화살이나 마법 공격을 20% 만큼 무효화해줍니다.\" [장비 효과: 배덕 | 낡은 방패 | 마법 및 원거리 공격 피해 -20%] \"우와, 이게 숨겨진 보물이라니!\" 배덕이 방패를 다시 등에 메며 기뻐했다. \"이제 침묵의 탑의 마법 공격도 조금은 막을 수 있겠군.\" 상인이 고개를 끄덕이며 말했다. \"영웅들이여, 이 힘으로 탑의 위험을 헤쳐나가시길 바랍니다.\" [🎬 SCENE: twilight inside a blacksmith shop, a massive bear-kin warrior holding an old wooden shield that glows with faint blue magical runes, a merchant examining it with wide eyes, a rabbit-kin berserker and a cat-kin rogue watching with curiosity, warm forge light contrasting with the cool blue glow of the shield, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 어두운 가죽 갑옷을 감정하고 기교를 올린만한 장비가 있는지 확인한다.\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:0, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 강철 방패 / 흑철 갑옷 / 낡은 방패, 소지: 침묵의 탑 내부 지도, 가죽 흉갑, 거대한 양손도끼)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 그림자 열쇠, 치유 물약, 쌍단검)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈 룩 크레이지스타가 자신의 어두운 가죽 갑옷을 가볍게 두드리며 상인에게 다가갔다. \"자, 이 가죽 갑옷도 한번 봐줘. 그리고 내 기교 (DEX) 를 더 살려줄 만한 장비가 혹시 없나? 나는 그림자처럼 움직여야 하니까.\" 상인이 갑옷을 받아 자세히 살펴보니, 가죽 표면에서 은은한 회색빛이 감돌았다. \"오! 이건 단순한 가죽이 아닙니다. '그림자 스며드는 피부'라 불리는 마법 갑옷이군요. 착용자의 움직임을 더 유려하게 만들어 회피율을 높여줍니다.\" [장비 효과: 뮤즈 룩 크레이지스타 | 어두운 가죽 갑옷 | 회피율 +15%, 은신 성공 시 방어력 일시 증가] \"좋아! 그런데 기교를 올려주는 건?\" 뮤즈가 눈을 반짝이며 물었다. 상인은 진열장 깊은 곳에서 얇고 가벼운 부츠 한 켤레를 꺼냈다. \"이 '바람의 발걸음' 부츠라면 어떨까요? 착용자의 발놀림을 날렵하게 만들어 기교를 더욱 빛나게 합니다. 가격은 50 골드입니다.\" [뮤즈 룩 크레이지스타 획득: 바람의 발걸음 | 방어구 | 기교 (DEX) +2, 이동 속도 +10%] \"비싸긴 하지만, 내 발에 딱 맞겠군!\" 뮤즈가 부츠를 신고 가볍게 점프하며 웃었다. \"이제 누구도 나를 잡지 못할 거야!\" [🎬 SCENE: twilight inside a blacksmith shop, a cat-kin rogue examining a glowing dark leather armor and trying on slender wind-woven boots, a merchant presenting the items with a knowing smile, a massive bear-kin warrior and a rabbit-kin berserker watching in the background, warm forge light reflecting off the magical gear, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 살육광 김코슈의 행동]: 김배덕에게 돈을 준다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:0, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 강철 방패 / 흑철 갑옷 / 낡은 방패, 소지: 침묵의 탑 내부 지도, 가죽 흉갑, 거대한 양손도끼)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 바람의 발걸음 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 어두운 가죽 갑옷)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코슈가 주머니를 뒤져 남은 모든 동전을 배덕의 손에 쑤셔 넣었다. \"자, 배덕 형! 이걸로 내 부츠 값이나 뭐든 더 필요한 걸 사게! 내가 쓸 돈은 없어, 오직 싸움뿐이니까!\" 그의 토끼 귀가 들썩이며 미친 듯이 웃자, 배덕은 놀란 눈으로 동전을 바라보다가 크게 웃음을 터뜨렸다. \"하! 네가 또? 자, 상인아! 이 돈으로 바람의 발걸음 부츠를 사주마. 그리고 남는 돈으로 우리 모두의 식량을 준비해 주게.\" [김코슈 골드: 50 → 0] [배덕 골드: 0 → 50] [배덕 골드 -50] [뮤즈 룩 크레이지스타 획득: 바람의 발걸음 | 방어구 | 기교 (DEX) +2, 이동 속도 +10%] \"이게 바로 형제애지!\" 배덕이 새 부츠를 받아 뮤즈에게 건네자, 뮤즈는 기뻐하며 부츠를 신으며 가볍게 점프해 보였다. \"와, 정말 가볍다! 이제 누구도 나를 잡지 못할 거야!\" 상인은 만족한 표정으로 동전을 주머니에 넣으며 말했다. \"영웅들이여, 침묵의 탑으로 가는 길은 멀고도 위험합니다. 하지만 이 무기를 가진다면... 희망이 있겠지요.\" [🎬 SCENE: twilight inside a blacksmith shop, a rabbit-kin berserker pouring gold coins into a massive bear-kin warrior's hand, the bear-kin warrior handing wind-woven boots to a cat-kin rogue, the rogue testing the boots with a grin, a nervous merchant watching with satisfaction, warm forge light illuminating the scene, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: 가죽흉갑과 양손도끼를 판매한다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.7, 2일차]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:20/30, 공격:15, 방어:10, 골드:0, [STR 16, INT 7, WIS 10, DEX 8, CHA 7, CON 14], 장착: 강철 방패 / 흑철 갑옷 / 낡은 방패, 소지: 침묵의 탑 내부 지도, 가죽 흉갑, 거대한 양손도끼)\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 바람의 발걸음 / 도둑의 밧줄, 소지: 쌍단검, 어두운 가죽 갑옷, 바람의 발걸음)\n\n[DM용 시스템 메모]\n※ 뮤즈 룩 크레이지스타이(가) '바람의 발걸음'을(를) weapon 슬롯에 장착했다. 기존 '그림자 이빨'은(는) 인벤토리로 회수됨.\n※ 뮤즈 룩 크레이지스타이(가) '그림자 이빨'을(를) weapon 슬롯에 장착했다. 기존 '바람의 발걸음'은(는) 인벤토리로 회수됨."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 배덕이 인벤토리에서 더 이상 쓸모없어진 낡은 가죽 흉갑과 거대한 양손도끼를 상인의 카운터 위에 툭 내려놓았다. \"이제 우리 파티는 각자 역할이 나뉜 만큼, 이 낡은 것들은 정리하자. 값은 적당히 쳐 주게.\" 상인이 두 손으로 무거운 도끼와 찢어진 흉갑을 받아 보더니, \"흠... 도끼는 재질이 나쁘지 않아 녹여 쓰면 15 골드, 흉갑은 가죽 상태가 너무 나빠 5 골드 정도가 한계군요. 합쳐서 20 골드입니다.\" 배덕은 주저 없이 수락했다. \"좋아, 그걸로 식량과 물약에 보태자.\" [배덕 골드: 0 → 20] [배덕 장비 해제: 방어구] [배덕 장비 해제: 무기] \"이제 짐이 가벼워졌군. 자, 이 돈으로 대장간 밖에서 구할 수 있는 식량을 사러 가자.\" 상인은 동전을 세어 배덕에게 건네며 고개를 숙였다. \"영웅들이여, 침묵의 탑의 문은 곧 열릴 것입니다. 준비가 끝났다면 서두르십시오.\" [🎬 SCENE: twilight inside a blacksmith shop, a massive bear-kin warrior placing a worn leather chest piece and a heavy two-handed axe on a wooden counter, a merchant counting gold coins with a satisfied expression, a rabbit-kin berserker leaning against the wall with a fiery axe, a cat-kin rogue adjusting their boots, warm forge light casting long shadows, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 배덕(수인 전사, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "그의 거대한 그림자가 대장간의 문을 나서며 잿빛 안개 속으로 희미해져 갔다. \"일단 여기서 기다려라... 내 영혼이 부르는 소리가 너무 커서, 잠시라도 길을 잃지 않으려 한다.\" 배덕은 한 번 더 뒤돌아보지 않은 채, 침묵의 탑이 우뚝 선 어둠 속으로 홀로 사라져 버렸다."
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 바람의 발걸음을 조리한다.\n\n현재 파티:\n[파티 2명 · 평균 Lv2.0, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)\n\n[DM용 시스템 메모]\n※ 뮤즈 룩 크레이지스타이(가) '어두운 가죽 갑옷'을(를) armor 슬롯에 장착했다. 기존 '바람의 발걸음'은(는) 인벤토리로 회수됨.\n※ 뮤즈 룩 크레이지스타이(가) '바람의 발걸음'을(를) weapon 슬롯에 장착했다. 기존 '그림자 이빨'은(는) 인벤토리로 회수됨.\n※ 뮤즈 룩 크레이지스타이(가) '바람의 발걸음'을(를) weapon 슬롯에 장착했다. 기존 '바람의 발걸음'은(는) 인벤토리로 회수됨.\n※ 뮤즈 룩 크레이지스타이(가) '그림자 이빨'을(를) weapon 슬롯에 장착했다. 기존 '바람의 발걸음'은(는) 인벤토리로 회수됨."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] \"호호, 이 부츠는 요리할 때 쓰는 게 아니야, 작은 토끼야.\" 뮤즈가 고양이 눈으로 김코슈를 흘겨보며 바람의 발걸음을 들어 흔들었다. \"하지만 네가 '조리'하라고 했으니, 이걸로 내 발놀림을 '요리'해 볼까?\" 그는 부츠를 신지 않은 채 발끝으로 가볍게 톡톡 치며, 마치 재료를 섞듯 공중으로 부츠를 던져 올렸다. \"이제 내 발걸음은 바람처럼 가볍고, 그림자처럼 빠르다! 배덕이 없어도 우리는 충분히 빠를 수 있어!\" 김코슈가 어리둥절해하며 고개를 갸웃거렸지만, 뮤즈는 이미 부츠를 다시 인벤토리에 넣으며 날렵하게 대장간 문을 향해 뛰쳐나갔다. \"자, 빨리 가자! 침묵의 탑이 우리를 기다리고 있잖아!\" [🎬 SCENE: twilight outside a blacksmith shop, a cat-kin rogue playfully tossing a pair of glowing wind-woven boots into the air and catching them with a grin, a rabbit-kin berserker watching with a confused expression, the rogue's tail flicking with excitement, the dark silhouette of a tall tower looming in the distance, warm sunset light contrasting with the cool magical glow of the boots, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 살육광 김코슈의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n[파티 2명 · 평균 Lv2.0, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코슈의 긴 토끼 귀가 예민하게 쫑긋 서서 주변 소음을 포착했다. \"쉿... 바람 소리만 들리는 줄 알았는데, 뭔가 숨은 숨결이 있어.\" 그가 무거운 도끼를 바닥에 내려놓고 주변을 살피자, 낡은 상자 더미 뒤에서 은은한 푸른 빛이 새어 나왔다. \"뭐야? 저게 뭐지?\" 김코슈가 조심스럽게 상자를 들어 올리자, 그 안에서 빛나는 치유 물약 두 병과 낡은 동전 주머니가 굴러떨어졌다. [김코슈 획득: 치유 물약 x2 | 소모품 | HP 30 즉시 회복] [김코슈 획득: 동전 주머니 | 소모품 | 골드 +15] \"하! 보물이군! 배덕이 없어도 우리는 운이 좋구나!\" 김코슈가 물약과 동전을 주머니에 집어넣으며 활기차게 웃었다. \"자, 뮤즈! 이제 더 빨리 가자!\" [🎬 SCENE: twilight outside a blacksmith shop, a rabbit-kin berserker crouching near a pile of old crates, holding up a glowing blue potion bottle and a small pouch of gold coins, a cat-kin rogue standing nearby with a curious expression, the silhouette of a dark tower in the background, warm sunset light casting long shadows, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: (뮤즈 룩 크레이지스타 은(는) 이번 차례에 직접 행동하지 않고 흐름을 지켜본다 — 관망/패스. **DM 은 시나리오를 한 단계 명확히 진척시켜라**: NPC 의 새 등장·환경 변화·새 정보 노출·시간 경과·적의 다음 행동 중 하나 이상으로 이야기를 다음 비트로 끌어가라. 빈 묘사·정적 풍경 묘사 금지.)\n\n현재 파티:\n[파티 2명 · 평균 Lv2.0, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈가 고개를 갸웃하며 팔짱을 끼고 서 있는 사이, 김코슈가 주운 보물을 챙기는 순간, 대장간 뒤쪽의 어두운 골목에서 낡은 천이 바람에 펄럭이며 누군가가 모습을 드러냈다. \"흠, 토끼 냄새와 고양이 냄새... 그리고 그토록 탐나는 볼카르의 파편 냄새가 나네.\" 낡은 두건 아래로 붉은 눈동자가 빛나는 **검은 사제**가 비틀거리며 걸어 나왔다. \"볼카르의 부활을 막으려다, 오히려 제물이 되려는가?\" 사제의 손끝에서 검은 연기가 피어오르며 바닥을 태우기 시작한다. [적 등장: 검은 사제 | HP 45 | 속도 12] \"무서워하지 마라, 작은 짐승들아. 네 운명은 이미 정해졌으니.\" 사제가 비웃으며 검은 마력을 뿜어내자, 주변 공기가 무겁게 가라앉고 김코슈의 토끼 귀가 공포에 떨며 쫑긋 섰다. [🎬 SCENE: twilight in a narrow alley behind a blacksmith shop, a hooded figure with glowing red eyes emerging from shadows casting dark smoke magic, a rabbit-kin berserker looking startled with a massive axe, a cat-kin rogue standing calmly with crossed arms, ominous purple mist swirling around the hooded figure's hands, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 살육광 김코슈의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n[파티 2명 · 평균 Lv2.0, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코슈의 긴 토끼 귀가 미세한 진동을 감지하듯 쫑긋 섰다. \"쉿... 바람 소리가 이상해. 무언가 숨은 숨결이 있어.\" 그가 무거운 양손도끼를 바닥에 살짝 내려놓고 주변을 예민하게 살피자, 낡은 상자 더미 뒤에서 은은한 푸른 빛이 새어 나왔다. \"뭐야? 저게 뭐지?\" 김코슈가 조심스럽게 상자를 들어 올리자, 그 안에서 빛나는 치유 물약 두 병과 낡은 동전 주머니가 굴러떨어졌다. [김코슈 획득: 치유 물약 x2 | 소모품 | HP 30 즉시 회복] [김코슈 획득: 동전 주머니 | 소모품 | 골드 +15] \"하! 보물이군! 배덕이 없어도 우리는 운이 좋구나!\" 김코슈가 물약과 동전을 주머니에 집어넣으며 활기차게 웃었다. \"자, 뮤즈! 이제 더 빨리 가자!\" [🎬 SCENE: twilight outside a blacksmith shop, a rabbit-kin berserker crouching near a pile of old crates, holding up a glowing blue potion bottle and a small pouch of gold coins, a cat-kin rogue standing nearby with a curious expression, the silhouette of a dark tower in the background, warm sunset light casting long shadows, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 검은 사제를 공격한다.\n\n현재 파티:\n[파티 2명 · 평균 Lv2.0, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈 룩 크레이지스타의 고양이 눈이 날카롭게 빛나며 그림자처럼 검은 사제를 향해 돌진했다. \"볼카르의 하수인이 여기 있을 줄은 몰랐군! 내 칼날이 너의 저주를 끊어주마!\" 그의 손에 들린 쌍단검이 공기를 가르며 사제의 검은 망토를 향해 날아갔다. 명중 판정 [🎲DM d20: 18] +3(DEX) = 21! 날카로운 칼날이 사제의 어깨를 가르며 검은 피를 튀겼다. [뮤즈 룩 크레이지스타 공격: 검은 사제 | 피해 12] \"끄아악! 이 작은 고양이 녀석!\" 사제가 고통에 비명을 지르며 뒤로 물러섰다. [적 HP: 검은 사제 45 → 33] \"네가 날 건드리다니... 볼카르의 분노를 맛보게 되리라!\" 사제가 손을 뻗어 검은 마력을 뿜어내려 했지만, 뮤즈는 이미 다시 그림자 속으로 숨어 버렸다. [🎬 SCENE: twilight in a narrow alley, a cat-kin rogue lunging with dual daggers towards a hooded dark priest, sparks of dark magic and blue blood flying in the air, a rabbit-kin berserker raising a massive axe in the background, ominous purple mist swirling around the priest, dramatic shadows cast by the setting sun, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 살육광 김코슈의 행동]: 마구잡이로 돌진해 공격한다\n\n현재 파티:\n[파티 2명 · 평균 Lv2.0, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코슈의 토끼 귀가 분노로 뻣뻣하게 섰다. \"이제 내 차례야, 사제 놈! 네 마법 따위 내 도끼 한 방에 부숴 버리겠어!\" 그가 거대한 양손도끼를 휘둘러 사제를 향해 돌진하자, 공기가 찢어지는 소리가 울렸다. 명중 판정 [🎲DM d20: 16] +2(STR) = 18! 도끼 날이 사제의 검은 망토를 갈라놓으며 깊은 상처를 입혔다. [김코슈 공격: 검은 사제 | 피해 18] \"크아악! 이 미친 토끼!\" 사제가 비명을 지르며 뒤로 주저앉았다. [적 HP: 검은 사제 33 → 15] \"이제 끝이야! 볼카르의 파편을 빼앗아 갈 테다!\" 김코슈가 도끼를 높이 치켜들며 포효하자, 사제의 눈에서 공포가 번졌다. \"멈춰라! 나는... 나는...\" 사제의 목소리가 떨리며 검은 연기가 더 짙게 피어올랐다. [🎬 SCENE: twilight in a narrow alley, a rabbit-kin berserker swinging a massive two-handed axe at a hooded dark priest, dark magic swirling around the priest's hands, a cat-kin rogue watching from the shadows with daggers drawn, sparks of blue blood flying, dramatic shadows cast by the setting sun, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 몬스터 행동 차례 — 검은 사제 (HP 15/45, 속도 12). 가능한 표적: 미친 살육광 김코슈, 뮤즈 룩 크레이지스타. 이 적이 1~2 문장으로 행동·대사·공격을 묘사해라. 공격이라면 명중 판정 [🎲DM d20: X] (보통 d20 + 적 속도 modifier vs 표적 DEX modifier 또는 방어), 명중 시 `[표적이름 HP: A → B]` 태그로 피해 적용. 적이 자기 차례를 그냥 보내는 건 금지 — 의미있는 행동·이동·주문·대사 중 하나 필수. 전투 종료 직후거나 도망 적합한 상황이면 `[적 퇴장: 검은 사제]` 도 가능.]"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 검은 사제는 비틀거리며 바닥에 무릎을 꿇었지만, 붉은 눈동자는 여전히 사나웠다. \"감히... 볼카르의 사도를 이렇게 치다니! 네 목숨이 그 대가를 치르게 하리라!\" 그가 흙먼지를 일으키며 검은 마력을 뿜어내자, 어둠이 뱀처럼 김코슈를 향해 치솟았다. 명중 판정 [🎲DM d20: 11] +2(마법) = 13 vs 김코슈의 회피... 하지만 토끼의 예민한 감각이 위험을 감지하고 몸을 피했다! \"크아악! 피했군... 하지만 내 저주는 피할 수 없다!\" 사제가 비웃으며 마력을 뿜어내자, 김코슈의 발목에 검은 가시들이 돋아났다. [김코슈 디버프: 검은 가시 2턴 | 매 턴 HP -5] \"이제 네 다리가 무너질 것이다, 미친 토끼야!\" [🎬 SCENE: twilight in a narrow alley, a hooded dark priest kneeling on the ground casting dark thorny magic at a rabbit-kin berserker, black thorns sprouting around the berserker's ankles, a cat-kin rogue watching with daggers ready, ominous purple mist swirling, dramatic shadows cast by the setting sun, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 검은 사제의 목을 베어버린다.\n\n현재 파티:\n[파티 2명 · 평균 Lv2.0, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv2, HP:100/100, MP:65/65, 공격:20, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 19, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈 룩 크레이지스타의 고양이 눈이 치명적인 순간을 포착하듯 좁아졌다. \"이제 끝이야, 사제! 네 목숨은 내 칼날이 받아주마!\" 그가 그림자처럼 사제 뒤로 순식간에 이동해 쌍단검을 목덜미에 겨누자, 검은 사제는 도망칠 틈도 없이 비명을 지르며 쓰러졌다. 명중 판정 [🎲DM d20: 19] +3(DEX) = 22! 날카로운 칼날이 사제의 목을 깔끔하게 베어 넘겼다. [뮤즈 룩 크레이지스타 공격: 검은 사제 | 피해 14] \"끄아악... 볼카르...의...\" 사제의 몸이 경련하듯 떨리다 바닥에 툭 쓰러지며 검은 피를 흘렸다. [적 HP: 검은 사제 15 → 1] [적 퇴장: 검은 사제] \"하아... 역시 도적의 손길은 빠르군.\" 뮤즈가 칼끝을 닦으며 중얼거렸다. 김코슈는 발목의 검은 가시가 서서히 사라지는 것을 느끼며 안도의 한숨을 내쉬었다. \"고맙다, 고양이 녀석! 이제 이 녀석의 주머니를 뒤져보자!\" [김코슈 XP +25] [뮤즈 룩 크레이지스타 XP +25] [🎬 SCENE: twilight in a narrow alley, a cat-kin rogue standing over a fallen hooded dark priest with dual daggers dripping black blood, a rabbit-kin berserker rubbing his ankles where dark thorns have vanished, the priest's body lying motionless on the cobblestones, ominous purple mist dissipating into the air, dramatic shadows cast by the setting sun, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 살육광 김코슈의 행동]: 마구잡이로 돌진해 공격한다\n\n현재 파티:\n[파티 2명 · 평균 Lv2.5, 2일차]\n- 미친 살육광 김코슈 (수인(토끼·수형·90%) 전사, Lv2, HP:130/130, MP:35/35, 공격:20, 방어:10, 골드:50, [STR 13, INT 7, WIS 10, DEX 15, CHA 7, CON 12], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패, 소지: 볼카르의 파편 조각)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv3, HP:110/110, MP:70/70, 공격:22, 방어:7, 골드:67, [STR 11, INT 8, WIS 9, DEX 22, CHA 13, CON 10], 장착: 그림자 이빨 / 어두운 가죽 갑옷 / 도둑의 밧줄, 소지: 치유 물약, 쌍단검, 바람의 발걸음)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코슈의 토끼 귀가 분노로 쫑긋 섰지만, 적인 검은 사제는 이미 바닥에 쓰러진 지 오래였다. \"뭐야? 이미 죽은 놈을 또 치겠다는 건가?\" 그가 거대한 양손도끼를 허공에 휘둘러 사제의 시체를 향해 내리찍자, 도끼날은 이미 식어버린 검은 피를 가르며 바닥의 돌을 갈랐다. 명중 판정 [🎲DM d20: 5] +2(STR) = 7! \"크아악! 헛쳤다!\" 김코슈가 균형을 잃고 비틀거리며 넘어질 뻔했다. 도끼의 위력이 돌바닥에 부딪히며 튀어 오르는 파편이 그의 가죽 흉갑을 긁었다. [김코슈 HP: 130 → 125] \"아프다! 이 돌들이 왜 나를 공격해!\" 김코슈가 어이없다는 듯 시체를 발로 차며 중얼거렸다. \"야, 뮤즈! 이 녀석은 이미 죽었으니 노획이나 하자!\" [🎬 SCENE: twilight in a narrow alley, a rabbit-kin berserker swinging a massive two-handed axe at a fallen hooded dark priest's corpse, sparks flying from the axe hitting the cobblestones, a cat-kin rogue standing nearby with a bemused expression, the priest's body lying motionless, ominous purple mist dissipating, dramatic shadows cast by the setting sun, dark fantasy atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 뮤즈 룩 크레이지스타(수인 도적, Lv3)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] \"이곳의 공기는 더 이상 내 호기심을 채워주지 못하네, 미친 토끼야.\" 뮤즈가 고양이 눈으로 김코슈를 한 번 더 흘겨보더니, 그림자 속으로 몸을 녹이며 사라졌다. \"나중에 다시 만날 때, 이 도끼가 너를 쪼개기 전에 내가 먼저 너를 잡았으면 좋겠군.\" 그의 목소리는 바람에 실려 희미해졌고, 남은 것은 김코슈와 쓰러진 사제의 시체, 그리고 고요한 어둠뿐이었다."
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 뮤즈 룩 크레이지스타(수인 도적, Lv3)이 파티에 다시 합류한다. 경과: 약 136초 — 잠시 자리를 비웠다 다시 합류하는 가벼운 톤. 이 인물은 다른 영웅의 모습을 빌려 합류한 새 동료이다. 2~3문장으로 자연스럽고 스무스한 등장 장면을 묘사해라. 시간대 태그 생략, 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "그림자가 다시 일어서며, 다른 영웅의 옷차림을 한 뮤즈 룩 크레이지스타가 재빨리 김코슈 곁으로 돌아왔다. \"미안하다, 토끼야. 잠시 다른 그림자 속을 기웃거렸을 뿐이지, 너를 혼자 두진 않았어.\" 그는 고양이처럼 유연하게 몸을 풀며 쌍단검을 다시 꽂았다. \"자, 이제 다시 시작할까? 이 녀석의 시체에서 뭔가 더 나올지도 모르지.\""
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 배덕(수인 전사, Lv1)이 파티에 다시 합류한다. 경과: 약 1004초 — 한동안 행방이 묘연했던 동료가 숨을 헐떡이며 돌아오는 톤. 이 인물은 다른 영웅의 모습을 빌려 합류한 새 동료이다. 2~3문장으로 자연스럽고 스무스한 등장 장면을 묘사해라. 시간대 태그 생략, 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "\"하아... 하아... 미안해, 김코슈! 길을 잃어버린 줄 알았지.\" 숨을 헐떡이며 뛰어온 **배덕**이 김코슈의 어깨를 부여잡고 무릎을 꿇었다. 그의 모습은 전사였지만, 눈빛과 몸짓은 어딘가 낯선 영웅의 기운을 띠고 있었다. \"다행히도... 볼카르의 그림자를 피해서 돌아왔어. 이제 우리 세 명으로 다시 출발하자!\""
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 배덕(수인 전사, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "\"이곳의 어둠은 내 피를 끓게 하지만, 더 깊은 그림자가 나를 부르고 있구나.\" 배덕이 갑자기 뒤를 돌아보며 김코슈에게 작게 인사를 건넸다. 그의 눈빛은 전사의 강인함보다는 낯선 영웅의 고뇌를 담고 있었다. \"나중에 다시 만날 때, 이 도끼가 너를 쪼개기 전에 내가 먼저 너를 잡았으면 좋겠군.\" 그의 몸이 그림자 속으로 녹아들며, 다시는 돌아오지 않을 듯 고요한 어둠만이 남았다."
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 뮤즈 룩 크레이지스타(엘프 도적, Lv1)이 파티에 다시 합류한다. 경과: 약 0초 — 잠시 자리를 비웠다 다시 합류하는 가벼운 톤. 이 인물은 본인이다. 2~3문장으로 자연스럽고 스무스한 등장 장면을 묘사해라. 시간대 태그 생략, 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "\"다시 돌아왔네, 김코슈! 고양이 발소리는 조용하니까 깜짝 놀랐을지도 모르지.\" 그림자 속에서 은은한 엘프의 귀가 드러난 뮤즈가 가볍게 점프해 김코슈 곁에 착지했다. \"방금 근처의 어둠을 살짝 정리하고 왔어, 이제부터는 다시 내 칼날이 네 도끼를 보조해 주마.\""
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 뮤즈 룩 크레이지스타(엘프 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [
+  {
+   "player_id": "18549586",
+   "name": "미친 살육광 김코슈",
+   "emoji": "⚔️",
+   "race_emoji": "🐰",
+   "text": "습박다주겨",
+   "ts": 1777305026.8103094,
+   "is_spectator": false
+  }
+ ],
+ "narrative_log": [
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "검은 사제에게 달려들어 쌍단검으로 번갈아 내려찍는다.",
+   "ts": 1777306656.5242906
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타의 고양이 발이 폐허의 돌을 가볍게 밟으며 검은 사제에게 번개처럼 다가갔다. \"이제 끝이야, 사제.\" 그가 쌍단검을 교차하며 사제의 목과 심장을 동시에 노렸다. [🎲DM d20: 18] 날카로운 검끝이 사제의 검은 망토를 뚫고 살을 찢었다. [적 HP: 검은 사제 14 → 4] \"크아악! 멈추어라!\" 사제가 비명을 지르며 지팡이를 떨어뜨렸다. 하지만 뮤즈는 멈추지 않고 두 번째 일격을 날렸다. [🎲DM d20: 16] 두 번째 단검이 사제의 심장을 관통하며 검은 피를 쏟게 했다. [적 HP: 검은 사제 4 → 0] \"으아… 볼카르…께서는…\" 사제가 마지막 숨을 내쉬며 폐허 위에 쓰러졌다. [적 퇴장: 검은 사제] \"하아… 깔끔하네.\" 뮤즈가 검을 닦으며 입가에 미소를 띠었다. [뮤즈 룩 크레이지스타 XP +30] [배덕 XP +10] [미친 살육광 김코슈 XP +10]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/ruined%20village%20street%20at%20dusk%2C%20a%20cat-kin%20rogue%20delivering%20a%20final%20dual-blade%20strike%20to%20a%20fallen%20hooded%20black-robed%20priest%2C%20black%20blood%20splattering%20on%20the%20ground%2C%20a%20rabbit-kin%20berserker%20kneeling%20in%20the%20mist%20recovering%2C%20a%20bear-kin%20warrior%20standing%20guard%2C%20embers%20falling%2C%20dark%20fantasy%20combat%20conclusion%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=8696&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777306662.1191018
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "마구잡이로 돌진해 공격한다",
+   "ts": 1777306701.48848
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈의 토끼 귀가 쫑긋 서며, 사제의 시체 위에서 피를 닦는 뮤즈의 뒤로 비틀거리는 자신의 다리가 완전히 회복되자마자 광란이 다시 일어났다. \"아직 끝난 게 아냐! 더러운 마법사들이 어딘가에 있을 거야!\" 그가 거대한 양손도끼를 휘두르며 폐허 더미를 향해 돌진해, 무작위로 상자를 부수고 벽을 갈랐다. [🎲DM d20: 9] 하지만 그의 맹렬한 돌진은 공허한 폐허만 가르며 멈췄을 뿐, 숨겨진 적을 찾아내지는 못했다. \"뭐야? 다 비어있어?\" 김코슈가 헐떡이며 주변을 두리번거렸다. \"아니, 잠깐….\" 그가 사제의 시체 옆에 떨어진 지팡이에서 희미한 빛을 발견하고 눈을 동그랗게 떴다. \"이게 뭐지?\" [미친 살육광 김코슈 획득: 볼카르의 파편 조각 | 퀘스트 | 검은 사제가 지니고 있던 마력의 조각, 다음 의식 장소 단서]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/ruined%20village%20street%20at%20dusk%2C%20a%20rabbit-kin%20berserker%20wildly%20smashing%20debris%20with%20a%20massive%20axe%2C%20a%20cat-kin%20rogue%20examining%20a%20glowing%20shard%20near%20a%20fallen%20priest%27s%20body%2C%20a%20bear-kin%20warrior%20standing%20guard%2C%20embers%20falling%2C%20mysterious%20dark%20fantasy%20discovery%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=67026&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777306706.3593674
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777306724.6985152
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕의 곰 같은 코가 공기를 가르며 미세한 냄새를 맡아냈다. \"이곳엔 고블린 냄새만 남았지. 하지만 저기….\" 그가 무너진 성벽 너머로 흐르는 어두운 안개를 가리켰다. \"무언가 숨겨진 통로가 있는 것 같구나. 바람이 그쪽으로만 불어오고 있어.\" 그가 거대한 발걸음으로 성벽을 향해 다가가자, 무너진 돌들 사이로 희미한 푸른 빛이 새어 나왔다. \"여긴 그냥 폐허가 아니야. 볼카르의 손길이 닿은 곳이지.\" 배덕이 돌을 치우자, 숨겨진 문이 드러났고 그 안에서 낡은 상자가 하나 튀어나왔다. [배덕 획득: 낡은 상자의 열쇠 | 퀘스트 | 푸른 빛을 띠는 상자를 여는 열쇠] [배덕 획득: 치유 물약 x2 | 소모품 | HP 30 즉시 회복] \"자, 이제 문을 열 시간이다.\" 배덕이 상자를 열며 말했다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/ruined%20village%20street%20at%20dusk%2C%20a%20massive%20bear-kin%20warrior%20pushing%20aside%20rubble%20to%20reveal%20a%20hidden%20door%20glowing%20with%20faint%20blue%20light%2C%20a%20rabbit-kin%20berserker%20holding%20a%20glowing%20shard%2C%20a%20cat-kin%20rogue%20watching%20with%20daggers%20ready%2C%20embers%20falling%2C%20mysterious%20dark%20fantasy%20discovery%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=87935&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777306729.0640512
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "배덕이 상자를 여는 것을 옆에서 지켜본다.",
+   "ts": 1777306791.4032762
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타는 배덕이 낡은 상자를 여는 모습을 옆에서 조용히 지켜보았다. 그의 고양이 눈이 좁혀지며 상자 내부의 빛을 경계했다. \"조심해, 곰 아저씨. 함정일 수도 있잖아.\" 하지만 배덕이 열쇠를 돌리는 순간, 상자에서 푸른 연기가 피어오르며 마법적인 경보음이 울려 퍼졌다. [🎲DM d20: 4] \"윽!\" 배덕이 비틀거리며 뒤로 물러났지만, 연기는 그에게 해를 끼치지 않고 대신 상자 속에서 낡은 두루마리가 하나 튀어나와 바닥에 떨어졌다. \"뭐야? 함정이 아니었군.\" 뮤즈가 두루마리를 줍고 펼쳤다. [배덕 획득: 볼카르의 봉인 해제 지시문 | 퀘스트 | 다음 파편이 숨겨진 '침묵의 탑'의 위치를 나타내는 지도] \"이게 뭐지? 지도인가?\" 김코슈가 호기심에 두루마리를 뺏어보려다 배덕의 거대한 손에 막혔다. \"이제 길을 알았구나. 침묵의 탑으로 가자.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/ruined%20village%20street%20at%20dusk%2C%20a%20bear-kin%20warrior%20holding%20an%20open%20wooden%20box%20with%20glowing%20blue%20smoke%20rising%2C%20a%20cat-kin%20rogue%20examining%20an%20ancient%20scroll%2C%20a%20rabbit-kin%20berserker%20reaching%20for%20the%20scroll%2C%20embers%20falling%2C%20mysterious%20dark%20fantasy%20discovery%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=72086&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777306798.5042295
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "상처를 치료하고 휴식을 취한다",
+   "ts": 1777306809.5142014
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] 황혼의 붉은 노을이 완전히 걷히고, 어둠이 폐허를 덮었다. 김코슈는 거친 숨을 몰아쉬며 상처 난 다리를 다독였다. \"아프다… 토끼 꼬리가 쑤시는군.\" 그가 주머니에서 치유 물약을 꺼내 마시자, 따뜻한 빛이 몸을 감싸며 상처가 아물어갔다. [미친 살육광 김코슈 사용: 치유 물약] [미친 살육광 김코슈 HP: 112 → 130] \"좋아, 다시 기운이 솟는다!\" 배덕과 뮤즈도 각자 휴식을 취하며 밤의 차가운 공기를 마셨다. \"침묵의 탑은 그리 멀지 않아. 밤새 이동하자.\" 배덕이 지시문을 다시 확인하며 말했다.",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/ruined%20village%20street%20at%20night%2C%20a%20rabbit-kin%20berserker%20drinking%20a%20glowing%20potion%20to%20heal%20wounds%2C%20a%20bear-kin%20warrior%20checking%20an%20ancient%20scroll%20by%20moonlight%2C%20a%20cat-kin%20rogue%20sharpening%20daggers%20nearby%2C%20cold%20wind%20blowing%20through%20broken%20walls%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=85913&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777306821.3960152
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "마을로 향한다",
+   "ts": 1777306894.2000675
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] 달빛이 폐허 사이로 비치는 길을 따라 세 수인의 발걸음이 마을 '회색 안개'로 향했다. 배덕의 거대한 그림자가 길게 늘어지며, 김코슈의 긴 토끼 귀가 밤바람에 살랑거렸다. \"이제 안전할 거야. 마을 사람들은 우리를 반겨줄 테니까.\" 뮤즈가 낮게 속삭이며 앞장섰다. 마을 입구에 다다르자, 낡은 여관 '고양이 발자국'의 간판이 희미한 등불에 흔들렸다. \"우린 여기서 잠을 자고, 다음 길을 준비해야겠어.\" 배덕이 여관 문을 밀며 말했다.",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/moonlit%20cobblestone%20path%20leading%20to%20a%20medieval%20village%20entrance%2C%20a%20massive%20bear-kin%20warrior%20walking%20ahead%2C%20a%20rabbit-kin%20berserker%20with%20glowing%20eyes%20following%2C%20a%20cat-kin%20rogue%20scouting%20the%20shadows%2C%20an%20old%20tavern%20sign%20swaying%20in%20the%20wind%2C%20mist%20rolling%20over%20the%20ground%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=56017&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777306901.8601656
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "음식을 구매하여 회복한다.",
+   "ts": 1777306981.4910953
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] 여관 '고양이 발자국'의 따뜻한 등불 아래, 뮤즈는 주인에게 은화로 15골드를 건네며 기름진 고기 구이와 생선 수프를 주문했다. \"배불리 먹어야 다음 여정도 무사하잖아, 고양이 친구.\" 그가 음식을 배에 채우자, 지친 몸이 풀리며 MP 가 회복되었다. [뮤즈 룩 크레이지스타 골드 -15] [뮤즈 룩 크레이지스타 MP: 65 → 65 (최대치 회복)] \"맛있군. 토끼도 같이 먹어라.\" 김코슈가 고기를 뜯으며 입가에 기름을 묻혔다. 배덕은 큰 접시에 담긴 고기를 한입에 삼키며 \"이제 힘을 얻었으니, 내일 아침에는 침묵의 탑으로 떠나자.\"라고 말했다. 여관 밖에서는 달빛이 안개 사이로 비추고 있었다.",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/warm%20interior%20of%20a%20medieval%20tavern%20at%20night%2C%20wooden%20tables%20with%20plates%20of%20roasted%20meat%20and%20fish%20soup%2C%20a%20cat-kin%20rogue%20eating%20happily%2C%20a%20rabbit-kin%20berserker%20devouring%20food%2C%20a%20bear-kin%20warrior%20drinking%20ale%2C%20candlelight%20flickering%20on%20stone%20walls%2C%20cozy%20atmosphere%2C%20dark%20fantasy%20setting%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=85712&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777306986.971221
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "(미친 살육광 김코슈 은(는) 이번 차례에 직접 행동하지 않고 흐름을 지켜본다 — 관망/패스. **DM 은 시나리오를 한 단계 명확히 진척시켜라**: NPC 의 새 등장·환경 변화·새 정보 노출·시간 경과·적의 다음 행동 중 하나 이상으로 이야기를 다음 비트로 끌어가라. 빈 묘사·정적 풍경 묘사 금지.)",
+   "linger": true,
+   "ts": 1777306999.5119576
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] 여관의 따뜻한 공기가 갑자기 식어붙자, 문지방을 넘어 낡은 망토를 두른 한 사내가 걸어 들어왔다. 그의 눈은 어둠 속에서 형광처럼 빛났고, 손에는 썩은 나뭇가지를 든 지팡이가 들려 있었다. \"볼카르의 파편을 찾는 자들인가?\" 그의 목소리는 모래를 갈아 넣은 듯 거칠었다. \"침묵의 탑으로 가는 길은 이미 발걸음을 기다리고 있지. 하지만 그 길목엔 '그림자 사냥개'들이 배회하고 있어.\" 사내가 테이블 위에 검은 두루마리를 던지며 말했다. \"이것을 가져가라. 탑의 문을 여는 열쇠일지도 모른다. 대가는 나중에 받겠지.\" [뮤즈 룩 크레이지스타 획득: 그림자 열쇠 | 퀘스트 | 침묵의 탑의 대문을 여는 마법 열쇠] 사내는 웃음소리와 함께 다시 어둠 속으로 사라졌고, 여관 안은 다시 고요해졌다. \"무슨 일이야? 저 자는 누구지?\" 김코슈가 두루마리를 집어 들며 물었다. 배덕이 두루마리를 살피며 말했다. \"분명히 볼카르의 세력과 관련이 있군. 하지만 우리를 돕는 것 같기도 하고... 조심해야겠어.\"",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dimly%20lit%20medieval%20tavern%20interior%20at%20night%2C%20a%20hooded%20mysterious%20figure%20with%20glowing%20eyes%20standing%20near%20a%20wooden%20table%2C%20a%20dark%20scroll%20lying%20on%20the%20table%2C%20three%20beastkin%20warriors%20%28bear%2C%20rabbit%2C%20cat%29%20looking%20at%20the%20figure%2C%20candlelight%20flickering%2C%20shadows%20stretching%20across%20the%20floor%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=48017&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777307006.6631281
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "검은두루마리를 확인한다",
+   "ts": 1777307044.4831913
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] 배덕이 거친 곰의 손으로 검은 두루마리를 펼치자, 종이는 마치 살아있는 것처럼 미끄러지며 퍼져나갔다. \"이건... 단순한 열쇠가 아니군.\" 그가 중얼거리자, 두루마리 위로 붉은 혈관이 뻗어 나며 '침묵의 탑'의 내부 구조도가 형광처럼 떠올랐다. \"탑의 지하 3 층, '조용한 방'에 파편이 숨겨져 있나보다. 하지만...\" 배덕의 곰 같은 코가 경계심을 보이며 코를 찡그렸다. \"공기 중의 마력이 변질되어 있어. 누군가 이미 그곳에 발을 들인 흔적이야.\" 두루마리의 끝이 갑자기 뾰족하게 변해 김코슈의 손등에 살짝 찔렀다. \"아프다!\" 김코슈가 손등을 잡으며 비명을 질렀지만, 배덕은 이미 두루마리를 접어 뮤즈에게 건넸다. \"이것을 잘 간직해. 그림자 열쇠와 함께라면 탑의 문을 열 수 있을 거야.\" [배덕 획득: 침묵의 탑 내부 지도 | 퀘스트 | 탑의 지하 3 층 '조용한 방' 위치와 함정 정보 표시]",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dimly%20lit%20tavern%20interior%20at%20night%2C%20a%20massive%20bear-kin%20warrior%20unfolding%20a%20glowing%20black%20scroll%20with%20red%20vein-like%20patterns%2C%20a%20rabbit-kin%20berserker%20clutching%20his%20hand%20in%20pain%2C%20a%20cat-kin%20rogue%20holding%20a%20shadowy%20key%2C%20candlelight%20flickering%20on%20stone%20walls%2C%20ominous%20atmosphere%2C%20dark%20fantasy%20mystery%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=60151&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777307052.8136485
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "바닥을 살피며 돈을 찾아본다.",
+   "ts": 1777307102.6056654
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 심야] 뮤즈 룩 크레이지스타의 고양이 눈이 어두운 여관 바닥을 살피자, 그의 날카로운 시선이 테이블 아래 구석진 틈새에 반짝이는 무언가를 포착했다. \"이봐, 여기엔 돈이 좀 있군.\" 그가 민첩하게 몸을 굽혀 낡은 나무 판자 사이로 손을 넣자, 더러운 손수건에 싸인 동전 더미가 튀어나왔다. [🎲DM d20: 17] \"후후, 고양이 특유의 재주는 여기서 빛을 발하는군.\" 그가 동전을 세어보니 총 12 골드가 나왔다. [뮤즈 룩 크레이지스타 골드 +12] \"이건 여관 주인이 실수로 떨어뜨린 것 같아. 하지만 우리가 찾아낸 거니까 우리의 거지.\" 뮤즈가 동전을 주머니에 쑤셔 넣으며 입가에 장난기 어린 미소를 띠었다. \"자, 이제 침묵의 탑으로 갈 준비가 다 됐나?\" 배덕이 두루마리를 다시 확인하며 고개를 끄덕였다. \"좋아, 새벽이 오기 전에 출발하자.\"",
+   "current_time": {
+    "icon": "🌙",
+    "label": "심야",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dimly%20lit%20tavern%20interior%20at%20night%2C%20a%20cat-kin%20rogue%20crouching%20to%20pick%20up%20a%20small%20pouch%20of%20gold%20coins%20from%20under%20a%20wooden%20table%2C%20a%20bear-kin%20warrior%20holding%20a%20glowing%20map%2C%20a%20rabbit-kin%20berserker%20leaning%20against%20the%20wall%2C%20candlelight%20flickering%20on%20stone%20walls%2C%20shadows%20stretching%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=72120&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777307110.6064808
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777307133.8086283
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 김코슈의 긴 토끼 귀가 미세한 진동을 감지하듯 쫑긋 서더니, 여관 창밖으로 스며드는 차가운 안개 속을 예리하게 주시했다. \"조용해... 너무 조용해. 바람 소리도, 새 소리도 들리지 않아.\" 그가 낮은 목소리로 경고하자, 배덕의 곰 같은 귀도 움직이며 주변을 경계했다. \"맞다. 보통 이 시간엔 장사치들이 장소를 차리는데, 거리가 텅 비었군.\" 김코슈가 창문을 살짝 열자, 안개 너머로 어둠 속에서 붉은 눈빛 몇 쌍이 일행의 방향을 응시하고 있었다. \"저건... 그림자 사냥개들인가? 지도에 나왔던 녀석들이야.\" [🎲DM d20: 11] 김코슈의 경계심이 적중했다. 안개 속의 그림자들이 서서히 형체를 드러내며 여관 입구를 에워싸기 시작했다. \"이제 시작이군. 준비해!\" 배덕이 거대한 양손도끼를 들어 올리며 외쳤다. [적 등장: 그림자 사냥개 A | HP 18 | 속도 16] [적 등장: 그림자 사냥개 B | HP 18 | 속도 16] [적 등장: 그림자 사냥개 C | HP 18 | 속도 16]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20filtering%20through%20misty%20tavern%20window%2C%20a%20rabbit-kin%20berserker%20with%20alert%20ears%20looking%20out%20into%20the%20fog%2C%20shadowy%20wolf-like%20creatures%20with%20glowing%20red%20eyes%20emerging%20from%20the%20darkness%20outside%2C%20a%20bear-kin%20warrior%20raising%20a%20massive%20axe%2C%20a%20cat-kin%20rogue%20drawing%20daggers%2C%20tense%20atmosphere%2C%20dark%20fantasy%20combat%20start%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=57017&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777307139.1877148
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "여관문을 박차고나가 사냥개들에게 달려든다",
+   "ts": 1777307188.9017847
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 배덕이 거대한 몸으로 여관 문을 박차고 나가자, 목재가 산산조각 나며 아침 안개가 흩어졌다. \"이리와, 그림자 같은 개들아!\" 그의 거대한 양손도끼가 공기를 가르며 그림자 사냥개 A 를 향해 내리꽂혔다. [🎲DM d20: 18] \"크아악!\" 도끼날이 그림자의 목덜미를 가르고 검은 피가 튀어 올랐다. [적 HP: 그림자 사냥개 A 18 → 6] \"하아, 한 방에 쓰러질 줄 알았는데...\" 배덕이 중얼거리자, 사냥개 B 가 그의 다리를 향해 이빨을 드러내며 달려들었다. [🎲DM d20: 15] \"윽!\" 사냥개의 이빨이 가죽 흉갑을 파고들었지만, 배덕의 강건한 체격이 치명상을 막아냈다. [배덕 HP: 120 → 112] \"배덕, 뒤를 봐!\" 김코슈가 양손도끼를 휘두르며 사냥개 C 를 향해 돌진했다.",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20breaking%20through%20mist%2C%20a%20massive%20bear-kin%20warrior%20swinging%20a%20huge%20axe%20at%20shadowy%20wolf%20creatures%20outside%20a%20broken%20tavern%20door%2C%20dark%20smoke%20and%20black%20blood%20splashing%2C%20a%20rabbit-kin%20berserker%20charging%20with%20a%20blade%2C%20a%20cat-kin%20rogue%20poised%20on%20a%20windowsill%2C%20dynamic%20combat%20action%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=25687&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777307194.7740357
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "그림자 사냥개 A를 마무리 한다.",
+   "ts": 1777307236.073764
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 뮤즈 룩 크레이지스타의 고양이 눈이 날카롭게 빛나자, 그는 그림자처럼 사냥개 A 의 등 뒤로 스며들었다. \"끝났다, 꼬리 잘린 개.\" 그가 쌍단검을 번개처럼 휘두르자, 날카로운 검끝이 그림자의 심장을 꿰뚫었다. [🎲DM d20: 19] \"끼익!\" 사냥개 A 가 비명을 지르며 검은 연기처럼 흩어지며 사라졌다. [적 퇴장: 그림자 사냥개 A] [뮤즈 룩 크레이지스타 XP +15] \"하아, 깔끔하군.\" 그가 검을 닦으며 중얼거렸다. 하지만 나머지 두 마리는 여전히 배덕과 김코슈를 에워싸고 으르렁거리며 공격 자세를 취했다. \"아직 끝나지 않았어!\" 김코슈가 토끼 귀를 쫑긋 세우며 적을 노려보았다.",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20cat-kin%20rogue%20delivering%20a%20finishing%20blow%20to%20a%20shadowy%20wolf%20creature%2C%20black%20smoke%20dissipating%20from%20the%20fallen%20enemy%2C%20a%20bear-kin%20warrior%20blocking%20attacks%20from%20two%20remaining%20wolves%2C%20a%20rabbit-kin%20berserker%20ready%20to%20strike%2C%20dynamic%20combat%20pose%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=98663&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777307243.3843489
+  },
+  {
+   "type": "monster_turn",
+   "monster_name": "그림자 사냥개 B",
+   "text": "[시스템: 몬스터 행동 차례 — 그림자 사냥개 B (HP 18/18, 속도 16). 가능한 표적: 배덕, 미친 살육광 김코슈, 뮤즈 룩 크레이지스타.] 그림자 사냥개 B 는 배덕의 다리를 노리며 어둠 속을 유령처럼 기어올라가 이빨을 드러냈다. [🎲DM d20: 12] \"낑!\" 날카로운 이빨이 가죽 흉갑을 파고들었지만, 배덕의 두꺼운 피부와 방어력이 치명상을 막아냈다. [배덕 HP: 112 → 104] \"아직도 버티는군, 큰 곰.\" 사냥개 B 가 으르렁거리며 물기를 놓지 않고 배덕의 팔을 더 깊이 물어뜯으려 했다.",
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20shadowy%20wolf%20creature%20lunging%20at%20a%20bear-kin%20warrior%27s%20leg%2C%20dark%20smoke%20swirling%20around%20the%20beast%2C%20the%20warrior%20grimacing%20in%20pain%20but%20holding%20his%20ground%2C%20dynamic%20combat%20action%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=59158&nologo=true&model=flux",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "ts": 1777307246.9379444
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "마구잡이로 돌진해 공격한다",
+   "ts": 1777307247.9900482
+  },
+  {
+   "type": "monster_turn",
+   "monster_name": "그림자 사냥개 C",
+   "text": "[시스템: 몬스터 행동 차례 — 그림자 사냥개 C (HP 18/18, 속도 16). 가능한 표적: 배덕, 미친 살육광 김코슈, 뮤즈 룩 크레이지스타.] 그림자 사냥개 C 는 김코슈의 긴 토끼 귀를 노려보다가, 순식간에 먹이를 향해 치켜든 이빨을 날렸다. [🎲DM d20: 8] \"끼익!\" 사냥개의 발톱이 김코슈의 어깨를 스쳤으나, 그의 민첩한 반사신경이 위험을 피하게 했다. 김코슈가 몸을 비틀며 도끼를 휘두르기 직전, 사냥개의 공격은 허공을 가르며 빗나갔다. \"하아, 빗나갔군. 이대로 물러서면 안 돼!\" 김코슈가 격노하며 사냥개를 향해 돌진 준비를 했다.",
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20shadowy%20wolf%20creature%20lunging%20at%20a%20rabbit-kin%20berserker%27s%20shoulder%2C%20the%20berserker%20dodging%20with%20agile%20movement%2C%20dark%20smoke%20swirling%20around%20the%20beast%2C%20dynamic%20combat%20action%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=52666&nologo=true&model=flux",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "ts": 1777307251.2686312
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 김코슈의 토끼 눈이 핏발 서며 미친 듯이 돌진했다. \"으아아악! 다 죽여버려!\" 그가 거대한 양손도끼를 마구잡이로 휘둘러 그림자 사냥개 C 를 향해 내리찍었다. [🎲DM d20: 9] \"크아악!\" 도끼날은 사냥개의 머리를 스쳐 지나가며 안개 속의 기둥을 갈라놓았다. 빗나간 충격에 김코슈의 몸이 휘청이며 균형을 잃었다. [김코슈 디버프: 균형 상실 1턴 | 다음 회피 판정 -4] \"젠장, 빗나가다니!\" 그가 비틀거리며 다시 도끼를 잡으려 했지만, 사냥개 C 는 그 틈을 타 날카로운 이빨로 김코슈의 옆구리를 파고들었다. [🎲DM d20: 16] \"끄아악!\" 사냥개의 이빨이 가죽 흉갑을 뚫고 살을 찢었다. [김코슈 HP: 130 → 115] \"이런... 미친 놈들아!\" 김코슈가 고통에 일그러진 얼굴로 사냥개를 노려보며 다시 일어섰다.",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20rabbit-kin%20berserker%20swinging%20a%20massive%20axe%20wildly%20and%20missing%2C%20a%20shadowy%20wolf%20creature%20biting%20the%20berserker%27s%20side%2C%20black%20smoke%20and%20dark%20blood%2C%20a%20bear-kin%20warrior%20standing%20guard%2C%20a%20cat-kin%20rogue%20watching%2C%20dynamic%20combat%20chaos%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=6026&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777307258.5276854
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "치유물약을 반쯤마시고 나머지를 뮤즈에게 던진다",
+   "ts": 1777307348.5619805
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 배덕이 거친 곰의 손으로 치유 물약 병을 따서 목구멍으로 꿀꺽 넘기자, 상처가 아물며 체력이 회복되었다. [배덕 HP: 104 → 120] \"이건 내 거야, 뮤즈!\" 그가 남은 반쪽을 힘껏 던지자, 뮤즈가 날렵하게 손을 뻗어 병을 낚아챘다. [뮤즈 룩 크레이지스타 사용: 치유 물약] \"고맙다, 곰아!\" 뮤즈가 병을 비우자, 그의 상처가 빠르게 아물며 체력이 완전히 회복되었다. [뮤즈 룩 크레이지스타 HP: 79 → 100] \"이제 다시 싸울 준비가 됐군.\" 배덕이 양손도끼를 휘두르며 사냥개 B 를 향해 돌진했다. \"이제 끝내주자!\"",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20bear-kin%20warrior%20drinking%20a%20glowing%20potion%20and%20throwing%20another%20to%20a%20cat-kin%20rogue%2C%20both%20healing%20instantly%2C%20a%20rabbit-kin%20berserker%20recovering%20from%20wounds%2C%20shadowy%20wolf%20creatures%20snarling%20in%20the%20background%2C%20dynamic%20combat%20action%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=22951&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777307353.3693342
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "그림자 사냥개 B를 베어낸다.",
+   "ts": 1777307491.7589061
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 뮤즈 룩 크레이지스타의 고양이 눈이 날카롭게 빛나자, 그는 그림자 사냥개 B 의 등 뒤로 번개처럼 스며들었다. \"너의 그림자는 여기까지야.\" 그가 쌍단검을 교차하며 베어 올리자, 날카로운 검날이 사냥개의 척추를 정확히 가랐다. [🎲DM d20: 20] \"끄아악!\" 그림자 사냥개 B 가 고통의 비명을 지르며 검은 연기와 함께 산산조각 나 흩어졌다. [적 퇴장: 그림자 사냥개 B] [뮤즈 룩 크레이지스타 XP +15] \"하아, 깔끔하군.\" 그가 검을 닦으며 입가에 여유로운 미소를 띠었다. 이제 남은 적은 사냥개 C 뿐. 김코슈가 다친 옆구리를 누르며 사냥개를 노려보았다. \"이제 마지막 놈이야!\"",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20cat-kin%20rogue%20delivering%20a%20critical%20dual-wield%20slash%20to%20a%20shadowy%20wolf%20creature%2C%20black%20smoke%20dissipating%20from%20the%20vanquished%20enemy%2C%20a%20bear-kin%20warrior%20standing%20ready%2C%20a%20rabbit-kin%20berserker%20nursing%20a%20wound%2C%20dynamic%20combat%20action%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=50765&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777307498.5487518
+  },
+  {
+   "type": "monster_turn",
+   "monster_name": "그림자 사냥개 C",
+   "text": "[시스템: 몬스터 행동 차례 — 그림자 사냥개 C (HP 18/18, 속도 16). 가능한 표적: 배덕, 미친 살육광 김코슈, 뮤즈 룩 크레이지스타.] 남은 그림자 사냥개 C 는 두 동료를 잃은 분노에 사로잡혀 가장 약해 보이는 김코슈를 향해 날카로운 이빨을 드러내며 돌진했다. [🎲DM d20: 14] \"끼익!\" 사냥개의 공격은 김코슈의 다리를 정확히 파고들었다. [김코슈 HP: 130 → 118] \"크아악! 이 잡초 같은 놈!\" 김코슈가 고통에 신음하며 다리를 부여잡자, 사냥개 C 는 피를 핥으며 더 깊은 상처를 내기 위해 다시 몸을 낮추었다. \"너희는 여기서 끝이야, 토끼 귀.\"",
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20shadowy%20wolf%20creature%20lunging%20at%20a%20rabbit-kin%20berserker%27s%20leg%2C%20dark%20blood%20splattering%20on%20the%20cobblestones%2C%20the%20berserker%20grimacing%20in%20pain%2C%20a%20bear-kin%20warrior%20charging%20forward%2C%20a%20cat-kin%20rogue%20poised%20to%20strike%2C%20tense%20combat%20moment%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=34052&nologo=true&model=flux",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "ts": 1777307506.6600633
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "마구잡이로 돌진해 공격한다",
+   "ts": 1777307526.3399856
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽] 김코슈의 토끼 눈이 핏발 서며 미친 듯이 돌진했다. \"다 죽여버려! 으아아악!\" 그가 거대한 양손도끼를 휘둘러 그림자 사냥개 C 의 머리를 향해 내리찍었다. [🎲DM d20: 17] \"크아악!\" 도끼날이 사냥개의 두개골을 갈라 검은 피가 뿜어져 나왔다. [적 HP: 그림자 사냥개 C 18 → 0] \"끄익!\" 사냥개 C 가 마지막 비명을 지르며 검은 연기가 되어 흩어졌다. [적 퇴장: 그림자 사냥개 C] [미친 살육광 김코슈 XP +20] \"하아... 다 죽였네.\" 김코슈가 헐떡이며 도끼를 내려놓자, 안개 속의 붉은 눈빛들은 모두 사라지고 조용한 아침 거리만 남았다. \"이제 조용해졌군.\" 배덕이 거대한 몸을 털며 안도했다.",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dawn%20light%20in%20a%20misty%20village%20street%2C%20a%20rabbit-kin%20berserker%20swinging%20a%20massive%20axe%20and%20striking%20down%20the%20last%20shadowy%20wolf%20creature%2C%20black%20smoke%20dissipating%20from%20the%20vanquished%20enemy%2C%20a%20bear-kin%20warrior%20standing%20with%20a%20massive%20axe%2C%20a%20cat-kin%20rogue%20sheathing%20daggers%2C%20peaceful%20aftermath%20of%20combat%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=88508&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777307534.6153283
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "전리품을챙기고장비를사러간다",
+   "ts": 1777307569.9349627
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 싸움의 소란이 가라앉자, 배덕이 사냥개들의 시체를 뒤져 낡은 동전 주머니를 주워 담았다. \"이 정도면 여관 값은 나올 텐데.\" [배덕 골드 +15] [배덕 획득: 낡은 동전 주머니 | 소모품 | 골드 +15] \"흠, 이걸로 좋은 무기를 하나 사야겠군.\" 배덕이 거대한 양손도끼를 어깨에 걸치고 마을 중심가로 향했다. 거리의 대장간에서는 타격음이 요란하게 울려 퍼지고, 상인들은 황혼의 빛을 받아 진열된 무기들을 자랑하듯 내보였다. \"저기, 저기! 저게 우리 배덕이 아니냐! 그림자 사냥개들을 물리친 영웅이라더니!\" 상인이 소리치며 반갑게 손을 흔들었다. \"어떤 무기를 찾으시나요? 오늘만 특별 할인해 드릴게요.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/golden%20hour%20light%20filtering%20through%20a%20medieval%20village%20street%2C%20a%20massive%20bear-kin%20warrior%20carrying%20a%20huge%20axe%20walking%20towards%20a%20bustling%20blacksmith%20shop%2C%20a%20rabbit-kin%20berserker%20and%20a%20cat-kin%20rogue%20following%2C%20merchants%20displaying%20weapons%20on%20wooden%20stalls%2C%20smoke%20rising%20from%20the%20forge%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=67436&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777307574.87336
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "배덕에게 매달리며 \"배덕아, 내 포션 돌려줘.\" 하고 울부짖는다.",
+   "ts": 1777307626.2541914
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕의 거대한 곰 발이 멈추자, 뮤즈 룩 크레이지스타가 그의 다리에 매달려 고양이 특유의 애교 섞인 울음소리를 냈다. \"배덕아! 제발 내 물약 좀 돌려줘! 그거 내 거였잖아!\" 그가 눈물을 글썽이며 호소하자, 배덕은 코를 찡긋거리며 킥킥거렸다. \"하하, 지금 와서 그거냐? 이미 마셨잖아, 꼬리 친구.\" 배덕이 주머니를 털어보이며 장난기 어린 미소를 지었다. \"하지만 걱정 마, 대장간에서 더 좋은 걸 사줄 테니까. 오늘만큼은 내 돈으로 치유 물약 두 병을 사주마.\" [배덕 골드 -10] [뮤즈 룩 크레이지스타 획득: 치유 물약 x2 | 소모품 | HP 30 즉시 회복] \"진짜? 고마워, 곰아!\" 뮤즈가 기뻐하며 두 병을 주머니에 넣자, 김코슈가 옆에서 킥킥거렸다. \"너희 둘이 정말 형제 같군.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/golden%20hour%20light%20in%20a%20medieval%20village%20street%2C%20a%20cat-kin%20rogue%20clinging%20to%20a%20massive%20bear-kin%20warrior%27s%20leg%20pleading%20with%20teary%20eyes%2C%20the%20bear-kin%20warrior%20laughing%20and%20patting%20the%20rogue%27s%20head%2C%20a%20rabbit-kin%20berserker%20watching%20with%20amusement%2C%20blacksmith%20forge%20in%20the%20background%20with%20glowing%20embers%2C%20warm%20atmosphere%2C%20dark%20fantasy%20style%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=54901&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777307632.8595095
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "돈을 전부 배덕에게 준다",
+   "ts": 1777307661.9369018
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈가 주머니를 뒤적거려 모든 동전을 배덕의 거대한 손바닥 위에 털어놓았다. \"이거 다 받아, 곰 형! 내 거 다야! 너가 더 좋은 무기를 사야지, 내가 쓸 돈은 없어!\" 그가 토끼 귀를 쫑긋 세우며 웃자, 배덕은 놀란 눈으로 동전 더미를 바라보다가 크게 웃음을 터뜨렸다. \"하! 네가 이걸 다 준다고? 고맙구나, 미친 토끼.\" [김코슈 골드: 50 → 0] [배덕 골드: 55 → 105] \"자, 이제 대장간 주인아! 이 돈으로 가장 튼튼한 갑옷과 날카로운 도끼를 만들어다오!\" 배덕이 금방이라도 터질 듯 부풀어 오른 주머니를 두드리며 외쳤다. 상인은 눈을 동그랗게 뜨고 동전 더미를 확인하더니, \"이건... 정말 대단한 호의시네요! 즉시 최고의 장비를 준비해 드리겠습니다!\" 하며 환하게 웃었다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/golden%20hour%20light%20in%20a%20medieval%20village%20street%2C%20a%20rabbit-kin%20berserker%20pouring%20a%20bag%20of%20gold%20coins%20into%20a%20massive%20bear-kin%20warrior%27s%20hand%2C%20the%20bear-kin%20warrior%20laughing%20heartily%20and%20holding%20the%20gold%2C%20a%20cat-kin%20rogue%20watching%20with%20a%20smile%2C%20a%20blacksmith%20shop%20with%20glowing%20forge%20in%20the%20background%2C%20bustling%20village%20atmosphere%2C%20dark%20fantasy%20style%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=93758&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777307665.6379867
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "(배덕 은(는) 이번 차례에 직접 행동하지 않고 흐름을 지켜본다 — 관망/패스. **DM 은 시나리오를 한 단계 명확히 진척시켜라**: NPC 의 새 등장·환경 변화·새 정보 노출·시간 경과·적의 다음 행동 중 하나 이상으로 이야기를 다음 비트로 끌어가라. 빈 묘사·정적 풍경 묘사 금지.)",
+   "linger": true,
+   "ts": 1777307684.2949705
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 대장간의 불꽃이 더욱 거세게 타오르자, 안쪽에서 검은 망토를 두른 낯선 사내가 걸어 나왔다. 그는 손에 낡은 양피지 한 장을 들고 있으며, 파티를 노려보는 듯한 날카로운 눈빛을 띠고 있다. \"들리시나요? 저기서 들리는 비명 소리... 볼카르의 사역자들이 침묵의 탑으로 향하고 있습니다.\" 그가 양피지를 펼쳐 보이자, 그 위에는 붉은 잉크로 그려진 지도 위에 '침묵의 탑'이라는 글자가 피처럼 번져 있었다. \"당신들이 가진 파편 조각이 그 열쇠입니다. 탑의 문이 열리는 순간, 대륙은 다시 불타버리겠지요.\" 상인은 당황한 기색을 보이며 뒷걸음질 쳤고, 김코슈의 토끼 귀가 경계심에 쫑긋 섰다. \"이게 무슨 소리냐, 인간아! 우리가 왜 네 말을 들어야 하지?\" 배덕이 무거운 양손도끼를 바닥에 내리찍으며 물었다. 사내는 입꼬리를 비틀며 미소 지었다. \"선택은 당신들의 자유입니다. 하지만 시간은... 이미 늦었을지도 모릅니다.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/golden%20hour%20fading%20into%20twilight%20in%20a%20medieval%20village%20street%2C%20a%20mysterious%20hooded%20figure%20holding%20a%20blood-stained%20parchment%20map%20standing%20before%20a%20blacksmith%20forge%2C%20a%20massive%20bear-kin%20warrior%20gripping%20a%20huge%20axe%2C%20a%20rabbit-kin%20berserker%20with%20alert%20ears%2C%20a%20cat-kin%20rogue%20watching%20intently%2C%20ominous%20atmosphere%2C%20dark%20fantasy%20style%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=84880&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777307689.6489189
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "쌍단검과 관련된 무기가 있는지 물어본다.",
+   "ts": 1777307740.153126
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타가 날렵하게 대장간 안으로 뛰어 들어가 상인의 목덜미를 잡으며 쌍단검을 흔들었다. \"이봐, 고양이 귀 있는 사나이. 내 쌍단검에 딱 맞는 더 좋은 무기가 있나? 아니면 마법으로 날을 세운 검 말이야.\" 상인은 놀라 뒷걸음질 치며 \"오, 오호라! 그건... 대장장이가 숨겨둔 보물 중 하나를 말씀하시는군요!\" 하며 뒤쪽의 어두운 선반을 가리켰다. 거기에는 검게 빛나는 두 개의 단검이 비닐처럼 얇은 실로 묶여 있었다. \"이것은 '그림자 이빨'이라 불립니다. 어둠 속에서 적의 심장을 정확히 찌를 수 있다고 하죠. 가격은... 80 골드입니다.\" 상인이 떨리는 손으로 단검을 내밀자, 뮤즈의 고양이 눈이 반짝였다. \"흥, 꽤 비싸군. 하지만 내 손에 딱 맞을 것 같아.\" [뮤즈 룩 크레이지스타 골드: 67 → 67] \"아, 아! 67 골드는 부족하군요.\" 상인이 당황하며 손을 흔들었다. \"하지만... 이봐요, 너희들이 침묵의 탑의 열쇠를 가진 영웅이라면, 대장장이님이 특별히 10 골드를 할인해 주실지도 모릅니다.\" 상인이 배덕을 바라보며 눈짓을 보냈다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": null,
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777307746.6936674
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "돈을 모두 배덕에게 준다",
+   "ts": 1777307779.047594
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈가 주머니를 뒤져 마지막 동전까지 배덕의 거대한 손바닥에 쏟아부었다. \"다 받아, 곰 형! 뮤즈의 검 값으로 쓰게! 내가 쓸 돈은 없어, 오직 싸우는 것뿐이니까!\" 그의 토끼 귀가 들썩이며 미친 듯이 웃자, 배덕은 고개를 저으며 웃음을 터뜨렸다. \"하! 네가 또? 자, 상인아! 이 돈으로 '그림자 이빨'을 사주마. 그리고 남는 돈으로 우리 모두의 방패를 수리해 주게.\" [김코슈 골드: 50 → 0] [배덕 골드: 105 → 155] [배덕 골드 -80] [뮤즈 룩 크레이지스타 획득: 그림자 이빨 | 무기 | 공격 +3, 어둠 속에서 은신 시 명중률 +15%] \"이게 바로 형제애지!\" 배덕이 새 단검을 받아 뮤즈에게 건네자, 뮤즈는 기뻐하며 검을 손에 쥐고 날카롭게 휘둘러보았다. \"와, 정말 가벼워! 이걸로 그림자를 베어낼 수 있겠군!\" 상인은 만족한 표정으로 동전을 주머니에 넣으며 말했다. \"영웅들이여, 침묵의 탑으로 가는 길은 멀고도 위험합니다. 하지만 이 무기를 가진다면... 희망이 있겠지요.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": null,
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777307786.5315638
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "방어구를구매한다",
+   "ts": 1777307852.0896025
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕이 상인에게 거대한 손짓을 하며 말했다. \"이제 내 방패와 갑옷을 업그레이드해 주게. 침묵의 탑에서는 단순한 가죽으로는 버티기 어렵다.\" 상인은 고개를 끄덕이며 진열장 뒤에서 빛나는 강철 갑옷 한 벌과 튼튼한 철포 방패를 꺼냈다. \"이것은 '흑철의 수호'라 불립니다. 그림자 사냥개의 이빨도 뚫지 못하죠. 가격은 60 골드입니다.\" 배덕이 주머니에서 동전을 꺼내 상인에게 건네자, 상인은 갑옷을 받아주며 미소 지었다. [배덕 골드: 75 → 15] [배덕 획득: 흑철 갑옷 | 방어구 | 방어 +5] [배덕 획득: 강철 방패 | 방어구 | 방어 +3] \"좋아, 이제 좀 더 단단해졌군.\" 배덕이 갑옷을 입고 방패를 든 뒤, 김코슈와 뮤즈를 바라보았다. \"자, 준비가 됐다. 침묵의 탑으로 가자.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20inside%20a%20blacksmith%20shop%2C%20a%20massive%20bear-kin%20warrior%20donning%20gleaming%20black%20iron%20plate%20armor%20and%20holding%20a%20sturdy%20steel%20shield%2C%20a%20rabbit-kin%20berserker%20and%20a%20cat-kin%20rogue%20standing%20nearby%2C%20warm%20forge%20light%20reflecting%20off%20the%20new%20armor%2C%20a%20merchant%20smiling%20in%20the%20background%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=13396&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777307856.341995
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "\"잠시만.\" 이라고 말하고는 상인에게 현재 장착중인 장신구 도둑의 밧줄 효과를 감정 받는다.",
+   "ts": 1777307980.9250655
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] \"잠시만.\" 뮤즈 룩 크레이지스타가 고양이 귀를 쫑긋 세우며 상인에게 다가가 도둑의 밧줄을 내밀었다. \"이게 정말 그냥 밧줄이야? 아니면 뭔가 숨은 힘이 있는 거지?\" 상인은 밧줄을 받아 만지작거리더니, 갑자기 눈이 커지며 놀란 표정을 지었다. \"오! 이거... 단순한 장비가 아니군요! 이 밧줄은 '그림자 걸쇠'라고 불리는 마법 장신구입니다. 등 뒤에서 적의 목을 조여 제압하거나, 높은 벽을 타고 오를 때 체중을 무시하게 해준다고 전해집니다.\" [장비 효과: 뮤즈 룩 크레이지스타 | 도둑의 밧줄 | 등반 시 이동력 +50%, 뒤에서 적 공격 시 '제압' 효과 15% 확률] \"하, 역시 도적의 눈은 다르군.\" 배덕이 웃으며 고개를 끄덕였다. \"그걸로 침묵의 탑의 높은 벽도 쉽게 넘을 수 있겠어.\" 상인이 밧줄을 다시 뮤즈에게 건네며 말했다. \"영웅이시여, 이 힘으로 탑의 비밀을 밝혀내시길 바랍니다.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20inside%20a%20blacksmith%20shop%2C%20a%20cat-kin%20rogue%20holding%20up%20a%20mysterious%20glowing%20rope%20accessory%20and%20examining%20it%20closely%20with%20a%20merchant%2C%20a%20massive%20bear-kin%20warrior%20in%20black%20iron%20armor%20watching%20with%20a%20smile%2C%20a%20rabbit-kin%20berserker%20leaning%20against%20the%20counter%2C%20warm%20forge%20light%20illuminating%20the%20magical%20rope%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=31733&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777307986.060144
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "내 무기도 강화시켜줘",
+   "ts": 1777308000.5027397
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈가 자신의 거대한 양손도끼를 대장간 화로에 꽂으며 미친 듯이 웃었다. \"이게 내 친구야! 하지만 더 날카롭게, 더 무겁게 만들어줘! 볼카르의 하수인들을 베어낼 때 이 도끼가 울어야지!\" 상인은 도끼날을 유심히 살피더니, \"이 도끼... 이미 영혼이 깃든 듯합니다. 하지만 '불꽃의 주조'로 날을 재연하면 더욱 강력해질 겁니다. 단, 40 골드가 필요합니다.\" 김코슈는 주머니를 두드리며 \"돈은 없어! 하지만 배덕 형이 줄 돈이 있지!\" 하고 배덕을 힐끗 보았다. 배덕이 한숨을 쉬며 남은 동전 15 골드를 주머니에서 꺼내 상인에게 내밀었다. \"나머지는... 다음에 갚게. 어서 해라, 토끼 녀석의 도끼를.\" 상인은 동전을 받아 화로에 던지며 특수한 약액을 부었다. \"으아아악!\" 도끼가 붉은 불꽃에 휩싸이며 날카로운 굉음을 냈다. [배덕 골드: 15 → 0] [김코슈 획득: 불꽃의 양손도끼 | 무기 | 공격 +4, 적에게 화상 상태 (매 턴 -3 HP) 부여] \"이제야 제대로 생겼군!\" 김코슈가 불타는 듯한 도끼를 휘두르며 포효했다. \"이제 침묵의 탑이 두려울 게 뭐 있겠어!\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20inside%20a%20blacksmith%20shop%2C%20a%20rabbit-kin%20berserker%20holding%20a%20massive%20two-handed%20axe%20engulfed%20in%20roaring%20red%20flames%2C%20a%20merchant%20pouring%20alchemical%20liquid%20onto%20the%20blade%2C%20a%20massive%20bear-kin%20warrior%20watching%20with%20a%20weary%20smile%2C%20sparks%20flying%20into%20the%20air%2C%20intense%20heat%20radiating%20from%20the%20forge%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=74536&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777308007.2958984
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "낡은방패를감정한다",
+   "ts": 1777308050.3001523
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕이 인벤토리에서 낡은 방패를 꺼내 상인의 손에 쥐어주며 물었다. \"이걸 봐주게. 그냥 폐기할 물건일까, 아니면 숨은 힘이 있을까?\" 상인이 방패를 받아 만져보더니, 낡은 나무 틈새에서 은은한 푸른 빛이 스며나오는 것을 발견하고 놀라 입을 벌렸다. \"이건... 단순한 나무가 아닙니다! '바람의 수호'라는 고대 마법이 각인된 방패군요. 적의 화살이나 마법 공격을 20% 만큼 무효화해줍니다.\" [장비 효과: 배덕 | 낡은 방패 | 마법 및 원거리 공격 피해 -20%] \"우와, 이게 숨겨진 보물이라니!\" 배덕이 방패를 다시 등에 메며 기뻐했다. \"이제 침묵의 탑의 마법 공격도 조금은 막을 수 있겠군.\" 상인이 고개를 끄덕이며 말했다. \"영웅들이여, 이 힘으로 탑의 위험을 헤쳐나가시길 바랍니다.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20inside%20a%20blacksmith%20shop%2C%20a%20massive%20bear-kin%20warrior%20holding%20an%20old%20wooden%20shield%20that%20glows%20with%20faint%20blue%20magical%20runes%2C%20a%20merchant%20examining%20it%20with%20wide%20eyes%2C%20a%20rabbit-kin%20berserker%20and%20a%20cat-kin%20rogue%20watching%20with%20curiosity%2C%20warm%20forge%20light%20contrasting%20with%20the%20cool%20blue%20glow%20of%20the%20shield%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=1917&nologo=true&model=flux",
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777308066.498239
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "어두운 가죽 갑옷을 감정하고 기교를 올린만한 장비가 있는지 확인한다.",
+   "ts": 1777308114.5709643
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타가 자신의 어두운 가죽 갑옷을 가볍게 두드리며 상인에게 다가갔다. \"자, 이 가죽 갑옷도 한번 봐줘. 그리고 내 기교 (DEX) 를 더 살려줄 만한 장비가 혹시 없나? 나는 그림자처럼 움직여야 하니까.\" 상인이 갑옷을 받아 자세히 살펴보니, 가죽 표면에서 은은한 회색빛이 감돌았다. \"오! 이건 단순한 가죽이 아닙니다. '그림자 스며드는 피부'라 불리는 마법 갑옷이군요. 착용자의 움직임을 더 유려하게 만들어 회피율을 높여줍니다.\" [장비 효과: 뮤즈 룩 크레이지스타 | 어두운 가죽 갑옷 | 회피율 +15%, 은신 성공 시 방어력 일시 증가] \"좋아! 그런데 기교를 올려주는 건?\" 뮤즈가 눈을 반짝이며 물었다. 상인은 진열장 깊은 곳에서 얇고 가벼운 부츠 한 켤레를 꺼냈다. \"이 '바람의 발걸음' 부츠라면 어떨까요? 착용자의 발놀림을 날렵하게 만들어 기교를 더욱 빛나게 합니다. 가격은 50 골드입니다.\" [뮤즈 룩 크레이지스타 획득: 바람의 발걸음 | 방어구 | 기교 (DEX) +2, 이동 속도 +10%] \"비싸긴 하지만, 내 발에 딱 맞겠군!\" 뮤즈가 부츠를 신고 가볍게 점프하며 웃었다. \"이제 누구도 나를 잡지 못할 거야!\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20inside%20a%20blacksmith%20shop%2C%20a%20cat-kin%20rogue%20examining%20a%20glowing%20dark%20leather%20armor%20and%20trying%20on%20slender%20wind-woven%20boots%2C%20a%20merchant%20presenting%20the%20items%20with%20a%20knowing%20smile%2C%20a%20massive%20bear-kin%20warrior%20and%20a%20rabbit-kin%20berserker%20watching%20in%20the%20background%2C%20warm%20forge%20light%20reflecting%20off%20the%20magical%20gear%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=17846&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777308133.5497477
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "김배덕에게 돈을 준다",
+   "ts": 1777308200.455059
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈가 주머니를 뒤져 남은 모든 동전을 배덕의 손에 쑤셔 넣었다. \"자, 배덕 형! 이걸로 내 부츠 값이나 뭐든 더 필요한 걸 사게! 내가 쓸 돈은 없어, 오직 싸움뿐이니까!\" 그의 토끼 귀가 들썩이며 미친 듯이 웃자, 배덕은 놀란 눈으로 동전을 바라보다가 크게 웃음을 터뜨렸다. \"하! 네가 또? 자, 상인아! 이 돈으로 바람의 발걸음 부츠를 사주마. 그리고 남는 돈으로 우리 모두의 식량을 준비해 주게.\" [김코슈 골드: 50 → 0] [배덕 골드: 0 → 50] [배덕 골드 -50] [뮤즈 룩 크레이지스타 획득: 바람의 발걸음 | 방어구 | 기교 (DEX) +2, 이동 속도 +10%] \"이게 바로 형제애지!\" 배덕이 새 부츠를 받아 뮤즈에게 건네자, 뮤즈는 기뻐하며 부츠를 신으며 가볍게 점프해 보였다. \"와, 정말 가볍다! 이제 누구도 나를 잡지 못할 거야!\" 상인은 만족한 표정으로 동전을 주머니에 넣으며 말했다. \"영웅들이여, 침묵의 탑으로 가는 길은 멀고도 위험합니다. 하지만 이 무기를 가진다면... 희망이 있겠지요.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20inside%20a%20blacksmith%20shop%2C%20a%20rabbit-kin%20berserker%20pouring%20gold%20coins%20into%20a%20massive%20bear-kin%20warrior%27s%20hand%2C%20the%20bear-kin%20warrior%20handing%20wind-woven%20boots%20to%20a%20cat-kin%20rogue%2C%20the%20rogue%20testing%20the%20boots%20with%20a%20grin%2C%20a%20nervous%20merchant%20watching%20with%20satisfaction%2C%20warm%20forge%20light%20illuminating%20the%20scene%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=60607&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777308206.3637779
+  },
+  {
+   "type": "action",
+   "player_id": "71cb5007",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/71cb5007?v=a55b72d0",
+   "action": "가죽흉갑과 양손도끼를 판매한다",
+   "ts": 1777308276.2149773
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕이 인벤토리에서 더 이상 쓸모없어진 낡은 가죽 흉갑과 거대한 양손도끼를 상인의 카운터 위에 툭 내려놓았다. \"이제 우리 파티는 각자 역할이 나뉜 만큼, 이 낡은 것들은 정리하자. 값은 적당히 쳐 주게.\" 상인이 두 손으로 무거운 도끼와 찢어진 흉갑을 받아 보더니, \"흠... 도끼는 재질이 나쁘지 않아 녹여 쓰면 15 골드, 흉갑은 가죽 상태가 너무 나빠 5 골드 정도가 한계군요. 합쳐서 20 골드입니다.\" 배덕은 주저 없이 수락했다. \"좋아, 그걸로 식량과 물약에 보태자.\" [배덕 골드: 0 → 20] [배덕 장비 해제: 방어구] [배덕 장비 해제: 무기] \"이제 짐이 가벼워졌군. 자, 이 돈으로 대장간 밖에서 구할 수 있는 식량을 사러 가자.\" 상인은 동전을 세어 배덕에게 건네며 고개를 숙였다. \"영웅들이여, 침묵의 탑의 문은 곧 열릴 것입니다. 준비가 끝났다면 서두르십시오.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": null,
+   "acting_player_id": "71cb5007",
+   "round_complete": true,
+   "ts": 1777308282.175191
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "바람의 발걸음을 조리한다.",
+   "ts": 1777308449.704744
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] \"호호, 이 부츠는 요리할 때 쓰는 게 아니야, 작은 토끼야.\" 뮤즈가 고양이 눈으로 김코슈를 흘겨보며 바람의 발걸음을 들어 흔들었다. \"하지만 네가 '조리'하라고 했으니, 이걸로 내 발놀림을 '요리'해 볼까?\" 그는 부츠를 신지 않은 채 발끝으로 가볍게 톡톡 치며, 마치 재료를 섞듯 공중으로 부츠를 던져 올렸다. \"이제 내 발걸음은 바람처럼 가볍고, 그림자처럼 빠르다! 배덕이 없어도 우리는 충분히 빠를 수 있어!\" 김코슈가 어리둥절해하며 고개를 갸웃거렸지만, 뮤즈는 이미 부츠를 다시 인벤토리에 넣으며 날렵하게 대장간 문을 향해 뛰쳐나갔다. \"자, 빨리 가자! 침묵의 탑이 우리를 기다리고 있잖아!\" [🎬 SCENE: twilight outside a blacksmith shop, a cat-kin rogue playfully tossing a pair of glowing wind-woven boots into the air and catching them with a grin, a rabbit-kin berserker watching with a confused expression, the rogue's tail flicking with excitement, the dark silhouette of a tall tower looming in the distance, warm sunset light contrasting with the cool magical glow of the boots, dark fantasy atmosphere]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": null,
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777308456.1985192
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777308488.1436248
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈의 긴 토끼 귀가 예민하게 쫑긋 서서 주변 소음을 포착했다. \"쉿... 바람 소리만 들리는 줄 알았는데, 뭔가 숨은 숨결이 있어.\" 그가 무거운 도끼를 바닥에 내려놓고 주변을 살피자, 낡은 상자 더미 뒤에서 은은한 푸른 빛이 새어 나왔다. \"뭐야? 저게 뭐지?\" 김코슈가 조심스럽게 상자를 들어 올리자, 그 안에서 빛나는 치유 물약 두 병과 낡은 동전 주머니가 굴러떨어졌다. [김코슈 획득: 치유 물약 x2 | 소모품 | HP 30 즉시 회복] [김코슈 획득: 동전 주머니 | 소모품 | 골드 +15] \"하! 보물이군! 배덕이 없어도 우리는 운이 좋구나!\" 김코슈가 물약과 동전을 주머니에 집어넣으며 활기차게 웃었다. \"자, 뮤즈! 이제 더 빨리 가자!\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20outside%20a%20blacksmith%20shop%2C%20a%20rabbit-kin%20berserker%20crouching%20near%20a%20pile%20of%20old%20crates%2C%20holding%20up%20a%20glowing%20blue%20potion%20bottle%20and%20a%20small%20pouch%20of%20gold%20coins%2C%20a%20cat-kin%20rogue%20standing%20nearby%20with%20a%20curious%20expression%2C%20the%20silhouette%20of%20a%20dark%20tower%20in%20the%20background%2C%20warm%20sunset%20light%20casting%20long%20shadows%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=89521&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": true,
+   "ts": 1777308502.2079997
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "(뮤즈 룩 크레이지스타 은(는) 이번 차례에 직접 행동하지 않고 흐름을 지켜본다 — 관망/패스. **DM 은 시나리오를 한 단계 명확히 진척시켜라**: NPC 의 새 등장·환경 변화·새 정보 노출·시간 경과·적의 다음 행동 중 하나 이상으로 이야기를 다음 비트로 끌어가라. 빈 묘사·정적 풍경 묘사 금지.)",
+   "linger": true,
+   "ts": 1777308623.1681972
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈가 고개를 갸웃하며 팔짱을 끼고 서 있는 사이, 김코슈가 주운 보물을 챙기는 순간, 대장간 뒤쪽의 어두운 골목에서 낡은 천이 바람에 펄럭이며 누군가가 모습을 드러냈다. \"흠, 토끼 냄새와 고양이 냄새... 그리고 그토록 탐나는 볼카르의 파편 냄새가 나네.\" 낡은 두건 아래로 붉은 눈동자가 빛나는 **검은 사제**가 비틀거리며 걸어 나왔다. \"볼카르의 부활을 막으려다, 오히려 제물이 되려는가?\" 사제의 손끝에서 검은 연기가 피어오르며 바닥을 태우기 시작한다. [적 등장: 검은 사제 | HP 45 | 속도 12] \"무서워하지 마라, 작은 짐승들아. 네 운명은 이미 정해졌으니.\" 사제가 비웃으며 검은 마력을 뿜어내자, 주변 공기가 무겁게 가라앉고 김코슈의 토끼 귀가 공포에 떨며 쫑긋 섰다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20in%20a%20narrow%20alley%20behind%20a%20blacksmith%20shop%2C%20a%20hooded%20figure%20with%20glowing%20red%20eyes%20emerging%20from%20shadows%20casting%20dark%20smoke%20magic%2C%20a%20rabbit-kin%20berserker%20looking%20startled%20with%20a%20massive%20axe%2C%20a%20cat-kin%20rogue%20standing%20calmly%20with%20crossed%20arms%2C%20ominous%20purple%20mist%20swirling%20around%20the%20hooded%20figure%27s%20hands%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=98085&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777308628.1484406
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777308677.3264182
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈의 긴 토끼 귀가 미세한 진동을 감지하듯 쫑긋 섰다. \"쉿... 바람 소리가 이상해. 무언가 숨은 숨결이 있어.\" 그가 무거운 양손도끼를 바닥에 살짝 내려놓고 주변을 예민하게 살피자, 낡은 상자 더미 뒤에서 은은한 푸른 빛이 새어 나왔다. \"뭐야? 저게 뭐지?\" 김코슈가 조심스럽게 상자를 들어 올리자, 그 안에서 빛나는 치유 물약 두 병과 낡은 동전 주머니가 굴러떨어졌다. [김코슈 획득: 치유 물약 x2 | 소모품 | HP 30 즉시 회복] [김코슈 획득: 동전 주머니 | 소모품 | 골드 +15] \"하! 보물이군! 배덕이 없어도 우리는 운이 좋구나!\" 김코슈가 물약과 동전을 주머니에 집어넣으며 활기차게 웃었다. \"자, 뮤즈! 이제 더 빨리 가자!\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20outside%20a%20blacksmith%20shop%2C%20a%20rabbit-kin%20berserker%20crouching%20near%20a%20pile%20of%20old%20crates%2C%20holding%20up%20a%20glowing%20blue%20potion%20bottle%20and%20a%20small%20pouch%20of%20gold%20coins%2C%20a%20cat-kin%20rogue%20standing%20nearby%20with%20a%20curious%20expression%2C%20the%20silhouette%20of%20a%20dark%20tower%20in%20the%20background%2C%20warm%20sunset%20light%20casting%20long%20shadows%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=89521&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": true,
+   "ts": 1777308681.3594036
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "검은 사제를 공격한다.",
+   "ts": 1777308744.6090903
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타의 고양이 눈이 날카롭게 빛나며 그림자처럼 검은 사제를 향해 돌진했다. \"볼카르의 하수인이 여기 있을 줄은 몰랐군! 내 칼날이 너의 저주를 끊어주마!\" 그의 손에 들린 쌍단검이 공기를 가르며 사제의 검은 망토를 향해 날아갔다. 명중 판정 [🎲DM d20: 18] +3(DEX) = 21! 날카로운 칼날이 사제의 어깨를 가르며 검은 피를 튀겼다. [뮤즈 룩 크레이지스타 공격: 검은 사제 | 피해 12] \"끄아악! 이 작은 고양이 녀석!\" 사제가 고통에 비명을 지르며 뒤로 물러섰다. [적 HP: 검은 사제 45 → 33] \"네가 날 건드리다니... 볼카르의 분노를 맛보게 되리라!\" 사제가 손을 뻗어 검은 마력을 뿜어내려 했지만, 뮤즈는 이미 다시 그림자 속으로 숨어 버렸다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20in%20a%20narrow%20alley%2C%20a%20cat-kin%20rogue%20lunging%20with%20dual%20daggers%20towards%20a%20hooded%20dark%20priest%2C%20sparks%20of%20dark%20magic%20and%20blue%20blood%20flying%20in%20the%20air%2C%20a%20rabbit-kin%20berserker%20raising%20a%20massive%20axe%20in%20the%20background%2C%20ominous%20purple%20mist%20swirling%20around%20the%20priest%2C%20dramatic%20shadows%20cast%20by%20the%20setting%20sun%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=84503&nologo=true&model=flux",
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777308755.3904154
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "마구잡이로 돌진해 공격한다",
+   "ts": 1777308809.1693897
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈의 토끼 귀가 분노로 뻣뻣하게 섰다. \"이제 내 차례야, 사제 놈! 네 마법 따위 내 도끼 한 방에 부숴 버리겠어!\" 그가 거대한 양손도끼를 휘둘러 사제를 향해 돌진하자, 공기가 찢어지는 소리가 울렸다. 명중 판정 [🎲DM d20: 16] +2(STR) = 18! 도끼 날이 사제의 검은 망토를 갈라놓으며 깊은 상처를 입혔다. [김코슈 공격: 검은 사제 | 피해 18] \"크아악! 이 미친 토끼!\" 사제가 비명을 지르며 뒤로 주저앉았다. [적 HP: 검은 사제 33 → 15] \"이제 끝이야! 볼카르의 파편을 빼앗아 갈 테다!\" 김코슈가 도끼를 높이 치켜들며 포효하자, 사제의 눈에서 공포가 번졌다. \"멈춰라! 나는... 나는...\" 사제의 목소리가 떨리며 검은 연기가 더 짙게 피어올랐다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20in%20a%20narrow%20alley%2C%20a%20rabbit-kin%20berserker%20swinging%20a%20massive%20two-handed%20axe%20at%20a%20hooded%20dark%20priest%2C%20dark%20magic%20swirling%20around%20the%20priest%27s%20hands%2C%20a%20cat-kin%20rogue%20watching%20from%20the%20shadows%20with%20daggers%20drawn%2C%20sparks%20of%20blue%20blood%20flying%2C%20dramatic%20shadows%20cast%20by%20the%20setting%20sun%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=18746&nologo=true&model=flux",
+   "acting_player_id": "18549586",
+   "round_complete": false,
+   "ts": 1777308813.5066125
+  },
+  {
+   "type": "monster_turn",
+   "monster_name": "검은 사제",
+   "text": "[🌆 황혼] 검은 사제는 비틀거리며 바닥에 무릎을 꿇었지만, 붉은 눈동자는 여전히 사나웠다. \"감히... 볼카르의 사도를 이렇게 치다니! 네 목숨이 그 대가를 치르게 하리라!\" 그가 흙먼지를 일으키며 검은 마력을 뿜어내자, 어둠이 뱀처럼 김코슈를 향해 치솟았다. 명중 판정 [🎲DM d20: 11] +2(마법) = 13 vs 김코슈의 회피... 하지만 토끼의 예민한 감각이 위험을 감지하고 몸을 피했다! \"크아악! 피했군... 하지만 내 저주는 피할 수 없다!\" 사제가 비웃으며 마력을 뿜어내자, 김코슈의 발목에 검은 가시들이 돋아났다. [김코슈 디버프: 검은 가시 2턴 | 매 턴 HP -5] \"이제 네 다리가 무너질 것이다, 미친 토끼야!\"",
+   "scene_image_url": "https://image.pollinations.ai/prompt/twilight%20in%20a%20narrow%20alley%2C%20a%20hooded%20dark%20priest%20kneeling%20on%20the%20ground%20casting%20dark%20thorny%20magic%20at%20a%20rabbit-kin%20berserker%2C%20black%20thorns%20sprouting%20around%20the%20berserker%27s%20ankles%2C%20a%20cat-kin%20rogue%20watching%20with%20daggers%20ready%2C%20ominous%20purple%20mist%20swirling%2C%20dramatic%20shadows%20cast%20by%20the%20setting%20sun%2C%20dark%20fantasy%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=30144&nologo=true&model=flux",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "ts": 1777308821.7148733
+  },
+  {
+   "type": "action",
+   "player_id": "2dc5f63d",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "검은 사제의 목을 베어버린다.",
+   "ts": 1777308835.442752
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타의 고양이 눈이 치명적인 순간을 포착하듯 좁아졌다. \"이제 끝이야, 사제! 네 목숨은 내 칼날이 받아주마!\" 그가 그림자처럼 사제 뒤로 순식간에 이동해 쌍단검을 목덜미에 겨누자, 검은 사제는 도망칠 틈도 없이 비명을 지르며 쓰러졌다. 명중 판정 [🎲DM d20: 19] +3(DEX) = 22! 날카로운 칼날이 사제의 목을 깔끔하게 베어 넘겼다. [뮤즈 룩 크레이지스타 공격: 검은 사제 | 피해 14] \"끄아악... 볼카르...의...\" 사제의 몸이 경련하듯 떨리다 바닥에 툭 쓰러지며 검은 피를 흘렸다. [적 HP: 검은 사제 15 → 1] [적 퇴장: 검은 사제] \"하아... 역시 도적의 손길은 빠르군.\" 뮤즈가 칼끝을 닦으며 중얼거렸다. 김코슈는 발목의 검은 가시가 서서히 사라지는 것을 느끼며 안도의 한숨을 내쉬었다. \"고맙다, 고양이 녀석! 이제 이 녀석의 주머니를 뒤져보자!\" [김코슈 XP +25] [뮤즈 룩 크레이지스타 XP +25]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": null,
+   "acting_player_id": "2dc5f63d",
+   "round_complete": false,
+   "ts": 1777308851.4049428
+  },
+  {
+   "type": "action",
+   "player_id": "18549586",
+   "player_name": "미친 살육광 김코슈",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/40FD00/18549586?v=95b83b54",
+   "action": "마구잡이로 돌진해 공격한다",
+   "ts": 1777308887.2625594
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코슈의 토끼 귀가 분노로 쫑긋 섰지만, 적인 검은 사제는 이미 바닥에 쓰러진 지 오래였다. \"뭐야? 이미 죽은 놈을 또 치겠다는 건가?\" 그가 거대한 양손도끼를 허공에 휘둘러 사제의 시체를 향해 내리찍자, 도끼날은 이미 식어버린 검은 피를 가르며 바닥의 돌을 갈랐다. 명중 판정 [🎲DM d20: 5] +2(STR) = 7! \"크아악! 헛쳤다!\" 김코슈가 균형을 잃고 비틀거리며 넘어질 뻔했다. 도끼의 위력이 돌바닥에 부딪히며 튀어 오르는 파편이 그의 가죽 흉갑을 긁었다. [김코슈 HP: 130 → 125] \"아프다! 이 돌들이 왜 나를 공격해!\" 김코슈가 어이없다는 듯 시체를 발로 차며 중얼거렸다. \"야, 뮤즈! 이 녀석은 이미 죽었으니 노획이나 하자!\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 2
+   },
+   "scene_image_url": null,
+   "acting_player_id": "18549586",
+   "round_complete": true,
+   "ts": 1777308892.2435143
+  }
+ ],
+ "turn_order": [
+  "18549586"
+ ],
+ "current_turn_index": 0,
+ "round_order": [
+  {
+   "kind": "player",
+   "id": "2dc5f63d",
+   "name": "뮤즈 룩 크레이지스타",
+   "initiative": 22,
+   "dex_or_speed": 22
+  },
+  {
+   "kind": "player",
+   "id": "18549586",
+   "name": "미친 살육광 김코슈",
+   "initiative": 15,
+   "dex_or_speed": 15
+  }
+ ],
+ "round_idx": 0,
+ "round_number": 25,
+ "players": {
+  "18549586": {
+   "player_id": "18549586",
+   "name": "미친 살육광 김코슈",
+   "character_class": "전사",
+   "race": "수인",
+   "race_animal": "토끼",
+   "race_ratio": 90,
+   "hp": 130,
+   "max_hp": 130,
+   "mp": 35,
+   "max_mp": 35,
+   "attack": 20,
+   "defense": 10,
+   "level": 2,
+   "xp": 140,
+   "stat_points": 0,
+   "gold": 50,
+   "custom_portrait": "data:image/jpeg;base64,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",
+   "equipped": {
+    "main_hand": {
+     "name": "거대한 양손도끼",
+     "effect": "양손 무기 — 공격력 +3, 속도 -1"
+    },
+    "off_hand": {
+     "name": "낡은 방패",
+     "effect": null
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [
+    {
+     "name": "볼카르의 파편 조각",
+     "effect": "검은 사제가 지니고 있던 마력의 조각, 다음 의식 장소 단서",
+     "quantity": 1,
+     "kind": "quest"
+    }
+   ],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 13,
+   "intelligence": 7,
+   "wisdom": 10,
+   "dexterity": 15,
+   "charisma": 7,
+   "constitution": 12,
+   "race_mod_applied": true
+  }
+ },
+ "monsters": {},
+ "dormant": {
+  "8adb47bd": {
+   "player": {
+    "player_id": "8adb47bd",
+    "name": "배덕",
+    "character_class": "전사",
+    "race": "수인",
+    "race_animal": "곰",
+    "race_ratio": 50,
+    "hp": 120,
+    "max_hp": 120,
+    "mp": 20,
+    "max_mp": 30,
+    "attack": 15,
+    "defense": 10,
+    "level": 1,
+    "xp": 85,
+    "stat_points": 0,
+    "gold": 20,
+    "custom_portrait": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAGAAYADASIAAhEBAxEB/8QAHAABAAMBAQEBAQAAAAAAAAAAAAUGBwQDAgEI/8QATxAAAQMDAgMGAwILBQIMBwAAAQACAwQFEQYhBxIxEyJBUWFxgZGhFDIVFiNCUmJygpKxwRckM6KyNFMIJSZDc5OzwtHT4fBERVRVVqPD/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANmREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARFzz1EVNA+eeVkUUbS58j3BrWgdSSegQdCKOtl2oLxA6ot1bBWRNeYy+CQPAcOoyPcfAg+KkUBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBz1NTDR0stVUyNihhYXyPcdmtAySVkbxduMN6mDZ5qDS9FJyjlHencPoXEb+IaCNiTvJ8Wq6quNZaNFW+QtmukzXz4ztHzYbnzGeZx/YCvFiprVbKFtjtcsJbb2NY+FkjXPjzvl4HQu3O/XdB86f01a9L0RpLVTdjG53NI5xLnSOwBkk+3QbeQCm0RARFGVF8tFJWNoKm60UFW7AbTyVDGyHPTDSc7+CCTREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBll6Ipf+EDY5ZiGsloiGE+ZbK0D57fFeGhYWT8X9V3GkZ2NLAZIZAHZ5pHSDJ38CY3u9PZdnGShqKehtWp6Ef3iz1TXOOOjXOBaT6B7WjH6y+eBlPz6fut1k3nrK4tefMNaD/N7kGoIi56mohpKeSoqJGRRRNL3yPdhrWjcknwCCM1RqCl0vYKm61RBEIwyPODI8/daPc/IZPgss0xw1fq/TVdfb5NIy6XRxmpJHZHL1PO4dCHE9MbNAI6rqnlqOL2r200D5Y9LWt/NI7Jb27vPHmeg/Rbk7E4OvMjZFG2ONoY1oAa1owAB4BBReFGoam42Kez3EPbcLNJ9nl7Q94tyQ3PqOUt/dHmtAWXaSYKTjjqimYQGSU3bFoHUkxuz/nPzWooCIiAi5qqtpaJnPV1MNOz9KWQNH1XlDdbdUu5ILhSyuzy8rJmuOfLYoO5ERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQF+L9WV601DcdWX46E004gE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",
+    "equipped": {
+     "main_hand": {
+      "name": "",
+      "effect": null
+     },
+     "off_hand": {
+      "name": "낡은 방패",
+      "effect": null
+     },
+     "armor": {
+      "name": "",
+      "effect": null
+     },
+     "accessory": {
+      "name": "낡은 방패",
+      "effect": "마법 및 원거리 공격 피해 -20%"
+     }
+    },
+    "inventory": [
+     {
+      "name": "낡은 상자의 열쇠",
+      "effect": "푸른 빛을 띠는 상자를 여는 열쇠",
+      "quantity": 1,
+      "kind": "quest"
+     },
+     {
+      "name": "치유 물약",
+      "effect": "HP 30 즉시 회복",
+      "quantity": 2,
+      "kind": "consumable"
+     },
+     {
+      "name": "볼카르의 봉인 해제 지시문",
+      "effect": "다음 파편이 숨겨진 '침묵의 탑'의 위치를 나타내는 지도",
+      "quantity": 1,
+      "kind": "quest"
+     },
+     {
+      "name": "침묵의 탑 내부 지도",
+      "effect": "탑의 지하 3 층 '조용한 방' 위치와 함정 정보 표시",
+      "quantity": 1,
+      "kind": "quest"
+     },
+     {
+      "name": "가죽 흉갑",
+      "effect": null,
+      "quantity": 1,
+      "kind": "equipment"
+     },
+     {
+      "name": "거대한 양손도끼",
+      "effect": "양손 무기 — 공격력 +3, 속도 -1",
+      "quantity": 1,
+      "kind": "equipment"
+     }
+    ],
+    "is_ready": false,
+    "pending_notes": [],
+    "status_effects": [],
+    "strength": 16,
+    "intelligence": 7,
+    "wisdom": 10,
+    "dexterity": 8,
+    "charisma": 7,
+    "constitution": 14,
+    "race_mod_applied": true
+   },
+   "departed_at": 1777309443.1165657
+  },
+  "d3ebf826": {
+   "player": {
+    "player_id": "d3ebf826",
+    "name": "뮤즈 룩 크레이지스타",
+    "character_class": "도적",
+    "race": "엘프",
+    "race_animal": null,
+    "race_ratio": null,
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 0,
+    "stat_points": 0,
+    "gold": 70,
+    "custom_portrait": null,
+    "equipped": {
+     "main_hand": {
+      "name": "쌍단검",
+      "effect": "2회 공격 — 치명타 확률 +10%"
+     },
+     "off_hand": {
+      "name": "단검",
+      "effect": null
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": false,
+    "pending_notes": [],
+    "status_effects": [],
+    "strength": 10,
+    "intelligence": 13,
+    "wisdom": 10,
+    "dexterity": 13,
+    "charisma": 10,
+    "constitution": 8,
+    "race_mod_applied": true
+   },
+   "departed_at": 1777309466.6752303
+  }
+ },
+ "saved_at": 1777309466.675642
+}

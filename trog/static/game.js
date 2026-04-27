@@ -505,13 +505,30 @@ function _amIDead() {
 }
 
 /* ── WEBSOCKET ──────────────────────────── */
+// 🆕 옛 ws 의 핸들러를 명시적으로 끊어 좀비 메시지 방지. close() 는 비동기라 onclose/onmessage 가
+// 신 ws 와 동시에 살아있을 수 있음 → 새 ws 만들기 전 항상 호출.
+function _detachWsHandlers(oldWs) {
+  if (!oldWs) return;
+  try {
+    oldWs.onopen = null;
+    oldWs.onmessage = null;
+    oldWs.onclose = null;
+    oldWs.onerror = null;
+  } catch (_) {}
+}
+
+// 🆕 재연결 백오프 (3s → 6s → 12s → … → 60s 캡). 서버 영구 다운 시 무한 3초 재시도 방지.
+let _reconnectAttempts = 0;
+const RECONNECT_MAX_DELAY = 60000;
+function _resetReconnectBackoff() { _reconnectAttempts = 0; }
+
 function connect(firstMsg) {
   const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+  _detachWsHandlers(ws);
   ws = new WebSocket(`${proto}//${location.host}/ws`);
-  ws.onopen = () => ws.send(JSON.stringify(firstMsg));
+  ws.onopen = () => { _resetReconnectBackoff(); ws.send(JSON.stringify(firstMsg)); };
   ws.onmessage = e => handle(JSON.parse(e.data));
   ws.onclose = () => {
-    // 이미 예약된 재연결이 있으면(visibilitychange 가 먼저 트리거한 경우) 안내만 생략.
     if (!reconnectTimer) sysMsg('서버 연결 끊김 — 재연결 시도 중...');
     scheduleReconnect();
   };
@@ -521,14 +538,23 @@ function connect(firstMsg) {
 function scheduleReconnect(immediate = false) {
   if (reconnectTimer) return;
   const s = loadSession();
-  if (!s) return;  // 저장된 세션 없으면 그냥 끝
-  // immediate=true → visibilitychange / online 콜백에서 즉시 재연결. 모바일 setTimeout 쓰로틀 우회.
-  const delay = immediate ? 50 : 3000;
+  if (!s) return;
+  let delay;
+  if (immediate) {
+    delay = 50;
+  } else {
+    // 지수 백오프: 3s, 6s, 12s, 24s, 48s, 60s(cap)
+    const base = 3000 * Math.pow(2, _reconnectAttempts);
+    delay = Math.min(base, RECONNECT_MAX_DELAY);
+    _reconnectAttempts++;
+  }
   reconnectTimer = setTimeout(() => {
     reconnectTimer = null;
     const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+    _detachWsHandlers(ws);   // 이전 ws 핸들러 차단 — 좀비 메시지 방지
     ws = new WebSocket(`${proto}//${location.host}/ws`);
     ws.onopen = () => {
+      _resetReconnectBackoff();
       sysMsg('재연결됨 — 세션 복구 중');
       ws.send(JSON.stringify({
         type: 'rejoin_room',
@@ -547,7 +573,9 @@ function scheduleReconnect(immediate = false) {
    백그라운드 setTimeout 을 쓰로틀링해서 기존 scheduleReconnect(3초 타이머)가 제때 안 풀림.
    → 탭이 장시간 백그라운드 → 포그라운드로 돌아올 때만 WS 좀비 의심·강제 재연결.
    짧은 전환·포커스 변경에는 손대지 않음 (멀쩡한 WS 를 끊어버려 역효과). */
-const MOBILE_BG_ZOMBIE_THRESHOLD_MS = 15000;  // 15초 이상 숨겨졌으면 WS 좀비 의심선
+// 🆕 5분 (300s) — 모바일 백그라운드 → 포그라운드 복귀 시 멀쩡한 WS 도 강제 종료해
+// 재연결 알림이 도배되던 UX 결함 해소. 그 이하 시간엔 WS 가 살아있을 가능성 높으니 그대로 둠.
+const MOBILE_BG_ZOMBIE_THRESHOLD_MS = 300000;  // 5분 이상 숨겨졌으면 WS 좀비 의심선
 let _lastHiddenAt = 0;
 
 (function bindReconnectTriggers() {
@@ -630,6 +658,10 @@ function handle(d) {
         updateTimeBadge(d.current_time);
         // 🆕 지금까지의 서사 로그 전부 재생 (신규 입장자도 이전 대화 볼 수 있음)
         replayNarrativeLog(d.narrative_log, d.players);
+        // 🆕 마지막 장면 이미지 복원
+        if (d.current_scene_url) {
+          updateSceneBanner('', d.current_time, d.players, d.current_scene_url);
+        }
         if (d.turn_player_id !== undefined) updateTurnIndicator(d.turn_player_id, d.players);
       } else {
         showWaiting(d.room_id, d.players);
@@ -662,6 +694,10 @@ function handle(d) {
           replayNarrativeLog(d.narrative_log, d.players);
         } else if (d.last_dm) {
           dmMsg(d.last_dm, false);
+        }
+        // 🆕 마지막 장면 이미지 복원
+        if (d.current_scene_url) {
+          updateSceneBanner('', d.current_time, d.players, d.current_scene_url);
         }
         if (d.turn_player_id !== undefined) updateTurnIndicator(d.turn_player_id, d.players);
         sysMsg('재연결되었습니다.');
@@ -768,6 +804,10 @@ function handle(d) {
       updateTimeBadge(d.current_time);
       showDmTyping(false);
       setTimeout(() => dmMsg(d.dm_text, true), 1800);
+      // 🆕 LLM 이 발급한 SCENE URL 이 있으면 첫 장면을 즉시 띄움
+      if (d.scene_image_url) {
+        updateSceneBanner(d.dm_text, d.current_time, d.players, d.scene_image_url);
+      }
       if (d.turn_player_id !== undefined) updateTurnIndicator(d.turn_player_id, d.players);
       if (Array.isArray(d.round_order)) updateRoundOrderUI(d.round_order, d.round_idx, d.round_number);
       break;
@@ -790,8 +830,11 @@ function handle(d) {
       if (d.turn_player_id !== undefined) updateTurnIndicator(d.turn_player_id, d.players);
       // 🆕 Phase 3 — 라운드 순서 표시 갱신
       if (Array.isArray(d.round_order)) updateRoundOrderUI(d.round_order, d.round_idx, d.round_number);
-      // 라운드 완료 시 상단 장면 배너 업데이트 (파티 종족을 씬에 섞어서 일관성)
-      if (d.round_complete) {
+      // 🆕 SCENE 태그가 있으면 매 응답마다 배너 갱신 (LLM 이 영문으로 직접 발급한 URL),
+      // 없으면 기존 동작 — 라운드 완료 시에만 한글 키워드 추출로 폴백.
+      if (d.scene_image_url) {
+        updateSceneBanner(d.text, d.current_time, d.players, d.scene_image_url);
+      } else if (d.round_complete) {
         updateSceneBanner(d.text, d.current_time, d.players);
       }
       break;
@@ -799,6 +842,10 @@ function handle(d) {
     case 'monster_turn':
       // 🆕 Phase 3 — 몬스터 자동 행동 차례. DM 응답과 비슷하게 본문 표시하되 시각적으로 구분.
       monsterTurnMsg(d.monster_name, d.text);
+      // 🆕 몬스터 차례에서도 SCENE URL 이 있으면 배너 갱신
+      if (d.scene_image_url) {
+        updateSceneBanner(d.text, null, _lastSeenPlayers || [], d.scene_image_url);
+      }
       if (Array.isArray(d.players)) {
         refreshPlayers(d.players);
         refreshCharPanel(d.players);
@@ -1459,15 +1506,59 @@ function renderStatWithBuff(base, delta) {
   return `${base} <span class="${cls}">(${sign}${delta})</span>`;
 }
 
-function renderStatusChips(statuses) {
-  if (!Array.isArray(statuses) || !statuses.length) return '';
-  const chips = statuses.map(st => {
-    const cls = st.kind === '버프' ? 'buff' : 'debuff';
-    const emoji = st.kind === '버프' ? '✨' : '☠';
-    const tip = st.effect ? `${st.name} (${st.turns_remaining}턴)\n${st.effect}` : `${st.name} (${st.turns_remaining}턴)`;
+/* 🆕 장비 보너스 + 버프 둘 다 합쳐서 effective stat 표시.
+   표시: 효과있는 합산값 (기본+장비). 버프는 추가로 (+N) 분리 표기.
+   tooltip 에 'base 15 + 장비 +5 [+ 버프 +3]' 분해 표시.
+   - base: 기본 능력치 값
+   - buffDelta: 상태이상 버프/디버프로 인한 가감
+   - equipBonus: 장비 보너스 (양수만 의미있음, equipment_bonuses 에서 옴)
+*/
+function renderStatWithEquip(base, buffDelta, equipBonus) {
+  const eq = equipBonus || 0;
+  const buf = buffDelta || 0;
+  const eff = base + eq;     // 장비까지 적용된 표시값
+  let out;
+  if (buf) {
+    const sign = buf > 0 ? '+' : '';
+    const cls = buf > 0 ? 'stat-buff-pos' : 'stat-buff-neg';
+    out = `${eff} <span class="${cls}">(${sign}${buf})</span>`;
+  } else {
+    out = `${eff}`;
+  }
+  if (eq) {
+    out += ` <span class="stat-equip-bonus" title="기본 ${base} + 장비 +${eq}">🛡+${eq}</span>`;
+  }
+  return out;
+}
+
+function renderStatusChips(statuses, comboBuffs) {
+  // 🆕 combo_buffs (장비 조합 영구 버프) 도 같이 렌더 — 칩 모양은 동일, 클래스만 다름.
+  const list = [];
+  if (Array.isArray(comboBuffs)) {
+    comboBuffs.forEach(cb => list.push({ ...cb, _kind: 'combo' }));
+  }
+  if (Array.isArray(statuses)) {
+    statuses.forEach(st => list.push({ ...st, _kind: 'status' }));
+  }
+  if (!list.length) return '';
+  const chips = list.map(item => {
+    if (item._kind === 'combo') {
+      // 영구 버프 — turns 표시 안 함, 🔗 chain 아이콘
+      const tip = `${item.name} (영구 — 장비 조합)\n${item.effect}`;
+      return `<span class="status-chip combo-buff" title="${escapeHtml(tip)}">
+                ${item.icon || '🔗'} ${escapeHtml(item.name)}
+                <span class="status-turns">∞</span>
+              </span>`;
+    }
+    // 일반 buff/debuff
+    const cls = item.kind === '버프' ? 'buff' : 'debuff';
+    const emoji = item.kind === '버프' ? '✨' : '☠';
+    const tip = item.effect
+      ? `${item.name} (${item.turns_remaining}턴)\n${item.effect}`
+      : `${item.name} (${item.turns_remaining}턴)`;
     return `<span class="status-chip ${cls}" title="${escapeHtml(tip)}">
-              ${emoji} ${escapeHtml(st.name)}
-              <span class="status-turns">${st.turns_remaining}턴</span>
+              ${emoji} ${escapeHtml(item.name)}
+              <span class="status-turns">${item.turns_remaining}턴</span>
             </span>`;
   }).join('');
   return `<div class="status-row">${chips}</div>`;
@@ -1488,7 +1579,7 @@ function refreshPlayers(players) {
     const kickBtn = (isOwner && !isSpectator && p.player_id !== myId)
       ? `<button class="pc-kick" data-kick-pid="${p.player_id}" title="강퇴 / 턴 자동 스킵">✕</button>`
       : '';
-    const statusChips = renderStatusChips(p.status_effects);
+    const statusChips = renderStatusChips(p.status_effects, p.combo_buffs);
 
     const card = document.createElement('div');
     // 🆕 사망 플레이어 카드 — .dead 클래스로 그레이스케일·💀 뱃지 (CSS 에서 처리).
@@ -1508,10 +1599,10 @@ function refreshPlayers(players) {
             <span class="pc-gauge-lbl">HP</span>
           </div>
           <div class="pc-compact-mid">
-            <img src="${p.portrait_url}" alt="${p.name}" class="pc-compact-portrait portrait-enlarge"
-                 data-full="${p.portrait_url}" data-caption="${escapeHtml(p.name)}"
+            <img src="${escapeHtml(p.portrait_url)}" alt="${escapeHtml(p.name)}" class="pc-compact-portrait portrait-enlarge"
+                 data-full="${escapeHtml(p.portrait_url)}" data-caption="${escapeHtml(p.name)}"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
-            <span class="pc-emoji-fallback" style="display:none">${p.emoji}</span>
+            <span class="pc-emoji-fallback" style="display:none">${escapeHtml(p.emoji)}</span>
             <div class="pc-compact-name">${escapeHtml(p.name)} <span class="pc-lvl">Lv.${p.level}</span></div>
           </div>
           <div class="pc-gauge-v mp" title="MP ${mp}/${maxMp}">
@@ -1527,18 +1618,18 @@ function refreshPlayers(players) {
         <div class="pc-head">
           <div class="pc-sprite-wrap">
             <div class="pc-sprite walk-idle">
-              <img src="${p.portrait_url}" alt="${p.name}" class="pc-portrait portrait-enlarge" data-full="${p.portrait_url}" data-caption="${escapeHtml(p.name)} — ${escapeHtml(p.race + ' ' + p.character_class + ' · Lv.' + p.level)}"
+              <img src="${escapeHtml(p.portrait_url)}" alt="${escapeHtml(p.name)}" class="pc-portrait portrait-enlarge" data-full="${escapeHtml(p.portrait_url)}" data-caption="${escapeHtml(p.name)} — ${escapeHtml(p.race + ' ' + p.character_class + ' · Lv.' + p.level)}"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
-              <span class="pc-emoji-fallback" style="display:none">${p.emoji}</span>
+              <span class="pc-emoji-fallback" style="display:none">${escapeHtml(p.emoji)}</span>
             </div>
           </div>
           <div class="pc-info">
             <div class="pc-name">
-              ${p.name}
+              ${escapeHtml(p.name)}
               <span class="pc-lvl">Lv.${p.level}</span>
               ${p.player_id === myId ? '<span style="color:var(--gold);font-size:.7rem">(나)</span>' : ''}
             </div>
-            <div class="pc-class">${p.race_emoji || ''} ${raceLabel(p)} · ${p.character_class}</div>
+            <div class="pc-class">${escapeHtml(p.race_emoji || '')} ${escapeHtml(raceLabel(p))} · ${escapeHtml(p.character_class)}</div>
           </div>
           ${kickBtn}
         </div>
@@ -1590,6 +1681,8 @@ function refreshCharPanel(players) {
   // 🆕 버프/디버프 수치 효과 추출 — "공격력 +10" 같은 걸 숫자로 만들어 스탯에 (+10) 로 병기.
   // 서버는 여전히 base stat 만 관리 (서사·밸런스 영향 최소). UI 표시에만 쓰는 시뮬레이션.
   const buffDelta = extractBuffDelta(me.status_effects);
+  // 🆕 장비 효과 보너스 (서버 to_dict 에서 받음). 없으면 빈 객체.
+  const eqBonuses = (me && typeof me.equipment_bonuses === 'object' && me.equipment_bonuses) || {};
 
   // XP 진행도: 다음 레벨까지 비율
   const xpNeeded = (me.xp_to_next || 0) + (me.xp - xpBaseForLevel(me.level));
@@ -1627,14 +1720,28 @@ function refreshCharPanel(players) {
               ${effLine}
             </div>`;
   };
-  const equipHtml = `
-    <div class="equipment">
-      <div class="eq-title">🛡 장착 중</div>
-      ${slot('⚔️', '무기',   eq.weapon)}
-      ${slot('🛡',  '방어구', eq.armor)}
-      ${slot('💎', '장신구', eq.accessory)}
-    </div>
-  `;
+  // 🆕 4슬롯 — main_hand(왼손)/off_hand(오른손)/armor/accessory.
+  // 구버전 save 호환: weapon → main_hand 폴백.
+  const mainH = eq.main_hand || eq.weapon;   // 구버전 호환
+  const offH  = eq.off_hand;
+  // 🆕 양손 동일 무기(쌍단검·쌍검 등) → 표시 통합
+  const isDual = mainH && offH
+                 && typeof mainH === 'object' && typeof offH === 'object'
+                 && mainH.name && mainH.name === offH.name;
+  const equipHtml = isDual
+    ? `<div class="equipment">
+        <div class="eq-title">🛡 장착 중</div>
+        ${slot('⚔️⚔️', '양손 (쌍)', mainH)}
+        ${slot('🛡',  '방어구', eq.armor)}
+        ${slot('💎', '장신구', eq.accessory)}
+      </div>`
+    : `<div class="equipment">
+        <div class="eq-title">🛡 장착 중</div>
+        ${slot('🗡️', '왼손',   mainH)}
+        ${slot('🛡',  '오른손', offH)}
+        ${slot('🥋', '방어구', eq.armor)}
+        ${slot('💎', '장신구', eq.accessory)}
+      </div>`;
 
   const inv = Array.isArray(me.inventory) ? me.inventory : [];
   // 인벤토리 요소는 이제 {name, effect, quantity, kind} 딕트. (구 포맷 '문자열'도 방어적으로 처리)
@@ -1673,20 +1780,56 @@ function refreshCharPanel(players) {
       </div>
     `;
   };
+  // 🆕 종류별 정렬 + 그룹화 — 장비 → 소모품 → 퀘스트 순.
+  // 각 그룹 헤더는 클릭 시 접기/펼치기 (localStorage 로 상태 기억).
+  const groups = { equipment: [], consumable: [], quest: [] };
+  inv.forEach(it => {
+    const obj = (typeof it === 'string')
+      ? { name: it, effect: null, quantity: 1, kind: 'consumable' }
+      : (it || {});
+    const k = (obj.kind === 'equipment' || obj.kind === 'quest') ? obj.kind : 'consumable';
+    groups[k].push(obj);
+  });
+  // 각 그룹 내부는 이름순으로 정렬 (안정적 표시)
+  Object.values(groups).forEach(arr =>
+    arr.sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ko'))
+  );
+
+  const collapsedGroups = (() => {
+    try { return JSON.parse(localStorage.getItem('trog-inv-collapsed') || '{}') || {}; }
+    catch (_) { return {}; }
+  })();
+
+  const groupSection = (key, title, icon, items) => {
+    if (!items.length) return '';
+    const isCollapsed = !!collapsedGroups[key];
+    const itemsHtml = items.map(renderItem).join('');
+    return `
+      <div class="inv-group ${isCollapsed ? 'collapsed' : ''}" data-inv-group="${key}">
+        <div class="inv-group-header" data-toggle-inv-group="${key}">
+          <span class="inv-group-chev">${isCollapsed ? '▶' : '▼'}</span>
+          <span class="inv-group-title">${icon} ${title} <span class="inv-group-count">${items.length}</span></span>
+        </div>
+        <div class="inv-group-body">${itemsHtml}</div>
+      </div>`;
+  };
+
   const invHtml = inv.length
     ? `<div class="inventory">
          <div class="inv-title">🎒 소지품 (${inv.length})</div>
-         <div class="inv-list">${inv.map(renderItem).join('')}</div>
+         ${groupSection('equipment', '장비',   '🛡', groups.equipment)}
+         ${groupSection('consumable', '소모품', '🍶', groups.consumable)}
+         ${groupSection('quest',      '퀘스트', '📜', groups.quest)}
        </div>`
     : `<div class="inventory inv-empty">🎒 소지품 없음</div>`;
 
-  const myStatusChips = renderStatusChips(me.status_effects);
+  const myStatusChips = renderStatusChips(me.status_effects, me.combo_buffs);
 
   document.getElementById('char-body').innerHTML = `
     <div class="char-avatar">
       <div class="char-sprite-wrap">
         <div class="char-sprite walk-idle">
-          <img src="${me.portrait_url}" alt="${me.name}" class="char-portrait portrait-enlarge" data-full="${me.portrait_url}" data-caption="${escapeHtml(me.name)} — ${escapeHtml(me.race + ' ' + me.character_class + ' · Lv.' + me.level)}"
+          <img src="${escapeHtml(me.portrait_url)}" alt="${escapeHtml(me.name)}" class="char-portrait portrait-enlarge" data-full="${escapeHtml(me.portrait_url)}" data-caption="${escapeHtml(me.name)} — ${escapeHtml(me.race + ' ' + me.character_class + ' · Lv.' + me.level)}"
                onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
           <span class="char-emoji-fallback" style="display:none">${me.emoji}</span>
         </div>
@@ -1730,16 +1873,23 @@ function refreshCharPanel(players) {
       };
       const abilityRow = (key, label, sub, hint, locked) => {
         const score = (typeof me[key] === 'number') ? me[key] : 10;
+        const eqB = eqBonuses[key] || 0;
+        const eff = score + eqB;
         const lockBadge = locked
           ? '<span class="stat-locked" title="매력은 생성 시 고정 — 레벨업으로 올릴 수 없음">🔒</span>'
           : '';
         const btn = locked
           ? '<button class="stat-plus disabled" type="button" disabled title="매력은 레벨업 불가">＋</button>'
           : plusBtn(key, 1, hint);
+        // 🆕 장비 보너스 있으면 합산값 + 🛡 표시 (modifier 도 effective 기준)
+        const valHtml = eqB
+          ? `${eff} <span class="stat-mod">(${_modStr(eff)})</span>` +
+            ` <span class="stat-equip-bonus" title="기본 ${score} + 장비 +${eqB}">🛡+${eqB}</span>`
+          : `${score} <span class="stat-mod">(${_modStr(score)})</span>`;
         return `
           <div class="stat-row stat-row-plus stat-ability">
             <span class="stat-lbl">${label} <span class="stat-sub">${sub}</span> ${lockBadge}</span>
-            <span class="stat-val">${score} <span class="stat-mod">(${_modStr(score)})</span></span>
+            <span class="stat-val">${valHtml}</span>
             ${btn}
           </div>`;
       };
@@ -1759,12 +1909,12 @@ function refreshCharPanel(players) {
           </div>
           <div class="stat-row stat-row-plus">
             <span class="stat-lbl">공격 <span class="stat-sub">ATK</span></span>
-            <span class="stat-val">${renderStatWithBuff(me.attack, buffDelta.attack)}</span>
+            <span class="stat-val">${renderStatWithEquip(me.attack, buffDelta.attack, eqBonuses.attack)}</span>
             ${plusBtn('attack', 1, '공격력 증가')}
           </div>
           <div class="stat-row stat-row-plus">
             <span class="stat-lbl">방어 <span class="stat-sub">DEF</span></span>
-            <span class="stat-val">${renderStatWithBuff(me.defense, buffDelta.defense)}</span>
+            <span class="stat-val">${renderStatWithEquip(me.defense, buffDelta.defense, eqBonuses.defense)}</span>
             ${plusBtn('defense', 1, '방어력 증가')}
           </div>
           <div class="stat-section-divider">— 6 능력치 (D&D 표준) —</div>
@@ -1803,6 +1953,25 @@ function refreshCharPanel(players) {
         console.error('[spend_stat_point] send failed:', err);
         btn.classList.remove('disabled');
       }
+    });
+  });
+
+  // 🆕 인벤 그룹 헤더 — 클릭 시 접기/펼치기 (localStorage 영구 기억).
+  document.querySelectorAll('#char-body [data-toggle-inv-group]').forEach(hdr => {
+    hdr.addEventListener('click', () => {
+      const key = hdr.dataset.toggleInvGroup;
+      const group = hdr.parentElement;
+      if (!group) return;
+      const willCollapse = !group.classList.contains('collapsed');
+      group.classList.toggle('collapsed', willCollapse);
+      const chev = hdr.querySelector('.inv-group-chev');
+      if (chev) chev.textContent = willCollapse ? '▶' : '▼';
+      // localStorage 에 상태 저장
+      try {
+        const s = JSON.parse(localStorage.getItem('trog-inv-collapsed') || '{}') || {};
+        s[key] = willCollapse;
+        localStorage.setItem('trog-inv-collapsed', JSON.stringify(s));
+      } catch (_) {}
     });
   });
 
@@ -2052,14 +2221,25 @@ function updateRoundOrderUI(roundOrder, roundIdx, roundNumber) {
     const max = isCur ? 4 : 3;
     return s.length > max ? s.slice(0, max) + '…' : s;
   };
+  // 🆕 플레이어 아이콘은 종족 emoji 로 — _lastSeenPlayers 에서 race_emoji 조회.
+  // 일반 'X' 아이콘 대신 인간/엘프/티플링/곰수인 등 종족 이모지로 한눈에 구분.
+  const playerById = {};
+  (Array.isArray(_lastSeenPlayers) ? _lastSeenPlayers : []).forEach(p => {
+    if (p && p.player_id) playerById[p.player_id] = p;
+  });
   const items = roundOrder.map((a, i) => {
     const isCur = (i === roundIdx);
     const isPlayer = (a.kind === 'player');
-    const icon = isPlayer ? '🧑' : '👹';
+    let icon;
+    if (isPlayer) {
+      const p = playerById[a.id];
+      icon = (p && p.race_emoji) || '🧑';
+    } else {
+      icon = '👹';
+    }
     const cls = `ro-item${isCur ? ' current' : ''}${isPlayer ? ' player' : ' monster'}`;
     const init = (typeof a.initiative === 'number') ? a.initiative : '?';
     const fullName = a.name || '?';
-    // 🆕 icon 과 name 을 분리해 좁은 화면에서 name 만 숨길 수 있게
     return `<span class="${cls}" title="${escapeHtml(fullName)} initiative=${init}"><span class="ro-icon">${icon}</span><span class="ro-name">${escapeHtml(truncate(fullName, isCur))}</span></span>`;
   }).join('');
   panel.innerHTML = `<span class="ro-label">⏱R${roundNumber || 1}</span>${items}`;
@@ -2134,7 +2314,26 @@ function updateTurnIndicator(turnPlayerId, players) {
   const bar = document.getElementById('action-bar');
   const inp = document.getElementById('action-input');
   const sendBtn = document.getElementById('send-btn');
-  if (bar) bar.classList.toggle('locked', lock);
+  if (bar) {
+    bar.classList.toggle('locked', lock);
+    // 🆕 lock 배너 텍스트를 CSS 변수로 동적 주입 — "⏳ {이름}의 차례" 형식.
+    // CSS 의 ::before content: var(--turn-banner) 가 이걸 읽음.
+    if (lock) {
+      const turnName = (players || []).find(p => p.player_id === turnPlayerId);
+      let bannerText;
+      if (dead) {
+        bannerText = '💀 사망 — 부활 대기 중';
+      } else if (turnName && turnName.name) {
+        bannerText = `⏳ ${turnName.name} 의 차례 — 기다리세요`;
+      } else {
+        bannerText = '⏳ DM 진행 중';
+      }
+      // CSS content: value 는 따옴표 포함 문자열 형태라야 함
+      bar.style.setProperty('--turn-banner', `"${bannerText.replace(/"/g, '\\"')}"`);
+    } else {
+      bar.style.removeProperty('--turn-banner');
+    }
+  }
   if (inp) {
     inp.disabled = lock;
     const name = (players || []).find(p => p.player_id === turnPlayerId);
@@ -2204,11 +2403,20 @@ function showEventToasts(events) {
     pushToast(layer, `🎁 ${ev.name} 획득: ${ev.item}`, mine ? 'toast-item-mine' : 'toast-item');
   });
   // 🆕 장비 해제 (무기 투척·파괴·분실)
-  const slotLabel = { weapon: '무기', armor: '방어구', accessory: '장신구' };
+  const slotLabel = { weapon: '무기', main_hand: '왼손', off_hand: '오른손', armor: '방어구', accessory: '장신구' };
   (events.unequipped || []).forEach(ev => {
     const mine = isMyName(ev.name);
     const lab = slotLabel[ev.slot] || ev.slot;
     pushToast(layer, `🗑 ${ev.name} ${lab} 해제: ${ev.prev}`, mine ? 'toast-item-mine' : 'toast-item');
+  });
+  // 🆕 V7 장비 강화 — 슬롯의 장비 이름·효과가 atomic 교체됨 (강화·업그레이드·리네임)
+  (events.equipment_upgrades || []).forEach(ev => {
+    const mine = isMyName(ev.name);
+    const lab = slotLabel[ev.slot] || ev.slot;
+    const dual = ev.dual_synced ? ' (양손)' : '';
+    pushToast(layer,
+      `⚒ ${ev.name} ${lab}${dual} 강화: ${ev.prev_name} → ${ev.new_name}`,
+      mine ? 'toast-item-mine' : 'toast-item');
   });
   // 🆕 상태 효과 적용 토스트 — 플레이어 대상
   (events.statuses_applied || []).forEach(st => {
@@ -2248,9 +2456,13 @@ function showEventToasts(events) {
       pushToast(layer, '🕯 파티 전멸 — 이야기가 막을 내린다', 'toast-error');
     }
   }
-  // 🆕 몬스터 이벤트 — buff/debuff 적용, DOT tick 피해, 처치
+  // 🆕 몬스터 이벤트 — buff/debuff 적용, DOT tick 피해, 처치, 신규 등장
   (events.monster_events || []).forEach(ev => {
-    if (ev.kind === 'debuff') {
+    if (ev.kind === 'spawn') {
+      // 🆕 적 등장 토스트 — 모바일에서도 즉시 알림 (party-panel 드로어 안 열어도 보임)
+      const spd = ev.speed ? ` ⚡${ev.speed}` : '';
+      pushToast(layer, `👹 ${ev.name} 등장 (HP ${ev.hp}${spd})`, 'toast-debuff');
+    } else if (ev.kind === 'debuff') {
       const desc = ev.effect ? ` — ${ev.effect}` : '';
       pushToast(layer, `☠ ${ev.name} 디버프: ${ev.effect_name} (${ev.turns}턴)${desc}`, 'toast-debuff');
     } else if (ev.kind === 'buff') {
@@ -2261,6 +2473,8 @@ function showEventToasts(events) {
     } else if (ev.kind === 'defeated') {
       const tag = ev.by_dot ? ' 💀 (지속 피해로 사망)' : ' 💀';
       pushToast(layer, `${ev.name} 처치${tag}`, 'toast-xp');
+    } else if (ev.kind === 'leave') {
+      pushToast(layer, `🌫 ${ev.name} 이탈/소멸`, 'toast-info');
     }
   });
 }
@@ -2313,17 +2527,24 @@ function openTakeoverModal(d) {
     const inv = (p.inventory || []).slice(0, 4);
     const invTxt = inv.length ? inv.join(', ') : '없음';
     const eq = p.equipped || {};
+    // 🆕 4슬롯 호환 — eq[slot] 은 {name, effect} 딕트, 구버전 weapon 폴백
+    const eqName = (s) => {
+      const v = (typeof s === 'object' && s !== null) ? s.name : s;
+      return v || '-';
+    };
+    const eqMain = eqName(eq.main_hand || eq.weapon);
+    const eqArmor = eqName(eq.armor);
     card.innerHTML = `
       <div class="takeover-portrait-wrap">
-        <img class="takeover-portrait" src="${p.portrait_url}" alt="${escapeHtml(p.name)}"
+        <img class="takeover-portrait" src="${escapeHtml(p.portrait_url)}" alt="${escapeHtml(p.name)}"
              onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
-        <span class="takeover-emoji-fallback" style="display:none">${p.emoji || '🧑'}</span>
+        <span class="takeover-emoji-fallback" style="display:none">${escapeHtml(p.emoji || '🧑')}</span>
       </div>
       <div class="takeover-info">
         <div class="takeover-name">${escapeHtml(p.name)} <span class="takeover-lvl">Lv.${p.level}</span></div>
-        <div class="takeover-sub">${p.race_emoji || ''} ${escapeHtml(raceLabel(p))} · ${escapeHtml(p.character_class)}</div>
+        <div class="takeover-sub">${escapeHtml(p.race_emoji || '')} ${escapeHtml(raceLabel(p))} · ${escapeHtml(p.character_class)}</div>
         <div class="takeover-stat">HP ${p.hp}/${p.max_hp} · MP ${p.mp}/${p.max_mp}</div>
-        <div class="takeover-eq">⚔️ ${escapeHtml(eq.weapon || '-')} · 🛡 ${escapeHtml(eq.armor || '-')}</div>
+        <div class="takeover-eq">🗡️ ${escapeHtml(eqMain)} · 🥋 ${escapeHtml(eqArmor)}</div>
         <div class="takeover-inv">🎒 ${escapeHtml(invTxt)}</div>
         <div class="takeover-away">${secToKo(p.seconds_away)}</div>
       </div>
@@ -2650,9 +2871,12 @@ function hashSeed(s) {
 
 let _roundCounter = 0;
 let _sceneCollapseTimer = null;
-const SCENE_VISIBLE_MS = 7000;  // 7초 후 자동 축소
+// 모바일은 본문 공간이 부족하니 더 빨리 축소 (3초). 데스크탑은 7초.
+const SCENE_VISIBLE_MS = (window.matchMedia && window.matchMedia('(max-width: 720px)').matches) ? 3000 : 7000;
 
-function updateSceneBanner(dmText, timeTag, players) {
+function updateSceneBanner(dmText, timeTag, players, directUrl) {
+  // directUrl 가 있으면 LLM 이 SCENE 태그로 영문 묘사를 써준 것 — 그대로 사용 (최우선).
+  // 없으면 기존 한글 키워드 추출 폴백.
   _roundCounter++;
   const banner = document.getElementById('scene-banner');
   const img = document.getElementById('scene-banner-img');
@@ -2660,15 +2884,21 @@ function updateSceneBanner(dmText, timeTag, players) {
   const roundEl = document.getElementById('scene-banner-round');
   if (!banner || !img) return;
 
-  const keywords = extractSceneKeywords(dmText);
-  const tod = (timeTag && timeTag.label) ? `, ${timeTag.label}` : '';
-  // 파티 구성 (종족들) 을 배경에 살짝 녹여서 일관된 캐릭터 느낌
-  const races = (players || []).map(p => RACE_PROMPT[p.race]).filter(Boolean);
-  const partyCue = races.length
-    ? `, fantasy adventuring party: ${[...new Set(races)].slice(0, 4).join(' and ')}`
-    : '';
-  const prompt = `wide cinematic landscape map view, ${keywords}${tod}${partyCue}`;
-  const seed = hashSeed(prompt + _roundCounter);
+  let url;
+  if (directUrl) {
+    url = directUrl;
+  } else {
+    const keywords = extractSceneKeywords(dmText);
+    const tod = (timeTag && timeTag.label) ? `, ${timeTag.label}` : '';
+    // 파티 구성 (종족들) 을 배경에 살짝 녹여서 일관된 캐릭터 느낌
+    const races = (players || []).map(p => RACE_PROMPT[p.race]).filter(Boolean);
+    const partyCue = races.length
+      ? `, fantasy adventuring party: ${[...new Set(races)].slice(0, 4).join(' and ')}`
+      : '';
+    const prompt = `wide cinematic landscape map view, ${keywords}${tod}${partyCue}`;
+    const seed = hashSeed(prompt + _roundCounter);
+    url = pollinationsUrl(prompt, 640, 200, seed);
+  }
 
   // 점진적 페이드
   banner.style.display = 'block';
@@ -2679,7 +2909,11 @@ function updateSceneBanner(dmText, timeTag, players) {
     img.src = newImg.src;
     banner.classList.remove('scene-loading');
   };
-  newImg.src = pollinationsUrl(prompt, 640, 200, seed);
+  newImg.onerror = () => {
+    // 그림 실패해도 배너는 라벨만 남기기 (깨진 아이콘 방지)
+    banner.classList.remove('scene-loading');
+  };
+  newImg.src = url;
 
   // 한글 라벨 (장면 요약용)
   const tLabel = (timeTag && timeTag.icon) ? `${timeTag.icon} ${timeTag.label}` : '';

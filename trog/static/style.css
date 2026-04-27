@@ -188,10 +188,22 @@ input[type="text"]:focus { border-color: var(--gold); }
 /* ── WAITING ─────────────────────────────── */
 #waiting-screen {
     align-items: center;
-    justify-content: center;
+    /* 'safe center': 컨텐츠가 viewport 보다 짧으면 가운데, 더 길면 위쪽으로 정렬 — 잘리지 않도록.
+       구형 브라우저는 'center' 로 폴백되니 안전. */
+    justify-content: safe center;
     background: radial-gradient(ellipse at 50% 40%, #1c1030 0%, #08080f 65%);
     padding: 1.5rem;
     overflow-y: auto;
+    /* 매우 작은 화면에서도 첫 화면(방 코드)에 도달 가능 — 스페이서 트릭 폴백 */
+    flex-direction: column;
+}
+
+/* safe center 미지원 브라우저용 폴백 — flex 1 spacer 가 fits 일 땐 늘어나서 가운데, overflow 일 땐 0으로 줄어 컨텐츠가 위로 붙음 */
+#waiting-screen::before,
+#waiting-screen::after {
+    content: '';
+    flex: 1 0 0;
+    min-height: 0;
 }
 
 /* 2컬럼 x 2행 그리드.
@@ -1217,6 +1229,75 @@ label.tool-btn, .file-label {
     flex-direction: column;
     gap: .3rem;
 }
+
+/* 🆕 인벤 그룹 (장비/소모품/퀘스트) — 접기 가능 */
+.inv-group {
+    margin-top: .4rem;
+}
+.inv-group:first-of-type { margin-top: .25rem; }
+.inv-group-header {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .3rem .45rem;
+    background: rgba(201,168,76,.06);
+    border: 1px solid rgba(201,168,76,.18);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background .15s, border-color .15s;
+}
+.inv-group-header:hover {
+    background: rgba(201,168,76,.12);
+    border-color: rgba(201,168,76,.4);
+}
+.inv-group-chev {
+    color: var(--gold);
+    font-size: .65rem;
+    width: .9rem;
+    flex-shrink: 0;
+}
+.inv-group-title {
+    color: var(--text);
+    font-size: .76rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+}
+.inv-group-count {
+    color: var(--muted);
+    font-size: .68rem;
+    margin-left: .2rem;
+    font-weight: 400;
+}
+.inv-group-body {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: .35rem 0 0;
+    overflow: hidden;
+    transition: max-height .25s ease-out, opacity .2s, padding .2s;
+    max-height: 999px;
+}
+.inv-group.collapsed .inv-group-body {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+/* 🆕 장비 보너스 배지 (스탯 옆에 🛡+5 표시) */
+.stat-equip-bonus {
+    display: inline-block;
+    margin-left: .25rem;
+    background: rgba(76, 195, 248, .12);
+    border: 1px solid rgba(76, 195, 248, .35);
+    color: #79c8ff;
+    font-size: .68rem;
+    padding: 0 .35rem;
+    border-radius: 3px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    cursor: help;
+}
 .inv-item {
     padding: .4rem .55rem;
     background: rgba(201,168,76,.08);
@@ -1649,9 +1730,10 @@ label.tool-btn, .file-label {
     pointer-events: none;
     filter: grayscale(.3);
 }
-/* 상단에 고정 배너로 표시 — 액션바 내부 요소 위에 덮음 */
+/* 상단에 고정 배너로 표시 — 액션바 내부 요소 위에 덮음.
+   --turn-banner CSS 변수로 JS 가 "OOO 의 차례" 로 동적 설정. 미설정 시 폴백 문구. */
 .action-bar.locked::before {
-    content: '⏳ 내 차례가 아닙니다';
+    content: var(--turn-banner, '⏳ 내 차례가 아닙니다');
     display: block;
     background: linear-gradient(90deg, rgba(201,168,76,.15), rgba(201,168,76,.05));
     color: var(--gold);
@@ -2618,6 +2700,148 @@ body.spectator-mode .action-bar::after {
     .room-code-display { font-size: 2.2rem; letter-spacing: .25em; }
 }
 
+/* ─────────────────────────────────────────────
+   📱 모바일 게임 화면 컴팩트 — 본문(서사) 최우선
+   배경: 작은 화면에서 scene 이미지 + 헤더 뱃지 + 액션바가 narrative 를
+   2~3줄로 압박. 본문이 가장 중요하니 다른 chrome 을 적극 줄인다.
+───────────────────────────────────────────── */
+@media (max-width: 720px) {
+    /* 1) 장면 배너 — 화면 1/3 먹던 거 → 1/8 정도. 기본 축소 상태로 시작. */
+    .scene-banner {
+        max-height: 110px !important;
+        margin-bottom: .4rem !important;
+    }
+    .scene-banner img {
+        height: 90px !important;
+    }
+    .scene-banner.collapsed {
+        max-height: 24px !important;
+        margin-bottom: .3rem !important;
+    }
+    .scene-banner-label {
+        padding: .3rem .6rem !important;
+        font-size: .72rem !important;
+    }
+
+    /* 2) narrative 본문 — 폰트 / 줄간격 살짝 키워 가독성 ↑ */
+    .narr-log {
+        padding: .65rem .75rem !important;
+        font-size: 1rem !important;
+        line-height: 1.62 !important;
+    }
+    .msg-dm {
+        padding: .55rem .75rem !important;
+        font-size: 1rem !important;
+        line-height: 1.62 !important;
+    }
+    .msg-dm .dm-para,
+    .msg-dm .dm-speech { font-size: 1rem !important; }
+
+    /* 3) 패널 헤더 — 한 줄에 너무 많은 뱃지가 본문 공간 잠식.
+          mobile 에서는 ① 룸코드 뱃지 숨김 (mini-hud 에 이미 있음) ② 긴 뱃지 텍스트 축약 ③
+          타이틀이 vertical clip 안 되도록 nowrap+min-width:0+ellipsis. */
+    .narrative-panel .panel-header {
+        padding: .35rem .6rem !important;
+        font-size: .68rem !important;
+        gap: .25rem !important;
+        flex-wrap: wrap !important;             /* nowrap 제거 — 차라리 wrap 허용해서 title 보호 */
+        overflow: visible !important;
+        align-items: center;
+    }
+    /* 타이틀: 절대 세로 분쇄되지 않도록 보호. 길면 ellipsis 로. */
+    .narrative-panel .panel-title {
+        flex: 0 1 auto !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: 7rem !important;
+        min-width: 2rem !important;
+        font-size: .72rem !important;
+    }
+    /* 뱃지 — 텍스트 잘림 + 축소 폰트 */
+    .scenario-badge,
+    .time-badge,
+    #turn-badge,
+    .turn-badge {
+        font-size: .62rem !important;
+        padding: 1px 5px !important;
+        max-width: 6rem !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        flex-shrink: 1 !important;
+    }
+    /* 모바일에서 룸코드 뱃지 숨김 — mini-hud 에 이미 있음 */
+    body.in-game #room-code-badge { display: none !important; }
+    /* 라운드 트래커도 더 축소 */
+    .round-order-panel {
+        font-size: .58rem !important;
+        gap: .1rem !important;
+        padding: .05rem .15rem !important;
+        max-width: 9rem !important;
+        overflow-x: auto !important;
+        flex-shrink: 1 !important;
+    }
+    .round-order-panel .ro-item {
+        max-width: 4rem !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* 4) 액션바 컴팩트 */
+    .action-bar {
+        max-height: 38vh !important;
+        padding: .45rem .55rem !important;
+        gap: .35rem !important;
+    }
+    .action-row { gap: .35rem !important; }
+    .action-row input {
+        padding: .55rem .7rem !important;
+        font-size: .88rem !important;
+    }
+    .btn-send {
+        padding: .55rem .9rem !important;
+        font-size: .82rem !important;
+    }
+
+    /* 5) 빠른 행동 버튼 줄 — 줄바꿈 대신 가로 스크롤로 한 줄 유지 (공간 절약) */
+    .quick-row {
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        gap: .3rem !important;
+        scrollbar-width: thin;
+    }
+    .quick-row::-webkit-scrollbar { height: 2px; }
+    .q-btn {
+        flex-shrink: 0 !important;
+        font-size: .72rem !important;
+        padding: .3rem .55rem !important;
+    }
+
+    /* 6) 주사위 트레이 / 보조 버튼 살짝 축소 */
+    .dice-tray { padding: .25rem !important; gap: .25rem !important; }
+    .dice-btn { font-size: .7rem !important; padding: 2px 5px !important; }
+
+    /* 7) "내 차례가 아닙니다" 상태 바 — 컴팩트 */
+    .turn-indicator,
+    .your-turn-indicator {
+        padding: .35rem .6rem !important;
+        font-size: .8rem !important;
+    }
+}
+
+/* 아주 좁은 폰: 더 강한 컴팩트 */
+@media (max-width: 380px) {
+    .scene-banner { max-height: 90px !important; }
+    .scene-banner img { height: 72px !important; }
+    .narr-log { padding: .55rem .65rem !important; font-size: .96rem !important; }
+    .msg-dm { font-size: .96rem !important; }
+    .quick-row { gap: .25rem !important; }
+    .q-btn { font-size: .68rem !important; padding: .25rem .45rem !important; }
+}
+
 /* ── TAKEOVER MODAL (휴면 캐릭터 이어받기) ── */
 .takeover-box { width: min(520px, 95vw); }
 .takeover-list {
@@ -3211,6 +3435,19 @@ body.spectator-mode .action-bar::after {
     background: rgba(244,80,70,.08);
     border-color: rgba(244,80,70,.45);
     color: #ff8c82;
+}
+/* 🆕 장비 조합 영구 버프 — 골드/시안 톤으로 일반 버프와 구분 */
+.status-chip.combo-buff {
+    background: rgba(76, 195, 248, .1);
+    border-color: rgba(76, 195, 248, .55);
+    color: #79c8ff;
+    font-weight: 600;
+    box-shadow: 0 0 6px rgba(76, 195, 248, .15);
+}
+.status-chip.combo-buff .status-turns {
+    color: #79c8ff;
+    opacity: .9;
+    font-weight: 700;
 }
 .stat-buff-pos {
     color: #8fd4aa;

@@ -1,0 +1,172 @@
+{
+ "version": 2,
+ "room_id": "A5A826",
+ "scenario_id": "dragon_pact",
+ "owner_id": "2e39ca1a",
+ "started": true,
+ "current_time": {
+  "icon": "🌙",
+  "label": "밤",
+  "ordinal": 4,
+  "day": 1
+ },
+ "current_scene_url": "https://image.pollinations.ai/prompt/moonlit%20dusty%20road%20at%20night%2C%20lone%20cat-eared%20rogue%20with%20dual%20daggers%20drawn%2C%20shadows%20stretching%20long%2C%20distant%20crows%20flying%2C%20ominous%20red%20sky%20fading%2C%20balder%27s%20gate%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=50790&nologo=true&model=flux",
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n[파티 1명 · 평균 Lv1.0]\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 9, INT 10, WIS 8, DEX 14, CHA 15, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n\n모험을 시작하세요. 왕의 밀사가 인장 반지와 금화 주머니를 건넸습니다. 카르녹테스의 둥지까지 이틀 거리. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼]\n노을이 붉게 물든 왕도 바깥의 먼지 길을 따라, **뮤즈 룩 크레이지스타**의 고양이 귀가 바람결에 살짝 떨린다. 뒤늦게 도착한 듯한 도적의 뒷모습을 보며, 왕의 밀사가 떨리는 손으로 인장 반지와 금화 주머니를 내밀었다.\n\"용의 둥지까지 이틀. 살아서 돌아오면 보상은 두 배, 실패하면... 그냥 시체가 되겠지.\"\n밀사가 중얼거리는 말에, 크레이지스타의 날카로운 눈동자가 반짝이며 금화를 쥔 손에 힘을 주었다. 어두운 가죽 갑옷 사이로 드러난 고양이 꼬리가 긴장감에 팽팽하게 곧아진다.\n\"이름이 '크레이지스타'라니, 진짜 미친 놈이네. 용을 상대할 정신이 있나?\" 밀사가 비웃으며 돌아서자, 크레이지스타는 쌍단검을 뽑아 낫을 갈며 낮게 중얼거렸다.\n\"미친 게 아니라, 미친 듯이 재미있어지는 거지.\"\n\n[🎬 SCENE: dusty road at sunset, silhouette of a cat-eared rogue with dual daggers, golden coins spilling from a leather pouch, ominous red sky, balder's gate atmosphere, lone traveler walking away from a city gate]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: (잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)\n\n현재 파티:\n[파티 1명 · 평균 Lv1.0]\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 9, INT 10, WIS 8, DEX 14, CHA 15, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] 달이 구름 사이로 숨듯 드리운 어둠 속에서, 크레이지스타의 고양이 귀가 미세한 소리를 포착하며 쫑긋 섰다. 25% 의 수인 혈통이 간지러운 듯 몸을 스치는 바람에, 그녀는 무심코 어깨를 으쓱이며 주변을 훑었다. \"흐음... 왕의 밀사가 떠난 지 꽤 됐는데, 이 골목에 발자국 소리가 하나도 없군.\" 그녀의 날카로운 눈이 어둠을 가르는 순간, 멀리서 들리는 까마귀의 울음소리와 함께 바람이 불어왔다. \"이건 평범한 밤이 아니야. 뭔가 숨겨진 무언가가 우리를 기다리고 있는 것 같아.\" 크레이지스타는 쌍단검을 살짝 뽑아 낫을 갈며, 어둠 속에서 무언가를 감지한 듯 긴장된 표정으로 고개를 돌렸다. \"자, 이제 진짜 모험이 시작되는 건가?\" [🎬 SCENE: moonlit dusty road at night, lone cat-eared rogue standing still with dual daggers drawn, shadows stretching long, distant crows flying, ominous red sky fading, balder's gate atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n[파티 1명 · 평균 Lv1.0]\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 9, INT 10, WIS 8, DEX 14, CHA 15, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌙 밤] 달빛이 희미하게 비치는 황량한 길가, 크레이지스타의 고양이 귀가 바람결에 스치는 미세한 나뭇잎 소리까지 포착하며 쫑긋 섰다. 그녀는 어둠 속을 뚫어지게 바라보다가, 고개를 살짝 기울이며 낮은 목소리로 중얼거렸다. \"후각이 이상하군... 흙냄새 뒤에 무언가 썩은 고기 냄새가 섞여 있어.\" 그녀의 눈동자가 달빛을 받아 금색으로 반짝이며, 어둠 속에 숨어 있는 무언가를 감지한 듯 긴장된 표정으로 주변을 훑었다. \"왕의 밀사가 준 금화 주머니가 무겁게 느껴지는데, 이건 단순한 보상이 아니야.\" 크레이지스타는 쌍단검을 살짝 뽑아 낫을 갈며, 어둠 속에서 무언가가 움직이는 듯한 기척을 느끼고 뒤로 한 발짝 물러섰다. \"자, 이제 진짜 모험이 시작되는 건가? 아니면 함정일까?\" [🎬 SCENE: moonlit dusty road at night, lone cat-eared rogue with dual daggers drawn, shadows stretching long, distant crows flying, ominous red sky fading, balder's gate atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 뮤즈 룩 크레이지스타(수인 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼]\n노을이 붉게 물든 왕도 바깥의 먼지 길을 따라, **뮤즈 룩 크레이지스타**의 고양이 귀가 바람결에 살짝 떨린다. 뒤늦게 도착한 듯한 도적의 뒷모습을 보며, 왕의 밀사가 떨리는 손으로 인장 반지와 금화 주머니를 내밀었다.\n\"용의 둥지까지 이틀. 살아서 돌아오면 보상은 두 배, 실패하면... 그냥 시체가 되겠지.\"\n밀사가 중얼거리는 말에, 크레이지스타의 날카로운 눈동자가 반짝이며 금화를 쥔 손에 힘을 주었다. 어두운 가죽 갑옷 사이로 드러난 고양이 꼬리가 긴장감에 팽팽하게 곧아진다.\n\"이름이 '크레이지스타'라니, 진짜 미친 놈이네. 용을 상대할 정신이 있나?\" 밀사가 비웃으며 돌아서자, 크레이지스타는 쌍단검을 뽑아 낫을 갈며 낮게 중얼거렸다.\n\"미친 게 아니라, 미친 듯이 재미있어지는 거지.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dusty%20road%20at%20sunset%2C%20silhouette%20of%20a%20cat-eared%20rogue%20with%20dual%20daggers%2C%20golden%20coins%20spilling%20from%20a%20leather%20pouch%2C%20ominous%20red%20sky%2C%20balder%27s%20gate%20atmosphere%2C%20lone%20traveler%20walking%20away%20from%20a%20city%20gate%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=60885&nologo=true&model=flux",
+   "ts": 1777303127.5451941
+  },
+  {
+   "type": "action",
+   "player_id": "2e39ca1a",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "(잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)",
+   "linger": true,
+   "ts": 1777303155.1101458
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] 달이 구름 사이로 숨듯 드리운 어둠 속에서, 크레이지스타의 고양이 귀가 미세한 소리를 포착하며 쫑긋 섰다. 25% 의 수인 혈통이 간지러운 듯 몸을 스치는 바람에, 그녀는 무심코 어깨를 으쓱이며 주변을 훑었다. \"흐음... 왕의 밀사가 떠난 지 꽤 됐는데, 이 골목에 발자국 소리가 하나도 없군.\" 그녀의 날카로운 눈이 어둠을 가르는 순간, 멀리서 들리는 까마귀의 울음소리와 함께 바람이 불어왔다. \"이건 평범한 밤이 아니야. 뭔가 숨겨진 무언가가 우리를 기다리고 있는 것 같아.\" 크레이지스타는 쌍단검을 살짝 뽑아 낫을 갈며, 어둠 속에서 무언가를 감지한 듯 긴장된 표정으로 고개를 돌렸다. \"자, 이제 진짜 모험이 시작되는 건가?\"",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/moonlit%20dusty%20road%20at%20night%2C%20lone%20cat-eared%20rogue%20standing%20still%20with%20dual%20daggers%20drawn%2C%20shadows%20stretching%20long%2C%20distant%20crows%20flying%2C%20ominous%20red%20sky%20fading%2C%20balder%27s%20gate%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=1359&nologo=true&model=flux",
+   "acting_player_id": "2e39ca1a",
+   "round_complete": true,
+   "ts": 1777303160.766974
+  },
+  {
+   "type": "action",
+   "player_id": "2e39ca1a",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777303171.0387573
+  },
+  {
+   "type": "dm",
+   "text": "[🌙 밤] 달빛이 희미하게 비치는 황량한 길가, 크레이지스타의 고양이 귀가 바람결에 스치는 미세한 나뭇잎 소리까지 포착하며 쫑긋 섰다. 그녀는 어둠 속을 뚫어지게 바라보다가, 고개를 살짝 기울이며 낮은 목소리로 중얼거렸다. \"후각이 이상하군... 흙냄새 뒤에 무언가 썩은 고기 냄새가 섞여 있어.\" 그녀의 눈동자가 달빛을 받아 금색으로 반짝이며, 어둠 속에 숨어 있는 무언가를 감지한 듯 긴장된 표정으로 주변을 훑었다. \"왕의 밀사가 준 금화 주머니가 무겁게 느껴지는데, 이건 단순한 보상이 아니야.\" 크레이지스타는 쌍단검을 살짝 뽑아 낫을 갈며, 어둠 속에서 무언가가 움직이는 듯한 기척을 느끼고 뒤로 한 발짝 물러섰다. \"자, 이제 진짜 모험이 시작되는 건가? 아니면 함정일까?\"",
+   "current_time": {
+    "icon": "🌙",
+    "label": "밤",
+    "ordinal": 4,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/moonlit%20dusty%20road%20at%20night%2C%20lone%20cat-eared%20rogue%20with%20dual%20daggers%20drawn%2C%20shadows%20stretching%20long%2C%20distant%20crows%20flying%2C%20ominous%20red%20sky%20fading%2C%20balder%27s%20gate%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=50790&nologo=true&model=flux",
+   "acting_player_id": "2e39ca1a",
+   "round_complete": true,
+   "ts": 1777303182.563412
+  }
+ ],
+ "turn_order": [],
+ "current_turn_index": 0,
+ "round_order": [
+  {
+   "kind": "player",
+   "id": "2e39ca1a",
+   "name": "뮤즈 룩 크레이지스타",
+   "initiative": 7,
+   "dex_or_speed": 14
+  }
+ ],
+ "round_idx": 0,
+ "round_number": 3,
+ "players": {},
+ "monsters": {},
+ "dormant": {
+  "2e39ca1a": {
+   "player": {
+    "player_id": "2e39ca1a",
+    "name": "뮤즈 룩 크레이지스타",
+    "character_class": "도적",
+    "race": "수인",
+    "race_animal": "고양이",
+    "race_ratio": 25,
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 0,
+    "stat_points": 0,
+    "gold": 70,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "쌍단검",
+      "effect": "2회 공격 — 치명타 확률 +10%"
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": [],
+    "strength": 9,
+    "intelligence": 10,
+    "wisdom": 8,
+    "dexterity": 14,
+    "charisma": 15,
+    "constitution": 10,
+    "race_mod_applied": true
+   },
+   "departed_at": 1777303396.6913564
+  }
+ },
+ "saved_at": 1777303396.6913564
+}

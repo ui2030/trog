@@ -1,0 +1,491 @@
+{
+ "version": 2,
+ "room_id": "BE8C01",
+ "scenario_id": "deep_sea_horror",
+ "owner_id": "c9d70128",
+ "started": true,
+ "current_time": {
+  "icon": "🌆",
+  "label": "황혼",
+  "ordinal": 3,
+  "day": 1
+ },
+ "current_scene_url": "https://image.pollinations.ai/prompt/foggy%20harbor%20dock%20at%20dusk%2C%20massive%20bear%20warrior%20standing%20still%20with%20giant%20axe%2C%20fluffy%20cat%20wizard%20listening%20intently%2C%20anthropomorphic%20cat%20rogue%20hiding%20in%20shadows%2C%20eerie%20mist%20swirling%20around%20wooden%20planks%2C%20shadowy%20figures%20emerging%20from%20water%2C%20cosmic%20horror%20atmosphere%2C%20dim%20orange%20light%20fading%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=256&nologo=true&model=flux",
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·수형·75%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 15, INT 10, WIS 10, DEX 4, CHA 7, CON 16], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 야생의 랜덤마법사 김코 (수인(고양이·수형·90%) 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 골드:80, [STR 7, INT 15, WIS 13, DEX 9, CHA 15, CON 7], 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 9, WIS 8, DEX 15, CHA 11, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n\n모험을 시작하세요. 파티는 실종 어부의 아내에게 고용되어 사그라 항구에 도착. 갈매기들이 일제히 날아가고 안개가 피부를 스칩니다. 귓속 깊은 곳에서 낮은 허밍이 들립니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼]\n사그라 항구의 붉은 노을이 짙은 회색 안개 속으로 삼켜집니다. 갈매기 떼가 비명을 지르며 하늘로 솟구치자, 낡은 부두의 나무 바닥이 차가운 숨결처럼 식어갑니다.\n\n\"이런, 내 털이 다 쫑긋 서는군. 저 안개는 그냥 물기가 아니야.\"\n배덕이 거대한 양손도끼를 어깨에 걸친 채 낮게 으르렁거립니다. 75% 의 곰 수인으로서 그는 인간의 후각을 훨씬 능가하는 이 해조 냄새와 비릿한 공포를 예민하게 감지합니다. 그의 굵은 손끝이 떨리지만, 눈빛은 단단합니다.\n\n\"허밍이 들리시나요? 마치 바다 저편에서 누군가 부르는 소리처럼...\"\n김코가 지팡이 끝을 불안하게 흔들며 중얼거립니다. 90% 의 고양이 수인인 그는 인간형보다 훨씬 더 선명한 청각으로 그 소리를 포착하고, 귀를 쫑긋 세운 채 어딘가를 노려봅니다. 그의 털끝이 전율하며 쭈뼛서 있습니다.\n\n\"조용히 해, 멍청한 곰아. 그리고 고양이도.\"\n뮤즈 룩 크레이지스타가 그림자처럼 배덕의 뒤로 스며듭니다. 25% 의 인간형 고양이 도적이라서인지, 그는 다른 두 사람보다 덜 위압적이지만, 날카로운 눈빛으로 안개 사이를 뚫어지게 바라봅니다. \"그 소리는 우리가 듣고 싶은 게 아니라, 무언가가 *우리를* 부르는 거야. 어부의 아내가 준 돈으로 이 기괴한 소리를 막아내야 해.\"\n\n바닷바람이 강해지며 안개가 더욱 짙어지고, 귓속의 허밍 소리가 점점 뚜렷한 목소리로 변해갑니다.\n\n[🎬 SCENE: foggy medieval harbor at dusk, grey mist rolling over wooden docks, seagulls fleeing in panic, three anthropomorphic adventurers standing tense, ominous low humming atmosphere, cosmic horror vibe, dim orange sunset fading into darkness]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·수형·75%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 15, INT 10, WIS 10, DEX 4, CHA 7, CON 16], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 야생의 랜덤마법사 김코 (수인(고양이·수형·90%) 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 골드:80, [STR 7, INT 15, WIS 13, DEX 9, CHA 15, CON 7], 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 9, WIS 8, DEX 15, CHA 11, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n\n[DM용 시스템 메모]\n※ 배덕(수인 전사)이(가) 방금 자기 캐릭터의 모습을 직접 그려 파티에게 공개했다. 다음 서사에서 이 캐릭터의 외양/인상을 자연스럽게 한두 문장 묘사하고, NPC나 다른 파티원의 반응을 한 마디 끼워넣어라.\n※ 야생의 랜덤마법사 김코(수인 마법사)이(가) 방금 자기 캐릭터의 모습을 직접 그려 파티에게 공개했다. 다음 서사에서 이 캐릭터의 외양/인상을 자연스럽게 한두 문장 묘사하고, NPC나 다른 파티원의 반응을 한 마디 끼워넣어라."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈 룩 크레이지스타의 날카로운 눈동자가 안개 속을 헤집고 지나갑니다. 25% 의 고양이 수인이라 인간의 모습에 가깝지만, 그의 은은한 수염과 뒤로 젖혀진 귀는 긴장감을 배가시킵니다. \"여기, 발자국 자국이 이상해. 뒤로 밀리는 게 아니라... 물속으로 빨려 들어간 듯하다.\" 그가 쌍단검을 살짝 뽑아 보이며 중얼거립니다. 그의 민첩한 손놀림은 도적다운 예리함을 보여주지만, 주변 공기가 무겁게 가라앉아 있습니다.\n\n배덕은 거대한 양손도끼를 바닥에 박으며 낮게 포효합니다. 그의 모습은 압도적인 위압감을 줍니다. 굵은 털이 뒤섞인 얼굴에는 곰 특유의 투박함과 강인함이 묻어나고, 거대한 어깨는 가죽 흉갑을 찢을 듯 팽팽합니다. \"이런 냄새는 처음이야. 마치 썩은 고기 위에 해초를 얹어놓은 듯해. 김코, 네 마법 불꽃이라도 켜봐라. 이 어둠이 너무 끈적거려.\" 그의 목소리는 낮고 굵은 울림으로 주변을 진동시킵니다.\n\n김코는 견습생 지팡이를 휘두르며 불안한 듯 귀를 쫑긋거립니다. 90% 의 고양이 수인인 그는 거의 짐승에 가까운데, 얼굴 대부분이 부드러운 털로 덮여 있고 주둥이 끝이 드러나 있습니다. 그의 초록색 눈동자가 커다랗게 뜨이며 안개를 뚫어봅니다. \"으으... 불꽃은 필요 없어. 오히려 더 시끄러운 소리를 부를지도 몰라. 저기, 저기 봐! 안개 사이로 무언가가 꿈틀거리는 것 같아.\" 그의 긴 꼬리가 불안하게 흔들리며, 마법사의 지팡이 끝에서 희미한 마력이 튀어 오릅니다.\n\n안개 속에서 희미한 형체가 스쳐 지나가는 듯합니다. 그것은 어부의 아내가 말한 실종자들의 흔적일까요, 아니면 바다의 저주가 만든 환영일까요? [🎬 SCENE: foggy harbor dock at dusk, anthropomorphic cat rogue inspecting ground, massive bear warrior holding giant axe, fluffy cat wizard holding staff, eerie mist swirling around wooden planks, ominous shadowy figures in background, cosmic horror atmosphere, dim orange light fading]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: (잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·수형·75%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 15, INT 10, WIS 10, DEX 4, CHA 7, CON 16], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 야생의 랜덤마법사 김코 (수인(고양이·수형·90%) 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 골드:80, [STR 7, INT 15, WIS 13, DEX 9, CHA 15, CON 7], 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 9, WIS 8, DEX 15, CHA 11, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 배덕이 거대한 발걸음을 멈추고 두꺼운 털로 덮인 가슴을 내밀어 숨을 고릅니다. 그의 모습은 인간과 짐승의 경계를 흐리게 하며, 굵은 이마와 주먹만한 주먹이 안개 속에서 위압감을 풍깁니다. \"조용히, 모두.\" 그의 낮고 굵은 목소리가 안개를 가르며 울립니다. 배덕의 강인한 체격은 가죽 흉갑을 팽팽하게 밀어 올리며, 그의 눈은 낡은 방패 너머로 날카롭게 주변을 훑습니다. 김코는 배덕의 말에 귀를 쫑긋 세우고, 90% 의 고양이 수인 특유의 예민한 감각으로 안개의 흐름을 따라갑니다. 그의 주둥이 끝이 살짝 떨리며, \"무언가가 다가오고 있어... 발소리가 아니라, 물결이 찰랑거리는 소리야.\"라고 속삭입니다. 뮤즈 룩 크레이지스타는 그림자 속에 몸을 숨긴 채, 날카로운 눈으로 안개 사이를 뚫어봅니다. 그의 모습은 인간에 가까우나, 고양이 특유의 경계심이 가득한 눈빛이 어둠을 꿰뚫습니다. \"그렇다면, 우리가 기다릴 시간만 남은 거군. 저기, 부두 끝에서 무언가가 움직이고 있어.\" 그의 쌍단검이 손에 쥐어진 채, 긴장된 공기가 가득 찹니다. 안개 속에서 희미한 형체가 하나, 둘, 그리고 셋... 어두운 물결 위에서 기어오르는 그림자들이 보입니다. [🎬 SCENE: foggy harbor dock at dusk, massive bear warrior standing still with giant axe, fluffy cat wizard listening intently, anthropomorphic cat rogue hiding in shadows, eerie mist swirling around wooden planks, shadowy figures emerging from water, cosmic horror atmosphere, dim orange light fading]"
+  },
+  {
+   "role": "user",
+   "content": "[야생의 랜덤마법사 김코의 행동]: 냐옹\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·수형·75%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 15, INT 10, WIS 10, DEX 4, CHA 7, CON 16], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 야생의 랜덤마법사 김코 (수인(고양이·수형·90%) 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 골드:80, [STR 7, INT 15, WIS 13, DEX 9, CHA 15, CON 7], 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 9, WIS 8, DEX 15, CHA 11, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 김코가 지팡이를 내려놓고 \"냐옹?\" 하고 짧게 울부짖습니다. 90% 의 고양이 수인인 그의 얼굴은 거의 짐승에 가까운데, 부드러운 털 사이로 드러난 주둥이가 안개 속의 미세한 진동을 감지하듯 꿈틀거립니다. \"저기, 저기! 물속에서 무언가가 올라와!\" 그의 초록색 눈동자가 커다랗게 뜨이며, 긴 꼬리가 불안하게 바위 위로 툭툭 치습니다. 배덕은 김코의 경계 신호에 즉각 반응해 거대한 양손도끼를 앞세웁니다. 그의 곰 특유의 후각이 썩은 해조 냄새와 함께 섞인 낯선 기운을 포착한 듯, 킁킁거리며 고개를 숙입니다. \"정말인가? 인간 냄새도, 짐승 냄새도 아닌... 차가운 것 같은 냄새가 나는데.\" 그의 굵은 목소리가 낮게 울리며, 가죽 흉갑 위로 땀방울이 맺힙니다. 뮤즈 룩 크레이지스타는 이미 그림자 속으로 몸을 숨긴 채, 날카로운 눈으로 김코가 가리키는 방향을 노려봅니다. \"그냥 냥냥거리는 게 아니라, 진짜 위험한 무언가가 다가오고 있어. 준비해, 곰아.\" 그의 쌍단검이 빛을 반사하며, 안개 사이로 희미한 형체가 하나, 둘, 그리고 셋... 물결 위에서 기어오르는 그림자들이 보입니다. [🎬 SCENE: foggy harbor dock at dusk, fluffy cat wizard meowing alertly, massive bear warrior raising giant axe, anthropomorphic cat rogue hiding in shadows, eerie mist swirling around wooden planks, shadowy figures emerging from water, cosmic horror atmosphere, dim orange light fading]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 주변 지형을 이용해 매복을 시도한다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·수형·75%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 15, INT 10, WIS 10, DEX 4, CHA 7, CON 16], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 야생의 랜덤마법사 김코 (수인(고양이·수형·90%) 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 골드:80, [STR 7, INT 15, WIS 13, DEX 9, CHA 15, CON 7], 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 9, WIS 8, DEX 15, CHA 11, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈 룩 크레이지스타가 안개와 낡은 목재 더미 사이로 유유히 스며듭니다. 25% 의 고양이 수인 특유의 은신 실력이 빛을 발해, 그의 어두운 가죽 갑옷은 그림자와 완벽하게 됩니다. \"배덕, 김코, 숨을 죽여. 내가 먼저 움직일 테니.\" 그의 속삭임은 바람 소리조차 삼켜버릴 듯 작습니다. 그는 쌍단검을 뽑아 손아귀에 쥔 채, 부두 끝에서 꿈틀거리는 그림자들의 정체를 확인하려 합니다. 그 순간, 안개 속에서 기괴한 손가락들이 드러납니다. 그것은 인간의 손이 아니었습니다. 비늘로 덮인 채 끝이 갈라진 손가락들이 부두의 나무를 타고 기어오르는 소리가 들립니다. \"끄으윽...\" 배덕이 낮게 으르렁거리며 양손도끼를 휘두를 준비를 합니다. 그의 곰 특유의 거대한 근육이 긴장하며 팽팽해집니다. 김코는 지팡이 끝에 마력을 모으며, \"이건... 바다의 저주야! 조심해!\"라고 외칩니다. 그의 90% 고양이 수인인 눈동자가 공포로 커다랗게 뜨이며, 안개 속의 그림자들이 점점 더 가까워집니다. [🎬 SCENE: foggy harbor dock at dusk, anthropomorphic cat rogue hiding behind wooden crates, shadowy figures with scaled hands emerging from water, massive bear warrior readying giant axe, fluffy cat wizard charging magic, eerie mist swirling, cosmic horror atmosphere, dim orange light fading]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: (잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·수형·75%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 15, INT 10, WIS 10, DEX 4, CHA 7, CON 16], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 야생의 랜덤마법사 김코 (수인(고양이·수형·90%) 마법사, Lv1, HP:70/70, MP:150/150, 공격:22, 방어:5, 골드:80, [STR 7, INT 15, WIS 13, DEX 9, CHA 15, CON 7], 장착: 견습생의 지팡이 / 수련자 로브 / 작은 마법서)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 9, WIS 8, DEX 15, CHA 11, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 배덕이 거대한 발걸음을 멈추고 두꺼운 털로 덮인 가슴을 내밀어 숨을 고릅니다. 그의 모습은 인간과 짐승의 경계를 흐리게 하며, 굵은 이마와 주먹만한 주먹이 안개 속에서 위압감을 풍깁니다. \"조용히, 모두.\" 그의 낮고 굵은 목소리가 안개를 가르며 울립니다. 배덕의 강인한 체격은 가죽 흉갑을 팽팽하게 밀어 올리며, 그의 눈은 낡은 방패 너머로 날카롭게 주변을 훑습니다. 김코는 배덕의 말에 귀를 쫑긋 세우고, 90% 의 고양이 수인 특유의 예민한 감각으로 안개의 흐름을 따라갑니다. 그의 주둥이 끝이 살짝 떨리며, \"무언가가 다가오고 있어... 발소리가 아니라, 물결이 찰랑거리는 소리야.\"라고 속삭입니다. 뮤즈 룩 크레이지스타는 그림자 속에 몸을 숨긴 채, 날카로운 눈으로 안개 사이를 뚫어봅니다. 그의 모습은 인간에 가까우나, 고양이 특유의 경계심이 가득한 눈빛이 어둠을 꿰뚫습니다. \"그렇다면, 우리가 기다릴 시간만 남은 거군. 저기, 부두 끝에서 무언가가 움직이고 있어.\" 그의 쌍단검이 손에 쥐어진 채, 긴장된 공기가 가득 찹니다. 안개 속에서 희미한 형체가 하나, 둘, 그리고 셋... 어두운 물결 위에서 기어오르는 그림자들이 보입니다. [🎬 SCENE: foggy harbor dock at dusk, massive bear warrior standing still with giant axe, fluffy cat wizard listening intently, anthropomorphic cat rogue hiding in shadows, eerie mist swirling around wooden planks, shadowy figures emerging from water, cosmic horror atmosphere, dim orange light fading]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 미치광이 김코슈(수인 전사, Lv1)이 파티에 다시 합류한다. 경과: 약 0초 — 잠시 자리를 비웠다 다시 합류하는 가벼운 톤. 이 인물은 본인이다. 2~3문장으로 자연스럽고 스무스한 등장 장면을 묘사해라. 시간대 태그 생략, 본문만.]"
+  },
+  {
+   "role": "assistant",
+   "content": "[시스템: 미치광이 김코슈 (수인 전사, Lv1) 이(가) 파티에 다시 합류한다.]\n\n안개 사이로 거대한 그림자가 갑자기 튀어나오며 배덕의 어깨를 툭 치는 소리가 들립니다. \"야, 곰아! 내가 어디 갔다고 기다리냐? 바닷물 한 모금 마시고 왔지!\" 미치광이 김코슈가 거친 웃음과 함께 등장합니다. 그는 75% 의 곰 수인인 배덕과 유사한 외모를 가졌지만, 눈빛이 조금 더 광기에 차 있고 어깨에는 낡은 배낭을 두르고 있습니다. \"이런, 김코는 고양이로 변했네? 재미있군! 자, 이제 우리 네 마리 곰... 아니, 네 명이서 이 안개를 썰어버릴 차례야!\" 그는 거대한 도끼를 가볍게 휘두르며 파티의 중심에 서서 자신만만하게 웃습니다."
+  },
+  {
+   "role": "user",
+   "content": "[시스템: 뮤즈 룩 크레이지스타(수인 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  }
+ ],
+ "chat_log": [
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "zz",
+   "ts": 1777304045.0171423,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "캐리해줌",
+   "ts": 1777304047.0665681,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "나만믿으셈",
+   "ts": 1777304049.1459324,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "b28c01",
+   "ts": 1777304111.6152654,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "v8c01",
+   "ts": 1777304128.352023,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "v8c01",
+   "ts": 1777304131.4318147,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "v28c01",
+   "ts": 1777304135.1055825,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "b28c01",
+   "ts": 1777304143.0570078,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "b8co1",
+   "ts": 1777304151.122584,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "v8co1",
+   "ts": 1777304155.337999,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "v28co1",
+   "ts": 1777304160.7840881,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "emoji": "🔮",
+   "race_emoji": "🐱",
+   "text": "b28co1",
+   "ts": 1777304165.4098303,
+   "is_spectator": false
+  }
+ ],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼]\n사그라 항구의 붉은 노을이 짙은 회색 안개 속으로 삼켜집니다. 갈매기 떼가 비명을 지르며 하늘로 솟구치자, 낡은 부두의 나무 바닥이 차가운 숨결처럼 식어갑니다.\n\n\"이런, 내 털이 다 쫑긋 서는군. 저 안개는 그냥 물기가 아니야.\"\n배덕이 거대한 양손도끼를 어깨에 걸친 채 낮게 으르렁거립니다. 75% 의 곰 수인으로서 그는 인간의 후각을 훨씬 능가하는 이 해조 냄새와 비릿한 공포를 예민하게 감지합니다. 그의 굵은 손끝이 떨리지만, 눈빛은 단단합니다.\n\n\"허밍이 들리시나요? 마치 바다 저편에서 누군가 부르는 소리처럼...\"\n김코가 지팡이 끝을 불안하게 흔들며 중얼거립니다. 90% 의 고양이 수인인 그는 인간형보다 훨씬 더 선명한 청각으로 그 소리를 포착하고, 귀를 쫑긋 세운 채 어딘가를 노려봅니다. 그의 털끝이 전율하며 쭈뼛서 있습니다.\n\n\"조용히 해, 멍청한 곰아. 그리고 고양이도.\"\n뮤즈 룩 크레이지스타가 그림자처럼 배덕의 뒤로 스며듭니다. 25% 의 인간형 고양이 도적이라서인지, 그는 다른 두 사람보다 덜 위압적이지만, 날카로운 눈빛으로 안개 사이를 뚫어지게 바라봅니다. \"그 소리는 우리가 듣고 싶은 게 아니라, 무언가가 *우리를* 부르는 거야. 어부의 아내가 준 돈으로 이 기괴한 소리를 막아내야 해.\"\n\n바닷바람이 강해지며 안개가 더욱 짙어지고, 귓속의 허밍 소리가 점점 뚜렷한 목소리로 변해갑니다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/foggy%20medieval%20harbor%20at%20dusk%2C%20grey%20mist%20rolling%20over%20wooden%20docks%2C%20seagulls%20fleeing%20in%20panic%2C%20three%20anthropomorphic%20adventurers%20standing%20tense%2C%20ominous%20low%20humming%20atmosphere%2C%20cosmic%20horror%20vibe%2C%20dim%20orange%20sunset%20fading%20into%20darkness%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=64286&nologo=true&model=flux",
+   "ts": 1777304192.200243
+  },
+  {
+   "type": "action",
+   "player_id": "334f7814",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777304247.2861867
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타의 날카로운 눈동자가 안개 속을 헤집고 지나갑니다. 25% 의 고양이 수인이라 인간의 모습에 가깝지만, 그의 은은한 수염과 뒤로 젖혀진 귀는 긴장감을 배가시킵니다. \"여기, 발자국 자국이 이상해. 뒤로 밀리는 게 아니라... 물속으로 빨려 들어간 듯하다.\" 그가 쌍단검을 살짝 뽑아 보이며 중얼거립니다. 그의 민첩한 손놀림은 도적다운 예리함을 보여주지만, 주변 공기가 무겁게 가라앉아 있습니다.\n\n배덕은 거대한 양손도끼를 바닥에 박으며 낮게 포효합니다. 그의 모습은 압도적인 위압감을 줍니다. 굵은 털이 뒤섞인 얼굴에는 곰 특유의 투박함과 강인함이 묻어나고, 거대한 어깨는 가죽 흉갑을 찢을 듯 팽팽합니다. \"이런 냄새는 처음이야. 마치 썩은 고기 위에 해초를 얹어놓은 듯해. 김코, 네 마법 불꽃이라도 켜봐라. 이 어둠이 너무 끈적거려.\" 그의 목소리는 낮고 굵은 울림으로 주변을 진동시킵니다.\n\n김코는 견습생 지팡이를 휘두르며 불안한 듯 귀를 쫑긋거립니다. 90% 의 고양이 수인인 그는 거의 짐승에 가까운데, 얼굴 대부분이 부드러운 털로 덮여 있고 주둥이 끝이 드러나 있습니다. 그의 초록색 눈동자가 커다랗게 뜨이며 안개를 뚫어봅니다. \"으으... 불꽃은 필요 없어. 오히려 더 시끄러운 소리를 부를지도 몰라. 저기, 저기 봐! 안개 사이로 무언가가 꿈틀거리는 것 같아.\" 그의 긴 꼬리가 불안하게 흔들리며, 마법사의 지팡이 끝에서 희미한 마력이 튀어 오릅니다.\n\n안개 속에서 희미한 형체가 스쳐 지나가는 듯합니다. 그것은 어부의 아내가 말한 실종자들의 흔적일까요, 아니면 바다의 저주가 만든 환영일까요?",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/foggy%20harbor%20dock%20at%20dusk%2C%20anthropomorphic%20cat%20rogue%20inspecting%20ground%2C%20massive%20bear%20warrior%20holding%20giant%20axe%2C%20fluffy%20cat%20wizard%20holding%20staff%2C%20eerie%20mist%20swirling%20around%20wooden%20planks%2C%20ominous%20shadowy%20figures%20in%20background%2C%20cosmic%20horror%20atmosphere%2C%20dim%20orange%20light%20fading%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=38572&nologo=true&model=flux",
+   "acting_player_id": "334f7814",
+   "round_complete": false,
+   "ts": 1777304257.488219
+  },
+  {
+   "type": "action",
+   "player_id": "c9d70128",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/BE8C01/c9d70128?v=a55b72d0",
+   "action": "(잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)",
+   "linger": true,
+   "ts": 1777304315.3851128
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕이 거대한 발걸음을 멈추고 두꺼운 털로 덮인 가슴을 내밀어 숨을 고릅니다. 그의 모습은 인간과 짐승의 경계를 흐리게 하며, 굵은 이마와 주먹만한 주먹이 안개 속에서 위압감을 풍깁니다. \"조용히, 모두.\" 그의 낮고 굵은 목소리가 안개를 가르며 울립니다. 배덕의 강인한 체격은 가죽 흉갑을 팽팽하게 밀어 올리며, 그의 눈은 낡은 방패 너머로 날카롭게 주변을 훑습니다. 김코는 배덕의 말에 귀를 쫑긋 세우고, 90% 의 고양이 수인 특유의 예민한 감각으로 안개의 흐름을 따라갑니다. 그의 주둥이 끝이 살짝 떨리며, \"무언가가 다가오고 있어... 발소리가 아니라, 물결이 찰랑거리는 소리야.\"라고 속삭입니다. 뮤즈 룩 크레이지스타는 그림자 속에 몸을 숨긴 채, 날카로운 눈으로 안개 사이를 뚫어봅니다. 그의 모습은 인간에 가까우나, 고양이 특유의 경계심이 가득한 눈빛이 어둠을 꿰뚫습니다. \"그렇다면, 우리가 기다릴 시간만 남은 거군. 저기, 부두 끝에서 무언가가 움직이고 있어.\" 그의 쌍단검이 손에 쥐어진 채, 긴장된 공기가 가득 찹니다. 안개 속에서 희미한 형체가 하나, 둘, 그리고 셋... 어두운 물결 위에서 기어오르는 그림자들이 보입니다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/foggy%20harbor%20dock%20at%20dusk%2C%20massive%20bear%20warrior%20standing%20still%20with%20giant%20axe%2C%20fluffy%20cat%20wizard%20listening%20intently%2C%20anthropomorphic%20cat%20rogue%20hiding%20in%20shadows%2C%20eerie%20mist%20swirling%20around%20wooden%20planks%2C%20shadowy%20figures%20emerging%20from%20water%2C%20cosmic%20horror%20atmosphere%2C%20dim%20orange%20light%20fading%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=256&nologo=true&model=flux",
+   "acting_player_id": "c9d70128",
+   "round_complete": false,
+   "ts": 1777304331.0282032
+  },
+  {
+   "type": "action",
+   "player_id": "d5efc0b3",
+   "player_name": "야생의 랜덤마법사 김코",
+   "player_emoji": "🔮",
+   "portrait_url": "/portrait/BE8C01/d5efc0b3?v=b78e3f3f",
+   "action": "냐옹",
+   "ts": 1777304344.7741027
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 김코가 지팡이를 내려놓고 \"냐옹?\" 하고 짧게 울부짖습니다. 90% 의 고양이 수인인 그의 얼굴은 거의 짐승에 가까운데, 부드러운 털 사이로 드러난 주둥이가 안개 속의 미세한 진동을 감지하듯 꿈틀거립니다. \"저기, 저기! 물속에서 무언가가 올라와!\" 그의 초록색 눈동자가 커다랗게 뜨이며, 긴 꼬리가 불안하게 바위 위로 툭툭 치습니다. 배덕은 김코의 경계 신호에 즉각 반응해 거대한 양손도끼를 앞세웁니다. 그의 곰 특유의 후각이 썩은 해조 냄새와 함께 섞인 낯선 기운을 포착한 듯, 킁킁거리며 고개를 숙입니다. \"정말인가? 인간 냄새도, 짐승 냄새도 아닌... 차가운 것 같은 냄새가 나는데.\" 그의 굵은 목소리가 낮게 울리며, 가죽 흉갑 위로 땀방울이 맺힙니다. 뮤즈 룩 크레이지스타는 이미 그림자 속으로 몸을 숨긴 채, 날카로운 눈으로 김코가 가리키는 방향을 노려봅니다. \"그냥 냥냥거리는 게 아니라, 진짜 위험한 무언가가 다가오고 있어. 준비해, 곰아.\" 그의 쌍단검이 빛을 반사하며, 안개 사이로 희미한 형체가 하나, 둘, 그리고 셋... 물결 위에서 기어오르는 그림자들이 보입니다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/foggy%20harbor%20dock%20at%20dusk%2C%20fluffy%20cat%20wizard%20meowing%20alertly%2C%20massive%20bear%20warrior%20raising%20giant%20axe%2C%20anthropomorphic%20cat%20rogue%20hiding%20in%20shadows%2C%20eerie%20mist%20swirling%20around%20wooden%20planks%2C%20shadowy%20figures%20emerging%20from%20water%2C%20cosmic%20horror%20atmosphere%2C%20dim%20orange%20light%20fading%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=43134&nologo=true&model=flux",
+   "acting_player_id": "d5efc0b3",
+   "round_complete": true,
+   "ts": 1777304362.7748663
+  },
+  {
+   "type": "action",
+   "player_id": "334f7814",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "주변 지형을 이용해 매복을 시도한다",
+   "ts": 1777304388.1595502
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타가 안개와 낡은 목재 더미 사이로 유유히 스며듭니다. 25% 의 고양이 수인 특유의 은신 실력이 빛을 발해, 그의 어두운 가죽 갑옷은 그림자와 완벽하게 됩니다. \"배덕, 김코, 숨을 죽여. 내가 먼저 움직일 테니.\" 그의 속삭임은 바람 소리조차 삼켜버릴 듯 작습니다. 그는 쌍단검을 뽑아 손아귀에 쥔 채, 부두 끝에서 꿈틀거리는 그림자들의 정체를 확인하려 합니다. 그 순간, 안개 속에서 기괴한 손가락들이 드러납니다. 그것은 인간의 손이 아니었습니다. 비늘로 덮인 채 끝이 갈라진 손가락들이 부두의 나무를 타고 기어오르는 소리가 들립니다. \"끄으윽...\" 배덕이 낮게 으르렁거리며 양손도끼를 휘두를 준비를 합니다. 그의 곰 특유의 거대한 근육이 긴장하며 팽팽해집니다. 김코는 지팡이 끝에 마력을 모으며, \"이건... 바다의 저주야! 조심해!\"라고 외칩니다. 그의 90% 고양이 수인인 눈동자가 공포로 커다랗게 뜨이며, 안개 속의 그림자들이 점점 더 가까워집니다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/foggy%20harbor%20dock%20at%20dusk%2C%20anthropomorphic%20cat%20rogue%20hiding%20behind%20wooden%20crates%2C%20shadowy%20figures%20with%20scaled%20hands%20emerging%20from%20water%2C%20massive%20bear%20warrior%20readying%20giant%20axe%2C%20fluffy%20cat%20wizard%20charging%20magic%2C%20eerie%20mist%20swirling%2C%20cosmic%20horror%20atmosphere%2C%20dim%20orange%20light%20fading%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=87363&nologo=true&model=flux",
+   "acting_player_id": "334f7814",
+   "round_complete": false,
+   "ts": 1777304396.9946005
+  },
+  {
+   "type": "action",
+   "player_id": "c9d70128",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "/portrait/BE8C01/c9d70128?v=a55b72d0",
+   "action": "(잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)",
+   "linger": true,
+   "ts": 1777304431.162047
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕이 거대한 발걸음을 멈추고 두꺼운 털로 덮인 가슴을 내밀어 숨을 고릅니다. 그의 모습은 인간과 짐승의 경계를 흐리게 하며, 굵은 이마와 주먹만한 주먹이 안개 속에서 위압감을 풍깁니다. \"조용히, 모두.\" 그의 낮고 굵은 목소리가 안개를 가르며 울립니다. 배덕의 강인한 체격은 가죽 흉갑을 팽팽하게 밀어 올리며, 그의 눈은 낡은 방패 너머로 날카롭게 주변을 훑습니다. 김코는 배덕의 말에 귀를 쫑긋 세우고, 90% 의 고양이 수인 특유의 예민한 감각으로 안개의 흐름을 따라갑니다. 그의 주둥이 끝이 살짝 떨리며, \"무언가가 다가오고 있어... 발소리가 아니라, 물결이 찰랑거리는 소리야.\"라고 속삭입니다. 뮤즈 룩 크레이지스타는 그림자 속에 몸을 숨긴 채, 날카로운 눈으로 안개 사이를 뚫어봅니다. 그의 모습은 인간에 가까우나, 고양이 특유의 경계심이 가득한 눈빛이 어둠을 꿰뚫습니다. \"그렇다면, 우리가 기다릴 시간만 남은 거군. 저기, 부두 끝에서 무언가가 움직이고 있어.\" 그의 쌍단검이 손에 쥐어진 채, 긴장된 공기가 가득 찹니다. 안개 속에서 희미한 형체가 하나, 둘, 그리고 셋... 어두운 물결 위에서 기어오르는 그림자들이 보입니다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/foggy%20harbor%20dock%20at%20dusk%2C%20massive%20bear%20warrior%20standing%20still%20with%20giant%20axe%2C%20fluffy%20cat%20wizard%20listening%20intently%2C%20anthropomorphic%20cat%20rogue%20hiding%20in%20shadows%2C%20eerie%20mist%20swirling%20around%20wooden%20planks%2C%20shadowy%20figures%20emerging%20from%20water%2C%20cosmic%20horror%20atmosphere%2C%20dim%20orange%20light%20fading%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=256&nologo=true&model=flux",
+   "acting_player_id": "c9d70128",
+   "round_complete": false,
+   "ts": 1777304447.0442116
+  }
+ ],
+ "turn_order": [
+  "c9d70128",
+  "77dde854"
+ ],
+ "current_turn_index": 0,
+ "round_order": [
+  {
+   "kind": "player",
+   "id": "334f7814",
+   "name": "뮤즈 룩 크레이지스타",
+   "initiative": 10,
+   "dex_or_speed": 15
+  },
+  {
+   "kind": "player",
+   "id": "c9d70128",
+   "name": "배덕",
+   "initiative": 9,
+   "dex_or_speed": 4
+  },
+  {
+   "kind": "player",
+   "id": "d5efc0b3",
+   "name": "야생의 랜덤마법사 김코",
+   "initiative": 9,
+   "dex_or_speed": 9
+  }
+ ],
+ "round_idx": 2,
+ "round_number": 2,
+ "players": {
+  "c9d70128": {
+   "player_id": "c9d70128",
+   "name": "배덕",
+   "character_class": "전사",
+   "race": "수인",
+   "race_animal": "곰",
+   "race_ratio": 75,
+   "hp": 120,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 50,
+   "custom_portrait": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAGAAYADASIAAhEBAxEB/8QAHAABAAMBAQEBAQAAAAAAAAAAAAUGBwQDAgEI/8QATxAAAQMDAgMGAwILBQIMBwAAAQACAwQFEQYhBxIxEyJBUWFxgZGhFDIVFiNCUmJygpKxwRckM6KyNFMIJSZDc5OzwtHT4fBERVRVVqPD/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANmREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARFzz1EVNA+eeVkUUbS58j3BrWgdSSegQdCKOtl2oLxA6ot1bBWRNeYy+CQPAcOoyPcfAg+KkUBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBz1NTDR0stVUyNihhYXyPcdmtAySVkbxduMN6mDZ5qDS9FJyjlHencPoXEb+IaCNiTvJ8Wq6quNZaNFW+QtmukzXz4ztHzYbnzGeZx/YCvFiprVbKFtjtcsJbb2NY+FkjXPjzvl4HQu3O/XdB86f01a9L0RpLVTdjG53NI5xLnSOwBkk+3QbeQCm0RARFGVF8tFJWNoKm60UFW7AbTyVDGyHPTDSc7+CCTREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBll6Ipf+EDY5ZiGsloiGE+ZbK0D57fFeGhYWT8X9V3GkZ2NLAZIZAHZ5pHSDJ38CY3u9PZdnGShqKehtWp6Ef3iz1TXOOOjXOBaT6B7WjH6y+eBlPz6fut1k3nrK4tefMNaD/N7kGoIi56mohpKeSoqJGRRRNL3yPdhrWjcknwCCM1RqCl0vYKm61RBEIwyPODI8/daPc/IZPgss0xw1fq/TVdfb5NIy6XRxmpJHZHL1PO4dCHE9MbNAI6rqnlqOL2r200D5Y9LWt/NI7Jb27vPHmeg/Rbk7E4OvMjZFG2ONoY1oAa1owAB4BBReFGoam42Kez3EPbcLNJ9nl7Q94tyQ3PqOUt/dHmtAWXaSYKTjjqimYQGSU3bFoHUkxuz/nPzWooCIiAi5qqtpaJnPV1MNOz9KWQNH1XlDdbdUu5ILhSyuzy8rJmuOfLYoO5ERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQF+L9WV601DcdWX46E004gE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",
+   "equipped": {
+    "weapon": {
+     "name": "거대한 양손도끼",
+     "effect": "양손 무기 — 공격력 +3, 속도 -1"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 15,
+   "intelligence": 10,
+   "wisdom": 10,
+   "dexterity": 4,
+   "charisma": 7,
+   "constitution": 16,
+   "race_mod_applied": true
+  },
+  "77dde854": {
+   "player_id": "77dde854",
+   "name": "미치광이 김코슈",
+   "character_class": "전사",
+   "race": "수인",
+   "race_animal": "여우",
+   "race_ratio": 90,
+   "hp": 120,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 50,
+   "custom_portrait": "data:image/jpeg;base64,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",
+   "equipped": {
+    "weapon": {
+     "name": "거대한 양손도끼",
+     "effect": "양손 무기 — 공격력 +3, 속도 -1"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": false,
+   "pending_notes": [
+    "※ 미치광이 김코슈(수인 전사)이(가) 방금 자기 캐릭터의 모습을 직접 그려 파티에게 공개했다. 다음 서사에서 이 캐릭터의 외양/인상을 자연스럽게 한두 문장 묘사하고, NPC나 다른 파티원의 반응을 한 마디 끼워넣어라."
+   ],
+   "status_effects": [],
+   "strength": 10,
+   "intelligence": 11,
+   "wisdom": 10,
+   "dexterity": 11,
+   "charisma": 11,
+   "constitution": 10,
+   "race_mod_applied": true
+  }
+ },
+ "monsters": {},
+ "dormant": {
+  "334f7814": {
+   "player": {
+    "player_id": "334f7814",
+    "name": "뮤즈 룩 크레이지스타",
+    "character_class": "도적",
+    "race": "수인",
+    "race_animal": "고양이",
+    "race_ratio": 25,
+    "hp": 90,
+    "max_hp": 90,
+    "mp": 60,
+    "max_mp": 60,
+    "attack": 18,
+    "defense": 7,
+    "level": 1,
+    "xp": 0,
+    "stat_points": 0,
+    "gold": 70,
+    "custom_portrait": null,
+    "equipped": {
+     "weapon": {
+      "name": "쌍단검",
+      "effect": "2회 공격 — 치명타 확률 +10%"
+     },
+     "armor": {
+      "name": "어두운 가죽 갑옷",
+      "effect": null
+     },
+     "accessory": {
+      "name": "도둑의 밧줄",
+      "effect": null
+     }
+    },
+    "inventory": [],
+    "is_ready": true,
+    "pending_notes": [],
+    "status_effects": [],
+    "strength": 11,
+    "intelligence": 9,
+    "wisdom": 8,
+    "dexterity": 15,
+    "charisma": 11,
+    "constitution": 10,
+    "race_mod_applied": true
+   },
+   "departed_at": 1777304595.8269324
+  }
+ },
+ "saved_at": 1777304595.8277166
+}

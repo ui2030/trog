@@ -1,0 +1,302 @@
+{
+ "version": 2,
+ "room_id": "0D43D7",
+ "scenario_id": "masquerade_heist",
+ "owner_id": "58633720",
+ "started": true,
+ "current_time": {
+  "icon": "🌆",
+  "label": "황혼",
+  "ordinal": 3,
+  "day": 1
+ },
+ "current_scene_url": "https://image.pollinations.ai/prompt/grand%20castle%20courtyard%20at%20twilight%2C%20masked%20guests%20mingling%20under%20golden%20lanterns%2C%20a%20cat%20rogue%20crouching%20near%20a%20carriage%20inspecting%20the%20crowd%20with%20narrowed%20eyes%2C%20tension%20in%20the%20air%2C%20baltur%27s%20gate%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=86959&nologo=true&model=flux",
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 16, INT 10, WIS 10, DEX 5, CHA 7, CON 15], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 10, WIS 8, DEX 16, CHA 12, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 미친 코슈 (수인(토끼·수형·90%) 성직자, Lv1, HP:100/100, MP:120/120, 공격:10, 방어:12, 골드:60, [STR 13, INT 7, WIS 10, DEX 16, CHA 7, CON 11], 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)\n\n모험을 시작하세요. 파티는 밀수업자의 마차 뒷칸에서 공작성에 도착. 각자 위조 초대장과 가면, 의상이 준비돼 있고, 신호는 자정의 종 — 앞으로 3시간 남았습니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼]\n마차의 흔들림이 멈추자, 무거운 커튼 너머로 화려한 성벽과 금빛 등불이 쏟아지는 광경이 비친다. 곰 수인 **배덕**의 거대한 어깨가 좁은 마차 공간을 꽉 막고, 그의 털이 섞인 주둥이가 긴장된 숨소리를 내뿜는다. \"이 좁은 구멍에서 곰이 숨을 쉴 수는 없다, 친구들.\" 옆에서 고양이 수인 **뮤즈 룩 크레이지스타**가 날카로운 발톱으로 가면을 다듬으며 비웃듯 중얼거린다. \"조용히 해, 배덕. 자정이 되기 전에 저기서 눈치 채기 전에 도망칠 작정이야.\" 그리고 토끼 수인 **미친 코슈**는 긴 귀를 쫑긋 세운 채 성스러운 철퇴를 꽉 잡으며, \"종소리가 울리기 전에 우리는 이미 오팔을 손에 넣었을 거야. 신이 우리를 지켜주실 테니.\"라고 다짐한다.\n\n[🎬 SCENE: dimly lit carriage interior opening to a grand masked ball courtyard, twilight glow, three anthropomorphic figures in formal masks and cloaks, tension in the air, baltur's gate atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[미친 코슈의 행동]: 배덕 이 불경한자가! (김배덕의 머리를 책으로 내려친다)\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 16, INT 10, WIS 10, DEX 5, CHA 7, CON 15], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 10, WIS 8, DEX 16, CHA 12, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 미친 코슈 (수인(토끼·수형·90%) 성직자, Lv1, HP:100/100, MP:120/120, 공격:10, 방어:12, 골드:60, [STR 13, INT 7, WIS 10, DEX 16, CHA 7, CON 11], 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] \"불경한 자!\" 미친 코슈의 외침과 함께 축복받은 철퇴가 공중을 가른다. **[🎲DM d20: 18]** 코슈의 민첩한 손놀림은 거대한 곰의 둔한 반응보다 한 치 앞서, **배덕**의 두터운 털이 덮인 머리를 책장 대신 철퇴로 강하게 내려친다. *쾅!* 소리와 함께 배덕의 눈앞에 별이 수백 개 튀어 오르고, 그의 거대한 몸이 비틀거리며 마차 바닥에 주저앉는다. \"아프다… 내 머리가!\" 배덕이 어지러운 눈으로 투덜거리지만, 코슈는 긴 토끼 귀를 쫑긋 세운 채 성스러운 빛을 띠며 \"죄를 씻어야 한다, 이 불경한 자여!\"라고 외친다. 옆에서 고양이 도적 **뮤즈 룩 크레이지스타**는 배덕의 멍한 표정을 보며 킬킬거린다. \"성직자님, 저게 불경한 게 아니라 그냥 멍청한 거 아닐까요? 자정 전에 그거 깨뜨리면 진짜로 불경해지겠는데.\" [배덕 HP: 120 → 105] [미친 코슈 MP: 120 → 115] [🎬 SCENE: cramped carriage interior at twilight, a rabbit cleric swinging a mace at a bear warrior's head, a cat rogue laughing in the corner, dust motes dancing in dim light, tension and absurdity, baldur's gate atmosphere]"
+  },
+  {
+   "role": "user",
+   "content": "[배덕의 행동]: (잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:105/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 16, INT 10, WIS 10, DEX 5, CHA 7, CON 15], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 10, WIS 8, DEX 16, CHA 12, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 미친 코슈 (수인(토끼·수형·90%) 성직자, Lv1, HP:100/100, MP:115/120, 공격:10, 방어:12, 골드:60, [STR 13, INT 7, WIS 10, DEX 16, CHA 7, CON 11], 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 배덕이 멍한 눈으로 주변을 둘러보며 고개를 갸웃거린다. 그의 거대한 곰 귀가 경계심 있게 움직이며, 마차 밖에서 들리는 하인들의 웃음소리와 잔칫날의 풍악소리가 선명하게 들린다. \"이제 가자, 친구들. 성스러운 성직자님의 '치유'는 많이 아팠지만, 우리는 준비가 됐다.\" 미친 코슈는 긴 토끼 귀를 쫓으며 고개를 끄덕인다. \"신은 우리를 용서하셨다. 이제 가면무도회로!\" 고양이 도적 **뮤즈 룩 크레이지스타**는 날카로운 발톱으로 가면을 다시 한번 점검하며, \"자정까지 3시간. 우리는 시간이 없다. 움직이자.\"라고 말한다. 마차 문이 열리고, 화려한 성의 정원이 시야에 들어온다. 금빛 등불과 가면 쓴 손님들이 오가는 광경이 펼쳐진다. [🎬 SCENE: grand courtyard of a medieval castle at twilight, golden lanterns illuminating masked guests, a carriage door opening, three anthropomorphic figures stepping out, festive yet tense atmosphere, baldur's gate style]"
+  },
+  {
+   "role": "user",
+   "content": "[뮤즈 룩 크레이지스타의 행동]: 주변을 조심스럽게 살펴본다\n\n현재 파티:\n[파티 3명 · 평균 Lv1.0]\n- 배덕 (수인(곰·반수인·50%) 전사, Lv1, HP:105/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 16, INT 10, WIS 10, DEX 5, CHA 7, CON 15], 장착: 거대한 양손도끼 / 가죽 흉갑 / 낡은 방패)\n- 뮤즈 룩 크레이지스타 (수인(고양이·인간형·25%) 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, 골드:70, [STR 11, INT 10, WIS 8, DEX 16, CHA 12, CON 10], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n- 미친 코슈 (수인(토끼·수형·90%) 성직자, Lv1, HP:100/100, MP:115/120, 공격:10, 방어:12, 골드:60, [STR 13, INT 7, WIS 10, DEX 16, CHA 7, CON 11], 장착: 축복받은 철퇴 / 성스러운 사제복 / 성표)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌆 황혼] 뮤즈 룩 크레이지스타의 고양이 눈동자가 좁은 동공으로 변하며 정원을 훑는다. 그녀의 예리한 후각이 화려한 향수 냄새 뒤로 감춰진, 냉랭한 마법과 긴장된 살기를 포착한다. **[🎲DM d20: 16]** \"여기저기 눈이 많아. 특히 저쪽 기둥 뒤의 경호원 두 명은... 그냥 호기심 많은 귀족이 아니야.\" 그녀는 낮게 속삭이며, 털이 살짝 일어난 귀를 배덕과 코슈 쪽으로 돌린다. \"그리고 저기, 붉은 가면을 쓴 여인이 우리를 쏘아보고 있어. 눈빛이 너무 차가워. 우리가 '깊은 밤' 길드 사람인 줄 알았나?\" 배덕은 거대한 어깨를 으쓱하며 \"그냥 가면 쓴 사람일 뿐이지, 뭐.\"라고 대수롭지 않게 말하지만, 미친 코슈는 긴 토끼 귀를 쫑긋 세운 채 불안한 듯 발을 구른다. \"신께서 지켜주실 테니... 하지만 조심해야 해.\" [🎬 SCENE: grand castle courtyard at twilight, masked guests mingling under golden lanterns, a cat rogue crouching near a carriage inspecting the crowd with narrowed eyes, tension in the air, baltur's gate atmosphere]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌆 황혼]\n마차의 흔들림이 멈추자, 무거운 커튼 너머로 화려한 성벽과 금빛 등불이 쏟아지는 광경이 비친다. 곰 수인 **배덕**의 거대한 어깨가 좁은 마차 공간을 꽉 막고, 그의 털이 섞인 주둥이가 긴장된 숨소리를 내뿜는다. \"이 좁은 구멍에서 곰이 숨을 쉴 수는 없다, 친구들.\" 옆에서 고양이 수인 **뮤즈 룩 크레이지스타**가 날카로운 발톱으로 가면을 다듬으며 비웃듯 중얼거린다. \"조용히 해, 배덕. 자정이 되기 전에 저기서 눈치 채기 전에 도망칠 작정이야.\" 그리고 토끼 수인 **미친 코슈**는 긴 귀를 쫑긋 세운 채 성스러운 철퇴를 꽉 잡으며, \"종소리가 울리기 전에 우리는 이미 오팔을 손에 넣었을 거야. 신이 우리를 지켜주실 테니.\"라고 다짐한다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/dimly%20lit%20carriage%20interior%20opening%20to%20a%20grand%20masked%20ball%20courtyard%2C%20twilight%20glow%2C%20three%20anthropomorphic%20figures%20in%20formal%20masks%20and%20cloaks%2C%20tension%20in%20the%20air%2C%20baltur%27s%20gate%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=54790&nologo=true&model=flux",
+   "ts": 1777304732.5039134
+  },
+  {
+   "type": "action",
+   "player_id": "5b108030",
+   "player_name": "미친 코슈",
+   "player_emoji": "✨",
+   "portrait_url": "https://image.pollinations.ai/prompt/rabbit%20muzzle%20with%20buck%20teeth%2C%20soft%20fur%20covering%20face%2C%20tall%20upright%20rabbit%20ears%2C%20human%20body%20with%20lapine%20features%2C%20full%20rabbit%20muzzle%2C%20face%20completely%20covered%20in%20rabbit%20fur%2C%20rabbit%20head%20on%20a%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20predominantly%20rabbit%20features%2C%20still%20a%20humanoid%20hero%20%28not%20a%20furry%20animal%20character%29%2C%20devoted%20cleric%2C%20ornate%20white%20and%20gold%20religious%20vestments%20with%20sacred%20engravings%2C%20holy%20symbol%20pendant%20glowing%20softly%2C%20wielding%20a%20blessed%20warhammer%2C%20divine%20golden%20light%20rays%20behind%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=2408259346&nologo=true&model=flux",
+   "action": "배덕 이 불경한자가! (김배덕의 머리를 책으로 내려친다)",
+   "ts": 1777304768.2976909
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] \"불경한 자!\" 미친 코슈의 외침과 함께 축복받은 철퇴가 공중을 가른다. **[🎲DM d20: 18]** 코슈의 민첩한 손놀림은 거대한 곰의 둔한 반응보다 한 치 앞서, **배덕**의 두터운 털이 덮인 머리를 책장 대신 철퇴로 강하게 내려친다. *쾅!* 소리와 함께 배덕의 눈앞에 별이 수백 개 튀어 오르고, 그의 거대한 몸이 비틀거리며 마차 바닥에 주저앉는다. \"아프다… 내 머리가!\" 배덕이 어지러운 눈으로 투덜거리지만, 코슈는 긴 토끼 귀를 쫑긋 세운 채 성스러운 빛을 띠며 \"죄를 씻어야 한다, 이 불경한 자여!\"라고 외친다. 옆에서 고양이 도적 **뮤즈 룩 크레이지스타**는 배덕의 멍한 표정을 보며 킬킬거린다. \"성직자님, 저게 불경한 게 아니라 그냥 멍청한 거 아닐까요? 자정 전에 그거 깨뜨리면 진짜로 불경해지겠는데.\" [배덕 HP: 120 → 105] [미친 코슈 MP: 120 → 115]",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/cramped%20carriage%20interior%20at%20twilight%2C%20a%20rabbit%20cleric%20swinging%20a%20mace%20at%20a%20bear%20warrior%27s%20head%2C%20a%20cat%20rogue%20laughing%20in%20the%20corner%2C%20dust%20motes%20dancing%20in%20dim%20light%2C%20tension%20and%20absurdity%2C%20baldur%27s%20gate%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=54267&nologo=true&model=flux",
+   "acting_player_id": "5b108030",
+   "round_complete": false,
+   "ts": 1777304777.422247
+  },
+  {
+   "type": "action",
+   "player_id": "58633720",
+   "player_name": "배덕",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/half-human%20half-bear%20hybrid%20head%20with%20hint%20of%20a%20bear%20muzzle%2C%20thick%20brown%20fur%20across%20cheeks%20and%20arms%2C%20powerful%20rounded%20ears%2C%20partial%20bear%20muzzle%20blending%20with%20human%20face%2C%20balanced%20fur-and-skin%20mix%20on%20cheekbones%2C%20clearly%20chimeric%20appearance%2C%20humanoid%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20hybrid%2C%20battle-hardened%20warrior%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3000608223&nologo=true&model=flux",
+   "action": "(잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)",
+   "linger": true,
+   "ts": 1777304830.5202386
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 배덕이 멍한 눈으로 주변을 둘러보며 고개를 갸웃거린다. 그의 거대한 곰 귀가 경계심 있게 움직이며, 마차 밖에서 들리는 하인들의 웃음소리와 잔칫날의 풍악소리가 선명하게 들린다. \"이제 가자, 친구들. 성스러운 성직자님의 '치유'는 많이 아팠지만, 우리는 준비가 됐다.\" 미친 코슈는 긴 토끼 귀를 쫓으며 고개를 끄덕인다. \"신은 우리를 용서하셨다. 이제 가면무도회로!\" 고양이 도적 **뮤즈 룩 크레이지스타**는 날카로운 발톱으로 가면을 다시 한번 점검하며, \"자정까지 3시간. 우리는 시간이 없다. 움직이자.\"라고 말한다. 마차 문이 열리고, 화려한 성의 정원이 시야에 들어온다. 금빛 등불과 가면 쓴 손님들이 오가는 광경이 펼쳐진다.",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/grand%20courtyard%20of%20a%20medieval%20castle%20at%20twilight%2C%20golden%20lanterns%20illuminating%20masked%20guests%2C%20a%20carriage%20door%20opening%2C%20three%20anthropomorphic%20figures%20stepping%20out%2C%20festive%20yet%20tense%20atmosphere%2C%20baldur%27s%20gate%20style%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=94374&nologo=true&model=flux",
+   "acting_player_id": "58633720",
+   "round_complete": false,
+   "ts": 1777304842.5512648
+  },
+  {
+   "type": "action",
+   "player_id": "f69a5509",
+   "player_name": "뮤즈 룩 크레이지스타",
+   "player_emoji": "🗡️",
+   "portrait_url": "https://image.pollinations.ai/prompt/human%20face%20with%20cat%20ears%20peeking%20through%20hair%20and%20a%20slender%20cat%20tail%2C%20slit-pupil%20eyes%2C%20human%20skin%20tone%2C%20fully%20human%20head%20shape%2C%20only%20subtle%20cat%20hints%20%28ears%20and%20tail%29%2C%20human%20body%2C%20dark%20fantasy%20CRPG%20hero%20portrait%2C%20beastfolk%20with%20mostly%20human%20appearance%2C%20cunning%20rogue%2C%20sharp%20features%20half-shadowed%20by%20a%20dark%20hood%2C%20studded%20leather%20armor%20with%20hidden%20buckles%2C%20twin%20curved%20daggers%20crossed%2C%20smirking%20lips%2C%20moonlit%20alley%20atmosphere%2C%20smoky%20background%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=1407613794&nologo=true&model=flux",
+   "action": "주변을 조심스럽게 살펴본다",
+   "ts": 1777304858.5997593
+  },
+  {
+   "type": "dm",
+   "text": "[🌆 황혼] 뮤즈 룩 크레이지스타의 고양이 눈동자가 좁은 동공으로 변하며 정원을 훑는다. 그녀의 예리한 후각이 화려한 향수 냄새 뒤로 감춰진, 냉랭한 마법과 긴장된 살기를 포착한다. **[🎲DM d20: 16]** \"여기저기 눈이 많아. 특히 저쪽 기둥 뒤의 경호원 두 명은... 그냥 호기심 많은 귀족이 아니야.\" 그녀는 낮게 속삭이며, 털이 살짝 일어난 귀를 배덕과 코슈 쪽으로 돌린다. \"그리고 저기, 붉은 가면을 쓴 여인이 우리를 쏘아보고 있어. 눈빛이 너무 차가워. 우리가 '깊은 밤' 길드 사람인 줄 알았나?\" 배덕은 거대한 어깨를 으쓱하며 \"그냥 가면 쓴 사람일 뿐이지, 뭐.\"라고 대수롭지 않게 말하지만, 미친 코슈는 긴 토끼 귀를 쫑긋 세운 채 불안한 듯 발을 구른다. \"신께서 지켜주실 테니... 하지만 조심해야 해.\"",
+   "current_time": {
+    "icon": "🌆",
+    "label": "황혼",
+    "ordinal": 3,
+    "day": 1
+   },
+   "scene_image_url": "https://image.pollinations.ai/prompt/grand%20castle%20courtyard%20at%20twilight%2C%20masked%20guests%20mingling%20under%20golden%20lanterns%2C%20a%20cat%20rogue%20crouching%20near%20a%20carriage%20inspecting%20the%20crowd%20with%20narrowed%20eyes%2C%20tension%20in%20the%20air%2C%20baltur%27s%20gate%20atmosphere%2C%20dark%20fantasy%20CRPG%20illustration%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20cinematic%20moody%20lighting%2C%20atmospheric%2C%20highly%20detailed%20environment%2C%20no%20text%2C%20no%20letters%2C%20no%20words%2C%20no%20logo%2C%20no%20watermark?width=768&height=384&seed=86959&nologo=true&model=flux",
+   "acting_player_id": "f69a5509",
+   "round_complete": true,
+   "ts": 1777304875.926805
+  }
+ ],
+ "turn_order": [
+  "58633720",
+  "f69a5509",
+  "5b108030"
+ ],
+ "current_turn_index": 0,
+ "round_order": [
+  {
+   "kind": "player",
+   "id": "5b108030",
+   "name": "미친 코슈",
+   "initiative": 12,
+   "dex_or_speed": 16
+  },
+  {
+   "kind": "player",
+   "id": "f69a5509",
+   "name": "뮤즈 룩 크레이지스타",
+   "initiative": 7,
+   "dex_or_speed": 16
+  },
+  {
+   "kind": "player",
+   "id": "58633720",
+   "name": "배덕",
+   "initiative": 0,
+   "dex_or_speed": 5
+  }
+ ],
+ "round_idx": 0,
+ "round_number": 2,
+ "players": {
+  "58633720": {
+   "player_id": "58633720",
+   "name": "배덕",
+   "character_class": "전사",
+   "race": "수인",
+   "race_animal": "곰",
+   "race_ratio": 50,
+   "hp": 105,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 50,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "거대한 양손도끼",
+     "effect": "양손 무기 — 공격력 +3, 속도 -1"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 16,
+   "intelligence": 10,
+   "wisdom": 10,
+   "dexterity": 5,
+   "charisma": 7,
+   "constitution": 15,
+   "race_mod_applied": true
+  },
+  "f69a5509": {
+   "player_id": "f69a5509",
+   "name": "뮤즈 룩 크레이지스타",
+   "character_class": "도적",
+   "race": "수인",
+   "race_animal": "고양이",
+   "race_ratio": 25,
+   "hp": 90,
+   "max_hp": 90,
+   "mp": 60,
+   "max_mp": 60,
+   "attack": 18,
+   "defense": 7,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 70,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "쌍단검",
+     "effect": "2회 공격 — 치명타 확률 +10%"
+    },
+    "armor": {
+     "name": "어두운 가죽 갑옷",
+     "effect": null
+    },
+    "accessory": {
+     "name": "도둑의 밧줄",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 11,
+   "intelligence": 10,
+   "wisdom": 8,
+   "dexterity": 16,
+   "charisma": 12,
+   "constitution": 10,
+   "race_mod_applied": true
+  },
+  "5b108030": {
+   "player_id": "5b108030",
+   "name": "미친 코슈",
+   "character_class": "성직자",
+   "race": "수인",
+   "race_animal": "토끼",
+   "race_ratio": 90,
+   "hp": 100,
+   "max_hp": 100,
+   "mp": 115,
+   "max_mp": 120,
+   "attack": 10,
+   "defense": 12,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 60,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "축복받은 철퇴",
+     "effect": "언데드에 추가 피해 +20%"
+    },
+    "armor": {
+     "name": "성스러운 사제복",
+     "effect": null
+    },
+    "accessory": {
+     "name": "성표",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 13,
+   "intelligence": 7,
+   "wisdom": 10,
+   "dexterity": 16,
+   "charisma": 7,
+   "constitution": 11,
+   "race_mod_applied": true
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777304875.9278014
+}
