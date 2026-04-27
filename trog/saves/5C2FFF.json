@@ -1,0 +1,92 @@
+{
+ "version": 2,
+ "room_id": "5C2FFF",
+ "scenario_id": "volkar",
+ "owner_id": "d3430069",
+ "started": false,
+ "current_time": null,
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n- 안녕 (드워프 도적, Lv1, HP:90/90, MP:60/60, 공격:18, 방어:7, [STR 11, INT 10, WIS 10, DEX 10, CHA 8, CON 12], 장착: 쌍단검 / 어두운 가죽 갑옷 / 도둑의 밧줄)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 불타는 지붕의 연기가 지평선에 피어오릅니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  }
+ ],
+ "chat_log": [
+  {
+   "player_id": "d3430069",
+   "name": "안녕",
+   "emoji": "🗡️",
+   "race_emoji": "🧔",
+   "text": "ㅊㅇㄴ핫ㅁ니",
+   "ts": 1777268753.499977,
+   "is_spectator": false
+  },
+  {
+   "player_id": "d3430069",
+   "name": "안녕",
+   "emoji": "🗡️",
+   "race_emoji": "🧔",
+   "text": "ㅁㄴ레랄;ㄹ",
+   "ts": 1777268753.5021634,
+   "is_spectator": false
+  }
+ ],
+ "narrative_log": [],
+ "turn_order": [
+  "d3430069"
+ ],
+ "current_turn_index": 0,
+ "round_order": [],
+ "round_idx": 0,
+ "round_number": 0,
+ "players": {
+  "d3430069": {
+   "player_id": "d3430069",
+   "name": "안녕",
+   "character_class": "도적",
+   "race": "드워프",
+   "race_animal": null,
+   "race_ratio": null,
+   "hp": 90,
+   "max_hp": 90,
+   "mp": 60,
+   "max_mp": 60,
+   "attack": 18,
+   "defense": 7,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 70,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "쌍단검",
+     "effect": "2회 공격 — 치명타 확률 +10%"
+    },
+    "armor": {
+     "name": "어두운 가죽 갑옷",
+     "effect": null
+    },
+    "accessory": {
+     "name": "도둑의 밧줄",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 11,
+   "intelligence": 10,
+   "wisdom": 10,
+   "dexterity": 10,
+   "charisma": 8,
+   "constitution": 12,
+   "race_mod_applied": true
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777268795.0883296
+}

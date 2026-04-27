@@ -3781,3 +3781,97 @@ body.spectator-mode .action-bar::after {
     vertical-align: middle;
 }
 
+/* ── v6: 인벤토리 카드 모바일 클릭 효과 토글 ───────────── */
+/* 데스크톱은 :hover 로 효과 자연 노출 — 모바일 hover 부재 → .show-effect 클래스로 강제 펼침 */
+.inv-item .inv-item-effect {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease;
+    opacity: .85;
+}
+.inv-item:hover .inv-item-effect,
+.inv-item.show-effect .inv-item-effect {
+    max-height: 6rem;
+    margin-top: .25rem;
+}
+.inv-item[data-effect-toggle="1"] {
+    cursor: pointer;
+}
+.inv-item.show-effect {
+    background: rgba(201,168,76,.06);
+    border-color: rgba(201,168,76,.4);
+}
+
+/* ── v6: 인벤 종류 뱃지 ───────────── */
+.inv-kind-badge {
+    display: inline-block;
+    margin-left: .35rem;
+    padding: 0 .35rem;
+    border-radius: 8px;
+    font-size: .65rem;
+    vertical-align: middle;
+    font-weight: 500;
+}
+.inv-kind-equip {
+    background: rgba(120,160,255,.14);
+    border: 1px solid rgba(120,160,255,.4);
+    color: #b9cfff;
+}
+.inv-kind-quest {
+    background: rgba(255,200,90,.14);
+    border: 1px solid rgba(255,200,90,.4);
+    color: #ffd577;
+}
+.inv-kind-consume {
+    background: rgba(120,200,140,.12);
+    border: 1px solid rgba(120,200,140,.35);
+    color: #a3d8b0;
+}
+
+/* 장착 버튼 */
+.inv-equip-btn {
+    background: rgba(120,160,255,.18);
+    border: 1px solid rgba(120,160,255,.45);
+    color: #cddcff;
+    padding: .15rem .55rem;
+    border-radius: 6px;
+    font-size: .72rem;
+    cursor: pointer;
+}
+.inv-equip-btn:hover { background: rgba(120,160,255,.3); }
+.inv-equip-btn.confirming {
+    background: rgba(255,160,90,.3);
+    border-color: rgba(255,160,90,.6);
+    color: #fff1d0;
+}
+
+/* ── v6: 골드 표시 ───────────── */
+.stat-gold {
+    margin-top: .35rem;
+    border-top: 1px dashed rgba(201,168,76,.3);
+    padding-top: .35rem;
+    color: var(--gold-light, #d6b958);
+    font-weight: 600;
+}
+.pc-gold {
+    margin-top: .25rem;
+    font-size: .72rem;
+    color: var(--gold-light, #d6b958);
+    text-align: right;
+    opacity: .9;
+}
+
+/* ── v6: 관망 / 패스 버튼 ───────────── */
+.q-btn-linger {
+    background: rgba(160,180,210,.1);
+    border: 1px dashed rgba(160,180,210,.45);
+    color: #c8d2e0;
+}
+.q-btn-pass {
+    background: rgba(120,80,80,.12);
+    border: 1px dashed rgba(255,140,140,.4);
+    color: #ddc0c0;
+}
+.q-btn-linger:hover { background: rgba(160,180,210,.22); }
+.q-btn-pass:hover { background: rgba(120,80,80,.22); }
+

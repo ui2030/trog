@@ -1,0 +1,150 @@
+{
+ "version": 2,
+ "room_id": "E00501",
+ "scenario_id": "volkar",
+ "owner_id": "11823bf7",
+ "started": true,
+ "current_time": {
+  "icon": "🌅",
+  "label": "새벽",
+  "ordinal": 0,
+  "day": 1
+ },
+ "day": 1,
+ "messages": [
+  {
+   "role": "user",
+   "content": "파티가 모였습니다:\n[파티 1명 · 평균 Lv1.0]\n- ㄷㅅㅂㅈㅅ (티플링 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 10, INT 11, WIS 7, DEX 10, CHA 11, CON 10], 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)\n\n모험을 시작하세요. 볼카르의 부하들이 인근 마을을 습격했다는 소식을 듣고 파티가 출발합니다. 불타는 지붕의 연기가 지평선에 피어오릅니다. 극적인 오프닝 장면을 묘사해주세요. 반드시 맨 첫 줄에 시간대 태그를 넣으세요."
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽]\n\n먼 동쪽 하늘, 여명을 가르던 창백한 빛이 핏빛 연기에 삼켜진다. 타오르는 마을의 지붕들이 검은 재로 무너져 내리며, 볼카르의 하수인들이 내지르는 야만적인 포효가 아침 안개를 찢어발긴다. \n\nㄷㅅㅂㅈㅅ의 기꺼운 발걸음이 잿더미로 변한 오솔길을 밟는다. 악마의 피가 흐르는 그의 눈동자가 분노로 이글거리며 붉은 화염을 응시한다. 뿔 달린 이마로 흐르는 땀방울을 닦아내자, 낡은 방패를 쥔 손마디가 허연다.\n\n\"이 썩을 놈들의 짓이로군.\"\n\n앞서길 망설이는 자는 없다. 오직 녹슨 장검을 뽑아든 채, 파멸의 한복판으로 뛰어드는 티플링 전사뿐."
+  },
+  {
+   "role": "user",
+   "content": "[ㄷㅅㅂㅈㅅ의 행동]: (잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)\n\n현재 파티:\n[파티 1명 · 평균 Lv1.0]\n- ㄷㅅㅂㅈㅅ (티플링 전사, Lv1, HP:120/120, MP:30/30, 공격:15, 방어:10, 골드:50, [STR 10, INT 11, WIS 7, DEX 10, CHA 11, CON 10], 장착: 녹슨 장검 / 가죽 흉갑 / 낡은 방패)"
+  },
+  {
+   "role": "assistant",
+   "content": "[🌅 새벽]\n\nㄷㅅㅂㅈㅅ가 화염 속에서 발걸음을 멈추자, 지옥 같던 소음이 잠시 멀어진다. 악마의 피가 흐르는 예민한 감각이 전장의 결을 읽는다. 둔한 지혜로 상황을 판단하기엔 벅차지만, 본능이 속삭인다—이건 단순한 약탈이 아니다.\n\n마을 입구, 쩍 갈라진 참나무 아래에 **검은 사제** 하나가 서 있다. 품은 볼카르의 문양이 새겨진 부적을 만지작거리며, 무너져 내리는 집터를 무심히 내려다본다. 그의 발밑엔 짓밟힌 주민들의 행주가구가 흩어져 있다.\n\n\"움직이는 시체가 있군.\"\n\n사제가 중얼거리며 돌아선다. 그의 눈동자가 ㄷㅅㅂㅈㅅ의 이글거리는 눈과 정면으로 마주친다.\n\n[적 등장: 검은 사제 | HP 18 | 속도 12]\n[적 상태: 검은 사제 | 마법 준비 중 — 다음 공격 위력 +3]"
+  }
+ ],
+ "chat_log": [],
+ "narrative_log": [
+  {
+   "type": "dm",
+   "text": "[🌅 새벽]\n\n먼 동쪽 하늘, 여명을 가르던 창백한 빛이 핏빛 연기에 삼켜진다. 타오르는 마을의 지붕들이 검은 재로 무너져 내리며, 볼카르의 하수인들이 내지르는 야만적인 포효가 아침 안개를 찢어발긴다. \n\nㄷㅅㅂㅈㅅ의 기꺼운 발걸음이 잿더미로 변한 오솔길을 밟는다. 악마의 피가 흐르는 그의 눈동자가 분노로 이글거리며 붉은 화염을 응시한다. 뿔 달린 이마로 흐르는 땀방울을 닦아내자, 낡은 방패를 쥔 손마디가 허연다.\n\n\"이 썩을 놈들의 짓이로군.\"\n\n앞서길 망설이는 자는 없다. 오직 녹슨 장검을 뽑아든 채, 파멸의 한복판으로 뛰어드는 티플링 전사뿐.",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "ts": 1777269079.5462365
+  },
+  {
+   "type": "action",
+   "player_id": "11823bf7",
+   "player_name": "ㄷㅅㅂㅈㅅ",
+   "player_emoji": "⚔️",
+   "portrait_url": "https://image.pollinations.ai/prompt/a%20tiefling%2C%20curving%20horns%2C%20reddish%20purple%20skin%2C%20glowing%20amber%20eyes%2C%20pointed%20tail%20visible%2C%20demonic%20lineage%2C%20battle-hardened%20warrior%2C%20weathered%20scarred%20face%2C%20intricate%20engraved%20steel%20plate%20armor%20with%20fur-trimmed%20pauldrons%2C%20gripping%20a%20massive%20longsword%2C%20stern%20determined%20expression%2C%20ember-lit%20forge%20background%20glow%2C%20dark%20fantasy%20CRPG%20character%20portrait%2C%20Baldur%27s%20Gate%203%20concept%20art%20style%2C%20painterly%20digital%20oil%20painting%2C%20dramatic%20cinematic%20rim%20lighting%2C%20moody%20atmosphere%2C%20highly%20detailed%20face%2C%20intricate%20costume%20details%2C%20centered%20bust%20shot%2C%20solid%20dark%20background%2C%20artstation%20trending?width=384&height=384&seed=3001951500&nologo=true&model=flux",
+   "action": "(잠시 행동을 멈추고 주변 상황을 지켜본다 — 장면이 자연스럽게 다음 단계로 흐르길 기다린다)",
+   "linger": true,
+   "ts": 1777269154.809464
+  },
+  {
+   "type": "dm",
+   "text": "[🌅 새벽]\n\nㄷㅅㅂㅈㅅ가 화염 속에서 발걸음을 멈추자, 지옥 같던 소음이 잠시 멀어진다. 악마의 피가 흐르는 예민한 감각이 전장의 결을 읽는다. 둔한 지혜로 상황을 판단하기엔 벅차지만, 본능이 속삭인다—이건 단순한 약탈이 아니다.\n\n마을 입구, 쩍 갈라진 참나무 아래에 **검은 사제** 하나가 서 있다. 품은 볼카르의 문양이 새겨진 부적을 만지작거리며, 무너져 내리는 집터를 무심히 내려다본다. 그의 발밑엔 짓밟힌 주민들의 행주가구가 흩어져 있다.\n\n\"움직이는 시체가 있군.\"\n\n사제가 중얼거리며 돌아선다. 그의 눈동자가 ㄷㅅㅂㅈㅅ의 이글거리는 눈과 정면으로 마주친다.\n\n[적 등장: 검은 사제 | HP 18 | 속도 12]\n[적 상태: 검은 사제 | 마법 준비 중 — 다음 공격 위력 +3]",
+   "current_time": {
+    "icon": "🌅",
+    "label": "새벽",
+    "ordinal": 0,
+    "day": 1
+   },
+   "acting_player_id": "11823bf7",
+   "round_complete": true,
+   "ts": 1777269188.3243234
+  }
+ ],
+ "turn_order": [
+  "11823bf7"
+ ],
+ "current_turn_index": 0,
+ "round_order": [
+  {
+   "kind": "monster",
+   "id": "검은 사제",
+   "name": "검은 사제",
+   "initiative": 19,
+   "dex_or_speed": 12
+  },
+  {
+   "kind": "player",
+   "id": "11823bf7",
+   "name": "ㄷㅅㅂㅈㅅ",
+   "initiative": 17,
+   "dex_or_speed": 10
+  }
+ ],
+ "round_idx": 0,
+ "round_number": 2,
+ "players": {
+  "11823bf7": {
+   "player_id": "11823bf7",
+   "name": "ㄷㅅㅂㅈㅅ",
+   "character_class": "전사",
+   "race": "티플링",
+   "race_animal": null,
+   "race_ratio": null,
+   "hp": 120,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 50,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "녹슨 장검",
+     "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 10,
+   "intelligence": 11,
+   "wisdom": 7,
+   "dexterity": 10,
+   "charisma": 11,
+   "constitution": 10,
+   "race_mod_applied": true
+  }
+ },
+ "monsters": {
+  "검은 사제": {
+   "name": "검은 사제",
+   "hp": 18,
+   "max_hp": 18,
+   "status_note": "마법 준비 중 — 다음 공격 위력 +3",
+   "status_effects": [],
+   "speed": 12,
+   "attackers": []
+  }
+ },
+ "dormant": {},
+ "saved_at": 1777269188.3253155
+}

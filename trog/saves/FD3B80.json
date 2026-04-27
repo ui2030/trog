@@ -1,6 +1,7 @@
 {
  "version": 2,
  "room_id": "FD3B80",
+ "scenario_id": "volkar",
  "owner_id": "909035be",
  "started": true,
  "current_time": {
@@ -70,6 +71,10 @@
   {
    "role": "user",
    "content": "[시스템: 산타카타리나기니피그(드래곤본 도적, Lv1)이 잠시 사정이 생겨 파티를 떠났다는 짧은 간주를 2~3문장으로 묘사해라. 서사시적이고 극적으로, 다시 돌아올 여지를 남겨라. 시간대 태그는 생략하고 본문만.]"
+  },
+  {
+   "role": "user",
+   "content": "[시스템: FD3B80(드워프 전사, Lv1)이 파티에 다시 합류한다. 경과: 약 0초 — 잠시 자리를 비웠다 다시 합류하는 가벼운 톤. 이 인물은 본인이다. 2~3문장으로 자연스럽고 스무스한 등장 장면을 묘사해라. 시간대 태그 생략, 본문만.]"
   }
  ],
  "chat_log": [
@@ -239,48 +244,59 @@
  ],
  "turn_order": [],
  "current_turn_index": 0,
+ "round_order": [],
+ "round_idx": 0,
+ "round_number": 0,
  "players": {},
  "monsters": {},
  "dormant": {
-  "909035be": {
+  "16caa140": {
    "player": {
-    "player_id": "909035be",
-    "name": "산타카타리나기니피그",
-    "character_class": "도적",
-    "race": "드래곤본",
+    "player_id": "16caa140",
+    "name": "FD3B80",
+    "character_class": "전사",
+    "race": "드워프",
     "race_animal": null,
     "race_ratio": null,
-    "hp": 90,
-    "max_hp": 90,
-    "mp": 60,
-    "max_mp": 60,
-    "attack": 18,
-    "defense": 7,
+    "hp": 120,
+    "max_hp": 120,
+    "mp": 30,
+    "max_mp": 30,
+    "attack": 15,
+    "defense": 10,
     "level": 1,
-    "xp": 55,
+    "xp": 0,
     "stat_points": 0,
+    "gold": 50,
     "custom_portrait": null,
     "equipped": {
      "weapon": {
-      "name": "독 바른 단도",
-      "effect": "독 부여 — 매 턴 HP -3 (3턴)"
+      "name": "녹슨 장검",
+      "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
      },
      "armor": {
-      "name": "어두운 가죽 갑옷",
+      "name": "가죽 흉갑",
       "effect": null
      },
      "accessory": {
-      "name": "도둑의 밧줄",
+      "name": "낡은 방패",
       "effect": null
      }
     },
     "inventory": [],
-    "is_ready": true,
+    "is_ready": false,
     "pending_notes": [],
-    "status_effects": []
+    "status_effects": [],
+    "strength": 11,
+    "intelligence": 10,
+    "wisdom": 10,
+    "dexterity": 10,
+    "charisma": 8,
+    "constitution": 13,
+    "race_mod_applied": true
    },
-   "departed_at": 1777046363.1975973
+   "departed_at": 1777273234.9506805
   }
  },
- "saved_at": 1777046363.1981025
+ "saved_at": 1777273234.9511843
 }

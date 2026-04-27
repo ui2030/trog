@@ -1,0 +1,68 @@
+{
+ "version": 2,
+ "room_id": "066A4B",
+ "scenario_id": "volkar",
+ "owner_id": "7c500ec2",
+ "started": false,
+ "current_time": null,
+ "day": 1,
+ "messages": [],
+ "chat_log": [],
+ "narrative_log": [],
+ "turn_order": [
+  "7c500ec2"
+ ],
+ "current_turn_index": 0,
+ "round_order": [],
+ "round_idx": 0,
+ "round_number": 0,
+ "players": {
+  "7c500ec2": {
+   "player_id": "7c500ec2",
+   "name": "12441",
+   "character_class": "전사",
+   "race": "하플링",
+   "race_animal": null,
+   "race_ratio": null,
+   "hp": 120,
+   "max_hp": 120,
+   "mp": 30,
+   "max_mp": 30,
+   "attack": 15,
+   "defense": 10,
+   "level": 1,
+   "xp": 0,
+   "stat_points": 0,
+   "gold": 50,
+   "custom_portrait": null,
+   "equipped": {
+    "weapon": {
+     "name": "녹슨 장검",
+     "effect": "균형잡힌 한손검 — 출혈 확률 소폭"
+    },
+    "armor": {
+     "name": "가죽 흉갑",
+     "effect": null
+    },
+    "accessory": {
+     "name": "낡은 방패",
+     "effect": null
+    }
+   },
+   "inventory": [],
+   "is_ready": true,
+   "pending_notes": [],
+   "status_effects": [],
+   "strength": 9,
+   "intelligence": 11,
+   "wisdom": 10,
+   "dexterity": 10,
+   "charisma": 10,
+   "constitution": 10,
+   "race_mod_applied": false
+  }
+ },
+ "monsters": {},
+ "dormant": {},
+ "saved_at": 1777268862.0411413
+}

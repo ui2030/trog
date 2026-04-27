@@ -424,7 +424,25 @@ document.getElementById('action-input').addEventListener('keydown', e => {
 });
 
 document.querySelectorAll('.q-btn').forEach(btn => {
+  // data-action 없는 버튼(#linger-btn, #pass-turn-btn 등)은 별도 핸들러가 처리하므로 스킵.
+  if (!btn.dataset.action) return;
   btn.addEventListener('click', () => sendRaw(btn.dataset.action));
+});
+
+// 🆕 v6: 관망/진행 — 행동 없이 DM 이 장면 진행. 본인 차례에서만 가능.
+document.getElementById('linger-btn')?.addEventListener('click', () => {
+  if (isSpectator) return;
+  if (_amIDead && _amIDead()) { sysMsg('사망 상태 — 관망 불가.'); return; }
+  if (!ws || ws.readyState !== WebSocket.OPEN) return;
+  try { ws.send(JSON.stringify({ type: 'linger_action' })); } catch (_) {}
+});
+
+// 🆕 v6: 내 턴 패스 — LLM 호출 없이 다음 사람으로. (방장 skip 과 달리 본인만 패스 가능)
+document.getElementById('pass-turn-btn')?.addEventListener('click', () => {
+  if (isSpectator) return;
+  if (!ws || ws.readyState !== WebSocket.OPEN) return;
+  if (!confirm('정말 본인 턴을 그냥 넘기시겠습니까? (이번 차례에 아무 일도 일어나지 않습니다)')) return;
+  try { ws.send(JSON.stringify({ type: 'pass_turn' })); } catch (_) {}
 });
 
 /* ── DICE ROLL ──────────────────────────── */
@@ -879,6 +897,31 @@ function handle(d) {
         pushToast(layer, `🧪 ${d.player_name} 이(가) '${d.item}' 사용 (남은 ${d.remaining})`, 'toast-item-mine');
       }
       break;
+
+    case 'item_equipped':
+      if (Array.isArray(d.players)) {
+        refreshPlayers(d.players);
+        refreshCharPanel(d.players);
+      }
+      if (d.player_name && d.item) {
+        const layer = ensureToastLayer();
+        const replacedNote = d.replaced ? ` ('${d.replaced}' → 인벤)` : '';
+        pushToast(layer, `🛡 ${d.player_name} '${d.item}' 장착${replacedNote}`, 'toast-item-mine');
+      }
+      break;
+
+    case 'use_item_confirm': {
+      // 🆕 서버가 "이건 장비입니다. 장착할까요?" 회신 — 사용자에게 confirm 후 action:'equip' 재전송.
+      const ok = confirm(d.message || `'${d.item_name}' 은(는) 장비입니다. 장착하시겠습니까?`);
+      if (ok && ws && ws.readyState === WebSocket.OPEN && d.item_name) {
+        // 슬롯 추론 (game.js 다른 핸들러와 동일 휴리스틱)
+        let slot = 'weapon';
+        if (/(갑옷|로브|흉갑|방어구|투구|튜닉|망토)/.test(d.item_name)) slot = 'armor';
+        else if (/(반지|목걸이|부적|장신구|성표|마법서|밧줄|오브)/.test(d.item_name)) slot = 'accessory';
+        ws.send(JSON.stringify({ type: 'use_item', item_name: d.item_name, action: 'equip', slot }));
+      }
+      break;
+    }
 
     case 'kicked':
       alert(`방장(${d.by || '알 수 없음'})에 의해 강퇴되었습니다.`);
@@ -1503,6 +1546,7 @@ function refreshPlayers(players) {
         <div class="hp-track"><div class="hp-fill" style="width:${hpPct}%;background:${hpCol}"></div></div>
         <div class="mp-label">MP ${mp} / ${maxMp}</div>
         <div class="mp-track"><div class="mp-fill" style="width:${mpPct}%"></div></div>
+        <div class="pc-gold" title="소지 금액">💰 ${(typeof p.gold === 'number' ? p.gold : 0)} G</div>
         ${statusChips}
       `;
     }
@@ -1593,22 +1637,37 @@ function refreshCharPanel(players) {
   `;
 
   const inv = Array.isArray(me.inventory) ? me.inventory : [];
-  // 인벤토리 요소는 이제 {name, effect} 딕트. (구 포맷 '문자열'도 방어적으로 처리)
+  // 인벤토리 요소는 이제 {name, effect, quantity, kind} 딕트. (구 포맷 '문자열'도 방어적으로 처리)
+  // kind: 'consumable' | 'equipment' | 'quest'
   const renderItem = (it) => {
-    const obj = (typeof it === 'string') ? { name: it, effect: null, quantity: 1 } : (it || {});
+    const obj = (typeof it === 'string') ? { name: it, effect: null, quantity: 1, kind: 'consumable' } : (it || {});
     const name = obj.name || '';
     const effect = obj.effect;
     const qty = (typeof obj.quantity === 'number' && obj.quantity > 0) ? obj.quantity : 1;
+    const kind = obj.kind || 'consumable';
     const qtyHtml = qty > 1 ? `<span class="inv-item-qty">×${qty}</span>` : '';
     const title = effect
       ? `${name}${qty > 1 ? ' ×' + qty : ''}\n효과: ${effect}`
       : `${name}${qty > 1 ? ' ×' + qty : ''}\n(효과 미확인)`;
-    const useBtn = `<button class="inv-use-btn" data-use-item="${escapeHtml(name)}" title="이 아이템을 1개 사용">사용</button>`;
+    // kind 기반 버튼 분기 — 모바일에서 "사용" 한 번 눌렀는데 장비 장착되는 혼선 방지.
+    let actionBtn = '';
+    let kindBadge = '';
+    if (kind === 'equipment') {
+      actionBtn = `<button class="inv-equip-btn" data-equip-item="${escapeHtml(name)}" title="이 장비를 장착 (기존 장비는 인벤토리로 회수)">장착</button>`;
+      kindBadge = '<span class="inv-kind-badge inv-kind-equip" title="장비">🛡 장비</span>';
+    } else if (kind === 'quest') {
+      actionBtn = '';
+      kindBadge = '<span class="inv-kind-badge inv-kind-quest" title="퀘스트 아이템 — 사용/장착 불가">📜 퀘스트</span>';
+    } else {
+      actionBtn = `<button class="inv-use-btn" data-use-item="${escapeHtml(name)}" title="이 아이템을 1개 사용">사용</button>`;
+      kindBadge = '<span class="inv-kind-badge inv-kind-consume" title="소모품 — 사용 시 1개 소비">🍶 소모품</span>';
+    }
+    // data-effect-toggle: 모바일에서 hover 가 안 되는 환경 대응 — 카드 자체를 탭하면 효과 표시 토글.
     return `
-      <div class="inv-item ${effect ? 'has-effect' : 'effect-unknown'}" title="${escapeHtml(title)}">
+      <div class="inv-item ${effect ? 'has-effect' : 'effect-unknown'}" data-effect-toggle="1" title="${escapeHtml(title)}">
         <div class="inv-item-head">
-          <div class="inv-item-name">${escapeHtml(name)}${qtyHtml}</div>
-          ${useBtn}
+          <div class="inv-item-name">${escapeHtml(name)}${qtyHtml}${kindBadge}</div>
+          ${actionBtn}
         </div>
         <div class="inv-item-effect">${effect ? escapeHtml(effect) : '<span class="unk">? 아직 알 수 없음</span>'}</div>
       </div>
@@ -1717,6 +1776,7 @@ function refreshCharPanel(players) {
           ${abilityRow('constitution', '건강', 'CON', '건강 — HP·독 저항', false)}
           <div class="stat-row"><span class="stat-lbl">XP</span><span class="stat-val">${me.xp} <span class="xp-next">(다음까지 ${me.xp_to_next || 0})</span></span></div>
           <div class="xp-track"><div class="xp-fill" style="width:${xpProgress}%"></div></div>
+          <div class="stat-row stat-gold"><span class="stat-lbl">💰 소지 금액</span><span class="stat-val">${(typeof me.gold === 'number' ? me.gold : 0)} G</span></div>
         </div>
       `;
     })()}
@@ -1746,9 +1806,17 @@ function refreshCharPanel(players) {
     });
   });
 
-  // 사용 버튼 위임 바인딩 — char-body 재렌더마다 새로 붙음.
-  // 2-클릭 confirm 패턴: 첫 클릭은 "확인?" 상태 전환, 2초 내 재클릭해야 실제 전송.
-  // (브라우저 native confirm() 이 차단되거나 모바일에서 동작이 불안정한 케이스 회피)
+  // 사용/장착 버튼 + 인벤 카드 클릭(효과 토글) 위임 바인딩.
+  // 효과 토글: 모바일에서 hover 가 안 되니, 카드 자체를 탭하면 .show-effect 클래스로 펼침.
+  // 사용/장착 버튼은 자체 stopPropagation 으로 토글에서 제외.
+  document.querySelectorAll('#char-body .inv-item[data-effect-toggle]').forEach(card => {
+    card.addEventListener('click', (e) => {
+      // 버튼 영역 클릭이면 토글 안 함 (버튼 자체 핸들러가 처리)
+      if (e.target.closest('.inv-use-btn,.inv-equip-btn')) return;
+      card.classList.toggle('show-effect');
+    });
+  });
+
   document.querySelectorAll('#char-body .inv-use-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -1760,7 +1828,7 @@ function refreshCharPanel(players) {
         pushToast(layer, '⚠ 서버 연결 끊김 — 잠시 후 다시 시도', 'toast-error');
         return;
       }
-      // 첫 클릭: "한 번 더 눌러 확인" 상태로 전환
+      // 2-클릭 confirm
       if (btn.dataset.confirming !== '1') {
         btn.dataset.confirming = '1';
         const originalText = btn.textContent;
@@ -1774,16 +1842,53 @@ function refreshCharPanel(players) {
         btn.dataset.timeoutId = String(timeoutId);
         return;
       }
-      // 2번째 클릭: 실제 전송
       clearTimeout(Number(btn.dataset.timeoutId || 0));
       btn.dataset.confirming = '';
       btn.classList.remove('confirming');
       try {
-        ws.send(JSON.stringify({ type: 'use_item', item_name: item }));
+        ws.send(JSON.stringify({ type: 'use_item', item_name: item, action: 'use' }));
       } catch (err) {
         console.error('[use_item] send failed:', err);
         const layer = ensureToastLayer();
         pushToast(layer, `⚠ 전송 실패: ${err.message || err}`, 'toast-error');
+      }
+    });
+  });
+
+  // 장착 버튼 — kind='equipment' 인 인벤 항목에만 노출됨.
+  // 슬롯 자동 결정: 이름 키워드로 weapon/armor/accessory 추론. 미상이면 weapon.
+  document.querySelectorAll('#char-body .inv-equip-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (isSpectator) return;
+      const item = btn.dataset.equipItem;
+      if (!item || !ws || ws.readyState !== WebSocket.OPEN) return;
+      // 슬롯 추론
+      const lower = item;
+      let slot = 'weapon';
+      if (/(갑옷|로브|흉갑|방어구|투구|튜닉|망토)/.test(lower)) slot = 'armor';
+      else if (/(반지|목걸이|부적|장신구|성표|마법서|밧줄|오브)/.test(lower)) slot = 'accessory';
+      // 1-클릭 confirm
+      if (btn.dataset.confirming !== '1') {
+        btn.dataset.confirming = '1';
+        const originalText = btn.textContent;
+        btn.textContent = '장착?';
+        btn.classList.add('confirming');
+        const tid = setTimeout(() => {
+          btn.dataset.confirming = '';
+          btn.textContent = originalText;
+          btn.classList.remove('confirming');
+        }, 2000);
+        btn.dataset.timeoutId = String(tid);
+        return;
+      }
+      clearTimeout(Number(btn.dataset.timeoutId || 0));
+      btn.dataset.confirming = '';
+      btn.classList.remove('confirming');
+      try {
+        ws.send(JSON.stringify({ type: 'use_item', item_name: item, action: 'equip', slot }));
+      } catch (err) {
+        console.error('[equip_item] send failed:', err);
       }
     });
   });
@@ -2114,6 +2219,18 @@ function showEventToasts(events) {
   });
   (events.statuses_expired || []).forEach(st => {
     pushToast(layer, `⌛ ${st.player_name} ${st.kind} '${st.name}' 해제`, 'toast-xp');
+  });
+  // 🆕 즉시 해제 (정화·해독·축복 종료) — 서사·수치 어긋남 해소
+  (events.statuses_cleared || []).forEach(st => {
+    pushToast(layer, `🧼 ${st.player_name} '${st.name}' 즉시 해제`, 'toast-xp');
+  });
+  // 🆕 골드 변동 — 거래·전리품·보상
+  (events.gold_events || []).forEach(g => {
+    const mine = isMyName(g.name);
+    const sign = g.delta > 0 ? '+' : '';
+    const cls = g.delta >= 0 ? 'toast-item-mine' : 'toast-debuff';
+    const icon = g.delta >= 0 ? '💰' : '💸';
+    pushToast(layer, `${icon} ${g.name} 골드 ${sign}${g.delta} (현재 ${g.gold} G)`, mine ? cls : 'toast-item');
   });
   // 🆕 캠페인 종료 — DM 이 아크 엔딩 태그를 찍음. 엔딩 오버레이로 크게 보여줌.
   if (events.campaign_ending) {
