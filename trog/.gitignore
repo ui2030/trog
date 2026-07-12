@@ -1,0 +1,31 @@
+# ── secrets ──────────────────────────────────
+.env
+.env.local
+*.key
+
+# ── python ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ── editor / os ──────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── runtime artifacts ────────────────────────
+*.log
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+saves/
+node_modules/
+package-lock.json
+*.bak
+*.swp
+*.tmp

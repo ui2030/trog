@@ -6,7 +6,7 @@
     --gold:         #c9a84c;
     --gold-light:   #e8c56a;
     --text:         #ddd6c4;
-    --muted:        #7a7060;
+    --muted:        #a89c80;
     --hp-hi:        #4caf50;
     --hp-mid:       #ff9800;
     --hp-lo:        #f44336;
@@ -59,6 +59,35 @@ body.in-game {
 }
 
 .entry-wrap { width: 480px; max-width: 95vw; }
+
+/* V50-01: entry 우상단 도움말 버튼 — 신규 사용자가 ? 단축키 모를 때 진입 */
+.entry-help-btn {
+    position: fixed;
+    top: 14px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    background: rgba(20, 18, 14, 0.85);
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, transform 0.15s;
+}
+.entry-help-btn:hover {
+    background: rgba(201, 168, 76, 0.18);
+    transform: scale(1.06);
+}
+.entry-help-btn:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
 
 .logo-area { text-align: center; margin-bottom: 2rem; }
 
@@ -256,6 +285,18 @@ input[type="text"]:focus { border-color: var(--gold); }
     letter-spacing: .4em;
     text-shadow: 0 0 20px rgba(201,168,76,.5);
     margin-top: .3rem;
+    transition: transform .15s, color .2s, text-shadow .2s;
+    user-select: none;
+}
+.room-code-display:hover {
+    transform: scale(1.03);
+    text-shadow: 0 0 28px rgba(201,168,76,.85);
+}
+.room-code-display:active { transform: scale(.98); }
+.room-code-display.copied {
+    color: #6ee79f;
+    text-shadow: 0 0 25px rgba(110,231,159,.7);
+    letter-spacing: .15em;
 }
 
 .room-hint { color: var(--muted); font-size: .8rem; margin-top: .4rem; }
@@ -374,6 +415,35 @@ input[type="text"]:focus { border-color: var(--gold); }
     animation: cardIn .4s ease-out both;
 }
 .player-card.mine { border-color: var(--gold); }
+
+/* V7-05: HP 25% 이하 — 빨간 펄스 보더로 시급 환기. .dead 와 우선순위 충돌 방지: critical 보더만 적용, dead 의 그레이스케일 / 💀 는 그대로 우위. */
+.player-card.critical:not(.dead) {
+    border-color: rgba(244,67,54,.7) !important;
+    animation: playerCriticalPulse 1.4s ease-in-out infinite;
+}
+@keyframes playerCriticalPulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(244,67,54,.0); }
+    50%     { box-shadow: 0 0 0 2px rgba(244,67,54,.45), 0 0 14px rgba(244,67,54,.35); }
+}
+
+/* V7-02: 플레이어 HP 변화 시각화 — 몬스터 카드와 같은 패턴 (피격 빨간 셰이크, 회복 초록 깜빡). */
+.player-card.hit-flash {
+    animation: playerHitFlash .6s ease-out 1;
+}
+.player-card.heal-flash {
+    animation: playerHealFlash .6s ease-out 1;
+}
+@keyframes playerHitFlash {
+    0%   { box-shadow: 0 0 0 2px rgba(220,40,40,.7), 0 0 18px rgba(220,40,40,.4); transform: translateX(0); }
+    20%  { transform: translateX(-2px); }
+    40%  { transform: translateX(2px); }
+    60%  { transform: translateX(-1px); }
+    100% { box-shadow: none; transform: translateX(0); }
+}
+@keyframes playerHealFlash {
+    0%   { box-shadow: 0 0 0 2px rgba(80,200,110,.7), 0 0 18px rgba(80,200,110,.4); }
+    100% { box-shadow: none; }
+}
 
 @keyframes cardIn {
     from { opacity: 0; transform: translateX(-18px); }
@@ -578,7 +648,22 @@ input[type="text"]:focus { border-color: var(--gold); }
     transform: translateY(-1px);
 }
 
-.quick-row { display: flex; gap: .4rem; }
+.quick-row { display: flex; gap: .4rem; flex-wrap: wrap; }
+/* V21-04: 데스크톱에서도 quick-row 가 길어지면 가로 스크롤로 (wrap 보다 한 줄 유지). */
+.quick-row.quick-row-custom,
+.quick-row.quick-row-scenario {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+}
+.quick-row.quick-row-custom::-webkit-scrollbar,
+.quick-row.quick-row-scenario::-webkit-scrollbar { height: 4px; }
+.quick-row.quick-row-custom::-webkit-scrollbar-thumb,
+.quick-row.quick-row-scenario::-webkit-scrollbar-thumb {
+    background: rgba(201,168,76,.35);
+    border-radius: 2px;
+}
 
 .q-btn {
     background: var(--bg-header);
@@ -1163,7 +1248,45 @@ label.tool-btn, .file-label {
     font-style: italic;
     text-align: center;
     flex-shrink: 0;
+    transition: background .3s, color .3s, border-color .3s;
 }
+/* V5-03: 30s 이상 — 차분한 노란 톤으로 경과 강조 */
+.dm-typing.dm-typing-slow {
+    background: rgba(201,168,76,.18);
+    color: #d6c182;
+}
+/* 60s 이상 — 시각적 경고 (NIM 콜드스타트 의심 / 모델 지연) */
+.dm-typing.dm-typing-very-slow {
+    background: rgba(244,67,54,.12);
+    color: #f0a39d;
+    border-top-color: rgba(244,67,54,.4);
+    animation: dmTypingPulse 1.6s ease-in-out infinite;
+}
+@keyframes dmTypingPulse {
+    0%,100% { opacity: 1; }
+    50%     { opacity: .65; }
+}
+.dm-elapsed {
+    margin-left: .4em;
+    font-style: normal;
+    font-variant-numeric: tabular-nums;
+    opacity: .8;
+}
+/* V25-01: dm-typing 안 [잠금 풀기] 버튼 — 60s+ 부터 노출. 작은 ghost 버튼. */
+.dm-typing-bail {
+    margin-left: .8em;
+    padding: 2px 9px;
+    font-size: .72rem;
+    font-style: normal;
+    background: rgba(244,67,54,.1);
+    border: 1px solid rgba(244,67,54,.5);
+    color: #f0a39d;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background .15s;
+}
+.dm-typing-bail:hover { background: rgba(244,67,54,.25); }
 
 /* ── LEVEL & XP ─────────────────────────── */
 .pc-lvl {
@@ -1364,7 +1487,11 @@ label.tool-btn, .file-label {
     opacity: 0;
     transform: translateX(30px);
     transition: opacity .3s, transform .3s;
+    /* V7-04: 클릭으로 즉시 닫기 가능 */
+    cursor: pointer;
+    user-select: none;
 }
+.toast:hover { background: rgba(30,30,48,.95); }
 .toast.show {
     opacity: 1;
     transform: translateX(0);
@@ -1396,16 +1523,62 @@ label.tool-btn, .file-label {
     font-size: 1.2rem;
     letter-spacing: .05em;
 }
+/* V9-01: 라운드 시작 토스트 — 검붉은 톤, 살짝 강조 */
+.toast-round {
+    border-color: rgba(220,80,60,.7);
+    color: #ffcfbf;
+    background: rgba(50,18,18,.95);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    box-shadow: 0 4px 14px rgba(220,80,60,.4);
+}
+/* V9-03: 사망 / 부활 토스트 */
+.toast-death {
+    border-color: rgba(180,40,40,.85);
+    color: #ffd0cc;
+    background: rgba(40,8,8,.96);
+    font-size: 1.0rem;
+    font-weight: 700;
+    box-shadow: 0 4px 18px rgba(180,40,40,.5);
+}
+.toast-revive {
+    border-color: rgba(120,220,140,.7);
+    color: #c8f3d6;
+    background: rgba(15,40,22,.95);
+    font-size: 1.0rem;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(120,220,140,.4);
+}
+
 .toast-dice.dice-crit {
     border-color: #ffeb3b;
     color: #fff59d;
     box-shadow: 0 0 24px rgba(255,235,59,.55);
     font-size: 1.35rem;
+    /* V8-04: 크리티컬 — 황금 펄스 + 살짝 회전 흔들림 */
+    animation: diceCritPulse 1.4s ease-in-out 2;
+}
+@keyframes diceCritPulse {
+    0%,100% { box-shadow: 0 0 24px rgba(255,235,59,.55); transform: translateX(0) rotate(0); }
+    25%     { box-shadow: 0 0 38px rgba(255,235,59,.95); transform: translateX(-2px) rotate(-1deg); }
+    50%     { box-shadow: 0 0 50px rgba(255,235,59,1); transform: translateX(0) rotate(0); }
+    75%     { box-shadow: 0 0 38px rgba(255,235,59,.95); transform: translateX(2px) rotate(1deg); }
 }
 .toast-dice.dice-fumble {
     border-color: #f44336;
     color: #ffcdd2;
     box-shadow: 0 0 18px rgba(244,67,54,.45);
+    /* V8-04: 펌블 — 빨간 셰이크 */
+    animation: diceFumbleShake .6s ease-out 1;
+}
+@keyframes diceFumbleShake {
+    0%,100% { transform: translateX(0); }
+    15%     { transform: translateX(-4px); box-shadow: 0 0 18px rgba(244,67,54,.7); }
+    30%     { transform: translateX(4px); }
+    45%     { transform: translateX(-3px); }
+    60%     { transform: translateX(3px); }
+    75%     { transform: translateX(-2px); }
 }
 
 /* ── DICE TRAY (action-bar) ─────────────── */
@@ -1751,6 +1924,53 @@ label.tool-btn, .file-label {
     order: -1;
 }
 
+/* V8-08: 행동 입력 글자수 카운터 — 80% 도달 시 노출. */
+.action-counter {
+    align-self: center;
+    margin-right: .35rem;
+    padding: 2px 6px;
+    font-size: .68rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    background: rgba(0,0,0,.3);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    pointer-events: none;
+}
+.action-counter.counter-warn {
+    color: #ffb87c;
+    border-color: rgba(255,184,124,.5);
+    background: rgba(255,184,124,.08);
+}
+
+/* V6-07: DM 응답 대기 중 — 같은 회색화 + 보라 톤 배너 (turn-lock 와 시각적으로 구분).
+   locked 와 같이 켜질 수도 있지만 대부분 단독. */
+.action-bar.dm-busy:not(.locked) > * {
+    opacity: .55;
+    pointer-events: none;
+}
+.action-bar.dm-busy:not(.locked)::before {
+    content: '⏳ DM 응답 대기 중...';
+    display: block;
+    background: linear-gradient(90deg, rgba(120,90,200,.18), rgba(80,60,140,.08));
+    color: #c0a8ff;
+    padding: .5rem .8rem;
+    border: 1px solid rgba(160,130,220,.5);
+    border-radius: 5px;
+    font-size: .85rem;
+    letter-spacing: .03em;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: .45rem;
+    pointer-events: none;
+    order: -1;
+    animation: dmBusyPulse 1.6s ease-in-out infinite;
+}
+@keyframes dmBusyPulse {
+    0%,100% { opacity: .85; }
+    50%     { opacity: 1; box-shadow: 0 0 12px rgba(160,130,220,.3); }
+}
+
 /* ── SCENE BANNER (모험의 기록 상단) ───── */
 .scene-banner {
     position: relative;
@@ -1866,6 +2086,18 @@ label.tool-btn, .file-label {
 .char-panel.level-flash {
     animation: level-flash-kf 1.6s ease-out;
 }
+
+/* 🆕 E-1 — 본인 피격/회복 플래시 (캐릭터 패널·미니HUD 공용) */
+@keyframes damage-flash-kf {
+    0%   { box-shadow: 0 0 0 2px rgba(244,80,70,.9), 0 0 32px rgba(244,80,70,.7); }
+    100% { box-shadow: 0 0 0 0 transparent, 0 0 0 transparent; }
+}
+@keyframes heal-flash-kf {
+    0%   { box-shadow: 0 0 0 2px rgba(126,212,170,.9), 0 0 32px rgba(126,212,170,.7); }
+    100% { box-shadow: 0 0 0 0 transparent, 0 0 0 transparent; }
+}
+.char-panel.damage-flash, .mini-hud.damage-flash { animation: damage-flash-kf .4s ease-out; }
+.char-panel.heal-flash,   .mini-hud.heal-flash   { animation: heal-flash-kf .4s ease-out; }
 
 /* ── CUSTOM QUICK ACTIONS ───────────────── */
 .quick-row-custom {
@@ -2034,6 +2266,16 @@ label.tool-btn, .file-label {
     word-break: break-word;
     flex: 1;
 }
+/* V5-04: 채팅 타임스탬프 — 같은 분 연속 발화면 숨김 (game.js 처리). */
+.chat-ts {
+    color: var(--muted);
+    font-size: .68rem;
+    font-variant-numeric: tabular-nums;
+    opacity: .65;
+    flex-shrink: 0;
+    align-self: baseline;
+}
+.chat-entry:hover .chat-ts { opacity: 1; }
 .chat-input-row {
     display: flex;
     gap: .4rem;
@@ -2763,7 +3005,7 @@ body.spectator-mode .action-bar::after {
     .time-badge,
     #turn-badge,
     .turn-badge {
-        font-size: .62rem !important;
+        font-size: .68rem !important; /* B-6: 가독 하한 (max-width+ellipsis 라 넘침 없이 잘림) */
         padding: 1px 5px !important;
         max-width: 6rem !important;
         white-space: nowrap !important;
@@ -2775,7 +3017,7 @@ body.spectator-mode .action-bar::after {
     body.in-game #room-code-badge { display: none !important; }
     /* 라운드 트래커도 더 축소 */
     .round-order-panel {
-        font-size: .58rem !important;
+        font-size: .68rem !important; /* B-6: 가독 하한 (max-width 9rem 로 넘침 방지) */
         gap: .1rem !important;
         padding: .05rem .15rem !important;
         max-width: 9rem !important;
@@ -3003,9 +3245,50 @@ body.spectator-mode .action-bar::after {
     border: 1px solid rgba(200,80,80,.35);
     border-radius: 5px;
     padding: .4rem .55rem;
-    transition: opacity .2s;
+    transition: opacity .2s, background .2s, border-color .2s, box-shadow .2s;
+    position: relative;
+    overflow: hidden;
 }
 .monster-card.defeated { opacity: .4; filter: grayscale(.6); }
+/* V7-01: HP 변화 시각화 — 피격(빨강 플래시) / 회복(초록 플래시). prev HP 와 비교해 클래스 부착. */
+.monster-card.hit-flash {
+    animation: monsterHitFlash .55s ease-out 1;
+}
+.monster-card.heal-flash {
+    animation: monsterHealFlash .55s ease-out 1;
+}
+@keyframes monsterHitFlash {
+    0%   { background: rgba(220,40,40,.55); box-shadow: 0 0 0 2px rgba(220,40,40,.7), 0 0 24px rgba(220,40,40,.5) inset; transform: translateX(0); }
+    20%  { transform: translateX(-3px); }
+    40%  { transform: translateX(3px); }
+    60%  { transform: translateX(-2px); }
+    80%  { transform: translateX(1px); }
+    100% { background: rgba(30,15,15,.7); box-shadow: none; transform: translateX(0); }
+}
+@keyframes monsterHealFlash {
+    0%   { background: rgba(60,180,90,.4); box-shadow: 0 0 0 2px rgba(80,200,110,.6) inset; }
+    100% { background: rgba(30,15,15,.7); box-shadow: none; }
+}
+/* HP 델타 오버레이 — +N / -N 가 짧게 떠올랐다 사라짐. */
+.hp-delta {
+    position: absolute;
+    right: .5rem;
+    top: .35rem;
+    font-size: .85rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    pointer-events: none;
+    animation: hpDeltaFloat 1s ease-out forwards;
+    text-shadow: 0 0 6px rgba(0,0,0,.9);
+}
+.hp-delta.dmg  { color: #ff7878; }
+.hp-delta.heal { color: #88e89d; }
+@keyframes hpDeltaFloat {
+    0%   { opacity: 0; transform: translateY(0) scale(.85); }
+    15%  { opacity: 1; transform: translateY(-4px) scale(1.1); }
+    65%  { opacity: 1; transform: translateY(-14px) scale(1); }
+    100% { opacity: 0; transform: translateY(-26px) scale(.95); }
+}
 .monster-row {
     display: flex;
     justify-content: space-between;
@@ -3218,6 +3501,427 @@ body.spectator-mode .action-bar::after {
     letter-spacing: .03em;
 }
 
+/* V5-05: 사망 / 위독 상태 시각화 */
+.mini-hud.hud-critical {
+    box-shadow: 0 4px 14px rgba(0,0,0,.55), 0 0 0 2px rgba(244,67,54,.6), 0 0 16px rgba(244,67,54,.4);
+    animation: hudCriticalPulse 1.2s ease-in-out infinite;
+}
+@keyframes hudCriticalPulse {
+    0%,100% { box-shadow: 0 4px 14px rgba(0,0,0,.55), 0 0 0 2px rgba(244,67,54,.6), 0 0 16px rgba(244,67,54,.4); }
+    50%     { box-shadow: 0 4px 14px rgba(0,0,0,.55), 0 0 0 3px rgba(244,67,54,.9), 0 0 22px rgba(244,67,54,.7); }
+}
+.mini-hud.hud-dead .hud-portrait {
+    filter: grayscale(1) brightness(.45);
+}
+.mini-hud.hud-dead::after {
+    content: "💀";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    text-shadow: 0 0 6px rgba(0,0,0,.9);
+    pointer-events: none;
+    animation: hudDeadFade 2s ease-in-out infinite;
+}
+@keyframes hudDeadFade {
+    0%,100% { opacity: .85; }
+    50%     { opacity: .55; }
+}
+.mini-hud.hud-dead {
+    box-shadow: 0 4px 14px rgba(0,0,0,.7), 0 0 0 2px rgba(180,180,180,.4);
+}
+
+/* V11-05: "↓ 최신" 점프 버튼 — narrative-panel 우하단 고정. 사용자가 위로 스크롤했을 때만 노출. */
+.jump-to-latest-btn {
+    position: absolute;
+    bottom: 80px;
+    right: 16px;
+    background: rgba(201,168,76,.92);
+    color: #07070e;
+    border: 1px solid var(--gold);
+    border-radius: 16px;
+    padding: .4rem .85rem;
+    font-size: .82rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0 4px 14px rgba(0,0,0,.55);
+    animation: jumpLatestPulse 1.6s ease-in-out infinite;
+}
+.jump-to-latest-btn:hover {
+    background: var(--gold);
+    transform: scale(1.05);
+}
+@keyframes jumpLatestPulse {
+    0%,100% { box-shadow: 0 4px 14px rgba(0,0,0,.55), 0 0 0 0 rgba(201,168,76,.4); }
+    50%     { box-shadow: 0 4px 14px rgba(0,0,0,.55), 0 0 0 6px rgba(201,168,76,0); }
+}
+
+/* V11-03: 단축키 도움말 모달 */
+.help-modal .modal-box {
+    max-width: 600px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+.help-modal .help-content {
+    background: rgba(0,0,0,.3);
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+    border-left: 2px solid var(--gold);
+    margin-top: .8rem;
+}
+.help-modal .help-content h3 {
+    color: var(--gold);
+    font-size: .92rem;
+    margin: .8rem 0 .35rem;
+    letter-spacing: .04em;
+}
+.help-modal .help-content h3:first-child { margin-top: 0; }
+.help-modal .help-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.help-modal .help-content li {
+    padding: .25rem 0;
+    color: var(--text);
+    font-size: .85rem;
+    line-height: 1.55;
+}
+.help-modal kbd {
+    display: inline-block;
+    padding: 1px 7px;
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: .85em;
+    color: var(--gold);
+    margin: 0 2px;
+}
+
+/* V11-02: 시나리오 정보 모달 */
+.scenario-info-modal .modal-box {
+    max-width: 520px;
+}
+.scenario-info-modal .modal-hint {
+    white-space: pre-wrap;
+    line-height: 1.55;
+    color: var(--text);
+    background: rgba(0,0,0,.3);
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    border-left: 2px solid var(--gold);
+    margin-top: .8rem;
+}
+
+/* V26-01: 한글 IME 조합 중 입력 칸 옅은 보더 — 사용자가 자기 조합 진행 상태 인지.
+   compositionstart/end 가 .ime-active 클래스 토글. */
+input.ime-active {
+    border-color: rgba(160,130,220,.6) !important;
+    box-shadow: 0 0 0 1px rgba(160,130,220,.2) inset, 0 0 6px rgba(160,130,220,.15);
+}
+
+/* V24-01: prefers-reduced-motion — 사용자 OS 설정으로 애니메이션 줄이기.
+   접근성·배터리 절약. 강조 효과는 유지하되 펄스/회전 애니메이션은 정지. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.05s !important;
+    }
+}
+
+/* V20-02: 방 코드 입력 칸 시각적 uppercase — 사용자가 소문자 쳐도 즉시 대문자로 보이게.
+   서버 전달 시에도 .toUpperCase() 처리되니 데이터 일치성도 유지. */
+input#room-code, input#spectate-code {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-family: monospace, ui-monospace, "Courier New";
+    font-weight: 700;
+}
+
+/* V20-01: 시나리오별 quick-action 행 — 살짝 다른 톤 (보라/푸른 계열) */
+.quick-row-scenario {
+    border-top: 1px dashed rgba(160,130,220,.3);
+    padding-top: .35rem;
+    margin-top: .35rem;
+}
+.q-btn.q-btn-scenario {
+    background: rgba(120,90,200,.1);
+    border-color: rgba(160,130,220,.5);
+    color: #c9b8ff;
+}
+.q-btn.q-btn-scenario:hover:not(:disabled) {
+    background: rgba(120,90,200,.2);
+    border-color: rgba(160,130,220,.8);
+    color: #e0d0ff;
+}
+
+/* V18-01: 시간대별 미세 배경 색조 — body 에 tod-* 클래스 부여 후 narrative-panel 만 살짝 톤 변경.
+   너무 강하면 가독성 낮춤 → linear-gradient overlay 0.06 alpha 정도로 자제. */
+body.tod-dawn .narrative-panel    { background: linear-gradient(180deg, rgba(255,180,140,.04), transparent 60%), var(--bg-panel); }
+body.tod-day .narrative-panel     { background: linear-gradient(180deg, rgba(255,235,120,.03), transparent 60%), var(--bg-panel); }
+body.tod-noon .narrative-panel    { background: linear-gradient(180deg, rgba(255,210,90,.04), transparent 60%), var(--bg-panel); }
+body.tod-dusk .narrative-panel    { background: linear-gradient(180deg, rgba(255,140,80,.06), transparent 60%), var(--bg-panel); }
+body.tod-night .narrative-panel   { background: linear-gradient(180deg, rgba(80,100,160,.07), transparent 60%), var(--bg-panel); }
+body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40,40,80,.12), transparent 60%), var(--bg-panel); }
+
+/* V17-01: 세션 경과 시간 뱃지 — narrative-panel 헤더 한 켠에 작은 시계 */
+.session-timer-badge {
+    display: inline-block;
+    margin-left: .5rem;
+    padding: 1px 8px;
+    font-size: .68rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    background: rgba(0,0,0,.3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    letter-spacing: .03em;
+    cursor: help;
+}
+
+/* V16-A: 본인 액션 pending/resolved 인디케이터 */
+.msg-player.mine .msg-name { color: var(--gold); }
+.msg-pending-badge {
+    display: inline-block;
+    margin-left: .35rem;
+    font-size: .85em;
+    color: #c0a8ff;
+    animation: pendingPulse 1.4s ease-in-out infinite;
+    vertical-align: middle;
+}
+.msg-player.resolved .msg-pending-badge {
+    color: #6ee79f;
+    animation: none;
+}
+@keyframes pendingPulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50%     { opacity: .55; transform: scale(.85); }
+}
+
+/* V32-04: 새 빌드 reload prompt (sticky toast — 자동 fade 없음, 사용자 직접 닫음) */
+.toast.toast-reload {
+    background: linear-gradient(135deg, #2a3550 0%, #1f2440 100%);
+    border: 1px solid rgba(120, 200, 255, 0.45);
+    color: #e9f2ff;
+    display: flex;
+    gap: .55rem;
+    align-items: center;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.55);
+}
+.toast.toast-reload .toast-reload-btn {
+    background: rgba(120, 200, 255, 0.22);
+    border: 1px solid rgba(120, 200, 255, 0.7);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: .85em;
+    cursor: pointer;
+    transition: background .15s ease;
+}
+.toast.toast-reload .toast-reload-btn:hover {
+    background: rgba(120, 200, 255, 0.4);
+}
+.toast.toast-reload .toast-reload-dismiss {
+    background: transparent;
+    border: none;
+    color: #b8c5d8;
+    cursor: pointer;
+    padding: 2px 6px;
+    font-size: .9em;
+    line-height: 1;
+}
+.toast.toast-reload .toast-reload-dismiss:hover { color: #fff; }
+
+/* V32-03: 본인 액션 1초 내 취소 버튼 — pending bubble 헤더에 잠깐 노출 */
+.msg-action-cancel {
+    margin-left: .5rem;
+    padding: 1px 7px;
+    font-size: .72em;
+    line-height: 1.4;
+    color: #ffd1d1;
+    background: rgba(140, 30, 30, 0.55);
+    border: 1px solid rgba(255, 90, 90, 0.55);
+    border-radius: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: opacity .25s ease, background .15s ease;
+    animation: cancelHintFade 1.5s ease forwards;
+}
+.msg-action-cancel:hover {
+    background: rgba(180, 50, 50, 0.75);
+    color: #fff;
+}
+@keyframes cancelHintFade {
+    0%   { opacity: 0; transform: translateY(-2px); }
+    15%  { opacity: 1; transform: translateY(0); }
+    85%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+.msg-player.cancelled {
+    opacity: .55;
+    filter: grayscale(.6);
+}
+.msg-player.cancelled .msg-action {
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 120, 120, .65);
+}
+.msg-player.cancelled .msg-pending-badge {
+    color: #ff8d8d;
+    animation: none;
+}
+
+/* V13-02: 캐릭터 export 버튼 — char-name 옆 작은 클립보드 아이콘 */
+.char-export-btn {
+    background: transparent;
+    border: 1px solid rgba(201,168,76,.4);
+    color: var(--gold);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: .7rem;
+    cursor: pointer;
+    margin-left: .35rem;
+    vertical-align: middle;
+    transition: background .15s, transform .1s;
+}
+.char-export-btn:hover { background: rgba(201,168,76,.15); }
+.char-export-btn:active { transform: scale(.92); }
+
+/* V10-04: 방장 왕관 표시 — 플레이어 카드 이름 옆에 작은 👑 */
+.pc-owner-crown {
+    display: inline-block;
+    font-size: .85em;
+    margin-right: .15rem;
+    filter: drop-shadow(0 0 4px rgba(255,215,0,.7));
+    cursor: help;
+}
+
+/* V10-01: WS 연결 상태 점 — 우상단 고정. green=open, yellow=reconnecting, red=closed. */
+.ws-conn-dot {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 200;
+    pointer-events: none;
+    transition: background .25s, box-shadow .25s;
+}
+.ws-conn-dot.dot-state-init,
+.ws-conn-dot.dot-state-reconnecting {
+    background: #f5c54f;
+    box-shadow: 0 0 8px rgba(245,197,79,.7);
+    animation: connDotPulse 1.1s ease-in-out infinite;
+}
+.ws-conn-dot.dot-state-open {
+    background: #5dd87f;
+    box-shadow: 0 0 6px rgba(93,216,127,.5);
+}
+/* V21-13: pong age 35s+ 시 살짝 어둡게 — 곧 reconnect 가능성 전조 */
+.ws-conn-dot.dot-state-open.dot-stale {
+    background: #b9d8a3;
+    box-shadow: 0 0 5px rgba(185,216,163,.5);
+    opacity: .7;
+}
+.ws-conn-dot.dot-state-closed {
+    background: #e84c4c;
+    box-shadow: 0 0 10px rgba(232,76,76,.7);
+    animation: connDotPulse .9s ease-in-out infinite;
+}
+@keyframes connDotPulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50%     { opacity: .6; transform: scale(.8); }
+}
+
+/* V17-03: 채팅 emote — *…* italic 렌더 + 차분한 보라 톤 */
+.chat-emote {
+    font-style: italic;
+    color: #c0a8ff;
+    opacity: .92;
+}
+
+/* V13-01: 채팅 멘션 강조 — 본인 이름 포함된 메시지 황금 배경 */
+.chat-entry.mention {
+    background: linear-gradient(90deg, rgba(201,168,76,.18), rgba(201,168,76,.04));
+    border-left: 2px solid var(--gold);
+    padding-left: 6px !important;
+    margin-left: -2px;
+    animation: chatMentionFlash .8s ease-out 1;
+}
+@keyframes chatMentionFlash {
+    0%   { background: rgba(201,168,76,.5); }
+    100% { background: linear-gradient(90deg, rgba(201,168,76,.18), rgba(201,168,76,.04)); }
+}
+.toast-mention {
+    border-color: var(--gold);
+    background: rgba(201,168,76,.18);
+    color: var(--gold-light);
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(201,168,76,.4);
+}
+
+/* V21-01: char-panel 헤더 unread 미러 배지 — 데스크톱에서 채팅 안 본 메시지 카운트 */
+#char-panel-unread.unread-badge {
+    display: inline-block;
+    margin-left: .5rem;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 6px;
+    background: #f44336;
+    color: #fff;
+    font-size: .68rem;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 9px;
+    vertical-align: middle;
+    box-shadow: 0 2px 6px rgba(244,67,54,.45);
+}
+
+/* V8-11: 채팅 unread 배지 — edge-tab-char 위에 빨간 원형 카운트. */
+.edge-tab .unread-badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    background: #f44336;
+    color: #fff;
+    font-size: .68rem;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 9px;
+    border: 1.5px solid rgba(17,17,28,.95);
+    box-shadow: 0 2px 6px rgba(244,67,54,.55);
+    writing-mode: horizontal-tb;   /* edge-tab 의 vertical-rl 영향 차단 */
+    text-orientation: mixed;
+    z-index: 1;
+}
+
+/* V8-10: 새 이벤트 도착 시 펄스 — 드로어 닫혀있을 때 클라가 .has-event 부착. */
+.edge-tab.has-event,
+.mini-hud.has-event {
+    animation: edgeEventPulse 1.4s ease-in-out infinite;
+}
+.edge-tab.has-event {
+    background: rgba(201,168,76,.25);
+    border-color: rgba(201,168,76,.85);
+}
+.mini-hud.has-event {
+    box-shadow: 0 4px 14px rgba(0,0,0,.55), 0 0 0 2px rgba(201,168,76,.6), 0 0 16px rgba(201,168,76,.4);
+}
+@keyframes edgeEventPulse {
+    0%,100% { filter: brightness(1); }
+    50%     { filter: brightness(1.35); box-shadow: 0 2px 10px rgba(0,0,0,.45), 0 0 0 3px rgba(201,168,76,.6), 0 0 18px rgba(201,168,76,.5); }
+}
+
 /* 엣지 탭 — 화면 가장자리에 붙은 세로 탭 */
 .edge-tab {
     position: fixed;
@@ -3276,7 +3980,7 @@ body.spectator-mode .action-bar::after {
 
     /* HUD 가 좌상단에 떠 있으니 game-screen 상단 여백 확보 (HUD 62px + 여유) */
     #game-screen {
-        padding-top: 76px !important;
+        padding-top: max(76px, calc(60px + env(safe-area-inset-top, 0px))) !important; /* B-3: 노치 대응 */
     }
 
     /* 서사 헤더 컴팩트 */
@@ -3466,6 +4170,18 @@ body.spectator-mode .action-bar::after {
     opacity: .75;
     font-weight: 600;
 }
+/* V9-02: 1턴 남은 status — 깜빡이며 곧 사라짐을 환기. buff/debuff 둘 다 적용. */
+.status-chip.expiring {
+    animation: statusExpiringBlink 1.1s ease-in-out infinite;
+}
+.status-chip.expiring .status-turns {
+    opacity: 1;
+    font-weight: 800;
+}
+@keyframes statusExpiringBlink {
+    0%,100% { opacity: 1; }
+    50%     { opacity: .55; transform: scale(.96); }
+}
 
 /* ── 인벤토리 사용 버튼 ── */
 .inv-item-head {
@@ -3490,6 +4206,34 @@ body.spectator-mode .action-bar::after {
     color: #1a1a2e;
 }
 .inv-use-btn:active { transform: scale(.95); }
+
+/* 🆕 미니 상점 — .inv-group 골격 재사용, 행/구매버튼만 추가 */
+.shop-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px 6px;
+}
+.shop-item-name { font-size: .78rem; }
+.shop-item-eff { color: var(--muted, #9aa); font-size: .68rem; margin-left: 4px; }
+.shop-buy-btn {
+    background: rgba(201,168,76,.12);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-size: .72rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all .15s;
+}
+.shop-buy-btn:hover { background: var(--gold); color: #1a1a2e; }
+.shop-buy-btn:active { transform: scale(.95); }
+.shop-buy-btn.disabled, .shop-buy-btn:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
 /* 2-클릭 confirm 상태: 한 번 눌렀을 때 "확인?" 표시. 2초 내 재클릭 필요. */
 .inv-use-btn.confirming {
     background: var(--gold);
@@ -3554,6 +4298,12 @@ body.spectator-mode .action-bar::after {
     border: 1px solid rgba(244,80,70,.55);
     color: #ff8c82;
 }
+/* 🆕 E-3 — 첫 전투 안내 토스트 (3줄, 왼쪽 정렬·넉넉한 행간) */
+.toast.toast-combat-tut {
+    text-align: left;
+    line-height: 1.55;
+    cursor: pointer;
+}
 
 /* ── 시나리오 선택 (엔트리 화면) ── */
 .scenario-picker {
@@ -3617,6 +4367,14 @@ body.spectator-mode .action-bar::after {
     color: var(--muted);
     line-height: 1.5;
     min-height: 1.4em;
+    /* V6-10: 모바일 좁은 화면에서 시나리오 설명이 길면 화면 절반을 먹는 문제.
+       max-height + overflow-y 로 자체 스크롤 컨테이너화. 데스크톱에서도 안전. */
+    max-height: 14em;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    /* V37-01: 공백 없는 영어/URL 등 긴 토큰이 박스 밖으로 빠져나가던 문제 차단. */
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 .scenario-summary:empty {
     display: none;
@@ -4003,6 +4761,21 @@ body.spectator-mode .action-bar::after {
     flex-wrap: wrap;
 }
 
+/* 🆕 E-2 — 진행 막 배지 (시나리오 배지 옆) */
+.act-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: .18rem .5rem;
+    margin-left: .35rem;
+    background: rgba(160,130,220,.14);
+    border: 1px solid rgba(160,130,220,.45);
+    border-radius: 10px;
+    font-size: .7rem;
+    font-weight: 700;
+    color: #c9b6f0;
+    vertical-align: middle;
+}
+
 /* 대기실/게임 헤더에 현재 시나리오 뱃지 */
 .scenario-badge {
     display: inline-flex;
@@ -4028,8 +4801,13 @@ body.spectator-mode .action-bar::after {
 }
 .inv-item:hover .inv-item-effect,
 .inv-item.show-effect .inv-item-effect {
-    max-height: 6rem;
+    max-height: 12rem;   /* V16-02: 6 → 12 (긴 효과 설명 fully visible) */
     margin-top: .25rem;
+}
+.inv-item:hover {
+    /* V16-02: hover 시 살짝 강조 — 어떤 카드 hover 중인지 명확 */
+    background: rgba(201,168,76,.04);
+    border-color: rgba(201,168,76,.35);
 }
 .inv-item[data-effect-toggle="1"] {
     cursor: pointer;
@@ -4112,3 +4890,363 @@ body.spectator-mode .action-bar::after {
 .q-btn-linger:hover { background: rgba(160,180,210,.22); }
 .q-btn-pass:hover { background: rgba(120,80,80,.22); }
 
+/* V33-03: 시트 가져오기 모달 */
+.import-row {
+    margin-top: .8rem;
+    text-align: center;
+}
+.import-row .btn-ghost {
+    font-size: .82rem;
+    opacity: .85;
+}
+.import-sheet-box {
+    width: min(560px, 96vw);
+}
+.import-sheet-textarea {
+    width: 100%;
+    min-height: 200px;
+    background: #15151f;
+    color: #d6d6e0;
+    border: 1px solid rgba(160,140,90,.3);
+    border-radius: 6px;
+    padding: .6rem .7rem;
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: .82rem;
+    line-height: 1.45;
+    resize: vertical;
+    box-sizing: border-box;
+}
+.import-sheet-textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+.import-sheet-preview {
+    margin-top: .8rem;
+    padding: .7rem .85rem;
+    background: rgba(50,55,75,.35);
+    border: 1px solid rgba(160,140,90,.25);
+    border-radius: 6px;
+    font-size: .82rem;
+    line-height: 1.55;
+    color: #d6d6e0;
+}
+.import-sheet-preview .ips-row { display: flex; gap: .5rem; }
+.import-sheet-preview .ips-key { color: var(--muted); min-width: 4.2em; }
+.import-sheet-preview .ips-val { color: var(--gold-light, #d6b958); font-weight: 600; }
+.import-sheet-preview .ips-warn {
+    margin-top: .55rem;
+    color: #f0a070;
+    font-size: .76rem;
+}
+.import-modal-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: .6rem;
+    justify-content: flex-end;
+}
+.import-modal-actions .btn:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+/* V42-03: streaming DM partial placeholder — 정식 버블(.msg-dm) 보다 살짝 흐리게.
+   진행 중 임을 시각적으로 구분 + 마지막 글자 깜빡이는 caret 으로 "쓰는 중" 인상. */
+.msg-dm-stream {
+    opacity: .85;
+}
+.msg-dm-stream .dm-stream-text {
+    white-space: pre-wrap;  /* 줄바꿈 보존 (포맷팅 함수 미적용) */
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.msg-dm-stream .dm-stream-text::after {
+    content: '▍';
+    color: var(--gold, #c9a84c);
+    margin-left: .1em;
+    animation: dmStreamCaret 0.8s steps(2) infinite;
+}
+@keyframes dmStreamCaret {
+    0%, 50%   { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+}
+
+/* V43-01: 신규 방문자 onboarding 배너 — entry 화면 상단에 한 번만. */
+.onboarding-banner {
+    position: relative;
+    margin: 0 0 1.2rem 0;
+    padding: .85rem 1rem .9rem;
+    background: linear-gradient(135deg, rgba(120,90,40,.18), rgba(60,50,80,.22));
+    border: 1px solid rgba(201,168,76,.45);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    animation: onboardingFadeIn .5s ease-out;
+}
+@keyframes onboardingFadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.onboarding-title {
+    color: var(--gold, #c9a84c);
+    font-weight: 700;
+    font-size: .95rem;
+    margin-bottom: .55rem;
+}
+.onboarding-body {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    font-size: .82rem;
+    color: #d6d6e0;
+    line-height: 1.45;
+}
+.onboarding-body .ob-step {
+    padding-left: .15rem;
+}
+.onboarding-body .ob-step b {
+    color: var(--gold, #c9a84c);
+    font-weight: 700;
+    margin-right: .35rem;
+}
+.onboarding-body .ob-tip {
+    margin-top: .35rem;
+    padding-top: .45rem;
+    border-top: 1px dashed rgba(201,168,76,.25);
+    color: var(--muted, #888);
+    font-size: .76rem;
+}
+.onboarding-dismiss {
+    position: absolute;
+    top: .35rem;
+    right: .55rem;
+    background: transparent;
+    border: none;
+    color: var(--muted, #888);
+    cursor: pointer;
+    font-size: .9rem;
+    padding: .15rem .4rem;
+    border-radius: 4px;
+}
+.onboarding-dismiss:hover { color: var(--gold, #c9a84c); background: rgba(201,168,76,.1); }
+
+/* V37-01: 긴 LLM 출력 텍스트 일관 wrap — 시나리오 요약 외 인벤 효과/takeover 인벤/토스트 등에 적용.
+   공백 없는 토큰(URL, 영문 단어) 으로 인한 가로 overflow 차단. */
+.inv-item-effect,
+.takeover-inv,
+.toast,
+.toast-mention,
+.dormant-name,
+.import-sheet-preview,
+.help-modal-content,
+.scenario-info-summary {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* ── 🆕 탐색 미니게임 오버레이 — 풀스크린 무대 ────────────────── */
+.exp-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  display: none;
+  background: #0c0810;
+  opacity: 0; transition: opacity 0.3s ease;
+  /* 🆕 화면 어디든 탭 = 전진 — 더블탭 줌·텍스트 선택 방지 */
+  touch-action: manipulation; user-select: none; -webkit-user-select: none;
+  cursor: pointer;
+}
+.exp-overlay.exp-in { opacity: 1; }
+.exp-panel {
+  position: relative; width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  transform: scale(1.02);
+  transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+}
+.exp-overlay.exp-in .exp-panel { transform: scale(1); }
+/* 배경 이미지가 뷰포트 전체를 풀블리드로 덮는다 */
+.exp-bg { position: absolute; inset: 0; background: #0c0810; overflow: hidden; }
+.exp-bg-img {
+  width: 100%; height: 100%; object-fit: cover; opacity: 0.9;
+  /* 🆕 진행도 카메라 push-in — 탭마다 --exp-progress(0~1) 가 올라가며 안쪽으로 걸어 들어감 */
+  transform: scale(calc(1.06 + var(--exp-progress, 0) * 0.18)) translateX(calc(var(--exp-progress, 0) * -5%));
+  transition: opacity 0.6s ease, transform 1.8s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+/* 🆕 보행 리듬 bob — 한 탭 = 뚜벅뚜벅 6걸음 (~1.8s, 걸음당 ~300ms).
+   위아래로만, 걸을수록 진폭이 잦아들어 마지막엔 멎음 (어지러움 방지 — 자연 감쇠).
+   카메라 push-in(1.8s)과 겹쳐 "걸으면서 전진". img 가 아닌 컨테이너에 재트리거. */
+@keyframes expStep {
+  /* 앞쪽 3걸음만 흔들리고, 이후(50%~)는 완전히 고요 — 발소리만 이어짐 (불쾌감 방지) */
+  0%, 50%, 100% { transform: translateY(0); }
+  8%  { transform: translateY(4px); }
+  17% { transform: translateY(0); }
+  25% { transform: translateY(3px); }
+  33% { transform: translateY(0); }
+  42% { transform: translateY(2px); }
+}
+.exp-bg.exp-step { animation: expStep 1.8s ease-in-out; }
+/* 🆕 배경 프리로드 중 표시 칩 (헤더 아래) */
+.exp-bg-loading {
+  position: relative; z-index: 1; align-self: center;
+  margin: 2px auto 0; padding: 4px 14px; border-radius: 14px;
+  font-size: 0.8rem; color: #d8cba8;
+  background: rgba(12, 8, 18, 0.55); border: 1px solid rgba(200,170,120,0.2);
+}
+.exp-bg::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse at center, rgba(10,7,14,0) 30%, rgba(10,7,14,0.55) 75%, rgba(6,4,9,0.85) 100%),
+    linear-gradient(to bottom, rgba(12,8,16,0.45) 0%, rgba(12,8,16,0) 22%, rgba(12,8,16,0) 55%, rgba(8,5,11,0.92) 100%);
+}
+/* 헤더: 상단에 크게 */
+.exp-header {
+  position: relative; z-index: 1;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  flex-wrap: wrap; gap: 6px 14px;
+  padding: max(20px, env(safe-area-inset-top)) 24px 8px;
+}
+.exp-place {
+  font-size: 1.6rem; font-weight: 800; color: #f6eeda;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.85), 0 0 3px rgba(0,0,0,0.9);
+}
+.exp-danger {
+  font-size: 1rem; color: #e6d4a6; white-space: nowrap;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.85);
+}
+/* 🆕 헤더 우측 컨트롤 (위험도 + 버튼들) */
+.exp-header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.exp-ctrls { display: flex; gap: 6px; align-items: center; }
+.exp-btn {
+  cursor: pointer; font-size: 0.85rem; font-weight: 700;
+  color: #ecdfbe; background: rgba(12, 8, 18, 0.6);
+  border: 1px solid rgba(200,170,120,0.35); border-radius: 12px;
+  padding: 5px 12px; line-height: 1;
+  touch-action: manipulation; -webkit-user-select: none; user-select: none;
+}
+.exp-btn:hover { background: rgba(30, 20, 36, 0.8); }
+.exp-btn.exp-abort { color: #ffb3a0; border-color: rgba(200,90,70,0.5); }
+/* 🆕 접힘 시 화면 구석 플로팅 버튼 — 탭하면 오버레이 재표시 */
+.exp-float-btn {
+  position: fixed; right: 14px; bottom: max(14px, env(safe-area-inset-bottom)); z-index: 2000;
+  cursor: pointer; font-size: 0.9rem; font-weight: 800;
+  color: #1a120a; background: linear-gradient(90deg, #e8c874, #f3dd9a);
+  border: none; border-radius: 20px; padding: 10px 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5), 0 0 12px rgba(232,200,116,0.4);
+  touch-action: manipulation; -webkit-user-select: none; user-select: none;
+}
+/* 이벤트 팝: 화면 중앙, 크게 */
+.exp-pop-area {
+  position: relative; z-index: 1; flex: 1 1 auto;
+  display: flex; align-items: center; justify-content: center; padding: 12px 20px;
+}
+.exp-pop {
+  text-align: center; padding: 16px 26px; border-radius: 16px;
+  background: rgba(12, 8, 18, 0.35);
+  animation: expPop 0.42s cubic-bezier(0.2, 1.2, 0.4, 1.4) both;
+}
+.exp-pop-icon { font-size: 3.5rem; line-height: 1; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.7)); }
+.exp-pop-name { font-size: 1.55rem; font-weight: 800; color: #f7efdd; margin-top: 8px; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
+.exp-pop-who { font-size: 1.1rem; color: #d6c8a3; margin-top: 4px; text-shadow: 0 1px 6px rgba(0,0,0,0.8); }
+.exp-pop-item { color: #ffe8a3; }
+.exp-pop-gold .exp-pop-name { color: #ffd66b; }
+.exp-pop-trap .exp-pop-name { color: #ff9a7a; }
+.exp-pop-enemy {
+  background: radial-gradient(circle, rgba(120,20,20,0.45), rgba(12,8,18,0.2) 70%);
+}
+.exp-pop-enemy .exp-pop-name { color: #ff6b6b; }
+.exp-pop-flavor { color: #d4c8b0; font-style: italic; font-size: 1.25rem; max-width: 24ch; margin: 0 auto; text-shadow: 0 2px 8px rgba(0,0,0,0.85); }
+.exp-pop-end { font-size: 1.55rem; font-weight: 800; color: #f6eeda; text-shadow: 0 2px 8px rgba(0,0,0,0.85); }
+@keyframes expPop {
+  0% { transform: scale(0.3) translateY(14px); opacity: 0; }
+  60% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+/* 하단 컨트롤: 게이지 + 버튼 + 힌트를 중앙에 모아 배치 */
+.exp-gauge {
+  position: relative; z-index: 1;
+  height: 24px; width: 100%; max-width: 520px;
+  margin: 0 auto 14px; padding: 0;
+  border-radius: 12px; background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(200,170,120,0.3); overflow: hidden;
+}
+.exp-gauge-fill {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, #b98a3e, #e8c874);
+  transition: width 0.35s cubic-bezier(0.3, 0.8, 0.3, 1);
+  box-shadow: 0 0 12px rgba(232, 200, 116, 0.6);
+}
+.exp-gauge-text {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 0.84rem; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+}
+/* 🆕 탭 리플 — 탭 지점에서 금색 원형 테두리가 확산+페이드아웃 (JS 가 animationend 에 제거) */
+.exp-ripple {
+  position: fixed; z-index: 2001;
+  width: 14px; height: 14px; margin: -7px 0 0 -7px;
+  border: 2px solid rgba(232, 200, 116, 0.55);
+  border-radius: 50%; pointer-events: none;
+  animation: expRipple 0.5s ease-out forwards;
+}
+@keyframes expRipple {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(6); opacity: 0; }
+}
+.exp-hint {
+  position: relative; z-index: 1;
+  text-align: center; font-size: 0.9rem; color: #c3b79c;
+  padding: 0 20px max(18px, env(safe-area-inset-bottom));
+  text-shadow: 0 1px 6px rgba(0,0,0,0.85);
+}
+@keyframes expShake {
+  0%,100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); } 40% { transform: translateX(7px); }
+  60% { transform: translateX(-5px); } 80% { transform: translateX(4px); }
+}
+.exp-shake { animation: expShake 0.4s ease; }
+.exp-shake-hard { animation: expShake 0.55s ease; }
+@media (max-width: 560px) {
+  .exp-place { font-size: 1.3rem; }
+  .exp-pop-icon { font-size: 2.8rem; }
+  .exp-pop-name, .exp-pop-end { font-size: 1.3rem; }
+  .exp-gauge { width: min(88vw, 520px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .exp-pop, .exp-shake, .exp-shake-hard, .exp-overlay, .exp-panel { animation: none !important; transition: none !important; }
+  .exp-bg-img { transform: none !important; transition: opacity 0.6s ease !important; }  /* 카메라 제외, 페이드 스왑은 유지 */
+  .exp-bg.exp-step { animation: none !important; }
+  .exp-ripple { display: none !important; }  /* JS 도 생략하지만 이중 안전 */
+}
+
+/* ══════════════ 패키지 B (모바일 응급, 2026-07-12) ══════════════ */
+/* 파일 끝 배치 = 앞선 미디어쿼리 동일 특이도 규칙보다 소스 순서로 우선. */
+
+/* B-2: 터치 기기 최소 타깃 44px (pointer:fine 데스크톱은 미적용 → 밀도 보존) */
+@media (pointer: coarse) {
+  .dice-btn, .q-btn, .inv-equip-btn { min-height: 40px; } /* 바형 — 폭 유지 */
+  .stat-plus, .stat-minus, .pc-kick, .qa-del {            /* 소형/원형 — 폭·높이 둘 다 */
+    min-width: 40px; min-height: 40px;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+}
+
+/* B-3: safe-area (노치/홈바). env fallback 0px 로 데스크톱 무해. */
+.action-bar { padding-bottom: max(.65rem, env(safe-area-inset-bottom, 0px)); }
+.mini-hud {
+  top: max(10px, env(safe-area-inset-top, 0px));
+  left: max(10px, env(safe-area-inset-left, 0px));
+}
+.edge-tab-left  { left: max(0px, env(safe-area-inset-left, 0px)); }
+.edge-tab-right { right: max(0px, env(safe-area-inset-right, 0px)); }
+
+/* B-5: 커스텀 행동 삭제 ✕ */
+.q-btn.q-custom { position: relative; }
+.qa-del {
+  margin-left: .35rem;
+  color: var(--muted);
+  font-size: .75rem;
+  line-height: 1;
+  opacity: .65;
+}
+.qa-del:hover { color: #f44336; opacity: 1; }
+
+/* B-6: ≤360px 가로 넘침 방지 */
+.my-race-box    { min-width: min(320px, 100%); }
+.waiting-players { min-width: min(300px, 100%); }
