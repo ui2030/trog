@@ -1,6 +1,6 @@
 # TROG — AI Dungeon Master
 
-한국어 멀티플레이 TRPG. Nvidia-api에 key에게 던전 마스터를 맡기고, 친구들과 방 코드를 공유해 함께 플레이한다.
+한국어 멀티플레이 TRPG. Claude가 던전 마스터를 맡고, 친구들과 방 코드를 공유해 함께 플레이한다.
 
 ## 한눈에 보기
 
