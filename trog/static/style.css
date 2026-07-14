@@ -5049,8 +5049,9 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
   display: none;
   background: #0c0810;
   opacity: 0; transition: opacity 0.3s ease;
-  /* 🆕 화면 어디든 탭 = 전진 — 더블탭 줌·텍스트 선택 방지 */
+  /* 🆕 화면 어디든 탭 = 전진 — 더블탭 줌·텍스트 선택·안드로이드 파란 탭 하이라이트 방지 */
   touch-action: manipulation; user-select: none; -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
 .exp-overlay.exp-in { opacity: 1; }
@@ -5067,10 +5068,10 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
 .exp-bg-img {
   width: 100%; height: 100%; object-fit: cover; opacity: 0.9;
   /* 🆕 진행도 카메라 push-in — 탭마다 --exp-progress(0~1) 가 올라가며 안쪽으로 걸어 들어감 */
-  transform: scale(calc(1.06 + var(--exp-progress, 0) * 0.18)) translateX(calc(var(--exp-progress, 0) * -5%));
-  transition: opacity 0.6s ease, transform 1.8s cubic-bezier(0.2, 0.7, 0.3, 1);
+  transform: scale(calc(1.06 + var(--exp-progress, 0) * 0.24)) translateX(calc(var(--exp-progress, 0) * -8%));
+  transition: opacity 0.6s ease, transform 2.4s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
-/* 🆕 보행 리듬 bob — 한 탭 = 뚜벅뚜벅 6걸음 (~1.8s, 걸음당 ~300ms).
+/* 🆕 보행 리듬 bob — 한 탭 = 뚜벅뚜벅 6걸음 (~2.4s, 걸음당 ~400ms — 여유로운 보폭).
    위아래로만, 걸을수록 진폭이 잦아들어 마지막엔 멎음 (어지러움 방지 — 자연 감쇠).
    카메라 push-in(1.8s)과 겹쳐 "걸으면서 전진". img 가 아닌 컨테이너에 재트리거. */
 @keyframes expStep {
@@ -5082,7 +5083,7 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
   33% { transform: translateY(0); }
   42% { transform: translateY(2px); }
 }
-.exp-bg.exp-step { animation: expStep 1.8s ease-in-out; }
+.exp-bg.exp-step { animation: expStep 2.4s ease-in-out; }
 /* 🆕 배경 프리로드 중 표시 칩 (헤더 아래) */
 .exp-bg-loading {
   position: relative; z-index: 1; align-self: center;
@@ -5120,6 +5121,7 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
   border: 1px solid rgba(200,170,120,0.35); border-radius: 12px;
   padding: 5px 12px; line-height: 1;
   touch-action: manipulation; -webkit-user-select: none; user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .exp-btn:hover { background: rgba(30, 20, 36, 0.8); }
 .exp-btn.exp-abort { color: #ffb3a0; border-color: rgba(200,90,70,0.5); }
@@ -5131,6 +5133,7 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
   border: none; border-radius: 20px; padding: 10px 16px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.5), 0 0 12px rgba(232,200,116,0.4);
   touch-action: manipulation; -webkit-user-select: none; user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 /* 이벤트 팝: 화면 중앙, 크게 */
 .exp-pop-area {
@@ -5148,6 +5151,12 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
 .exp-pop-item { color: #ffe8a3; }
 .exp-pop-gold .exp-pop-name { color: #ffd66b; }
 .exp-pop-trap .exp-pop-name { color: #ff9a7a; }
+/* 스텟으로 무마된 함정 — 위험(붉은색)이 아닌 안도(초록) 톤 */
+.exp-pop-saved .exp-pop-name { color: #b8e6a0; }
+.exp-pop-saved .exp-pop-who  { color: #8fd88f; }
+/* 적 조우 진입 판정 — 유리(초록)/불리(붉은) */
+.exp-enc-good { color: #9fe08a; font-weight: 700; }
+.exp-enc-bad  { color: #ff8a6b; font-weight: 700; }
 .exp-pop-enemy {
   background: radial-gradient(circle, rgba(120,20,20,0.45), rgba(12,8,18,0.2) 70%);
 }
@@ -5194,7 +5203,10 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
   text-align: center; font-size: 0.9rem; color: #c3b79c;
   padding: 0 20px max(18px, env(safe-area-inset-bottom));
   text-shadow: 0 1px 6px rgba(0,0,0,0.85);
+  transition: opacity 0.8s ease;
 }
+/* 🆕 시작 안내 자동 페이드 — 첫 탭/타이머 후 사라짐 (JS 가 클래스 토글). reduced-motion 은 즉시 숨김 */
+.exp-hint.exp-hint-hidden { opacity: 0; pointer-events: none; }
 @keyframes expShake {
   0%,100% { transform: translateX(0); }
   20% { transform: translateX(-8px); } 40% { transform: translateX(7px); }
@@ -5208,11 +5220,29 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
   .exp-pop-name, .exp-pop-end { font-size: 1.3rem; }
   .exp-gauge { width: min(88vw, 520px); }
 }
+/* 🆕 모바일 과밀 완화 — 헤더 한 줄 압축 + 버튼 아이콘화 + 인앱브라우저 하단툴바 대비 플로팅버튼 상향 */
+@media (max-width: 720px) {
+  .exp-header { flex-wrap: nowrap; align-items: center; gap: 4px 8px; padding: max(14px, env(safe-area-inset-top)) 12px 8px; }
+  .exp-place { flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .exp-header-right { flex-direction: row; align-items: center; flex: 0 0 auto; gap: 8px; }
+  .exp-btn-label { display: none; }  /* 버튼 텍스트 숨기고 아이콘만 (title 유지) */
+  .exp-btn {
+    min-width: 40px; min-height: 40px; padding: 0 6px;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem;
+  }
+  /* 인앱브라우저(카카오톡 등) 하단 툴바가 뷰포트 하단을 덮어도 보이도록 상향 + 대비 강화 */
+  .exp-float-btn {
+    bottom: calc(max(14px, env(safe-area-inset-bottom)) + 56px);
+    font-size: 1rem; padding: 12px 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6), 0 0 16px rgba(232,200,116,0.55);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .exp-pop, .exp-shake, .exp-shake-hard, .exp-overlay, .exp-panel { animation: none !important; transition: none !important; }
   .exp-bg-img { transform: none !important; transition: opacity 0.6s ease !important; }  /* 카메라 제외, 페이드 스왑은 유지 */
   .exp-bg.exp-step { animation: none !important; }
   .exp-ripple { display: none !important; }  /* JS 도 생략하지만 이중 안전 */
+  .exp-hint { transition: none !important; }  /* 페이드 없이 즉시 숨김 */
 }
 
 /* ══════════════ 패키지 B (모바일 응급, 2026-07-12) ══════════════ */
@@ -5250,3 +5280,217 @@ body.tod-midnight .narrative-panel { background: linear-gradient(180deg, rgba(40
 /* B-6: ≤360px 가로 넘침 방지 */
 .my-race-box    { min-width: min(320px, 100%); }
 .waiting-players { min-width: min(300px, 100%); }
+
+/* ══════════════ 패키지 M (모바일 인게임 단순화, 2026-07-14) ══════════════ */
+/* 파일 끝 배치 = 앞선 720px 미디어쿼리보다 소스 순서로 우선. PC(>720px) 무영향. */
+
+/* 데스크톱: 신규 요소는 아예 안 뜸 (미디어쿼리 밖에서 숨김) */
+#mini-info-badge { display: none; }
+#action-more-toggle { display: none; }
+
+@media (max-width: 720px) {
+  /* ── M-1. 헤더 다이어트 — 턴 배지 + 통합 미니 배지만 ── */
+  body.in-game .narrative-panel .panel-title,
+  body.in-game #game-scenario-badge,
+  body.in-game #session-timer-badge,
+  body.in-game #round-order-panel,
+  body.in-game #game-act-badge,
+  body.in-game #time-badge { display: none !important; }
+
+  body.in-game .narrative-panel .panel-header {
+    flex-wrap: nowrap !important;
+    gap: .4rem !important;
+  }
+
+  /* [제N막 · 시간대] 통합 미니 배지 — 탭하면 숨긴 정보 토스트 */
+  body.in-game #mini-info-badge {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: .68rem;
+    padding: 2px 8px;
+    border-radius: 9px;
+    background: rgba(201,168,76,.1);
+    border: 1px solid rgba(201,168,76,.35);
+    color: var(--gold);
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* 턴 상태 배지 크게 — 화면 상태의 핵심 */
+  body.in-game #turn-badge,
+  body.in-game .turn-badge {
+    font-size: .88rem !important;
+    max-width: 58vw !important;
+    padding: 4px 11px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    flex-shrink: 1 !important;
+  }
+
+  /* ── M-2. 행동 영역 3층 재편 ── */
+  /* 펼쳤을 때 안전장치 (더보기 열면 내부 스크롤) */
+  .action-bar { max-height: 42vh !important; }
+
+  /* Tier1: 입력줄 항상 최상단 */
+  .action-bar .action-row { order: 1; }
+
+  /* Tier2: 빠른 행동 한 줄 가로 스크롤 — 세로 잘림 근본 수정
+     (overflow-x:auto 시 브라우저가 overflow-y 를 auto 로 승격 → 스크롤바가
+      칩 하단을 갉아먹던 것이 잘림 원인. y:hidden + 스크롤바 완전 숨김으로 해결) */
+  .action-bar #quick-row-preset,
+  .action-bar #quick-row-scenario {
+    order: 2;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none !important;   /* 스크롤바 숨김(스와이프는 가능) */
+    gap: .3rem !important;
+    align-items: center;
+  }
+  .action-bar #quick-row-preset::-webkit-scrollbar,
+  .action-bar #quick-row-scenario::-webkit-scrollbar { display: none !important; }
+  .action-bar #quick-row-preset .q-btn,
+  .action-bar #quick-row-scenario .q-btn {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Tier3: "⋯ 더보기" 접이식 토글 */
+  #action-more-toggle {
+    display: block;
+    order: 3;
+    align-self: flex-start;
+    background: transparent;
+    border: 1px dashed var(--border);
+    color: var(--muted);
+    border-radius: 6px;
+    padding: .3rem .75rem;
+    font-size: .72rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #action-more-toggle:active { background: rgba(201,168,76,.1); }
+
+  /* 더보기 안 요소 — 시각 순서를 토글 아래로 */
+  .action-bar .owner-tools    { order: 4; }
+  .action-bar #quick-row-custom { order: 5; }
+  .action-bar .dice-row       { order: 6; }
+
+  /* 접힘 상태 = 부가 도구 숨김 (기본). 미디어쿼리 안 → 데스크톱에선 이 규칙 자체가 무효 */
+  .action-bar.more-collapsed .owner-tools,
+  .action-bar.more-collapsed .dice-row,
+  .action-bar.more-collapsed #quick-row-custom { display: none !important; }
+}
+
+/* ══════════════════════════════════════════════════
+   [L] 공동 낙서판 — 기다리는 시간에 다 같이 그림
+   ════════════════════════════════════════════════ */
+.doodle-btn {
+  background: none; border: none; cursor: pointer;
+  font-size: 1.1rem; line-height: 1; padding: 2px 4px;
+  border-radius: 8px; opacity: 0.85;
+  -webkit-tap-highlight-color: transparent;
+}
+.doodle-btn:hover { opacity: 1; background: rgba(200,170,120,0.15); }
+/* 기다리는 동안(남의 턴·DM 서술 중) 은은한 펄스 — "지금 그리세요" 신호 */
+.doodle-btn.pulse { animation: doodlePulse 1.8s ease-in-out infinite; }
+@keyframes doodlePulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); filter: drop-shadow(0 0 0 rgba(232,200,116,0)); }
+  50% { opacity: 1; transform: scale(1.14); filter: drop-shadow(0 0 6px rgba(232,200,116,0.7)); }
+}
+
+.doodle-overlay {
+  position: fixed; inset: 0; z-index: 2400;
+  display: none; align-items: center; justify-content: center;
+  background: rgba(8, 6, 12, 0.72);
+  -webkit-tap-highlight-color: transparent;
+}
+.doodle-panel {
+  position: relative;
+  width: min(94vw, 900px); height: min(90vh, 760px);
+  display: flex; flex-direction: column; gap: 8px;
+  padding: 14px 16px 16px;
+  background: rgba(24, 18, 30, 0.96);
+  border: 1px solid rgba(200,170,120,0.28); border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+.doodle-header {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.doodle-title { font-size: 1.05rem; font-weight: 800; color: #f6eeda; }
+.doodle-hint { font-size: 0.82rem; color: #c8b98f; flex: 1 1 auto; }
+.doodle-x {
+  background: rgba(12,8,18,0.6); color: #ecdfbe;
+  border: 1px solid rgba(200,170,120,0.35); border-radius: 10px;
+  cursor: pointer; font-size: 0.9rem; padding: 4px 10px; line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+.doodle-x:hover { background: rgba(40,28,48,0.85); }
+.doodle-turn-banner {
+  text-align: center; font-weight: 800; color: #1a120a;
+  background: linear-gradient(90deg, #e8c874, #f3dd9a);
+  border-radius: 10px; padding: 6px 10px; font-size: 0.92rem;
+  box-shadow: 0 0 12px rgba(232,200,116,0.4);
+  animation: doodleBannerPop 0.4s ease both;
+}
+@keyframes doodleBannerPop { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.doodle-stage {
+  flex: 1 1 auto; min-height: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.25); border-radius: 10px; overflow: hidden;
+}
+#doodle-canvas {
+  background: #fbfaf6; border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  touch-action: none;            /* 캔버스 위 터치 시 페이지 스크롤/줌 방지 */
+  -webkit-tap-highlight-color: transparent;
+  cursor: crosshair;
+}
+.doodle-tools {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  justify-content: center;
+}
+.doodle-colors { display: flex; gap: 6px; }
+.dd-color {
+  width: 26px; height: 26px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.35); cursor: pointer; padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.dd-color.selected { border-color: #f3dd9a; box-shadow: 0 0 0 2px rgba(243,221,154,0.5); transform: scale(1.12); }
+.doodle-widths { display: flex; gap: 6px; }
+.dd-width {
+  min-width: 34px; height: 30px; border-radius: 8px;
+  background: rgba(12,8,18,0.6); color: #ecdfbe;
+  border: 1px solid rgba(200,170,120,0.35); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.dd-width[data-w="3"] { font-size: 1.4rem; }
+.dd-width[data-w="8"] { font-size: 0.8rem; }
+.dd-width.selected { border-color: #f3dd9a; background: rgba(60,44,70,0.85); }
+.dd-clear {
+  background: rgba(60,20,20,0.6); color: #ffb3a0;
+  border: 1px solid rgba(200,90,70,0.5); border-radius: 10px;
+  cursor: pointer; font-size: 0.85rem; font-weight: 700; padding: 6px 12px;
+  -webkit-tap-highlight-color: transparent;
+}
+.dd-clear:hover { background: rgba(90,30,30,0.8); }
+
+/* 모바일: 오버레이 전체화면에 가깝게 */
+@media (max-width: 640px) {
+  .doodle-panel {
+    width: 100vw; height: 100vh; max-width: none; max-height: none;
+    border-radius: 0; border: none;
+    padding: max(10px, env(safe-area-inset-top)) 10px max(10px, env(safe-area-inset-bottom));
+  }
+  .doodle-hint { flex-basis: 100%; order: 3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .doodle-btn.pulse, .doodle-turn-banner { animation: none !important; }
+}

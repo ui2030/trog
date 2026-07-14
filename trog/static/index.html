@@ -279,6 +279,8 @@
       <span id="game-scenario-badge" class="scenario-badge" style="display:none"></span>
       <span id="game-act-badge" class="act-badge" style="display:none"></span>
       <span id="time-badge" class="time-badge" style="display:none"></span>
+      <!-- 🆕 [L] 공동 낙서판 — 기다리는 동안 다 같이 그림 -->
+      <button id="doodle-btn" class="doodle-btn" title="공동 낙서판 — 기다리는 동안 다 같이 그리기">🎨</button>
       <button id="toggle-char-btn" class="mobile-toggle mobile-toggle-right" title="내 캐릭터 보기">🧙</button>
     </div>
     <!-- 장면 배너: 한 라운드가 끝나면 AI 생성 맵/풍경으로 업데이트 -->
@@ -329,7 +331,7 @@
       <input type="text" id="action-input" placeholder="행동을 입력하세요... (예: 검을 뽑아 전방의 고블린을 공격한다)" maxlength="400">
       <button id="send-btn" class="btn-send">전송 ⚡</button>
     </div>
-    <div class="quick-row">
+    <div class="quick-row" id="quick-row-preset">
       <button class="q-btn" data-action="이 장소를 본격적으로 샅샅이 탐색하며 나아간다">🔍 탐색</button>
       <button class="q-btn" data-action="파티원과 작전을 의논한다">💬 대화</button>
       <button class="q-btn" data-action="적에게 돌진하여 공격한다">⚔️ 공격</button>
@@ -439,6 +441,39 @@
   </div>
 </div>
 
+<!-- ── [L] 공동 낙서판 오버레이 ──────── -->
+<div id="doodle-overlay" class="doodle-overlay" style="display:none"
+     role="dialog" aria-modal="true" aria-label="공동 낙서판">
+  <div class="doodle-panel">
+    <div class="doodle-header">
+      <span class="doodle-title">🎨 공동 낙서판</span>
+      <span class="doodle-hint">기다리는 동안 다 같이 그려요</span>
+      <button id="doodle-close" class="doodle-x" aria-label="닫기">✕</button>
+    </div>
+    <div id="doodle-turn-banner" class="doodle-turn-banner" style="display:none">▶ 당신 차례!</div>
+    <div class="doodle-stage">
+      <canvas id="doodle-canvas"></canvas>
+    </div>
+    <div class="doodle-tools">
+      <div class="doodle-colors" id="doodle-colors">
+        <button class="dd-color selected" data-color="#111111" style="background:#111111" aria-label="검정"></button>
+        <button class="dd-color" data-color="#ffffff" style="background:#ffffff" aria-label="흰색"></button>
+        <button class="dd-color" data-color="#e23c3c" style="background:#e23c3c" aria-label="빨강"></button>
+        <button class="dd-color" data-color="#f0a020" style="background:#f0a020" aria-label="주황"></button>
+        <button class="dd-color" data-color="#f5e050" style="background:#f5e050" aria-label="노랑"></button>
+        <button class="dd-color" data-color="#3ca85a" style="background:#3ca85a" aria-label="초록"></button>
+        <button class="dd-color" data-color="#3a7bd5" style="background:#3a7bd5" aria-label="파랑"></button>
+        <button class="dd-color" data-color="#9b59b6" style="background:#9b59b6" aria-label="보라"></button>
+      </div>
+      <div class="doodle-widths" id="doodle-widths">
+        <button class="dd-width selected" data-w="3" aria-label="얇게">·</button>
+        <button class="dd-width" data-w="8" aria-label="굵게">⬤</button>
+      </div>
+      <button id="doodle-clear-btn" class="dd-clear" style="display:none" title="방장 전용 — 전체 지우기">🗑 전체 지우기</button>
+    </div>
+  </div>
+</div>
+
 <!-- ── TAKEOVER MODAL — 입장 시 휴면 캐릭터 이어받기 선택 ─ -->
 <!-- V38-01: ARIA dialog -->
 <div id="takeover-modal" class="modal" style="display:none"
@@ -472,6 +507,6 @@
   </div>
 </div>
 
-<script src="/static/game.js?v=10"></script>
+<script src="/static/game.js?v=11"></script>
 </body>
 </html>

@@ -96,17 +96,25 @@ def test_item_gain_cap():
     print("test_item_gain_cap OK")
 
 
-def test_auto_equip_cap():
+def test_no_auto_equip():
+    # [P-1] 자동 장착 폐지 — 어떤 장비도 자동 장착되지 않고 전부 소지품으로.
     p = mk()
     players = {p.player_id: p}
     text = ("[허접 획득: 강철검 | 무기 | 공격 +5] "
             "[허접 획득: 강철도끼 | 무기 | 공격 +6]")
     gained = main.parse_and_apply_items(text, players)
-    equipped = [g for g in gained if g.get("auto_equipped")]
-    assert len(equipped) == main.AUTO_EQUIP_MAX_PER_RESPONSE, gained     # 1개만 자동 장착
-    # 초과 장비는 인벤토리로
-    assert any(it["name"] == "강철도끼" for it in p.inventory), "초과 장비 인벤 미수납"
-    print("test_auto_equip_cap OK")
+    assert all(g.get("auto_equipped") is False for g in gained), gained   # 자동 장착 0개
+    # 획득한 무기는 손 슬롯을 차지하지 않는다(시작 장비 유지).
+    equipped_names = {(v or {}).get("name") for v in p.equipped.values()}
+    assert "강철검" not in equipped_names and "강철도끼" not in equipped_names, p.equipped
+    # 둘 다 인벤토리로 — kind=equipment 로 보관.
+    inv_names = {it["name"] for it in p.inventory}
+    assert {"강철검", "강철도끼"} <= inv_names, p.inventory
+    assert all(it.get("kind") == "equipment" for it in p.inventory
+               if it["name"] in ("강철검", "강철도끼")), p.inventory
+    # slot 분류는 유지(장착 UI 용) — 무기는 main_hand 로 분류.
+    assert any(g.get("slot") == "main_hand" for g in gained), gained
+    print("test_no_auto_equip OK")
 
 
 def test_shop_buy_and_insufficient():
@@ -203,7 +211,7 @@ if __name__ == "__main__":
     test_damage_not_capped()
     test_xp_response_cap()
     test_item_gain_cap()
-    test_auto_equip_cap()
+    test_no_auto_equip()
     test_shop_buy_and_insufficient()
     test_use_potion_bypasses_heal_cap()
     test_race_net_spread()

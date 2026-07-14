@@ -28,6 +28,10 @@ def _seed_exploration(room, cells):
 
 def test_item_and_gold_and_trap():
     """각 칸 타입이 실제 인벤/골드/HP 에 반영되는지."""
+    # 탐색 스텟 판정(함정 회피·발견 보너스)이 RNG 라 결과가 흔들린다 → 결정론적 seed 로 고정.
+    # seed 2: 모든 save/discovery 실패 → 함정 풀피해(HP 50→35)·발견 보너스 없음(골드 100+30=130).
+    import random
+    random.seed(2)
     room, p = _mk_room()
     p.gold = 100
     p.hp = 50

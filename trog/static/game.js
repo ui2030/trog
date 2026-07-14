@@ -2,6 +2,18 @@
 let ws = null;
 let myId = null;
 let isOwner = false;
+
+// O-3: 수동 장착 슬롯 추론 — 서버 _NAME_SLOT_HINTS 와 동일 목록 미러(4슬롯).
+// 서버가 최종적으로 _correct_slot_by_name 으로 재교정하므로 여기선 UI 힌트 수준.
+function guessEquipSlot(name) {
+  const n = name || '';
+  if (/(방패|실드|버클러|타워실드)/.test(n)) return 'off_hand';
+  if (/(갑옷|갑주|경갑|중갑|로브|튜닉|의복|조끼|코트|흉갑|체인메일|판금|가죽갑|사슬갑|투구|헬름|신발|부츠|장화|장갑|건틀릿|망토|방어구|옷(?!감))/.test(n)) return 'armor';
+  if (/(반지|목걸이|부적|펜던트|호부|증표|성표|마법서|훈장|배지|장신구)/.test(n)) return 'accessory';
+  return 'weapon';
+}
+// O-4: 이 클라가 현재 탐색의 시작자인지 — 시작 시 exploration_start.starter_id 로 세팅.
+let _expIsStarter = false;
 // V10-04: 모든 플레이어 카드에 방장(👑) 표시. 서버 broadcast 가 owner_id 동봉.
 let currentOwnerId = null;
 let isSpectator = false;            // 🆕 관전자 모드 여부
@@ -312,6 +324,46 @@ function applyActBadge(act) {
       el.style.display = '';
     }
   }
+  _syncMiniInfoBadge();  // M-1: 모바일 통합 미니 배지 갱신
+}
+
+// M-1: 모바일 헤더 다이어트 — [제N막 · 시간대] 통합 미니 배지 1개. 탭하면 숨긴
+// 정보(시나리오·라운드·경과시간)를 sysToast 로 노출 (B-4 title→toast 패턴).
+let _lastTimeLabel = '';
+function _ensureMiniInfoBadge() {
+  let b = document.getElementById('mini-info-badge');
+  if (!b) {
+    const header = document.querySelector('#narrative-panel .panel-header');
+    if (!header) return null;
+    b = document.createElement('span');
+    b.id = 'mini-info-badge';
+    b.title = '탭하면 시나리오·라운드·경과시간';
+    b.addEventListener('click', _showMiniInfoToast);
+    header.appendChild(b);
+  }
+  return b;
+}
+function _syncMiniInfoBadge() {
+  const b = _ensureMiniInfoBadge();
+  if (!b) return;
+  const parts = [`제${_currentAct}막`];
+  if (_lastTimeLabel) parts.push(_lastTimeLabel);
+  b.textContent = parts.join(' · ');
+}
+function _showMiniInfoToast() {
+  const bits = [];
+  if (_currentScenario && _currentScenario.name) {
+    bits.push(`${_currentScenario.emoji || '📖'} ${_currentScenario.name}`);
+  }
+  bits.push(`제${_currentAct}막`);
+  if (_prevRoundNumber > 0) bits.push(`라운드 ${_prevRoundNumber}`);
+  if (_sessionStartedAt) {
+    const sec = Math.floor((Date.now() - _sessionStartedAt) / 1000);
+    const m = Math.floor(sec / 60), s = sec % 60;
+    bits.push(m >= 60 ? `${Math.floor(m/60)}시간 ${m%60}분 경과`
+                      : `${m}분 ${String(s).padStart(2,'0')}초 경과`);
+  }
+  sysToast(bits.join('  ·  '), 'toast-item', 'ℹ');
 }
 
 // V20-01: 시나리오 전용 quick-action 버튼 렌더 — quick-row-custom 위에 별도 행 추가.
@@ -586,6 +638,8 @@ function _myDisplayName() {
   const me = (Array.isArray(_lastSeenPlayers) ? _lastSeenPlayers : []).find(p => p.player_id === myId);
   return me && me.name && me.name.length >= 2 ? me.name : '';
 }
+const _CHAT_LOG_CAP = 150;
+const _CHAT_LOG_KEEP = 100;
 function appendChatEntry(entry) {
   // 대기실 채팅, 게임 채팅 양쪽에 모두 추가
   const logs = document.querySelectorAll('.chat-log');
@@ -617,6 +671,12 @@ function appendChatEntry(entry) {
       ${showTs ? `<span class="chat-ts" title="${tsStr}">${tsStr}</span>` : ''}
     `;
     log.appendChild(row);
+    // V6-02 패턴: 채팅 로그도 무한 누적 방지. 150 초과 시 오래된 것 batch 트림(→100).
+    if (log.children.length > _CHAT_LOG_CAP) {
+      while (log.children.length > _CHAT_LOG_KEEP && log.firstElementChild) {
+        log.removeChild(log.firstElementChild);
+      }
+    }
     log.scrollTop = log.scrollHeight;
   });
   // V8-11: 채팅 unread badge — 게임 채팅(char-panel)이 모바일에서 닫혀있고 본인 메시지가 아닐 때 카운트.
@@ -1186,6 +1246,9 @@ function cleanupTransientUiState(reason = '', opts = {}) {
     try { _stopHeartbeat(); } catch (_) {}
   }
   if (reason) console.debug('[cleanupTransientUiState]', reason);
+  // 🆕 [L] DM 서술 종료 → 낙서 버튼 펄스 해제(남의 턴 조건은 유지)
+  _ddDmPending = false;
+  try { refreshDoodlePulse(); } catch (_) {}
 }
 
 function resetSpectatorUiState() {
@@ -1507,6 +1570,17 @@ function handle(d) {
       if (d.entry) appendChatEntry(d.entry);
       break;
 
+    // 🆕 [L] 공동 낙서판
+    case 'doodle_stroke':
+      _doodleApplyStroke(d.stroke);
+      break;
+    case 'doodle_state':
+      _doodleSetState(d.strokes);
+      break;
+    case 'doodle_clear':
+      _doodleHandleClear();
+      break;
+
     case 'dice_rolled':
       renderDiceRoll(d);
       break;
@@ -1536,6 +1610,8 @@ function handle(d) {
       // 🆕 A-1 — 남이 행동해서 DM 이 서술 중. 행동자 본인은 sendRaw 에서 이미 typing 켬(서버가 exclude).
       // 대기자에게도 진행 표시를 띄워 "파티가 멈춘 건지" 혼동 방지.
       if (d.acting_player_id && d.acting_player_id !== myId) {
+        _ddDmPending = true;
+        try { refreshDoodlePulse(); } catch (_) {}
         showDmTyping(true);
         const nm = d.acting_player_name || '누군가';
         const badge = ensureTurnBadge();
@@ -1671,6 +1747,7 @@ function handle(d) {
     case 'dm_response':
       // V42-03: streaming partial placeholder 가 있으면 제거 후 정식 렌더 (포맷팅 적용).
       cleanupTransientUiState('dm_response');  // stream/typing/busy 정리
+      _expWarmFallback();  // N-1.2 응답당 1장 지형 폴백 CDN 예열
       _markDrawerEvent('party-panel', 'edge-tab-party');  // V8-10
       _markDrawerEvent('char-panel', 'edge-tab-char', 'mobile-mini-hud');
       // V46-02: 첫 dm_response 도달 시 onboarding 토스트 발화 — 인트로 + spawn 토스트 가라앉은 후.
@@ -1826,6 +1903,17 @@ function handle(d) {
       }
       break;
 
+    case 'item_unequipped':   // 🆕 [P-2] 슬롯 해제 → 소지품 회수
+      if (Array.isArray(d.players)) {
+        refreshPlayers(d.players);
+        refreshCharPanel(d.players);
+      }
+      if (d.player_name && d.item) {
+        const layer = ensureToastLayer();
+        pushToast(layer, `🚫 ${d.player_name} '${d.item}' 해제 → 🎒 소지품`, 'toast-item-mine');
+      }
+      break;
+
     case 'shop_bought':
       if (Array.isArray(d.players)) {
         refreshPlayers(d.players);
@@ -1852,10 +1940,8 @@ function handle(d) {
       // 🆕 서버가 "이건 장비입니다. 장착할까요?" 회신 — 사용자에게 confirm 후 action:'equip' 재전송.
       const ok = confirm(d.message || `'${d.item_name}' 은(는) 장비입니다. 장착하시겠습니까?`);
       if (ok && ws && ws.readyState === WebSocket.OPEN && d.item_name) {
-        // 슬롯 추론 (game.js 다른 핸들러와 동일 휴리스틱)
-        let slot = 'weapon';
-        if (/(갑옷|로브|흉갑|방어구|투구|튜닉|망토)/.test(d.item_name)) slot = 'armor';
-        else if (/(반지|목걸이|부적|장신구|성표|마법서|밧줄|오브)/.test(d.item_name)) slot = 'accessory';
+        // 슬롯 추론 (O-3: 서버 목록과 동일한 guessEquipSlot 사용)
+        const slot = guessEquipSlot(d.item_name);
         ws.send(JSON.stringify({ type: 'use_item', item_name: d.item_name, action: 'equip', slot }));
       }
       break;
@@ -2301,6 +2387,36 @@ function showGame(players) {
 
   renderCustomActions();
   initMobileDrawers();
+  initActionMore();  // M-2: 모바일 "⋯ 더보기" 접이식
+}
+
+// M-2 Tier3: 모바일 액션바 부가도구(턴 스킵·몬스터 정리·주사위·나만의 행동 관리)를
+// "⋯ 더보기"로 접는다. DOM 재구조화 없이 action-bar 에 클래스만 토글 → 데스크톱 무영향.
+function initActionMore() {
+  const bar = document.getElementById('action-bar');
+  if (!bar) return;
+  let open = false;
+  try { open = localStorage.getItem('trog-action-more-open') === '1'; } catch (_) {}
+  bar.classList.toggle('more-collapsed', !open);  // 기본 접힘
+  let btn = document.getElementById('action-more-toggle');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'action-more-toggle';
+    btn.type = 'button';
+    btn.addEventListener('click', () => {
+      const collapsed = bar.classList.toggle('more-collapsed');
+      try { localStorage.setItem('trog-action-more-open', collapsed ? '0' : '1'); } catch (_) {}
+      _syncActionMoreLabel();
+    });
+    bar.appendChild(btn);  // 최종 위치는 CSS order 가 결정
+  }
+  _syncActionMoreLabel();
+}
+function _syncActionMoreLabel() {
+  const bar = document.getElementById('action-bar');
+  const btn = document.getElementById('action-more-toggle');
+  if (!bar || !btn) return;
+  btn.textContent = bar.classList.contains('more-collapsed') ? '⋯ 더보기' : '⋯ 접기';
 }
 
 /* ── MOBILE SIDE DRAWERS (파티 / 내 캐릭터) ──
@@ -2470,6 +2586,10 @@ window.addEventListener('resize', () => {
   if (!isMobileViewport()) {
     document.querySelectorAll('.drawer-open').forEach(el => el.classList.remove('drawer-open'));
     document.getElementById('mobile-drawer-backdrop')?.classList.remove('visible');
+  }
+  // M-2: 모바일↔데스크톱 경계를 넘으면 커스텀 칩 위치(프리셋 줄 ↔ 커스텀 줄) 재배치.
+  if (typeof renderCustomActions === 'function' && isMobileViewport() !== _customRenderMobile) {
+    renderCustomActions();
   }
 });
 // V21-03: orientationchange (모바일 가로↔세로 전환) — 양쪽 drawer 둘 다 열려있는
@@ -2849,29 +2969,33 @@ function refreshPlayers(players) {
     if (!liveIds.has(pid)) _prevPlayerDead.delete(pid);
   }
 
-  list.querySelectorAll('.pc-kick').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+}
+
+// V22-02 / kick: 파티 리스트 클릭은 매 렌더마다 리스너 재부착하지 않고 컨테이너 위임 1회로.
+(function bindPartyListClicks() {
+  document.addEventListener('click', (e) => {
+    const kickBtn = e.target.closest('.pc-kick');
+    if (kickBtn) {
       e.stopPropagation();
-      const tid = btn.dataset.kickPid;
+      const tid = kickBtn.dataset.kickPid;
       if (!tid || !ws) return;
-      const target = (players || []).find(x => x.player_id === tid);
+      const target = (_lastSeenPlayers || []).find(x => x.player_id === tid);
       const nm = target ? target.name : '이 플레이어';
       if (confirm(`${nm}을(를) 강퇴합니까? (게임 중이면 턴이 자동 스킵됩니다)`)) {
         ws.send(JSON.stringify({ type: 'kick_player', target_id: tid }));
       }
-    });
-  });
-  // V22-02: 모바일에서 본인 카드(.player-card.mine) 탭 시 char-panel 펼침 — 빠른 시트 액세스.
-  list.querySelectorAll('.player-card.mine').forEach(card => {
-    card.addEventListener('click', (e) => {
-      // kick 버튼/이미지 클릭은 자체 핸들러 → 전파 차단됨. 일반 카드 영역만 처리.
-      if (e.target.closest('.pc-kick, .portrait-enlarge')) return;
+      return;
+    }
+    // 모바일에서 본인 카드(.player-card.mine) 탭 시 char-panel 펼침 — 빠른 시트 액세스.
+    const mineCard = e.target.closest('.player-card.mine');
+    if (mineCard) {
+      if (e.target.closest('.portrait-enlarge')) return;
       if (typeof isMobileViewport === 'function' && isMobileViewport()) {
         if (typeof toggleDrawer === 'function') toggleDrawer('char-panel');
       }
-    });
+    }
   });
-}
+})();
 
 (function bindPartyCollapse() {
   document.addEventListener('click', (e) => {
@@ -2915,26 +3039,30 @@ function refreshCharPanel(players) {
 
   // 🆕 장착 장비 3슬롯 — 효과 툴팁: 알려진 효과 or "효과: 아직 잘 모르겠다"
   const eq = me.equipped || {};
-  const slot = (icon, label, item) => {
+  // 🆕 [P-2] 슬롯 탭 → 해제/교체 시트. slotKey 는 서버 슬롯명(main_hand/off_hand/armor/accessory).
+  //   본인 살아있을 때만 탭 가능(관전자는 char-panel 자체가 안 뜸, 사망은 dim + 가드).
+  const tappable = !isSpectator && !me.is_dead;
+  const slot = (icon, label, item, slotKey) => {
     // item 은 문자열 또는 {name, effect} 딕트 허용
     const data = (item && typeof item === 'object') ? item : { name: item || '', effect: null };
     const name = data.name || '';
+    const tapAttrs = tappable ? ` data-eq-slot="${slotKey}" role="button" tabindex="0"` : '';
     if (!name) {
-      return `<div class="eq-slot eq-empty" title="비어 있음">
+      return `<div class="eq-slot eq-empty${tappable ? ' eq-tappable' : ''}" title="${tappable ? '탭해서 장비 장착' : '비어 있음'}"${tapAttrs}>
                 <span class="eq-icon">${icon}</span>
                 <span class="eq-label">${label}</span>
-                <span class="eq-item">—</span>
+                <span class="eq-item eq-empty-cta">${tappable ? '＋ 비어 있음' : '—'}</span>
               </div>`;
     }
     const effect = data.effect;
-    const tip = effect
+    const tip = (effect
       ? `${name}\n효과: ${effect}`
-      : `${name}\n효과: 아직 잘 모르겠다`;
+      : `${name}\n효과: 아직 잘 모르겠다`) + (tappable ? '\n(탭 → 해제/교체)' : '');
     const cls = effect ? 'has-effect' : 'effect-unknown';
     const effLine = effect
       ? `<span class="eq-effect">${escapeHtml(effect)}</span>`
       : `<span class="eq-effect eq-unk">효과: 아직 잘 모르겠다</span>`;
-    return `<div class="eq-slot ${cls}" title="${escapeHtml(tip)}">
+    return `<div class="eq-slot ${cls}${tappable ? ' eq-tappable' : ''}" title="${escapeHtml(tip)}"${tapAttrs}>
               <div class="eq-row">
                 <span class="eq-icon">${icon}</span>
                 <span class="eq-label">${label}</span>
@@ -2953,17 +3081,17 @@ function refreshCharPanel(players) {
                  && mainH.name && mainH.name === offH.name;
   const equipHtml = isDual
     ? `<div class="equipment">
-        <div class="eq-title">🛡 장착 중</div>
-        ${slot('⚔️⚔️', '양손 (쌍)', mainH)}
-        ${slot('🛡',  '방어구', eq.armor)}
-        ${slot('💎', '장신구', eq.accessory)}
+        <div class="eq-title">🛡 장착 중${tappable ? ' <span class="eq-hint-tap">— 슬롯을 탭해 해제·교체</span>' : ''}</div>
+        ${slot('⚔️⚔️', '양손 (쌍)', mainH, 'main_hand')}
+        ${slot('🛡',  '방어구', eq.armor, 'armor')}
+        ${slot('💎', '장신구', eq.accessory, 'accessory')}
       </div>`
     : `<div class="equipment">
-        <div class="eq-title">🛡 장착 중</div>
-        ${slot('🗡️', '왼손',   mainH)}
-        ${slot('🛡',  '오른손', offH)}
-        ${slot('🥋', '방어구', eq.armor)}
-        ${slot('💎', '장신구', eq.accessory)}
+        <div class="eq-title">🛡 장착 중${tappable ? ' <span class="eq-hint-tap">— 슬롯을 탭해 해제·교체</span>' : ''}</div>
+        ${slot('🗡️', '왼손',   mainH, 'main_hand')}
+        ${slot('🛡',  '오른손', offH, 'off_hand')}
+        ${slot('🥋', '방어구', eq.armor, 'armor')}
+        ${slot('💎', '장신구', eq.accessory, 'accessory')}
       </div>`;
 
   const inv = Array.isArray(me.inventory) ? me.inventory : [];
@@ -3315,11 +3443,8 @@ function refreshCharPanel(players) {
       if (isSpectator) return;
       const item = btn.dataset.equipItem;
       if (!item || !ws || ws.readyState !== WebSocket.OPEN) return;
-      // 슬롯 추론
-      const lower = item;
-      let slot = 'weapon';
-      if (/(갑옷|로브|흉갑|방어구|투구|튜닉|망토)/.test(lower)) slot = 'armor';
-      else if (/(반지|목걸이|부적|장신구|성표|마법서|밧줄|오브)/.test(lower)) slot = 'accessory';
+      // 슬롯 추론 (O-3: 서버 목록과 동일한 guessEquipSlot 사용)
+      const slot = guessEquipSlot(item);
       // 1-클릭 confirm
       if (btn.dataset.confirming !== '1') {
         btn.dataset.confirming = '1';
@@ -3344,6 +3469,17 @@ function refreshCharPanel(players) {
       }
     });
   });
+
+  // 🆕 [P-2] 장비 슬롯 탭 → 해제/교체 시트. me(현재 캐릭터)를 closure 로 넘김.
+  if (tappable) {
+    document.querySelectorAll('#char-body .eq-slot[data-eq-slot]').forEach(el => {
+      const openIt = (e) => { e.stopPropagation(); openEquipPicker(el.dataset.eqSlot, me); };
+      el.addEventListener('click', openIt);
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openIt(e); }
+      });
+    });
+  }
 
   // V13-02: 캐릭터 시트 텍스트 export — 본인 정보 한꺼번에 클립보드 복사.
   // 친구에게 공유하거나 별도 노트 기록할 때 사용.
@@ -4005,9 +4141,11 @@ function showDmTyping(on) {
 function updateTimeBadge(t) {
   const badge = document.getElementById('time-badge');
   if (!badge) return;
-  if (!t || !t.icon) { badge.style.display = 'none'; return; }
+  if (!t || !t.icon) { badge.style.display = 'none'; _lastTimeLabel = ''; _syncMiniInfoBadge(); return; }
   // V15-01: day 표시 — V4 ⑩ 의 day 카운터를 시각화. 1일차면 생략, 2일차부터 노출.
   const dayPart = (typeof t.day === 'number' && t.day > 1) ? ` · ${t.day}일차` : '';
+  _lastTimeLabel = `${t.icon} ${t.label}`;  // M-1: 미니 배지용 (day 는 생략해 짧게)
+  _syncMiniInfoBadge();
   badge.textContent = `${t.icon} ${t.label}${dayPart}`;
   badge.title = (t.day && t.day > 1) ? `모험 ${t.day}일차` : '시간대';
   badge.style.display = 'inline-block';
@@ -4092,6 +4230,8 @@ function updateTurnIndicator(turnPlayerId, players) {
   // V11-01: 다른 탭/배경 상태에서 내 차례가 시작되면 브라우저 title 깜빡 + 모바일 진동(가능 시).
   // dead 면 자동 스킵되니 알림 X.
   _maybeNotifyMyTurnStart(myTurn, dead);
+  // 🆕 [L] 낙서 버튼 펄스(남의 턴이면 강조) + 오버레이 내 '당신 차례' 배너 갱신
+  try { refreshDoodlePulse(); _ddUpdateTurnBanner(); } catch (_) {}
 }
 
 // V11-03: 단축키 도움말 모달 — `?` 또는 Shift+/ 키. 입력칸 포커스 중엔 무시.
@@ -4340,7 +4480,9 @@ function showEventToasts(events) {
   (events.items || []).forEach(ev => {
     if (ev.converted_to_gold || ev.kind === 'currency') return;
     const mine = isMyName(ev.name);
-    pushToast(layer, `🎁 ${ev.name} 획득: ${ev.item}`, mine ? 'toast-item-mine' : 'toast-item');
+    // [P-1] 획득물은 자동 장착 없이 전부 소지품으로 — 문구로 명시.
+    const dest = ev.kind === 'equipment' ? ' → 🎒 소지품 (장착은 슬롯/장착 버튼)' : ' → 🎒 소지품';
+    pushToast(layer, `🎁 ${ev.name} 획득: ${ev.item}${dest}`, mine ? 'toast-item-mine' : 'toast-item');
   });
   // 🆕 장비 해제 (무기 투척·파괴·분실)
   const slotLabel = { weapon: '무기', main_hand: '왼손', off_hand: '오른손', dual: '양손', armor: '방어구', accessory: '장신구' };
@@ -4462,6 +4604,41 @@ let _expStageLoaded = [];  // 단계별 로드 완료 여부
 let _expStageShown = -1;   // 현재 표시 중인 단계 (-1 = 폴백 배경)
 let _expPreloadGen = 0;    // 세대 카운터 — 오버레이 닫힘/새 탐색 시 증가시켜 stale onload 무시
 
+// 🆕 [N] 배경 선(先)생성 — Pollinations 는 같은 URL(프롬프트+시드)을 CDN 에 캐시하므로
+//   "미리 생성" = URL 을 미리 한 번 요청해두는 것. 아래 3겹(프리워밍·재사용·지형 폴백)으로 대기 체감 제거.
+const EXP_PREWARM = true;          // N-1.2 평시(dm_response) 저우선 워밍 on/off 레버
+let _expLastTerrain = 'dirt';      // N-1.2 마지막 탐색 지형 (없으면 dirt) — _expTerrain 은 종료 시 리셋되므로 별도 보관
+let _expWarmIdx = 0;               // 폴백 2장 라운드로빈 인덱스
+const _expWarmedFallbacks = new Set();  // N-3 워밍 완료된 폴백 URL — 완료분만 즉시 배경으로 사용
+// N-3 지형별 고정 시드 폴백 풀 — 오버레이 열리는 즉시(워밍돼 있으면) 배경으로 깔고, 본 이미지 로드 시 크로스페이드.
+const _EXP_FALLBACK_STYLE = 'digital painting, fantasy concept art, cinematic lighting, atmospheric, no text';
+const _EXP_TERRAIN_FALLBACK = {
+  stone: ['ancient stone castle hall, torchlight, mist', 'ruined stone temple corridor, shafts of light'],
+  dirt:  ['dirt trail through wilderness at dusk, overcast sky', 'muddy road winding into distant hills'],
+  grass: ['lush green meadow with wildflowers, sunlight', 'deep enchanted forest clearing, sunbeams'],
+  wood:  ['old wooden mansion interior, candlelight, dust', 'weathered ship deck below, wooden beams'],
+  cave:  ['dark underground cavern, glowing crystals', 'deep mine tunnel, lantern light, damp rock'],
+};
+const _EXP_FB_SEED = { stone: 41000, dirt: 42000, grass: 43000, wood: 44000, cave: 45000 };
+function _expFallbackUrl(terrain, i) {
+  const t = _EXP_TERRAIN_FALLBACK[terrain] ? terrain : 'dirt';
+  const pool = _EXP_TERRAIN_FALLBACK[t];
+  const idx = ((i % pool.length) + pool.length) % pool.length;
+  const prompt = encodeURIComponent(pool[idx] + ', ' + _EXP_FALLBACK_STYLE);
+  const seed = _EXP_FB_SEED[t] + idx;
+  return `https://image.pollinations.ai/prompt/${prompt}?width=768&height=384&seed=${seed}&nologo=true&model=flux`;
+}
+// N-1.2 응답당 1장 저우선 워밍 — 마지막(또는 기본) 지형 폴백 2장을 라운드로빈으로 CDN 예열.
+function _expWarmFallback() {
+  if (!EXP_PREWARM) return;
+  const url = _expFallbackUrl(_expLastTerrain, _expWarmIdx);
+  _expWarmIdx = (_expWarmIdx + 1) % 2;
+  const im = new Image();
+  im.decoding = 'async';
+  im.onload = () => _expWarmedFallbacks.add(url);
+  im.src = url;  // 응답당 1장 초과 금지 — 외부 서비스 예의
+}
+
 function _ensureExplorationOverlay() {
   let ov = document.getElementById('exploration-overlay');
   if (ov) return ov;
@@ -4478,8 +4655,8 @@ function _ensureExplorationOverlay() {
           <span class="exp-danger"></span>
           <div class="exp-ctrls">
             <button class="exp-btn exp-mute" type="button" title="소리 켜기/끄기">🔊</button>
-            <button class="exp-btn exp-abort" type="button" style="display:none">탐색 중단</button>
-            <button class="exp-btn exp-collapse" type="button" title="접기">⌄ 접기</button>
+            <button class="exp-btn exp-abort" type="button" title="탐색 중단" aria-label="탐색 중단" style="display:none">⏹<span class="exp-btn-label"> 탐색 중단</span></button>
+            <button class="exp-btn exp-collapse" type="button" title="접기" aria-label="접기">⌄<span class="exp-btn-label"> 접기</span></button>
           </div>
         </div>
       </div>
@@ -4504,6 +4681,15 @@ function _ensureExplorationOverlay() {
 let _expCollapsed = false;
 let _expLast = { pos: 0, total: 0 };
 let _expMuted = localStorage.getItem('trog_exp_mute') === '1';
+let _expHintTimer = null;  // 🆕 시작 안내 자동 페이드 타이머
+
+// 🆕 시작 안내를 서서히 숨김 + "본 적 있음" 기억 (재탐색 땐 더 빨리 사라짐)
+function _fadeExpHint() {
+  _expHintTimer = null;
+  const h = document.querySelector('#exploration-overlay .exp-hint');
+  if (h) h.classList.add('exp-hint-hidden');
+  try { localStorage.setItem('trog_exp_hint_seen', '1'); } catch (e) {}
+}
 
 function _expFloatBtn() {
   let b = document.getElementById('exp-float-btn');
@@ -4554,13 +4740,14 @@ function _syncMuteBtn() {
 }
 
 function _abortExploration() {
-  if (!isOwner) return;
+  if (!isOwner && !_expIsStarter) return;  // O-4: 방장 또는 시작자만
   wsSendSafe({ type: 'explore_abort' });
 }
 
 function _onExploreTapPointer(e) {
   if (_explorationEnded) return;               // 종료 연출 중 — 탭·리플 모두 무시
   if (isSpectator || _amIDead()) return;       // 사망자/관전자 무반응
+  if (_expHintTimer) { clearTimeout(_expHintTimer); _expHintTimer = null; _fadeExpHint(); }  // 🆕 첫 탭 = 안내 즉시 페이드
   _expAudio();  // 🆕 첫 사용자 제스처에서 AudioContext 생성/resume (발소리 언락)
   // 리플은 쿨다운 중에도 그려줌 (연타 손맛) — 서버 전송만 0.3s 락
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -4675,7 +4862,7 @@ function _expScheduleSteps() {
   _expCancelSteps();
   const n = 5 + (Math.random() < 0.5 ? 0 : 1);
   for (let i = 0; i < n; i++) {
-    const delay = i * (300 + (Math.random() * 40 - 20));
+    const delay = i * (400 + (Math.random() * 40 - 20));
     const vol = 1 - (i / n) * 0.6;  // 첫 걸음 100% → 마지막 걸음 ~40%
     _expStepTimers.push(setTimeout(() => { if (!_explorationEnded) _expFootstep(vol, _expTerrain); }, delay));
   }
@@ -4705,7 +4892,7 @@ function _expEventSound(type) {
       o.connect(g); g.connect(master);
       o.start(at); o.stop(at + dur + 0.02);
     };
-    if (type === 'item' || type === 'gold') { tone(880, t, 0.05); tone(1320, t + 0.05, 0.09); }
+    if (type === 'item' || type === 'gold' || type === 'discovery') { tone(880, t, 0.05); tone(1320, t + 0.05, 0.09); }
     else if (type === 'trap') { tone(60, t, 0.15); tone(165, t, 0.12); }  // 🆕 165Hz 중역 = 모바일 가청
     else if (type === 'enemy') { tone(220, t, 0.25); tone(233, t, 0.25); }
   } catch (e) { /* 무시 */ }
@@ -4724,14 +4911,21 @@ const _DANGER_LABEL = { '하': '🟢 위험도 하', '중': '🟡 위험도 중'
 function showExplorationOverlay(d, restore) {
   const ov = _ensureExplorationOverlay();
   _explorationTotal = d.total || 0;
+  _expIsStarter = !!(d.starter_id && myId && d.starter_id === myId);  // O-4: 시작자 중단권
   ov.querySelector('.exp-place').textContent = '🗺 ' + (d.place || '탐색');
   ov.querySelector('.exp-danger').textContent = _DANGER_LABEL[d.danger] || '';
   const img = ov.querySelector('.exp-bg-img');
   // 🆕 Pollinations 신규 이미지는 요청 시점에 생성 시작 → 첫 로드 ~44초 (실측).
   // 즉시 폴백(현재 장면 배너) 표시 → 단계 이미지(최대 3장) 순차 프리로드 → 도착/진행률 따라 스왑.
   _expPreloadGen++;
+  _expTerrain = d.terrain || 'dirt';  // 🆕 지형 발소리 재질 (복원 포함) — 폴백 계산보다 먼저
+  _expLastTerrain = _expTerrain;      // N-1.2 워밍 타겟 갱신
+  // N-3 폴백: 현재 배너(즉시) 우선, 없으면 워밍 완료된 지형 폴백 URL 만 즉시 배경으로 사용.
+  //   (미예열 폴백을 깔면 오히려 빈 배경이 길어짐 → 워밍 완료분만.)
   const banner = document.getElementById('scene-banner-img');
-  const fallbackSrc = (banner && banner.getAttribute('src')) ? banner.src : '';
+  const bannerSrc = (banner && banner.getAttribute('src')) ? banner.src : '';
+  const fbUrl = _expFallbackUrl(_expTerrain, 0);
+  const fallbackSrc = bannerSrc || (_expWarmedFallbacks.has(fbUrl) ? fbUrl : '');
   img.style.opacity = '';
   if (fallbackSrc) { img.src = fallbackSrc; img.style.display = ''; }
   else { img.removeAttribute('src'); img.style.display = 'none'; }
@@ -4739,14 +4933,15 @@ function showExplorationOverlay(d, restore) {
     ? d.image_urls : (d.image_url ? [d.image_url] : [])).slice(0, 3);
   _expStageLoaded = _expStageUrls.map(() => false);
   _expStageShown = -1;
+  // 🎨 "그리는 중" 칩 — 폴백이 깔려 있으면 띄우지 않는다(체감 제거). 폴백도 본이미지도 없을 때만.
   const chip = ov.querySelector('.exp-bg-loading');
-  chip.style.display = (_expStageUrls.length && _expStageUrls[0] !== fallbackSrc) ? '' : 'none';
-  _expPreloadStage(0, _expPreloadGen);
+  chip.style.display = (!fallbackSrc && _expStageUrls.length && _expStageUrls[0] !== fallbackSrc) ? '' : 'none';
+  // N-1.1 프리워밍: 스테이지 URL 전부 즉시 병렬 fire (기존 순차 체이닝 제거). 표시 게이팅은 그대로.
+  for (let i = 0; i < _expStageUrls.length; i++) _expPreloadStage(i, _expPreloadGen);
   // 카메라 진행도 초기화 (재접속 복원 포함 — 현재 pos/total 로)
   ov.style.setProperty('--exp-progress', (d.total > 0 ? Math.min(1, (d.pos || 0) / d.total) : 0));
   ov.querySelector('.exp-pop-area').innerHTML = '';
   _renderExpGauge(d.pos || 0, d.total || 0);
-  _expTerrain = d.terrain || 'dirt';  // 🆕 지형 발소리 재질 (복원 포함)
   _explorationEnded = false;  // 🆕 종료 플래그 리셋 (새 탐색/복원)
   _expLast = { pos: d.pos || 0, total: d.total || 0 };  // 접힘 대비 최신값 시드
   // 새 탐색/복원은 항상 펼친 상태로 시작 — 잔류 접힘/플로팅 버튼 정리
@@ -4754,45 +4949,61 @@ function showExplorationOverlay(d, restore) {
   const fb = document.getElementById('exp-float-btn');
   if (fb) fb.style.display = 'none';
   _syncMuteBtn();  // 🆕 음소거 버튼 라벨 동기화
-  // 🆕 탐색 중단 버튼 — 방장에게만 (관전자 제외)
+  // 🆕 탐색 중단 버튼 — 방장 또는 시작자에게 (관전자 제외). O-4
   const abortBtn = ov.querySelector('.exp-abort');
-  if (abortBtn) abortBtn.style.display = (isOwner && !isSpectator) ? '' : 'none';
+  if (abortBtn) abortBtn.style.display = ((isOwner || _expIsStarter) && !isSpectator) ? '' : 'none';
   // 사망/관전자는 탭 무반응 — 힌트 문구로 안내. 포인터 타입에 따라 탭/클릭 (P3-J).
   const tapVerb = window.matchMedia('(pointer: coarse)').matches ? '탭' : '클릭';
-  ov.querySelector('.exp-hint').textContent = (isSpectator || _amIDead())
+  const hint = ov.querySelector('.exp-hint');
+  hint.textContent = (isSpectator || _amIDead())
     ? '관전 중…'
     : `화면을 ${tapVerb}해 앞으로 나아가세요 — 함께 두드리면 같이 전진합니다`;
+  // 🆕 시작 안내 자동 페이드 — 재진입 시 타이머·opacity 리셋 후 재예약 (본 적 있으면 2초, 처음 4초)
+  hint.classList.remove('exp-hint-hidden');
+  if (_expHintTimer) clearTimeout(_expHintTimer);
+  let seen = false; try { seen = localStorage.getItem('trog_exp_hint_seen') === '1'; } catch (e) {}
+  _expHintTimer = setTimeout(_fadeExpHint, seen ? 2000 : 4000);
   ov.style.display = 'flex';
   if (!restore) requestAnimationFrame(() => ov.classList.add('exp-in'));
   else ov.classList.add('exp-in');
 }
 
-// 🆕 단계 이미지 순차 프리로드 — Pollinations 동시요청 부하 방지 (1장 완료 후 다음).
-function _expPreloadStage(idx, gen) {
+// 🆕 [N] 단계 이미지 병렬 프리로드 — 각 스테이지를 독립적으로 fire (stale 는 gen 으로 무시).
+//   본이미지(0단계)는 onerror/8초 타임아웃 시 1회 재시도(폴백은 그대로 유지). retried=재시도분 표시.
+function _expPreloadStage(idx, gen, retried) {
   if (gen !== _expPreloadGen || idx >= _expStageUrls.length) return;
   const pre = new Image();
+  let settled = false;  // 이 Image 의 원요청/재시도 late 콜백 중복 방지
   pre.onload = () => {
-    if (gen !== _expPreloadGen) return;  // 오버레이 닫힘/새 탐색 — stale 무시
+    if (gen !== _expPreloadGen || settled) return;  // 오버레이 닫힘/새 탐색·중복 — 무시
+    settled = true;
     _expStageLoaded[idx] = true;
     const ov = document.getElementById('exploration-overlay');
-    if (ov) {
-      if (idx === 0) ov.querySelector('.exp-bg-loading').style.display = 'none';
-      // 첫 장 도착 → 폴백에서 즉시 스왑 (이후 단계는 explore_progress 가 진행률 보고 교체)
-      if (idx === 0 && _expStageShown < 0 && ov.style.display !== 'none') {
-        _expStageShown = 0;
-        _expSwapBg(_expStageUrls[0]);
-      }
+    if (!ov || ov.style.display === 'none') return;
+    // 첫 장 도착 → 폴백에서 즉시 스왑
+    if (idx === 0 && _expStageShown < 0) {
+      _expStageShown = 0;
+      _expSwapBg(_expStageUrls[0]);
+    } else if (idx > _expStageShown) {
+      // 늦게 온 상위 단계: 이미 진행률이 그 문턱을 지났으면 즉시 승격 (다음 tap 안 기다림)
+      const prog = _expLast.total > 0 ? Math.min(1, _expLast.pos / _expLast.total) : 0;
+      const want = prog >= 0.75 ? 2 : prog >= 0.4 ? 1 : 0;
+      if (want >= idx) { _expStageShown = idx; _expSwapBg(_expStageUrls[idx]); }
     }
-    _expPreloadStage(idx + 1, gen);
   };
   pre.onerror = () => {
-    if (gen !== _expPreloadGen) return;
-    if (idx === 0) {
-      const chip = document.querySelector('#exploration-overlay .exp-bg-loading');
-      if (chip) chip.style.display = 'none';  // 폴백 유지
-    }
-    _expPreloadStage(idx + 1, gen);  // 실패 단계는 건너뛰고 다음 장 시도
+    if (gen !== _expPreloadGen || settled) return;
+    settled = true;
+    if (idx === 0 && !retried) _expPreloadStage(0, gen, true);  // 본이미지 1회 재시도 (폴백 유지)
   };
+  // 본이미지 8초 타임아웃 → 아직 미로드면 1회 재시도 (Pollinations 첫 생성이 늦는 케이스)
+  if (idx === 0 && !retried) {
+    setTimeout(() => {
+      if (gen !== _expPreloadGen || settled || _expStageLoaded[0]) return;
+      settled = true;
+      _expPreloadStage(0, gen, true);
+    }, 8000);
+  }
   pre.src = _expStageUrls[idx];
 }
 
@@ -4821,6 +5032,9 @@ function _renderExpGauge(pos, total) {
 
 function updateExplorationProgress(d) {
   _expLast = { pos: d.pos, total: d.total };  // 🆕 접힘 상태에서도 최신 진행값 보존 (펼치면 복원)
+  // 🆕 접힘 상태 플로팅 버튼에도 진행률 표시 (버튼 텍스트 갱신 — 오버레이가 숨겨도 진행이 보임)
+  const fb = document.getElementById('exp-float-btn');
+  if (fb && d.total > 0) fb.textContent = `🔍 탐색 ${d.pos}/${d.total} — 펼치기`;
   const ov = document.getElementById('exploration-overlay');
   if (!ov || ov.style.display === 'none') return;  // 없거나 접힘 — 펼칠 때 _expLast 로 복원
   _renderExpGauge(d.pos, d.total);
@@ -4834,7 +5048,7 @@ function updateExplorationProgress(d) {
   if (!_explorationEnded) {
     _expScheduleSteps();
     const evType = (d.event || {}).type;
-    if (evType === 'item' || evType === 'gold' || evType === 'trap' || evType === 'enemy') {
+    if (evType === 'item' || evType === 'gold' || evType === 'trap' || evType === 'enemy' || evType === 'discovery') {
       _expEventSound(evType);
     }
   }
@@ -4859,7 +5073,7 @@ let _expLastEventPopAt = 0;  // 🆕 마지막 보상/함정 팝 시각 — flav
 function _popExploreEvent(ev, who) {
   const ov = document.getElementById('exploration-overlay');
   if (!ov) return;
-  const isEvent = (ev.type === 'item' || ev.type === 'gold' || ev.type === 'trap' || ev.type === 'enemy');
+  const isEvent = (ev.type === 'item' || ev.type === 'gold' || ev.type === 'trap' || ev.type === 'enemy' || ev.type === 'discovery');
   // 보상/함정 팝은 최소 1.2s 노출 — 그 사이 도착한 flavor/empty 는 무시 (이벤트 팝끼리는 즉시 교체).
   if (!isEvent && (performance.now() - _expLastEventPopAt) < 1200) return;
   const area = ov.querySelector('.exp-pop-area');
@@ -4876,11 +5090,45 @@ function _popExploreEvent(ev, who) {
     card.innerHTML = `<div class="exp-pop-icon">💰</div><div class="exp-pop-name">골드 +${parseInt(ev.amount, 10) || 0}</div><div class="exp-pop-who">파티 전원</div>`;
   } else if (t === 'trap') {
     card.classList.add('exp-pop-trap');
-    card.innerHTML = `<div class="exp-pop-icon">💥</div><div class="exp-pop-name">${escapeHtmlStr(ev.text || '함정!')}</div><div class="exp-pop-who">${w} -${parseInt(ev.damage, 10) || 0} HP</div>`;
-    if (panel) { panel.classList.remove('exp-shake'); void panel.offsetWidth; panel.classList.add('exp-shake'); }
+    const dmg = parseInt(ev.damage, 10) || 0;
+    const save = ev.save;
+    if (save && save.kind === 'spot') {
+      // 지혜/지능으로 미리 발견 — 완전 회피 (무피해)
+      card.classList.add('exp-pop-saved');
+      card.innerHTML = `<div class="exp-pop-icon">🛡</div><div class="exp-pop-name">${escapeHtmlStr(ev.text || '함정!')}</div><div class="exp-pop-who">${w} — 미리 발견해 피했다! (${escapeHtmlStr(save.label)} ${parseInt(save.value, 10) || 0})</div>`;
+    } else if (save && save.kind === 'dodge') {
+      // 기교로 낚아챔/회피 — 절반 경감
+      card.classList.add('exp-pop-saved');
+      card.innerHTML = `<div class="exp-pop-icon">🤺</div><div class="exp-pop-name">${escapeHtmlStr(ev.text || '함정!')}</div><div class="exp-pop-who">${w} — 쳐냈다! 절반만 -${dmg} HP (${escapeHtmlStr(save.label)} ${parseInt(save.value, 10) || 0})</div>`;
+      if (panel) { panel.classList.remove('exp-shake'); void panel.offsetWidth; panel.classList.add('exp-shake'); }
+    } else {
+      card.innerHTML = `<div class="exp-pop-icon">💥</div><div class="exp-pop-name">${escapeHtmlStr(ev.text || '함정!')}</div><div class="exp-pop-who">${w} -${dmg} HP</div>`;
+      if (panel) { panel.classList.remove('exp-shake'); void panel.offsetWidth; panel.classList.add('exp-shake'); }
+    }
+  } else if (t === 'discovery') {
+    // 심심한 칸에서 스텟으로 뭔가를 얻음 — 초록 톤 재사용
+    card.classList.add('exp-pop-saved');
+    const val = parseInt(ev.value, 10) || 0;
+    if (ev.kind === 'vigor') {
+      // 건강 → HP 소량 회복
+      const heal = parseInt(ev.heal, 10) || 0;
+      card.innerHTML = `<div class="exp-pop-icon">💚</div><div class="exp-pop-name">기운을 되찾다! +${heal} HP</div><div class="exp-pop-who">${w} — 건강 ${val} 덕분</div>`;
+    } else {
+      const icon = ev.kind === 'nimble' ? '🤸' : ev.kind === 'force' ? '💪' : '🔎';
+      const amt = parseInt(ev.amount, 10) || 0;
+      card.innerHTML = `<div class="exp-pop-icon">${icon}</div><div class="exp-pop-name">숨겨진 것을 발견! +${amt} 골드</div><div class="exp-pop-who">${w} — ${escapeHtmlStr(ev.label || '')} ${val} 덕분</div>`;
+    }
   } else if (t === 'enemy') {
     card.classList.add('exp-pop-enemy');
-    card.innerHTML = `<div class="exp-pop-icon">👹</div><div class="exp-pop-name">${escapeHtmlStr(ev.name || '적')}</div><div class="exp-pop-who">HP ${parseInt(ev.hp, 10) || 0} — 조우!</div>`;
+    // 🆕 조우 진입 판정 결과 — 스텟으로 기습/약점간파/매복간파 성공 or 기습당함
+    let sub = `HP ${parseInt(ev.hp, 10) || 0} — 조우!`;
+    const enc = ev.encounter;
+    if (enc && enc.kind) {
+      const good = { surprise: '🗡 기습 성공!', weakness: '👁 약점 간파!', spotted: '🛡 매복 간파!' }[enc.kind];
+      if (good) sub += `<br><span class="exp-enc-good">${good} (${escapeHtmlStr(enc.label || '')} ${parseInt(enc.value, 10) || 0})</span>`;
+      else if (enc.kind === 'ambushed') sub += `<br><span class="exp-enc-bad">⚠ 기습당함! 적이 선제</span>`;
+    }
+    card.innerHTML = `<div class="exp-pop-icon">👹</div><div class="exp-pop-name">${escapeHtmlStr(ev.name || '적')}</div><div class="exp-pop-who">${sub}</div>`;
     if (panel) { panel.classList.remove('exp-shake-hard'); void panel.offsetWidth; panel.classList.add('exp-shake-hard'); }
   } else if (t === 'flavor') {
     card.classList.add('exp-pop-flavor');
@@ -4921,6 +5169,7 @@ function hideExplorationOverlay() {
   ov.classList.remove('exp-in');
   ov.style.display = 'none';
   _explorationTapLock = false;
+  if (_expHintTimer) { clearTimeout(_expHintTimer); _expHintTimer = null; }  // 🆕 힌트 페이드 타이머 정리
   // 🆕 프리로드·로딩 칩·카메라·발소리 예약 정리 — 다음 탐색 때 잔류 방지
   _expCancelSteps();
   _expTerrain = 'dirt';
@@ -5310,11 +5559,20 @@ function deleteCustomAction(idx, label) {
   renderCustomActions();
 }
 
+// M-2: 모바일에선 커스텀 칩을 프리셋 줄(#quick-row-preset) 뒤에 이어붙여 "한 줄"로,
+// '＋ 나만의 행동' 추가 버튼만 #quick-row-custom(더보기)에 남긴다. 데스크톱은 종전대로.
+let _customRenderMobile = null;
 function renderCustomActions() {
   const row = document.getElementById('quick-row-custom');
   if (!row) return;
+  const mobile = typeof isMobileViewport === 'function' && isMobileViewport();
+  _customRenderMobile = mobile;
+  const presetRow = document.getElementById('quick-row-preset');
+  // 이전 렌더가 프리셋 줄에 남긴 커스텀 칩 제거 (모바일↔데스크톱 전환 안전)
+  if (presetRow) presetRow.querySelectorAll('.q-custom').forEach(el => el.remove());
   row.innerHTML = '';
   const actions = loadCustomActions();
+  const chipTarget = (mobile && presetRow) ? presetRow : row;
   actions.forEach((a, idx) => {
     const b = document.createElement('button');
     b.className = 'q-btn q-custom';
@@ -5337,9 +5595,9 @@ function renderCustomActions() {
       deleteCustomAction(idx, a.label);
     });
     b.appendChild(del);
-    row.appendChild(b);
+    chipTarget.appendChild(b);
   });
-  // 추가 버튼 (최대 도달 시 숨김)
+  // 추가 버튼 (최대 도달 시 숨김) — 항상 #quick-row-custom 에 (모바일=더보기 안)
   if (actions.length < MAX_CUSTOM_ACTIONS) {
     const add = document.createElement('button');
     add.className = 'q-btn q-add';
@@ -5797,8 +6055,8 @@ function floodFill(startX, startY, fillHex) {
 /* ── OWNER TOOLS (턴 스킵 등 방장 전용) ── */
 function updateOwnerToolsVisibility() {
   const tools = document.getElementById('owner-tools');
-  if (!tools) return;
-  tools.style.display = (isOwner && !isSpectator) ? 'flex' : 'none';
+  if (tools) tools.style.display = (isOwner && !isSpectator) ? 'flex' : 'none';
+  try { _ddUpdateOwnerUI(); } catch (_) {}   // 🆕 [L] 낙서판 전체지우기 버튼도 방장만
 }
 (function bindOwnerTools() {
   const btn = document.getElementById('skip-turn-btn');
@@ -5834,6 +6092,10 @@ function leaveRoom() {
 
 function finalizeLeave() {
   document.body.classList.remove('in-game');
+  // V17: 세션/placeholder 타이머 정지 + 재진입 가드 리셋 (재입장 시 재시작되도록).
+  if (_sessionTimerInterval) { clearInterval(_sessionTimerInterval); _sessionTimerInterval = null; }
+  _sessionStartedAt = 0;
+  if (_placeholderRotateTimer) { clearInterval(_placeholderRotateTimer); _placeholderRotateTimer = null; }
   try { if (ws) ws.close(); } catch (_) {}
   clearSession();
   location.href = location.pathname;
@@ -6697,3 +6959,188 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   } catch (_) {}
 });
+
+/* ══════════════════════════════════════════════════
+   [L] 공동 낙서판 — 기다리는 시간에 다 같이 그림.
+   LLM 무관 순수 소셜. 좌표는 0..1 정규화라 리사이즈에도 재현 가능.
+   ════════════════════════════════════════════════ */
+let _ddCanvas = null, _ddCtx = null;
+let _ddStrokes = [];              // 정규화 좌표 획 [{pid,color,w,pts:[[x,y]..]}]
+let _ddColor = '#111111', _ddW = 3;
+let _ddDrawing = false, _ddCur = null, _ddOpen = false, _ddDmPending = false;
+const _DD_REF = 640;             // 굵기 픽셀 스케일 기준 폭 (캔버스가 커지면 선도 비례)
+
+function _ddClampPos(e) {
+  const r = _ddCanvas.getBoundingClientRect();
+  let x = (e.clientX - r.left) / r.width;
+  let y = (e.clientY - r.top) / r.height;
+  return [Math.min(1, Math.max(0, x)), Math.min(1, Math.max(0, y))];
+}
+function _ddDrawStroke(s) {
+  if (!_ddCtx || !s || !Array.isArray(s.pts) || !s.pts.length) return;
+  const w = _ddCanvas.clientWidth, h = _ddCanvas.clientHeight;
+  _ddCtx.lineJoin = _ddCtx.lineCap = 'round';
+  _ddCtx.strokeStyle = s.color;
+  _ddCtx.lineWidth = Math.max(1, s.w * w / _DD_REF);
+  _ddCtx.beginPath();
+  _ddCtx.moveTo(s.pts[0][0] * w, s.pts[0][1] * h);
+  for (let i = 1; i < s.pts.length; i++) _ddCtx.lineTo(s.pts[i][0] * w, s.pts[i][1] * h);
+  if (s.pts.length === 1) _ddCtx.lineTo(s.pts[0][0] * w + 0.01, s.pts[0][1] * h);  // 점 하나
+  _ddCtx.stroke();
+}
+function _ddRenderAll() {
+  if (!_ddCtx) return;
+  _ddCtx.clearRect(0, 0, _ddCanvas.clientWidth, _ddCanvas.clientHeight);
+  for (const s of _ddStrokes) _ddDrawStroke(s);
+}
+function _ddResize() {
+  if (!_ddCanvas) return;
+  const stage = _ddCanvas.parentElement;
+  const availW = stage.clientWidth, availH = stage.clientHeight;
+  if (availW < 2 || availH < 2) return;
+  const ratio = 16 / 10;
+  let w = availW, h = w / ratio;
+  if (h > availH) { h = availH; w = h * ratio; }
+  const dpr = window.devicePixelRatio || 1;
+  _ddCanvas.style.width = w + 'px';
+  _ddCanvas.style.height = h + 'px';
+  _ddCanvas.width = Math.round(w * dpr);
+  _ddCanvas.height = Math.round(h * dpr);
+  _ddCtx.setTransform(dpr, 0, 0, dpr, 0, 0);   // 이후 모든 좌표는 CSS 픽셀 기준
+  _ddRenderAll();
+}
+function _ddDownsample(pts, max) {
+  if (pts.length <= max) return pts;
+  const out = [], step = (pts.length - 1) / (max - 1);
+  for (let i = 0; i < max; i++) out.push(pts[Math.round(i * step)]);
+  return out;
+}
+function _ddTrim() {   // 서버 캡과 동일 — 재렌더 비용 상한 유지
+  while (_ddStrokes.length > 1200) _ddStrokes.shift();
+  let total = _ddStrokes.reduce((a, s) => a + s.pts.length, 0);
+  while (total > 30000 && _ddStrokes.length) total -= _ddStrokes.shift().pts.length;
+}
+function _ddDown(e) {
+  if (!_ddOpen) return;
+  e.preventDefault();
+  _ddDrawing = true;
+  const p = _ddClampPos(e);
+  _ddCur = { pid: myId, color: _ddColor, w: _ddW, pts: [p] };
+  _ddDrawStroke(_ddCur);  // 점 하나 즉시
+}
+function _ddMove(e) {
+  if (!_ddDrawing || !_ddCur) return;
+  e.preventDefault();
+  const p = _ddClampPos(e);
+  const pts = _ddCur.pts, last = pts[pts.length - 1];
+  const w = _ddCanvas.clientWidth, h = _ddCanvas.clientHeight;
+  _ddCtx.lineJoin = _ddCtx.lineCap = 'round';
+  _ddCtx.strokeStyle = _ddCur.color;
+  _ddCtx.lineWidth = Math.max(1, _ddCur.w * w / _DD_REF);
+  _ddCtx.beginPath();
+  _ddCtx.moveTo(last[0] * w, last[1] * h);
+  _ddCtx.lineTo(p[0] * w, p[1] * h);
+  _ddCtx.stroke();
+  pts.push(p);
+}
+function _ddUp() {
+  if (!_ddDrawing) return;
+  _ddDrawing = false;
+  const cur = _ddCur; _ddCur = null;
+  if (!cur || !cur.pts.length) return;
+  if (cur.pts.length === 1) cur.pts.push(cur.pts[0].slice());   // 최소 2점(서버 검증)
+  let pts = cur.pts.length > 60 ? _ddDownsample(cur.pts, 60) : cur.pts;
+  pts = pts.map(p => [Math.round(p[0] * 1000) / 1000, Math.round(p[1] * 1000) / 1000]);
+  const stroke = { pid: myId, color: cur.color, w: cur.w, pts };
+  _ddStrokes.push(stroke); _ddTrim();
+  if (ws && ws.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify({ type: 'doodle_stroke', color: cur.color, w: cur.w, pts }));
+  }
+}
+// ── 수신 핸들러 (dispatch 에서 호출) ──
+function _doodleApplyStroke(stroke) {
+  if (!stroke || !Array.isArray(stroke.pts)) return;
+  _ddStrokes.push(stroke); _ddTrim();
+  if (_ddOpen) _ddDrawStroke(stroke);
+}
+function _doodleSetState(strokes) {
+  _ddStrokes = Array.isArray(strokes) ? strokes.slice() : [];
+  _ddTrim();
+  if (_ddOpen) _ddRenderAll();
+}
+function _doodleHandleClear() {
+  _ddStrokes = [];
+  if (_ddCtx && _ddCanvas) _ddCtx.clearRect(0, 0, _ddCanvas.clientWidth, _ddCanvas.clientHeight);
+}
+// ── 펄스 강조 + 내 턴 배너 ──
+function refreshDoodlePulse() {
+  const btn = document.getElementById('doodle-btn');
+  if (!btn) return;
+  const notMyTurn = !!(currentTurnPlayerId && currentTurnPlayerId !== myId);
+  btn.classList.toggle('pulse', (notMyTurn || _ddDmPending) && !_ddOpen);
+}
+function _ddUpdateTurnBanner() {
+  const b = document.getElementById('doodle-turn-banner');
+  if (!b) return;
+  const myTurn = !!myId && currentTurnPlayerId === myId && !isSpectator;
+  b.style.display = (_ddOpen && myTurn) ? 'block' : 'none';
+}
+function _ddUpdateOwnerUI() {
+  const c = document.getElementById('doodle-clear-btn');
+  if (c) c.style.display = (isOwner && !isSpectator) ? 'inline-block' : 'none';
+}
+function _doodleOpen() {
+  const ov = document.getElementById('doodle-overlay');
+  if (!ov) return;
+  ov.style.display = 'flex';
+  _ddOpen = true;
+  _ddUpdateOwnerUI();
+  _ddUpdateTurnBanner();
+  refreshDoodlePulse();
+  requestAnimationFrame(_ddResize);
+}
+function _doodleClose() {
+  const ov = document.getElementById('doodle-overlay');
+  if (ov) ov.style.display = 'none';
+  _ddOpen = false;
+  refreshDoodlePulse();
+}
+(function _ddInit() {
+  _ddCanvas = document.getElementById('doodle-canvas');
+  if (!_ddCanvas) return;
+  _ddCtx = _ddCanvas.getContext('2d');
+  const btn = document.getElementById('doodle-btn');
+  if (btn) btn.addEventListener('click', () => (_ddOpen ? _doodleClose() : _doodleOpen()));
+  const closeBtn = document.getElementById('doodle-close');
+  if (closeBtn) closeBtn.addEventListener('click', _doodleClose);
+  const ov = document.getElementById('doodle-overlay');
+  if (ov) ov.addEventListener('pointerdown', (e) => { if (e.target === ov) _doodleClose(); });
+  document.querySelectorAll('#doodle-colors .dd-color').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('#doodle-colors .dd-color').forEach(x => x.classList.remove('selected'));
+      b.classList.add('selected');
+      _ddColor = b.dataset.color;
+    });
+  });
+  document.querySelectorAll('#doodle-widths .dd-width').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('#doodle-widths .dd-width').forEach(x => x.classList.remove('selected'));
+      b.classList.add('selected');
+      _ddW = parseInt(b.dataset.w, 10);
+    });
+  });
+  const clearBtn = document.getElementById('doodle-clear-btn');
+  if (clearBtn) clearBtn.addEventListener('click', () => {
+    if (!isOwner || isSpectator) return;
+    if (!confirm('낙서판을 전체 지웁니다. (모두에게 적용)')) return;
+    if (ws && ws.readyState === WebSocket.OPEN) ws.send(JSON.stringify({ type: 'doodle_clear' }));
+  });
+  // 캔버스 그리기 — pointer 이벤트(터치+마우스 통합). 캔버스 밖에서 손 떼도 종료.
+  _ddCanvas.addEventListener('pointerdown', _ddDown);
+  _ddCanvas.addEventListener('pointermove', _ddMove);
+  _ddCanvas.addEventListener('pointerup', _ddUp);
+  _ddCanvas.addEventListener('pointercancel', _ddUp);
+  window.addEventListener('pointerup', _ddUp);
+  window.addEventListener('resize', () => { if (_ddOpen) _ddResize(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && _ddOpen) _doodleClose(); });
+})();
